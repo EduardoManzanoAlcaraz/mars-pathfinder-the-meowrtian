@@ -1,0 +1,72 @@
+{
+  "verifiedAtUtc": "2026-11-15T17:05:03.265Z",
+  "passed": true,
+  "repository": "https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+  "commit": "4dd79798c0ce7625fea8cf239af85853e82189c9",
+  "anonymousClone": true,
+  "globalAndSystemGitConfigurationDisabled": true,
+  "comparedFiles": 538,
+  "comparedBytes": 72050983,
+  "allFilesSha256Equal": true,
+  "readmeLocalLinksValid": true,
+  "http": [
+    {
+      "url": "https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+      "status": 200,
+      "bytes": 304278,
+      "noAuthorizationHeader": true
+    },
+    {
+      "url": "https://api.github.com/repos/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+      "status": 200,
+      "bytes": 6899,
+      "noAuthorizationHeader": true,
+      "visibility": "public",
+      "license": "Apache-2.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/README.md",
+      "status": 200,
+      "bytes": 10312,
+      "noAuthorizationHeader": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/LICENSE",
+      "status": 200,
+      "bytes": 11358,
+      "noAuthorizationHeader": true
+    }
+  ],
+  "netlifyMutation": false,
+  "productionSource": {
+    "url": "https://mars-pathfinder-the-meowrtian.netlify.app/release.json",
+    "sourceCommit": "78e29b929bc007814ea137043fdb23829f56645b",
+    "isAncestorOfMain": true,
+    "runtimeInputsCompared": 64,
+    "allHashesEqual": true,
+    "runtimeInputsSha256": "8a25b784844890f5ef128f2daf90cb04d4f82f7fdbc5917a3fef6ad0b1a2a63e"
+  },
+  "recovery": {
+    "tag": "before-english-release-20261115",
+    "commit": "fa79089bb5bfed8ce0f1c2fdaf7b4d515a3d2213",
+    "remoteTagVerified": true,
+    "historyPreserved": true
+  },
+  "materials": {
+    "pptxSlides": 7,
+    "pdfPages": 7,
+    "allPublicCloneHashesMatchValidatedFiles": true,
+    "files": [
+      {
+        "file": "Mars-Pathfinder-The-Meowrtian.pptx",
+        "bytes": 3080344,
+        "sha256": "7eca1d78db64c8afd94728466c6fd868d1c031dee87a33bb33c758879b99bd5a"
+      },
+      {
+        "file": "Mars-Pathfinder-The-Meowrtian-Submission.pdf",
+        "bytes": 535255,
+        "sha256": "8c0083408a5a0ee676b581bf5195a7f1813a60dd13d740e7efee162d3bddee78"
+      }
+    ]
+  }
+}

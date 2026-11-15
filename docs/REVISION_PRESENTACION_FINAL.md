@@ -14,6 +14,14 @@
 
 [Registro del borrador](final-review-20261115/preview/deploy.json), [producción](final-review-20261115/production/deploy.json), [comprobación final](final-review-20261115/final-checks.json).
 
+### Verificación pública de GitHub y entregables
+
+La rama inglesa se integró en `main` por avance rápido y push normal, commit `4dd79798c0ce7625fea8cf239af85853e82189c9`, junto al tag remoto `before-english-release-20261115`. Una clonación anónima, con configuración global/sistema y helpers de credenciales desactivados, cotejó **538 archivos / 72.050.983 bytes**: todos los hashes coinciden. Las 64 entradas de ejecución coinciden con producción y el commit construido es ancestro de `main`; el historial anterior y el tag se comprobaron.
+
+Una sesión privada de Chrome abrió GitHub y la demo, ejecutó Start Mission y descargó por HTTPS el PPTX, PDF, candidatura, README, LICENSE y NOTICE publicados. Todos respondieron 200 y coinciden con las copias revisadas. [Clonación y correspondencia](final-review-20261115/public-source-verification.json), [enlaces y descargas](final-review-20261115/delivery-links.json), [captura GitHub](final-review-20261115/github-public.png). Los 403 externos NASA/JPL se registran aparte, sin contarlos como enlaces accesibles.
+
+El commit posterior que incorpora este registro es documental; `git rev-parse HEAD` identifica la revisión final. No requiere recompilar ni sustituir el paquete publicado.
+
 ## Interfaz, datos y licencia
 
 Se continuó la implementación inglesa existente, sin repetirla. `lang=en`, números ingleses, controles, estados, errores, fuentes, leyendas, perfil y fichas en inglés. No existía selector español; no se añadió infraestructura bilingüe. Las exportaciones conservan sus campos originales y añaden `warningEn` y `designationEn` para lectura internacional; las métricas, geometrías y parámetros no cambian.

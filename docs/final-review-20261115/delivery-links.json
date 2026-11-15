@@ -1,0 +1,70 @@
+{
+  "checkedAtUtc": "2026-11-15T17:04:50.225Z",
+  "passed": true,
+  "commit": "4dd79798c0ce7625fea8cf239af85853e82189c9",
+  "privateBrowserContext": true,
+  "noCredentials": true,
+  "results": [
+    {
+      "url": "https://mars-pathfinder-the-meowrtian.netlify.app",
+      "status": 200,
+      "english": true,
+      "startMissionM3": true,
+      "privateNavigation": true
+    },
+    {
+      "url": "https://mars-pathfinder-the-meowrtian.netlify.app/THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "apacheNoticeCorrect": true
+    },
+    {
+      "url": "https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+      "status": 200,
+      "privateNavigation": true,
+      "authenticationNotRequired": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian.pptx",
+      "status": 200,
+      "bytes": 3080344,
+      "sha256": "7eca1d78db64c8afd94728466c6fd868d1c031dee87a33bb33c758879b99bd5a",
+      "identicalToReviewedCopy": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian-Submission.pdf",
+      "status": 200,
+      "bytes": 535255,
+      "sha256": "8c0083408a5a0ee676b581bf5195a7f1813a60dd13d740e7efee162d3bddee78",
+      "identicalToReviewedCopy": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/deliverables/spaceapps-2026/SUBMISSION_TEXT_EN.md",
+      "status": 200,
+      "bytes": 11648,
+      "sha256": "910a54f12350461721ba8153c15ceaf3b333da9187bef80a8014c6fb0021719f",
+      "identicalToReviewedCopy": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/LICENSE",
+      "status": 200,
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "identicalToReviewedCopy": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/NOTICE",
+      "status": 200,
+      "bytes": 1367,
+      "sha256": "822481ddc10e65c6fa131a305f72009de43268ea4f3088c2a9f450448242225e",
+      "identicalToReviewedCopy": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/4dd79798c0ce7625fea8cf239af85853e82189c9/README.md",
+      "status": 200,
+      "bytes": 10312,
+      "sha256": "49cf140d911527dd9a7f757c9663ec0c9425463d4b53bcf238566d0570b74583",
+      "identicalToReviewedCopy": true
+    }
+  ],
+  "scope": "Critical delivery links and downloaded artifacts; official external reference restrictions recorded separately"
+}
