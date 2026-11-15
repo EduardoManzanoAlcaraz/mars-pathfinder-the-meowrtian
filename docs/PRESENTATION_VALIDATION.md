@@ -1,6 +1,10 @@
 # Presentation and submission-material validation
 
-Completed 15 November 2026, Europe/Madrid. This phase creates submission materials and leaves the deployed application unchanged.
+**Current jury release, 15 November 2026:** the existing deck was updated with current production captures, Start Mission to M3, 72 Vitest tests and the team-approved Apache-2.0 license. PPTX/PDF retain exactly seven slides/pages. Native PowerPoint open/export, embedded image hashes, editable slide-5 table, PDF text/link checks and individual visual review passed. [Current checks](jury-release-20261115/materials-validation.json), [release evidence](MEJORA_FINAL_JURADO.md). The narrative below records the earlier deck revision.
+
+## Historical first-deck record
+
+The remainder records the first deck revision, completed earlier on 15 November 2026. Its sizes, test counts, license status and load measurements describe that revision only. The linked deliverables have since been replaced by the verified seven-slide jury release described above; use the current materials report for their hashes and sizes.
 
 ## Final files
 

@@ -13,6 +13,7 @@ import { cellCenter } from '../../lib/routing/grid.js';
 import type { RouteSuccess } from '../../lib/routing/types.js';
 import type { ScienceObjective, DocumentedPhoto } from '../../lib/science/model.js';
 import { verifyHostedContent } from './hosted-content.mjs';
+import { compareRoutes } from '../../lib/map/route-comparison.js';
 
 const dir = process.env.MARS_AUDIT_OUTPUT || 'docs/final-audit'; await mkdir(dir, { recursive: true });
 const security = JSON.parse(await readFile(`${dir}/antivirus.json`, 'utf8'));
@@ -40,8 +41,13 @@ async function waitFor(test: () => Promise<boolean>, message: string) {
   throw new Error(message);
 }
 async function cardInViewport(page: Page) {
-  await waitFor(async () => { const b = await page.getByTestId('science-inspector').boundingBox(); return !!b && b.y >= 0 && b.y + b.height <= page.viewportSize()!.height + 1; }, 'Scientific card outside actual visible viewport');
-  await page.waitForTimeout(200);
+  let previous = '', stable = 0;
+  await waitFor(async () => {
+    const b = await page.getByTestId('science-inspector').boundingBox();
+    const now = b ? `${b.y.toFixed(1)},${b.height.toFixed(1)}` : '';
+    stable = now && now === previous ? stable + 1 : 0; previous = now;
+    return stable >= 6 && !!b && b.y >= 0 && b.y + b.height <= page.viewportSize()!.height + 1;
+  }, 'Scientific card outside actual visible viewport after scrolling settles');
 }
 async function pixel(page: Page, x: number, y: number) {
   const map = page.getByTestId('mars-map'), b = await map.boundingBox(); if (!b) throw new Error('Map missing');
@@ -97,6 +103,49 @@ try {
     await page.waitForLoadState('networkidle'); await Promise.all(pending);
     const initialResources = resources.map(x => ({ ...x }));
     await page.screenshot({ path: `${dir}/${name}-initial.png`, fullPage: true });
+    // Exercise the actual new guided action before the manual-regression flow.
+    let guidedMission: Record<string, unknown> | null = null;
+    if (await page.getByRole('button', { name: /Start Mission/ }).count()) {
+      await page.waitForSelector('[data-overview-ready="true"]');
+      const initialResolution = Number(await page.getByTestId('mars-map').getAttribute('data-resolution'));
+      await page.getByRole('button', { name: 'Acercar mapa', exact: true }).click();
+      await page.getByRole('radio', { name: 'Pendiente', exact: true }).click();
+      const startAt = performance.now(); await page.getByRole('button', { name: /Start Mission/ }).click();
+      await page.waitForSelector('[data-demo-state="complete"]');
+      const elapsedMs = performance.now() - startAt;
+      await waitFor(async () => Math.abs(Number(await page.getByTestId('mars-map').getAttribute('data-resolution')) - initialResolution) < 1e-5, 'Guided mission did not restore the camera');
+      assert.equal(await page.getByTestId('mars-map').getAttribute('data-origin-cell'), JSON.stringify(demo.start));
+      assert.equal(await page.getByTestId('mars-map').getAttribute('data-destination-cell'), JSON.stringify(objectives[2]!.cell));
+      assert.equal(await page.getByRole('radio', { name: 'Ortoimagen', exact: true }).getAttribute('aria-checked'), 'true');
+      const a = planRoute(grid, demo.start, objectives[2]!.cell, { mode: 'distance', lambda: 0, maxSlopeDeg: 15 });
+      const b = planRoute(grid, demo.start, objectives[2]!.cell, { mode: 'slope-penalty', lambda: 4, maxSlopeDeg: 15 });
+      assert.ok(a.status === 'success' && b.status === 'success');
+      const summary = await page.getByTestId('route-insight').innerText();
+      assert.ok(summary.includes(compareRoutes(a, b)));
+      for (const [id, result] of [['a', a], ['b', b]] as const) {
+        for (const key of ['horizontalMeters', 'terrainMeters', 'ascentMeters', 'descentMeters', 'maxSlopeDeg'] as const) assert.equal(Number(await page.getByTestId(`${id}-${key}`).getAttribute('data-value')), result.metrics[key]);
+      }
+      const overview = page.getByTestId('regional-overview');
+      const toggle = overview.getByRole('button', { name: 'JEZERO / CONTEXT' });
+      if (await toggle.getAttribute('aria-expanded') === 'false') await toggle.click();
+      assert.equal(await overview.locator('svg[role="img"]').getAttribute('data-study-extent'), JSON.stringify([-1968, 1091838, 1968, 1095398]));
+      await overview.screenshot({ path: `${dir}/${name}-context.png` });
+      if (config.width < 761) await toggle.click();
+      await page.locator('#route-comparison').screenshot({ path: `${dir}/${name}-comparison.png` });
+      const exports: Record<string, unknown> = {};
+      for (const [id, expected] of [['a', a], ['b', b]] as const) {
+        await page.getByRole('button', { name: `Ver perfil ruta ${id.toUpperCase()}` }).click();
+        const pendingDownload = page.waitForEvent('download'); await page.getByRole('button', { name: 'Exportar JSON' }).click();
+        const download = await pendingDownload, file = `${dir}/${name}-guided-route-${id}.json`; await download.saveAs(file);
+        const actual = JSON.parse(await readFile(file, 'utf8')) as RouteSuccess;
+        assert.deepEqual(actual.cells, expected.cells); assert.deepEqual(actual.metrics, expected.metrics);
+        const audit = auditRoute(grid, actual); assert.equal(audit.passed, true);
+        exports[id] = { file, computeTimeMs: actual.computeTimeMs, expandedCells: actual.expandedCells, audit, parameters: actual.parameters };
+      }
+      guidedMission = { passed: true, start: demo.start, goal: objectives[2]!.cell, roundTripMs: elapsedMs, cameraRestored: true, overviewVerified: true, summary, routeA: a.metrics, routeB: b.metrics, exports };
+      // Start the separate manual regression from genuinely empty endpoints.
+      await page.getByRole('button', { name: 'Reiniciar', exact: true }).click();
+    } else if (process.env.MARS_REQUIRE_GUIDED === '1') throw new Error('Required Start Mission action missing in this deployment');
     // Explicit layer interaction, not static screenshots of a cached example.
     for (const layer of ['Relieve', 'Elevación', 'Pendiente', 'Ortoimagen']) {
       await page.getByRole('radio', { name: layer, exact: true }).click(); await page.waitForLoadState('networkidle');
@@ -180,7 +229,7 @@ try {
     const resourceReadErrors = settled.filter(x => x.status === 'rejected').map(x => String((x as PromiseRejectedResult).reason));
     assert.deepEqual(errors, []); assert.deepEqual(external, []); assert.deepEqual(resources.filter(x => x.status >= 400), []); assert.deepEqual(resourceReadErrors, []);
     const resourceTiming = await page.evaluate(() => performance.getEntriesByType('resource').map(x => { const r = x as PerformanceResourceTiming; return { path: new URL(r.name).pathname, durationMs: r.duration, transferSize: r.transferSize, encodedBodySize: r.encodedBodySize, decodedBodySize: r.decodedBodySize }; }));
-    report.scenarios.push({ config, mapAndScienceReadyMs, bothRoutesUiMs, coldBrowserCache: true, externalNetworkBlocked: true, initialBodyBytes: initialResources.reduce((sum, x) => sum + x.bodyBytes, 0), completeFlowBodyBytes: resources.reduce((sum, x) => sum + x.bodyBytes, 0), initialResources, resources, resourceTiming, routes, layout, errors, externalRequests: external, fullFlowPassed: true });
+    report.scenarios.push({ config, mapAndScienceReadyMs, bothRoutesUiMs, guidedMission, coldBrowserCache: true, externalNetworkBlocked: true, initialBodyBytes: initialResources.reduce((sum, x) => sum + x.bodyBytes, 0), completeFlowBodyBytes: resources.reduce((sum, x) => sum + x.bodyBytes, 0), initialResources, resources, resourceTiming, routes, layout, errors, externalRequests: external, fullFlowPassed: true });
     await context.close(); console.log(`${name}: full flow passed, ready ${mapAndScienceReadyMs.toFixed(1)} ms`);
   }
   const inventory = [];
@@ -196,6 +245,7 @@ try {
   report.staticInventory = { files: inventory.length, totalBytes: inventory.reduce((sum, x) => sum + x.bytes, 0), hypotheticalGzipBytes: inventory.reduce((sum, x) => sum + x.gzipBytes, 0), gzipIsMeasuredTransfer: false, entries: inventory };
   report.allPassed = true;
 } catch (error) {
+  process.exitCode = 1; console.error(String(error));
   const activePage = browser.contexts().at(-1)?.pages().at(-1);
   if (activePage) {
     await activePage.screenshot({ path: `${dir}/audit-failure.png`, fullPage: true });

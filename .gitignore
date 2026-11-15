@@ -23,6 +23,10 @@ __pycache__/
 Thumbs.db
 Desktop.ini
 *.log
+# Machine-oriented JUnit records stay local; publish sanitized summaries instead.
+/docs/**/vitest*.xml
+/docs/**/pytest*.xml
+/docs/**/antivirus*.json
 /out/
 *.tsbuildinfo
 # Original scientific products are downloaded, not versioned.

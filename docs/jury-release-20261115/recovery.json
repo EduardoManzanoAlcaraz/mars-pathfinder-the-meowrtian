@@ -1,0 +1,12 @@
+{
+  "verifiedAtUtc": "2026-11-15T14:36:14.485889+00:00",
+  "sourceCommit": "33ae224304735917200f2cbdf4f28c628affca89",
+  "gitTag": "before-jury-release-20261115",
+  "previousDeploy": "6af97dee2c4df4cb0f9da6cc",
+  "sourceArchive": ".cache/releases/mars-pathfinder-20261115T095223Z.zip",
+  "sourceArchiveSha256": "9377c418044b9559145b368f29f020b1da242c423cabab42caad87785d164d10",
+  "recoveryDirectory": ".cache/jury-release-20261115/previous-out",
+  "files": 66,
+  "bytes": 6115416,
+  "allFilesSha256Verified": true
+}

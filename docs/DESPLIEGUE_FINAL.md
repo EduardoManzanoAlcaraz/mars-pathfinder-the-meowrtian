@@ -1,5 +1,7 @@
 # Publicación de Mars Pathfinder — The Meowrtian
 
+**Actualización de producción, 15 de noviembre de 2026:** se publicó y verificó la mejora para el jurado en el mismo proyecto, deploy `6af9c6aa89bcb0bfe5fb7e09`. Start Mission usa el escenario M3; pasaron 72 Vitest, 22 pytest, build/typecheck y los flujos privados HTTPS de escritorio/móvil, tanto en prueba como en producción. [Estado actual, capturas y recuperación](MEJORA_FINAL_JURADO.md), [verificación actual](deployment-validation/final-checks.json). Las secciones siguientes conservan el relato y las cifras del despliegue inicial; los archivos de evidencia activa se han renovado y el respaldo previo está preservado.
+
 ## Estado comprobado
 
 **Publicada y comprobada el 15 de noviembre de 2026:** [Mars Pathfinder — The Meowrtian](https://mars-pathfinder-the-meowrtian.netlify.app). La demo es accesible sin autenticación; pasaron los flujos completos de escritorio y móvil en contextos privados nuevos de Chrome.
@@ -40,7 +42,7 @@ Se conserva la aplicación existente, sin nuevas funciones ni cambios de datos c
 
 Durante el build, Next notificó un primer timeout de 60 s en la generación estática de cuatro páginas y reintentó automáticamente. Completó las cuatro en 73 s; compilación 3,6 s. No se ha cambiado la aplicación ni elevado el timeout para ocultarlo. El paquete final está completo; queda como advertencia de reproducibilidad del entorno local, no como fallo de una página publicada.
 
-Evidencias: antivirus (local-only evidence omitted from source release), pruebas rutas (local-only evidence omitted from source release), pruebas interfaz (local-only evidence omitted from source release), pytest JUnit (local-only evidence omitted from source release), [routing JSON](routing-validation/vitest.json), [interfaz JSON](interface-validation/vitest.json), [hashes NASA](routing-validation/final-checks.json), [hashes científicos](science-validation/final-checks.json).
+Evidencias: antivirus (local-only evidence retained outside the public source), pruebas rutas (local-only evidence retained outside the public source), pruebas interfaz (local-only evidence retained outside the public source), pytest JUnit (local-only evidence retained outside the public source), [routing JSON](routing-validation/vitest.json), [interfaz JSON](interface-validation/vitest.json), [hashes NASA](routing-validation/final-checks.json), [hashes científicos](science-validation/final-checks.json).
 
 ## Publicación realizada e incidencias resueltas
 
@@ -50,9 +52,9 @@ La autorización OAuth se completó mediante `netlify login --request`/`--check`
 
 Incidencias y resolución:
 
-1. El ticket de acceso antiguo siguió en `pending`; la CLI confirmó que no existía sesión. Un enlace nuevo completó el acceso. Estado final sin credenciales (local-only evidence omitted from source release).
-2. El proyecto nuevo nació privado con `sso_login: true`. Se cambió **solo ese proyecto** a `sso_login: false`, sin contraseña. Una primera petición combinada que también incluía contraseña vacía y `force_ssl` fue rechazada con HTTP 422; la petición mínima de SSO pasó. No se atribuye una causa concreta al 422. El HTTPS efectivo se comprobó después mediante navegación y redirección HTTP. Acceso (local-only evidence omitted from source release), [configuración final](deployment-validation/site.json).
-3. Netlify inyectaba su insignia opcional y un comentario HTML. La insignia tapaba métricas en móvil/perfil en escritorio y provocó el fallo del primer cotejo byte a byte. Se desactivó `built_with_badge_enabled` únicamente en este proyecto, sin cambiar el plan, y se repitieron ambos flujos completos. Cambio confirmado (local-only evidence omitted from source release), captura previa con solapamiento (local-only evidence omitted from source release), registro previo (local-only evidence omitted from source release).
+1. El ticket de acceso antiguo siguió en `pending`; la CLI confirmó que no existía sesión. Un enlace nuevo completó el acceso. Estado final sin credenciales (local-only evidence retained outside the public source).
+2. El proyecto nuevo nació privado con `sso_login: true`. Se cambió **solo ese proyecto** a `sso_login: false`, sin contraseña. Una primera petición combinada que también incluía contraseña vacía y `force_ssl` fue rechazada con HTTP 422; la petición mínima de SSO pasó. No se atribuye una causa concreta al 422. El HTTPS efectivo se comprobó después mediante navegación y redirección HTTP. Acceso (local-only evidence retained outside the public source), [configuración final](deployment-validation/site.json).
+3. Netlify inyectaba su insignia opcional y un comentario HTML. La insignia tapaba métricas en móvil/perfil en escritorio y provocó el fallo del primer cotejo byte a byte. Se desactivó `built_with_badge_enabled` únicamente en este proyecto, sin cambiar el plan, y se repitieron ambos flujos completos. Cambio confirmado (local-only evidence retained outside the public source), captura previa con solapamiento (local-only evidence retained outside the public source), registro previo (local-only evidence retained outside the public source).
 4. Permanece un comentario HTML invisible de 326 bytes insertado por el hosting. El verificador permite **solo su cadena exacta, una vez y con el ID de este proyecto**, y exige que el resto del HTML sea idéntico. No elimina etiquetas, scripts ni comentarios arbitrarios. Cada archivo conserva hashes del contenido recibido y canónico. Los datos científicos, workers, JavaScript, CSS, fuentes e imágenes siguen sujetos a igualdad íntegra de bytes. No se afirma que los 66 cuerpos HTTP sean idénticos sin esa salvedad.
 5. El host de control visual del navegador no estaba disponible. La validación real se ejecutó con Chrome/Playwright instalado y capturas del navegador; no se sustituyó por comprobaciones HTTP únicamente.
 
@@ -88,7 +90,7 @@ La prueba interactiva usa origen **celda (59,302)** y destino **M3 (334,233)**, 
 
 Exposición por intervalos, parámetros, CRS marciano, versión de datos y hashes completos constan en cada exportación. [JSON A escritorio](deployment-validation/1440-production-route-a.json), [JSON B escritorio](deployment-validation/1440-production-route-b.json), [JSON A móvil](deployment-validation/390-production-route-a.json), [JSON B móvil](deployment-validation/390-production-route-b.json).
 
-[Informe completo del navegador](deployment-validation/browser-audit.json), registro final (local-only evidence omitted from source release), [inspección HTTP](deployment-validation/http-inspection.json), [comprobador final aprobado](deployment-validation/final-checks.json). Los 66 activos previstos dieron HTTP 200; una URL inventada deliberadamente dio el 404 correcto. El worker y chunks se sirven como JavaScript, los manifiestos requieren revalidación y los chunks tienen caché inmutable.
+[Informe completo del navegador](deployment-validation/browser-audit.json), registro final (local-only evidence retained outside the public source), [inspección HTTP](deployment-validation/http-inspection.json), [comprobador final aprobado](deployment-validation/final-checks.json). Los 66 activos previstos dieron HTTP 200; una URL inventada deliberadamente dio el 404 correcto. El worker y chunks se sirven como JavaScript, los manifiestos requieren revalidación y los chunks tienen caché inmutable.
 
 Capturas reales de la URL HTTPS final, sin la insignia superpuesta:
 
@@ -105,7 +107,7 @@ El guion adaptado se ejecutó adicionalmente sobre `out/` por HTTP local en un c
 
 ## Respaldo local
 
-Se conserva la instantánea previa `.cache/releases/mars-pathfinder-20261115T064337Z.zip` y se genera otra con el código, documentos, datos preparados, `out/` y evidencias finales. Ubicación, inventario, SHA-256 y CRC del respaldo más reciente (local-only evidence omitted from source release). El script reproducible es `scripts/audit/backup-release.py`. Se excluyen originales NASA/USGS, cachés, entornos, `node_modules` y sesión Netlify. Los originales permanecen intactos en `data/raw/`. Los ZIP son locales, **no se publican** en el hosting.
+Se conserva la instantánea previa `.cache/releases/mars-pathfinder-20261115T064337Z.zip` y se genera otra con el código, documentos, datos preparados, `out/` y evidencias finales. Ubicación, inventario, SHA-256 y CRC del respaldo más reciente (local-only evidence retained outside the public source). El script reproducible es `scripts/audit/backup-release.py`. Se excluyen originales NASA/USGS, cachés, entornos, `node_modules` y sesión Netlify. Los originales permanecen intactos en `data/raw/`. Los ZIP son locales, **no se publican** en el hosting.
 
 ## Limitaciones y entrega
 

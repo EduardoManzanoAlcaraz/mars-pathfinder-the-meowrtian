@@ -1,6 +1,6 @@
 {
   "schema": "mars-pathfinder-local-route-v1",
-  "exportedAtUtc": "2026-11-15T13:59:15.517Z",
+  "exportedAtUtc": "2026-11-15T14:37:18.469Z",
   "routeName": "b",
   "engineVersion": "1.0.0",
   "dataset": {
@@ -37,7 +37,7 @@
     "col": 334,
     "row": 233
   },
-  "computeTimeMs": 55.69999998807907,
+  "computeTimeMs": 57.90000003576279,
   "expandedCells": 50939,
   "discoveredCells": 51801,
   "peakOpenCells": 968,

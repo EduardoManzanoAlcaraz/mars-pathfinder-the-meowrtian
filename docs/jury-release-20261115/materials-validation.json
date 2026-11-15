@@ -1,0 +1,87 @@
+{
+  "verifiedAtUtc": "2026-11-15T15:09:52.666298+00:00",
+  "pptxSlides": 7,
+  "pdfPages": 7,
+  "nativePowerPointOpenAndExport": true,
+  "editableTableOnSlide5": true,
+  "allAuthoredSlideTextEnglish": true,
+  "currentProductionCaptureHashesEmbedded": 5,
+  "originalMissionPhotoBytesPreserved": true,
+  "slides": [
+    {
+      "slide": 1,
+      "nativeTables": 0,
+      "textRuns": 9
+    },
+    {
+      "slide": 2,
+      "nativeTables": 0,
+      "textRuns": 9
+    },
+    {
+      "slide": 3,
+      "nativeTables": 0,
+      "textRuns": 16
+    },
+    {
+      "slide": 4,
+      "nativeTables": 0,
+      "textRuns": 15
+    },
+    {
+      "slide": 5,
+      "nativeTables": 1,
+      "textRuns": 20
+    },
+    {
+      "slide": 6,
+      "nativeTables": 0,
+      "textRuns": 17
+    },
+    {
+      "slide": 7,
+      "nativeTables": 0,
+      "textRuns": 10
+    }
+  ],
+  "codeLicense": "Apache-2.0",
+  "teamApproved": true,
+  "aiDisclosure": [
+    "OpenAI Codex",
+    "ChatGPT"
+  ],
+  "metricScenario": {
+    "start": [
+      59,
+      302
+    ],
+    "goalM3": [
+      334,
+      233
+    ],
+    "capDeg": 15,
+    "lambda": [
+      0,
+      4
+    ]
+  },
+  "testCounts": {
+    "routing": 37,
+    "interface": 35,
+    "totalVitest": 72,
+    "python": 22
+  },
+  "files": [
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian.pptx",
+      "bytes": 3113013,
+      "sha256": "1fa48c69aa6405823bffb4a90f5b2b920a386536e9e4743ae05a8fb91e305f14"
+    },
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian-Submission.pdf",
+      "bytes": 446251,
+      "sha256": "c2c834d74676c1ae560cfe8bbffe206b6f8a2fa01e3e107115a9d2427fe1336e"
+    }
+  ],
+  "scope": "Executed package/text/native-open/provenance checks and PDF rendering. Visual inspection is recorded separately."
+}

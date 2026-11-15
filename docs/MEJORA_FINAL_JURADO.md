@@ -1,6 +1,55 @@
 # Mejora final para el jurado — Mars Pathfinder / The Meowrtian
 
-**15 de noviembre de 2026. Estado: implementada y verificada sobre el build estático local; no desplegada en Netlify y sin push a GitHub en esta fase.** La URL pública conserva la versión anterior. Se recomienda publicar este paquete comprobado y validar de nuevo la URL HTTPS antes de presentar. No se ha añadido 3D, un servicio externo, una dependencia ni un ráster regional.
+**Estado actual, 15 de noviembre de 2026: publicada y verificada en HTTPS en el mismo sitio Netlify, tras superar un despliegue de prueba.** No se han añadido funcionalidades durante esta fase de publicación.
+
+## Publicación, código y materiales actuales
+
+| Referencia | Resultado comprobado |
+|---|---|
+| Prueba | [jury-20261115-review](https://jury-20261115-review--mars-pathfinder-the-meowrtian.netlify.app), deploy `6af9c51343e35768f69c472f` |
+| Producción | [Mars Pathfinder](https://mars-pathfinder-the-meowrtian.netlify.app), deploy `6af9c6aa89bcb0bfe5fb7e09`, ready |
+| Proyecto existente reutilizado | `89d24aa6-4300-4b08-afcc-84f51da7f164`; sin otro proyecto, Git CD ni servicios de pago |
+| Commit construido | [29a4d63a9259c9f6ee8c8dde393cfcf23e29bb49](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/commit/29a4d63a9259c9f6ee8c8dde393cfcf23e29bb49), descendiente de las mejoras `cb2a0b0` |
+| Correspondencia | [release.json público](https://mars-pathfinder-the-meowrtian.netlify.app/release.json): 63 entradas de ejecución con hashes; huella conjunta `e68dac905d559d977d05eec2bce34af55d7a7d0d35b8ab0830f444dd4b59964a` |
+| Paquete publicado | **68 archivos / 6.194.991 bytes**, incluida la identificación de versión; inventario SHA-256 `80e2a1a845020372c604c76cbe4f67e70eb5bcba8f96984ce29d1c5393973a86` |
+| Nueva ejecución de pruebas | **37 rutas/workers + 35 interfaz/ciencia = 72 Vitest**, **22 pytest**, build y typecheck correctos |
+| Datos y algoritmos anteriores | **50/50 hashes idénticos**, sin diferencias Git en motor, workers o paquetes HiRISE/ciencia previos |
+
+La rama de mejoras se integra en `main` mediante avance rápido y push normal. Las revisiones posteriores del repositorio completan documentación, auditores y materiales; no cambian las entradas de ejecución del commit construido. Esa equivalencia se comprueba contra `release.json`. La API Netlify informa `commit_ref:null` para esta subida manual: se registra la identificación propia verificable, sin atribuir al proveedor un SHA que no proporciona.
+
+La prueba mantuvo producción en `6af97dee2c4df4cb0f9da6cc`. Después de aprobarla se publicó **el mismo paquete, sin recompilarlo**. En cada URL pasaron dos contextos privados nuevos de Chrome 157, 1440×900 y 390×844, caché de navegador desactivada y solicitudes externas bloqueadas: Start Mission→M3, restauración del encuadre, ambas rutas, resumen y métricas, minimapa, M1–M3, geología, ambas fotos/créditos, perfiles y exportación JSON. Se ejecutó también el flujo manual por clic. Se descargaron y auditaron **8 JSON por entorno** entre ambos flujos y resoluciones.
+
+Los flujos finales no tuvieron errores JavaScript/consola, fallos de activos ni dependencias externas necesarias. Los 68 cuerpos HTTP fueron contrastados: **64 íntegramente idénticos**; cuatro HTML incluyen exclusivamente el comentario inerte Netlify ya observado, de 326 bytes, y el resto coincide íntegramente. HTTP redirige 301 a HTTPS. Una URL deliberadamente inexistente devuelve 404.
+
+Evidencias vigentes: [pruebas](jury-release-20261115/checks.json), [integridad científica](jury-release-20261115/scientific-integrity.json), [prueba HTTPS](jury-release-20261115/preview/browser-audit.json), [producción HTTPS](jury-release-20261115/production/browser-audit.json), [resumen final](deployment-validation/final-checks.json).
+
+Capturas reales de producción: [escritorio](jury-release-20261115/production/1440-production-routes.png), [comparación móvil](jury-release-20261115/production/390-production-comparison.png), [contexto USGS](jury-release-20261115/production/390-production-context.png), [M3](jury-release-20261115/production/390-production-objective.png), [foto documentada](jury-release-20261115/production/390-production-perseverance.png).
+
+### Materiales finales de entrega
+
+El deck original fue editado conservando exactamente **siete diapositivas**, diseño y tabla nativa editable en slide 5. Se embebieron los cinco PNG nuevos del mapa de producción sin cambiar sus bytes y se conservó la foto NASA original. La comparación sigue siendo M3 y sus cifras no cambiaron. Slide 6 muestra **72 Vitest** y **Apache-2.0 aprobada por el equipo**; slide 7 explica Start Mission y retira el intervalo de carga de la versión anterior. Fuentes, créditos y declaración de Codex/ChatGPT se mantienen.
+
+PowerPoint abrió/exportó el PPTX y el PDF conserva **siete páginas**, texto nativo y enlace activo a la demo. Se inspeccionaron individualmente las siete diapositivas renderizadas y las siete páginas PDF. `SUBMISSION_TEXT_EN.md` se actualizó al mismo escenario y conteos. Copias finales: `deliverables/spaceapps-2026/`. [Comprobaciones de materiales](jury-release-20261115/materials-validation.json).
+
+### Incidencias resueltas y límites
+
+La CLI rechazó combinar `--context` con `--no-build` antes de subir; se corrigió a borrador con alias. El conector repitió la autenticación y se utilizó la CLI ya autorizada. El guion detectó reutilización del origen guiado en la prueba manual y selecciones encadenadas antes de terminar el desplazamiento suave; se separaron ambos flujos, se añadieron las descargas guiadas y se exigió estabilidad del rectángulo visible. No se desplazaron artificialmente las fichas para aprobarlas. Los intentos fallidos se conservan localmente y no cuentan como aprobados. La aplicación y el paquete no cambiaron durante esas correcciones del guion.
+
+Readiness observada en la nueva producción: **2792,7 ms escritorio / 2282,8 ms móvil**. Son observaciones únicas en este equipo/red, caché de navegador vacía, CDN no purgada y viewport móvil emulado; no garantías globales ni ensayo de teléfono físico. Las cifras locales siguientes pertenecen a la fase anterior. Persisten las limitaciones científicas y de navegadores documentadas.
+
+### Recuperación de la versión anterior
+
+Se conservan el tag **`before-jury-release-20261115`**, commit `33ae224304735917200f2cbdf4f28c628affca89`, y el deploy anterior `6af97dee2c4df4cb0f9da6cc`. El respaldo `.cache/releases/mars-pathfinder-20261115T095223Z.zip` fue verificado y sus **66 archivos / 6.115.416 bytes** se extrajeron a `.cache/jury-release-20261115/previous-out/`, todos con SHA-256 original. [Registro](jury-release-20261115/recovery.json).
+
+Si aparece un problema, se publica ese paquete verificado como **un despliegue nuevo** en el mismo proyecto:
+
+```powershell
+node .tools/netlify-cli/node_modules/netlify-cli/bin/run.js deploy --prod --no-build --dir .cache/jury-release-20261115/previous-out --site 89d24aa6-4300-4b08-afcc-84f51da7f164 --message "Recover verified previous static package" --json
+```
+
+Después se verifica HTTPS y se registra el nuevo ID; la corrección del código debe llegar a `main` mediante un nuevo commit/revert revisado y push normal, usando el tag preservado como referencia. El paquete anterior utiliza el flujo manual. **No se ha ejecutado recuperación**: sus archivos están preparados y verificados, y la nueva producción supera las comprobaciones.
+
+## Registro de implementación y verificación local previa
 
 ## Cambios e impacto en la demostración
 
@@ -108,11 +157,11 @@ Son capturas de Chrome de la aplicación, sin imágenes generadas por IA ni modi
 
 ## Entrega y recomendación
 
-**Recomiendo redesplegar esta versión comprobada**, conservando el despliegue anterior como respaldo. No se ha realizado ese despliegue ni un push remoto en esta fase. Antes de declarar que la mejora está publicada, hay que subir `out/` al mismo proyecto Netlify y volver a ejecutar el flujo Start Mission→M3, capas, fichas, fotos y exportación sobre la URL pública, en sesión limpia de escritorio y móvil. La disponibilidad de la versión anterior no valida automáticamente el build nuevo.
+La publicación y verificación HTTPS recomendadas en la fase local ya se completaron; el estado vigente figura al principio de este documento.
 
-Los verificadores históricos de despliegue incluyen los conteos 27/64 de aquella fase. Al preparar la siguiente publicación deben regenerarse sus informes y actualizar esos conteos a 35/72; no se han usado esos JSON antiguos como evidencia de esta mejora. El informe específico nuevo se obtiene de los registros realmente ejecutados y contiene los conteos actuales.
+El verificador de despliegue ahora obtiene los totales de los nuevos informes ejecutados y exige éxito, cero fallos y cero pendientes. Los 27/64 históricos se han sustituido por 35/72 en las evidencias actuales.
 
-El checkout fuente conservado en `.cache/github-publication/repository` se prepara en la rama local `jury-improvements-20261115`, basada en la publicación `33ae224304735917200f2cbdf4f28c628affca89`. No se hace push: permite revisar el cambio antes de actualizar el repositorio público y el hosting.
+El checkout fuente está en `.cache/github-publication/repository`. La rama de mejoras se integra en `main` conservando la historia; el commit construido y el manifiesto público permiten comprobar la correspondencia del código desplegado.
 
 Prueba local: `npm start` y abrir `http://127.0.0.1:3000`. El build actual ya está en `out/`. No se necesita Python ni descargar originales para la demo web. La reproducción del nuevo vector sí requiere la base USGS local y el entorno geoespacial fijado.
 

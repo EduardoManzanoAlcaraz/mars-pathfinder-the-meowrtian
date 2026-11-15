@@ -46,6 +46,7 @@ for (const entry of preflight.entries) {
 }
 const scenarios = browser.scenarios.map(s => {
   assert.equal(s.fullFlowPassed, true); assert.equal(s.coldBrowserCache, true);
+  assert.equal(s.guidedMission?.passed, true, 'The current release must pass Start Mission, not just the legacy manual flow');
   assert.deepEqual(s.errors, []); assert.deepEqual(s.externalRequests, []);
   assert.ok(s.routes.a.audit.passed && s.routes.b.audit.passed);
   assert.equal(s.routes.a.parameters.lambda, 0); assert.equal(s.routes.b.parameters.lambda, 4);

@@ -1,6 +1,6 @@
 {
   "browserVersion": "157.0.8103.51",
-  "executedAtUtc": "2026-11-15T06:36:29.508Z",
+  "executedAtUtc": "2026-11-15T14:36:40.099Z",
   "realJezero": {
     "results": [
       {
@@ -40,8 +40,8 @@
             }
           ]
         },
-        "computeTimeMs": 21.80000001192093,
-        "roundTripMs": 32.10000002384186,
+        "computeTimeMs": 13.899999976158142,
+        "roundTripMs": 22.899999976158142,
         "pathCells": 276,
         "expandedCells": 8553,
         "audit": {
@@ -107,8 +107,8 @@
             }
           ]
         },
-        "computeTimeMs": 56.39999997615814,
-        "roundTripMs": 56.5,
+        "computeTimeMs": 36.60000002384186,
+        "roundTripMs": 36.799999952316284,
         "pathCells": 314,
         "expandedCells": 51534,
         "audit": {
@@ -163,19 +163,19 @@
     "lifecycle": [
       {
         "event": "created",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       },
       {
         "event": "created",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       },
       {
         "event": "closed",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       },
       {
         "event": "closed",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       }
     ],
     "browserObservedTerminatedWorkerClose": true
@@ -197,19 +197,19 @@
     "lifecycle": [
       {
         "event": "created",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       },
       {
         "event": "created",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       },
       {
         "event": "closed",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       },
       {
         "event": "closed",
-        "url": "http://127.0.0.1:53586/routing.worker.js"
+        "url": "http://127.0.0.1:52387/routing.worker.js"
       }
     ],
     "browserObservedTerminatedWorkerClose": true

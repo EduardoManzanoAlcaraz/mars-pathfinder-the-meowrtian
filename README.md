@@ -7,13 +7,13 @@ Challenge: **Interplanetary Survival Guide: Martian Map**
 
 [Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md) · [Publication evidence](docs/GITHUB_PUBLICATION.md)
 
-**Jury-focused working-tree update, 15 November:** the local build now includes a lightweight Jezero overview, **Start Mission** to compute the validated origin-to-M3 scenario, clearer A/B comparisons and science-objective cards. This update has **not been redeployed to Netlify**. [Changes, actual checks and screenshots](docs/MEJORA_FINAL_JURADO.md).
+**Jury release, 15 November:** the public demo now includes the lightweight Jezero overview, **Start Mission** to compute the validated origin-to-M3 scenario, clearer A/B comparisons and science-objective cards. The preview and production HTTPS deployments passed fresh desktop/mobile browser checks. [Release evidence and recovery instructions](docs/MEJORA_FINAL_JURADO.md).
 
 A working browser application for exploring a verified region of Jezero crater and comparing scientific traverse candidates on real Martian terrain. HiRISE imagery and stereo topography meet published USGS geology, three team-proposed science objectives and two documented Perseverance photographs.
 
 **Educational and mission-concept prototype. Neither route certifies astronaut safety.**
 
-![Real production map and route metrics](docs/deployment-validation/1440-production-routes.png)
+![Real production map and route metrics](docs/jury-release-20261115/production/1440-production-routes.png)
 
 ## Quick start
 
@@ -66,7 +66,7 @@ Origin **(column 59, row 302)** to team objective **M3 (334,233)**, dataset `jez
 | Cumulative ascent | 36.39 m | 31.88 m |
 | Maximum modeled slope | 14.54° | 9.02° |
 
-The downloaded JSON matches the local engine and passes independent edge audits. Two private Chrome sessions at 1440 × 900 and 390 × 844 passed the full production flow without authentication. Measured readiness was 1.16 s and 1.79 s on the tested machine/network, not a worldwide performance guarantee. [Deployment evidence](docs/DESPLIEGUE_FINAL.md).
+The downloaded JSON matches the local engine and passes independent edge audits. Two fresh private Chrome sessions at 1440 × 900 and 390 × 844 passed Start Mission and the manual production flow without authentication. Observed readiness was **2.79 s desktop / 2.28 s mobile viewport** with an empty browser cache on the tested machine/network; the CDN was not purged and this is not a physical-phone test or worldwide performance guarantee. [Current production evidence](docs/jury-release-20261115/production/browser-audit.json).
 
 ## Scientific sources
 
@@ -93,7 +93,7 @@ npm run test:interface
 npm run demo:routes
 ```
 
-The clean source checkout passed **37 routing/worker + 27 interface/science Vitest tests**, **8 synthetic geospatial Python tests**, typecheck and the static build. Independent Dijkstra comparisons supplement the suite. [Executed source-release checks](docs/SOURCE_RELEASE_CHECKS.md). Historical release records also contain **22 pytest tests** with the full original-data environment; that full suite was not rerun on the compact checkout.
+The jury release passed **37 routing/worker + 35 interface/science Vitest tests**, typecheck and the static build from the source checkout. The **22-test Python suite** also passed in the full original-data environment, which is deliberately larger than this compact repository. Independent Dijkstra comparisons supplement the suite. [Current executed checks](docs/jury-release-20261115/checks.json). [Initial source-publication checks](docs/SOURCE_RELEASE_CHECKS.md) retain their earlier 27-test UI and 8-test synthetic-Python scope.
 
 For optional Python work, create an isolated environment, install the pinned geospatial dependencies, and run the synthetic-primitives suite:
 
@@ -108,9 +108,9 @@ The remaining Python checks require original downloads, retained official metada
 
 ## Screenshots and documentation
 
-- [Mobile route flow](docs/deployment-validation/390-production-routes.png)
-- [Geological uncertainty](docs/deployment-validation/390-production-geology.png)
-- [Documented Perseverance image](docs/deployment-validation/390-production-perseverance.png)
+- [Mobile route comparison](docs/jury-release-20261115/production/390-production-comparison.png)
+- [Geological uncertainty](docs/jury-release-20261115/production/390-production-geology.png)
+- [Documented Perseverance image](docs/jury-release-20261115/production/390-production-perseverance.png)
 - [Plan](PLAN.md), [routes](docs/VALIDACION_RUTAS.md), [scientific sources](docs/NASA_RESOURCES.md), [deployment](docs/DESPLIEGUE_FINAL.md)
 - [English submission text](deliverables/spaceapps-2026/SUBMISSION_TEXT_EN.md), [editable seven-slide presentation](deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian.pptx), [seven-page PDF](deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian-Submission.pdf)
 
@@ -118,6 +118,6 @@ Earlier detailed validation reports retain their original language and historica
 
 ## License and AI transparency
 
-The team explicitly approved **Apache-2.0 for original code on 15 November 2026**. See [LICENSE](LICENSE), [NOTICE](NOTICE), [licensing scope](docs/LICENSING.md) and [full upstream notices](public/THIRD_PARTY_NOTICES.txt). Third-party software, agency datasets, photographs, fonts and icons retain their own conditions. Earlier reports/slides retain their historical pending-license status; `docs/LICENSING.md` records the current decision.
+The team explicitly approved **Apache-2.0 for original code on 15 November 2026**. See [LICENSE](LICENSE), [NOTICE](NOTICE), [licensing scope](docs/LICENSING.md) and [full upstream notices](public/THIRD_PARTY_NOTICES.txt). Third-party software, agency datasets, photographs, fonts and icons retain their own conditions. The current seven-slide deck reflects that approval; earlier validation records retain their historical scope.
 
 **OpenAI Codex** assisted implementation, processing scripts, A*, integration, automated tests, debugging, deployment and documentation. **ChatGPT** assisted planning, challenge interpretation, architecture, instructions and methodology/presentation advice. NASA/USGS supply the observations and published interpretation. No generative image tool created the scientific imagery or measured outcomes, and no LLM service calculates routes at runtime. No agency endorsement is implied.
