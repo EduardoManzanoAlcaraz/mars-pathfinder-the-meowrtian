@@ -2,6 +2,8 @@
 
 **Current jury release, 15 November 2026:** the existing repository is reused with its full history. The deployed build is commit `29a4d63a9259c9f6ee8c8dde393cfcf23e29bb49`, following `cb2a0b0`; subsequent documentation/material changes preserve its runtime-input hashes. Current checks passed **37 routing/worker + 35 interface/science Vitest tests** and **22 Python tests** in the original-data environment, plus build/typecheck. [Release, HTTPS evidence and recovery](MEJORA_FINAL_JURADO.md). The account creation, file counts and reproduction scope below describe the initial publication, not this later release.
 
+The improvements were fast-forwarded to `main` at `9fc031a7df38a2fbb2ae268524e408038f9fe8b9` and pushed without force, together with `before-jury-release-20261115`. A fresh anonymous clone matched all 410 reviewed files, all 63 production runtime inputs, and both validated presentation files. [Executed public verification](jury-release-20261115/public-source-verification.json). The subsequent audit-record commit changes documentation only.
+
 Published on **15 November 2026** in the owner's account:
 
 **https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian**
