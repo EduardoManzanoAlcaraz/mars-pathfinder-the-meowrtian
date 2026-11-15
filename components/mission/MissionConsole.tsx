@@ -13,7 +13,7 @@ import { loadScience } from '../../lib/science/model';
 import type { ScienceData, ScienceObjective, ScienceSelection } from '../../lib/science/model';
 import { ScienceControls } from './SciencePanel';
 import { compareRoutes } from '../../lib/map/route-comparison';
-import { LAYER_COPY } from '../../lib/map/display-copy';
+import { LAYER_COPY, englishScienceText } from '../../lib/map/display-copy';
 
 const MissionMap = dynamic(() => import('./MissionMap'), { ssr: false, loading: () => <div className="map-skeleton"><span className="loading-ring" />Preparing cartography</div> });
 type Runtime = { grid: RoutingGrid; catalog: VisualCatalog; demo: { start: Cell; goal: Cell; manifestSha256: string } };
@@ -159,8 +159,8 @@ export default function MissionConsole() {
     if (!runtime || !origin || !destination || !routes[selected]) return;
     const content = { ...makeRouteExport(runtime.grid, routes[selected]!, origin, destination, selected), scientificContext: science ? {
       datasetId: science.manifest.datasetId, manifestSha256: science.manifestSha256, geologySource: science.geology.source,
-      geologyUse: 'Context only; excluded from routing constraints and cost', registration: science.geology.registration,
-      endpointCellAssociations: science.objectives.filter(o => [origin, destination].some(e => e.cell.col === o.cell.col && e.cell.row === o.cell.row)).map(o => ({ id: o.id, designation: o.designation, sourceFid: o.sourceFid, unitSymbol: o.unitSymbol, uncertainty: o.uncertainty })),
+      geologyUse: 'Context only; excluded from routing constraints and cost', registration: { ...science.geology.registration, warningEn: englishScienceText(science.geology.registration.warningEs) },
+      endpointCellAssociations: science.objectives.filter(o => [origin, destination].some(e => e.cell.col === o.cell.col && e.cell.row === o.cell.row)).map(o => ({ id: o.id, designation: o.designation, designationEn: englishScienceText(o.designation), sourceFid: o.sourceFid, unitSymbol: o.unitSymbol, uncertainty: o.uncertainty })),
     } : null };
     const url = URL.createObjectURL(new Blob([JSON.stringify(content, null, 2) + '\n'], { type: 'application/json' }));
     const anchor = document.createElement('a'); anchor.href = url; anchor.download = `mars-pathfinder-${runtime.grid.dataset.id}-route-${selected}.json`; anchor.click();

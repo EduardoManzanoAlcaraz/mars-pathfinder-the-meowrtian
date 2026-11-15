@@ -10,7 +10,7 @@ NASA/JPL use conditions and non-endorsement: https://www.jpl.nasa.gov/jpl-image-
 Mars Trek metadata consulted, no Trek raster incorporated. https://trek.nasa.gov/mars/
 The Meowrtian: reprojection/crops, terrain derivatives, display colors, proposed targets, routes and application. These are not NASA/USGS official stations or a safety certification. No agency logos incorporated.
 
-Font Manrope (SIL OFL-1.1), Lucide icons (ISC), OpenLayers (BSD-2-Clause), Next/React (MIT): full upstream notices follow. Build/test dependency notices included for traceability. The project's original code has no declared open-source license at this stage; no license for it is inferred from dependencies.
+Font Manrope (SIL OFL-1.1), Lucide icons (ISC), OpenLayers (BSD-2-Clause), Next/React (MIT): full upstream notices follow. Build/test dependency notices included for traceability. The project's original code is licensed under Apache-2.0, explicitly approved by The Meowrtian. See LICENSE and NOTICE in the source repository. Scientific materials and third-party software retain their own terms.
 
 ===== @fontsource-variable/manrope@5.3.0: LICENSE =====
 Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)

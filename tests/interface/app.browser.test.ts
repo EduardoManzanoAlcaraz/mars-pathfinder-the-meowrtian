@@ -399,6 +399,9 @@ it('opens all three real objective markers and uses a documented target as the r
   expect(auditRoute(grid, exported).passed).toBe(true);
   expect(exported.scientificContext.endpointCellAssociations[0].id).toBe(target.id);
   expect(exported.scientificContext.geologyUse).toContain('excluded');
+  expect(exported.scientificContext.registration.warningEn).toContain('100–200 m');
+  expect(exported.scientificContext.registration.warningEn).toContain('Reprojection does not correct');
+  expect(exported.scientificContext.endpointCellAssociations[0].designationEn).toContain('not an official NASA/USGS name or station');
   expect(exported.scientificContext.registration.documentedOffsetMeters).toEqual([100, 200]);
   evidence.scienceObjectives = { markersQueriedAtExactCoordinates: objectives.map(x => x.id), destination: target.cell, computedMetrics: exported.metrics, independentAudit: auditRoute(grid, exported), exportIncludesUncertainty: true };
 });
