@@ -1,0 +1,12 @@
+{
+  "changes": [
+    {
+      "part": "ppt/slides/slide5.xml",
+      "fillElementsReordered": 8
+    }
+  ],
+  "nonChangedPartsByteIdentical": true,
+  "allSlideTextPreserved": true,
+  "inputSha256": "a2f651a32f1dcbdcb30b0cef2ebcaf48d4e2389aff1ae0ae8d27b5d90e0faa5c",
+  "outputSha256": "8cfda70a8e76dbe0464d7c34c624f99d1205a7f8d3431475409acf2acece7c83"
+}

@@ -1,0 +1,125 @@
+{
+  "checkedAtUtc": "2026-11-15T10:32:37.901204+00:00",
+  "pptxSlides": 7,
+  "pdfPages": 7,
+  "slides": [
+    {
+      "slide": 1,
+      "nativeTextRuns": 9,
+      "nativeTables": 0,
+      "speakerNotesPresent": true
+    },
+    {
+      "slide": 2,
+      "nativeTextRuns": 9,
+      "nativeTables": 0,
+      "speakerNotesPresent": true
+    },
+    {
+      "slide": 3,
+      "nativeTextRuns": 16,
+      "nativeTables": 0,
+      "speakerNotesPresent": true
+    },
+    {
+      "slide": 4,
+      "nativeTextRuns": 15,
+      "nativeTables": 0,
+      "speakerNotesPresent": true
+    },
+    {
+      "slide": 5,
+      "nativeTextRuns": 20,
+      "nativeTables": 1,
+      "speakerNotesPresent": true
+    },
+    {
+      "slide": 6,
+      "nativeTextRuns": 17,
+      "nativeTables": 0,
+      "speakerNotesPresent": true
+    },
+    {
+      "slide": 7,
+      "nativeTextRuns": 10,
+      "nativeTables": 0,
+      "speakerNotesPresent": true
+    }
+  ],
+  "pdfRenderedPages": 7,
+  "nativePowerPointOpenAndRender": true,
+  "editableTableOnSlide5": true,
+  "allAuthoredSlideTextEnglish": true,
+  "aiToolsDisclosed": [
+    "OpenAI Codex",
+    "ChatGPT"
+  ],
+  "sourceApplicationAndDataFilesHashUnchanged": 63,
+  "noLicenseSelected": true,
+  "noDeploymentMutationInvokedInThisPhase": true,
+  "verifiedMetricsMatchReleaseExports": true,
+  "pdfPublicLinkPresent": true,
+  "files": [
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian.pptx",
+      "bytes": 3106729,
+      "sha256": "8cfda70a8e76dbe0464d7c34c624f99d1205a7f8d3431475409acf2acece7c83"
+    },
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian-Submission.pdf",
+      "bytes": 446718,
+      "sha256": "ace883cb8b3b6b4270d813173ad12ae3ec60def5a0ba79c74b52c9a99c73724e"
+    }
+  ],
+  "submissionFieldLengths": {
+    "Project title": {
+      "characters": 15,
+      "words": 2
+    },
+    "Team": {
+      "characters": 13,
+      "words": 2
+    },
+    "Challenge": {
+      "characters": 42,
+      "words": 5
+    },
+    "Public demo": {
+      "characters": 49,
+      "words": 1
+    },
+    "Summary": {
+      "characters": 564,
+      "words": 76
+    },
+    "Project description": {
+      "characters": 2559,
+      "words": 360
+    },
+    "Technologies used": {
+      "characters": 471,
+      "words": 65
+    },
+    "NASA data and resources used": {
+      "characters": 1897,
+      "words": 189
+    },
+    "Space agency partner and other data": {
+      "characters": 652,
+      "words": 86
+    },
+    "Use of artificial intelligence": {
+      "characters": 1195,
+      "words": 153
+    },
+    "Reference list and software attribution": {
+      "characters": 1284,
+      "words": 113
+    },
+    "Team action before submission": {
+      "characters": 425,
+      "words": 63
+    }
+  },
+  "scope": "Package/text/editability/rendering and local release preservation checks. Visual review and team legal/submission decisions remain separate."
+}

@@ -1,0 +1,66 @@
+{
+  "freeBytesBefore": "117817565184",
+  "files": [
+    {
+      "name": "sim3464_readme.txt",
+      "path": "data/raw/usgs-sim3464/sim3464_readme.txt",
+      "url": "https://pubs.usgs.gov/sim/3464/sim3464_readme.txt",
+      "bytes": 3914,
+      "sha256": "226c04cc89b86441fff8d51e70e3f906551b405c7a23a8a9cfb8ca9df9a7762d",
+      "action": "downloaded",
+      "responseHeaders": {
+        "content-length": null,
+        "last-modified": "Thu, 03 Dec 2020 00:08:08 GMT",
+        "etag": "W/\"f4a-5b5842795ea00-br\"",
+        "content-type": "text/plain"
+      },
+      "checkedAtUtc": "2026-11-14T13:02:46.160Z"
+    },
+    {
+      "name": "sim3464_metadata.txt",
+      "path": "data/raw/usgs-sim3464/sim3464_metadata.txt",
+      "url": "https://pubs.usgs.gov/sim/3464/sim3464_metadata.txt",
+      "bytes": 20767,
+      "sha256": "24f129b9ae7ac670f620ea5397860703f1051e53a10ea8f3871f7ed82fb5acd5",
+      "action": "downloaded",
+      "responseHeaders": {
+        "content-length": null,
+        "last-modified": "Thu, 03 Dec 2020 00:08:07 GMT",
+        "etag": "W/\"511f-5b5842786a7c0-br\"",
+        "content-type": "text/plain"
+      },
+      "checkedAtUtc": "2026-11-14T13:02:46.858Z"
+    },
+    {
+      "name": "sim3464.pdf",
+      "path": "data/raw/usgs-sim3464/sim3464.pdf",
+      "url": "https://pubs.usgs.gov/sim/3464/sim3464.pdf",
+      "bytes": 36406378,
+      "sha256": "51da76ebbaafc36e31fab13766832a8613bcda5e1b6b188532f8d25f8d74df2f",
+      "action": "downloaded",
+      "responseHeaders": {
+        "content-length": "36406378",
+        "last-modified": "Thu, 03 Dec 2020 00:08:40 GMT",
+        "etag": "\"22b846a-5b584297e3200\"",
+        "content-type": "application/pdf"
+      },
+      "checkedAtUtc": "2026-11-14T13:02:48.744Z"
+    },
+    {
+      "name": "sim3464_database.zip",
+      "path": "data/raw/usgs-sim3464/sim3464_database.zip",
+      "url": "https://pubs.usgs.gov/sim/3464/sim3464_database.zip",
+      "bytes": 349336873,
+      "sha256": "a88bd53a5573743cc4a20036c10e585106d08a433ad2f34af269e9cea1529f87",
+      "action": "downloaded",
+      "responseHeaders": {
+        "content-length": "349336873",
+        "last-modified": "Thu, 03 Dec 2020 00:09:34 GMT",
+        "etag": "\"14d27529-5b5842cb62b80\"",
+        "content-type": "application/zip"
+      },
+      "checkedAtUtc": "2026-11-14T13:03:00.644Z"
+    }
+  ],
+  "integrity": "Exact HTTP size and local SHA-256; ZIP CRC additionally checked by preparation script. No publisher full-file checksum claimed."
+}

@@ -1,0 +1,48 @@
+{
+  "pdf": "<workspace>\\deliverables\\spaceapps-2026\\Mars-Pathfinder-The-Meowrtian.pdf",
+  "existingUserPresentationsWereNotClosed": true,
+  "method": "Read-only open, native slide PNG export and slides-only PDF export",
+  "version": "16.0",
+  "slides": [
+    {
+      "nativeTables": 0,
+      "editableTextShapes": 7,
+      "index": 1
+    },
+    {
+      "nativeTables": 0,
+      "editableTextShapes": 8,
+      "index": 2
+    },
+    {
+      "nativeTables": 0,
+      "editableTextShapes": 13,
+      "index": 3
+    },
+    {
+      "nativeTables": 0,
+      "editableTextShapes": 14,
+      "index": 4
+    },
+    {
+      "nativeTables": 1,
+      "editableTextShapes": 6,
+      "index": 5
+    },
+    {
+      "nativeTables": 0,
+      "editableTextShapes": 12,
+      "index": 6
+    },
+    {
+      "nativeTables": 0,
+      "editableTextShapes": 8,
+      "index": 7
+    }
+  ],
+  "renderDirectory": "<workspace>\\.cache\\presentation-2026\\powerpoint",
+  "checkedAtUtc": "2026-11-15T10:25:06.3374919Z",
+  "application": "Microsoft PowerPoint",
+  "slideCount": 7,
+  "pptxSha256": "8CFDA70A8E76DBE0464D7C34C624F99D1205A7F8D3431475409ACF2ACECE7C83"
+}

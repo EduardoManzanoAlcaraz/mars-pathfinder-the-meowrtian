@@ -1,0 +1,454 @@
+{
+  "dataset_id": "jezero-hirise-v1",
+  "configuration": {
+    "dataset_id": "jezero-hirise-v1",
+    "aoi_lon_lat": [
+      77.4,
+      18.42,
+      77.47,
+      18.48
+    ],
+    "resolution_m": 2,
+    "block_size": 512,
+    "source_margin_pixels": 8,
+    "hillshade_azimuth_deg": 315,
+    "hillshade_altitude_deg": 45,
+    "connectivity_demo_slope_limit_deg": 15
+  },
+  "local_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",18.45,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Longitude of natural origin\",77.435,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "local_crs_proj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+  "vertical_reference": "Mars equipotential surface, Mars 2000 datum, per official PDS label; unchanged heights",
+  "provenance": "Real official HiRISE inputs; all crops, warps, slope, mask and display illumination derived by The Meowrtian",
+  "input_files": [
+    {
+      "name": "DTEEC_045994_1985_046060_1985_U01.IMG",
+      "path": "data/raw/hirise-pds/DTEEC_045994_1985_046060_1985_U01.IMG",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.IMG",
+      "bytes": 380814764,
+      "sha256": "b40739b4d32516ef9b3cd849f519a6a20df9720b5369a9c141047ced27c57654",
+      "researchPrefixBytes": 65536,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a74cf-16b2c5ac\"",
+        "last-modified": "Thu, 27 Jul 2017 23:18:39 GMT",
+        "content-type": "application/octet-stream",
+        "content-length": "380814764"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:43.598Z"
+    },
+    {
+      "name": "ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "path": "data/raw/hirise-pds/ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "bytes": 33534820,
+      "sha256": "7dc1d5ccfc7ad368b2651e9aa476733e83a1814ed88d11b2bad62c677eca6ed2",
+      "researchPrefixBytes": 65536,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a749f-1ffb364\"",
+        "last-modified": "Thu, 27 Jul 2017 23:17:51 GMT",
+        "content-type": "image/jp2",
+        "content-length": "33534820"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:46.433Z"
+    },
+    {
+      "name": "ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "path": "data/raw/hirise-pds/ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "bytes": 5432,
+      "sha256": "25be59938b86f73e3d7479bc16388d033059f3961f42f18381e2a5e4735d96c2",
+      "researchPrefixBytes": 5432,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a749d-1538\"",
+        "last-modified": "Thu, 27 Jul 2017 23:17:49 GMT",
+        "content-type": "text/plain",
+        "content-length": "5432"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:46.643Z"
+    }
+  ],
+  "grid": {
+    "width": 1968,
+    "height": 1780,
+    "resolution_m": 2,
+    "transform_gdal": [
+      -1968,
+      2,
+      0,
+      1095398,
+      0,
+      -2
+    ],
+    "axis_order": "x east / y north; row 0 at north; pixel area; centres at col+0.5,row+0.5"
+  },
+  "native_crop": {
+    "source_window_col_row_width_height": [
+      935,
+      4006,
+      3985,
+      3538
+    ],
+    "counts_with_margin": {
+      "dem_valid": 14098930,
+      "ortho_valid": 14084212,
+      "joint_valid": 14084212,
+      "total": 14098930
+    }
+  },
+  "alignment_numeric": {
+    "method": "Five target pixel centres transformed independently with pyproj; compare actual source pixels with GDAL nearest-neighbour warp. This checks data mapping, not external absolute accuracy.",
+    "samples": [
+      {
+        "row": 267,
+        "col": 295,
+        "x_m": -1377,
+        "y_m": 1094863,
+        "lon_lat_mars": [
+          77.4105104173273,
+          18.471001046770603
+        ],
+        "source_row": 4542,
+        "source_col": 1539,
+        "elevation_m": -2473.37353515625,
+        "image_dn": 123,
+        "roundtrip_error_m": 1.90084392670542e-10,
+        "nearest_gdal_vs_independent_pyproj_dem_difference_m": 0,
+        "nearest_gdal_vs_independent_pyproj_image_difference_dn": 0,
+        "source_valid": true
+      },
+      {
+        "row": 267,
+        "col": 1672,
+        "x_m": 1377,
+        "y_m": 1094863,
+        "lon_lat_mars": [
+          77.45948958267272,
+          18.471001046770603
+        ],
+        "source_row": 4542,
+        "source_col": 4315,
+        "elevation_m": -2560.77099609375,
+        "image_dn": 90,
+        "roundtrip_error_m": 1.90084392670542e-10,
+        "nearest_gdal_vs_independent_pyproj_dem_difference_m": 0,
+        "nearest_gdal_vs_independent_pyproj_image_difference_dn": 0,
+        "source_valid": true
+      },
+      {
+        "row": 890,
+        "col": 984,
+        "x_m": 1,
+        "y_m": 1093617,
+        "lon_lat_mars": [
+          77.43501778473689,
+          18.44998027311739
+        ],
+        "source_row": 5776,
+        "source_col": 2928,
+        "elevation_m": -2559.3505859375,
+        "image_dn": 103,
+        "roundtrip_error_m": 8.273781659795532e-11,
+        "nearest_gdal_vs_independent_pyproj_dem_difference_m": 0,
+        "nearest_gdal_vs_independent_pyproj_image_difference_dn": 0,
+        "source_valid": true
+      },
+      {
+        "row": 1513,
+        "col": 295,
+        "x_m": -1377,
+        "y_m": 1092371,
+        "lon_lat_mars": [
+          77.4105104173273,
+          18.428959499464177
+        ],
+        "source_row": 7010,
+        "source_col": 1539,
+        "elevation_m": -2550.035888671875,
+        "image_dn": 67,
+        "roundtrip_error_m": 1.90084392670542e-10,
+        "nearest_gdal_vs_independent_pyproj_dem_difference_m": 0,
+        "nearest_gdal_vs_independent_pyproj_image_difference_dn": 0,
+        "source_valid": true
+      },
+      {
+        "row": 1513,
+        "col": 1672,
+        "x_m": 1377,
+        "y_m": 1092371,
+        "lon_lat_mars": [
+          77.45948958267272,
+          18.428959499464177
+        ],
+        "source_row": 7010,
+        "source_col": 4315,
+        "elevation_m": -2586.657470703125,
+        "image_dn": 63,
+        "roundtrip_error_m": 1.90084392670542e-10,
+        "nearest_gdal_vs_independent_pyproj_dem_difference_m": 0,
+        "nearest_gdal_vs_independent_pyproj_image_difference_dn": 0,
+        "source_valid": true
+      }
+    ],
+    "distance_checks": [
+      {
+        "local_distance_m": 2754,
+        "mars_sphere_geodesic_m": 2753.6630305845256,
+        "relative_difference_percent": 0.012237133292336232
+      },
+      {
+        "local_distance_m": 2492,
+        "mars_sphere_geodesic_m": 2492.0000000003497,
+        "relative_difference_percent": 1.4032933901751278e-11
+      },
+      {
+        "local_distance_m": 3714.105545080807,
+        "mars_sphere_geodesic_m": 3714.1057123125806,
+        "relative_difference_percent": 0.000004502612107901911
+      }
+    ]
+  },
+  "statistics": {
+    "total_pixels": 3503040,
+    "projected_bounds_m": [
+      -1968,
+      1091838,
+      1968,
+      1095398
+    ],
+    "dem_valid_percent": 100,
+    "ortho_valid_percent": 99.89511966748881,
+    "conservative_joint_coverage_percent": 99.79449278341099,
+    "derivative_valid_percent": 99.49646592673793,
+    "elevation_min_m": -2614.888671875,
+    "elevation_max_m": -2442.878662109375,
+    "slope_deg_percentiles_0_50_90_95_99_100": [
+      0.00349705689586699,
+      2.9232749938964844,
+      9.396590232849121,
+      13.372227668762207,
+      23.44318389892578,
+      71.45588684082031
+    ],
+    "slope_over_45_deg_pixels": 344,
+    "possible_artifact_diagnostics": {
+      "local_median3x3_residual_max_m": 1.875732421875,
+      "local_median3x3_residual_over_5m_pixels": 0,
+      "maximum_slope_row_col": [
+        1192,
+        256
+      ],
+      "interpretation": "High slope and local residuals can be real cliffs or stereo artefacts. No confidence raster/ground truth was supplied; these diagnostics do not classify them or remove them automatically."
+    },
+    "connectivity_assumption_slope_limit_deg": 15,
+    "traversable_percent_of_total": 95.6257422124783,
+    "connected_components_4_neighbours": 579,
+    "largest_component_pixels": 3339774,
+    "largest_component_area_m2": 13359096,
+    "largest_component_percent_of_traversable": 99.70046044430009,
+    "connectivity_is_not_an_Astar_route_or_EVA_safety_validation": true
+  },
+  "routing_grid": {
+    "width": 394,
+    "height": 356,
+    "resolution_m": 10,
+    "transform_gdal": [
+      -1968,
+      10,
+      0,
+      1095398,
+      0,
+      -10
+    ],
+    "crs": "Same local Mars CRS as the 2 m layers",
+    "layout": "row-major, row 0 north; centres at col+0.5,row+0.5",
+    "binary_endianness": "little",
+    "binary_float_type": "Float32",
+    "nodata_float": -9999,
+    "mask_codes": "0=blocked/unknown, 1=valid (slope policy still to be applied)",
+    "aggregation": "5x5: all valid; mean elevation; maximum slope. Partial edge cells blocked.",
+    "total_cells": 140264,
+    "valid_cells": 138135,
+    "valid_percent": 98.48214794958079,
+    "cells_at_or_below_demo_15deg": 129058,
+    "largest_4_connected_component_cells_at_demo_15deg": 128649,
+    "connected_components_at_demo_15deg": 43,
+    "paths": {
+      "dem": "routing_dem_10m.tif",
+      "slope": "routing_slope_max_10m.tif",
+      "valid": "routing_valid_10m.tif",
+      "dem_binary": "routing_elevation.f32",
+      "slope_binary": "routing_slope_max.f32",
+      "valid_binary": "routing_valid.u8"
+    },
+    "route_computed": false
+  },
+  "visual_inspection_windows": [
+    {
+      "id": 1,
+      "window_col_row_width_height": [
+        226,
+        192,
+        256,
+        256
+      ],
+      "centre_local_m": [
+        -1259,
+        1094757
+      ]
+    },
+    {
+      "id": 2,
+      "window_col_row_width_height": [
+        1348,
+        228,
+        256,
+        256
+      ],
+      "centre_local_m": [
+        985,
+        1094685
+      ]
+    },
+    {
+      "id": 3,
+      "window_col_row_width_height": [
+        856,
+        762,
+        256,
+        256
+      ],
+      "centre_local_m": [
+        1,
+        1093617
+      ]
+    },
+    {
+      "id": 4,
+      "window_col_row_width_height": [
+        265,
+        1260,
+        256,
+        256
+      ],
+      "centre_local_m": [
+        -1181,
+        1092621
+      ]
+    },
+    {
+      "id": 5,
+      "window_col_row_width_height": [
+        1407,
+        1260,
+        256,
+        256
+      ],
+      "centre_local_m": [
+        1103,
+        1092621
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/processed/jezero-hirise-v1/dem_source_crop.tif",
+      "bytes": 19195367,
+      "sha256": "0d2aed50d13f1a78ecc15c107722598ec1faa2204ff68ba2a076254b745138c0"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/ortho_source_crop.tif",
+      "bytes": 8796180,
+      "sha256": "b74200fd4c4a375706a8e5eaf20b7641da346e860d240d8bf1f862253232645a"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/source_coverage_mask.tif",
+      "bytes": 72281,
+      "sha256": "7fd270575524f81bc50a34639b3d7f5d532a2c220f4fb7f7b846b315619cfefb"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/dem.tif",
+      "bytes": 5286140,
+      "sha256": "daf194283c3f21db593d6afe0fc0b530313d3a24ea5f5d69c065e3e5c81bd523"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/ortho.tif",
+      "bytes": 2321460,
+      "sha256": "fad3be72440dd08b0ba212c0295f6bb39eb1199d1b9f6f22f9ff72c18aa71dd1"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/coverage_mask.tif",
+      "bytes": 21214,
+      "sha256": "9ab07727298979fc3fe3bb0ed26d471c83b46b2a59984454ecf1f790885f3efe"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/coverage_codes.tif",
+      "bytes": 20811,
+      "sha256": "03886f7a8e4f339c68d112ea76ce1a204de006d84b7e5a84e29d54b362a4ab20"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/slope_deg.tif",
+      "bytes": 11353360,
+      "sha256": "139917287c230bac2499158c021e8e2b362e80802974ee478edd8182815728ca"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/hillshade.tif",
+      "bytes": 1719095,
+      "sha256": "f7f0d52d0dfdbd0312b39a472e488970fcec570fe307ac6fec6d4daf4b56f90a"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/valid_mask.tif",
+      "bytes": 20018,
+      "sha256": "70689539ddd1ab920dd055583e6125c67b368c9e6dd5b4c8abeac00a5e9ae221"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_dem_10m.tif",
+      "bytes": 268474,
+      "sha256": "bf2efa80482d4c09c200f4fbb9044137203c29dd43f9923660bfc359db0cc4f2"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_slope_max_10m.tif",
+      "bytes": 457949,
+      "sha256": "831a9c7c31898003f5ef9f2fcdaeb0eec58caeef216b6a9e9a0d61d29b4027f2"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_valid_10m.tif",
+      "bytes": 2087,
+      "sha256": "66f649849a997417279988876721045acf67cc3e43b5ec4462136464e48ebca6"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_elevation.f32",
+      "bytes": 561056,
+      "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_slope_max.f32",
+      "bytes": 561056,
+      "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_valid.u8",
+      "bytes": 140264,
+      "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/preview.png",
+      "bytes": 1974595,
+      "sha256": "451df4a3848386a4f29f6670280b13d73a5ab85b2d8cd75542d1c599b4281f0c"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/alignment_overlay.png",
+      "bytes": 2459527,
+      "sha256": "7abef82d4a76d4c8ac6d029d6499b121727e2e8ed1b5afe6262118163616661f"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/alignment_windows.png",
+      "bytes": 954822,
+      "sha256": "9734f5751cdc15788c43d0d9581c2df77cf057748ce8732b95bd360fb50f7abe"
+    }
+  ]
+}

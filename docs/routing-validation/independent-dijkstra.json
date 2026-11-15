@@ -1,0 +1,50 @@
+{
+  "python": "3.14.7",
+  "scipy": "1.18.1",
+  "method": "Independent Python pixel/edge/metric checks and SciPy sparse directed Dijkstra over the complete real 8-neighbour graph",
+  "routes": {
+    "route-a": {
+      "checked_cells": 276,
+      "checked_edges": 275,
+      "violations": 0,
+      "full_graph_directed_edges": 999894,
+      "dijkstra_cost": 3781.391770309028,
+      "astar_cost": 3781.391770309028,
+      "cost_absolute_difference": 0,
+      "metric_absolute_errors": {
+        "horizontalMeters": 2.091837814077735e-11,
+        "terrainMeters": 9.094947017729282e-13,
+        "ascentMeters": 0,
+        "descentMeters": 0,
+        "netElevationMeters": 0,
+        "maxSlopeDeg": 0,
+        "totalCost": 2.091837814077735e-11
+      },
+      "graph_build_ms": 105.40910001145676,
+      "dijkstra_ms": 22.12609999696724,
+      "passed": true
+    },
+    "route-b": {
+      "checked_cells": 314,
+      "checked_edges": 313,
+      "violations": 0,
+      "full_graph_directed_edges": 999894,
+      "dijkstra_cost": 4932.615239510466,
+      "astar_cost": 4932.615239510466,
+      "cost_absolute_difference": 0,
+      "metric_absolute_errors": {
+        "horizontalMeters": 1.7280399333685637e-11,
+        "terrainMeters": 2.7284841053187847e-12,
+        "ascentMeters": 0,
+        "descentMeters": 0,
+        "netElevationMeters": 0,
+        "maxSlopeDeg": 0,
+        "totalCost": 9.094947017729282e-13
+      },
+      "graph_build_ms": 88.7724999920465,
+      "dijkstra_ms": 19.284899986814708,
+      "passed": true
+    }
+  },
+  "prepared_data_unchanged": true
+}

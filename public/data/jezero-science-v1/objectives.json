@@ -1,0 +1,151 @@
+{
+  "schema": "mars-pathfinder-science-objectives-v1",
+  "datasetId": "jezero-science-v1",
+  "crsProj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+  "topographyManifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "geologySha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+  "provenance": "The Meowrtian selections derived from official USGS interpretation and real HiRISE grid; not official named sites",
+  "objectives": [
+    {
+      "id": "meowrtian-nhjf2",
+      "label": "M1 · Depósito de abanico",
+      "designation": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS",
+      "xy": [
+        -1253.0,
+        1094703.0
+      ],
+      "cell": {
+        "col": 71,
+        "row": 69
+      },
+      "longitudeEastDeg": 77.41271572469942,
+      "latitudePlanetocentricDeg": 18.468301749993305,
+      "elevationMeters": -2467.1416015625,
+      "routingSlopeMaxDeg": 14.94555377960205,
+      "routingMask": 1,
+      "sameTraversableComponentAsDemo15Deg": true,
+      "validCandidateCellsInUnit": 17630,
+      "sameComponentCandidateCells": 17236,
+      "unitSymbol": "NHjf2",
+      "unitName": "Jezero fan 2 unit",
+      "sourceFid": 1101,
+      "distanceToClippedUnitBoundaryM": 695.0,
+      "scientificObjective": "Comparar textura, relieve y posibles exposiciones estratificadas de la unidad cartografiada con el suelo del cráter; evaluar su contexto de depósito deltaico interpretado en SIM 3464. La estratificación en este punto requiere observación de campo.",
+      "method": "Team-selected centre of a valid 10 m cell, inside the published polygon, maximizing interior margin; prefer component containing demo start under 15 degree cell/edge and corner constraints",
+      "uncertainty": {
+        "geologyRegistrationOffsetM": [
+          100,
+          200
+        ],
+        "routingCellSizeM": 10,
+        "coordinatePrecisionIsAccuracy": false,
+        "noteEs": "La coordenada del centro de celda está comprobada en la rejilla. La pertenencia geológica hereda el desfase 100–200 m del mapa; no localiza un afloramiento con precisión de 10 m ni demuestra transitabilidad física."
+      },
+      "sources": [
+        {
+          "title": "Sun & Stack (2020), USGS SIM 3464, GeoUnits_v1 y descripción de unidades",
+          "url": "https://doi.org/10.3133/sim3464",
+          "sourceFid": 1101
+        },
+        {
+          "title": "HiRISE: DTM ESP_045994_1985 / ESP_046060_1985 y orto RED_C",
+          "url": "https://www.uahirise.org/dtm/ESP_045994_1985"
+        }
+      ]
+    },
+    {
+      "id": "meowrtian-nle",
+      "label": "M2 · Unidad inferior erosionada",
+      "designation": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS",
+      "xy": [
+        227.0,
+        1093143.0
+      ],
+      "cell": {
+        "col": 219,
+        "row": 225
+      },
+      "longitudeEastDeg": 77.43903713526994,
+      "latitudePlanetocentricDeg": 18.44198360641464,
+      "elevationMeters": -2556.7841796875,
+      "routingSlopeMaxDeg": 7.854242324829102,
+      "routingMask": 1,
+      "sameTraversableComponentAsDemo15Deg": true,
+      "validCandidateCellsInUnit": 31422,
+      "sameComponentCandidateCells": 31420,
+      "unitSymbol": "Nle",
+      "unitName": "Lower etched unit",
+      "sourceFid": 983,
+      "distanceToClippedUnitBoundaryM": 558.5055853596613,
+      "scientificObjective": "Documentar morfología y relaciones de erosión de la unidad Nle; contrastar con las interpretaciones deposicionales alternativas publicadas, sin asumir composición mineral en este punto.",
+      "method": "Team-selected centre of a valid 10 m cell, inside the published polygon, maximizing interior margin; prefer component containing demo start under 15 degree cell/edge and corner constraints",
+      "uncertainty": {
+        "geologyRegistrationOffsetM": [
+          100,
+          200
+        ],
+        "routingCellSizeM": 10,
+        "coordinatePrecisionIsAccuracy": false,
+        "noteEs": "La coordenada del centro de celda está comprobada en la rejilla. La pertenencia geológica hereda el desfase 100–200 m del mapa; no localiza un afloramiento con precisión de 10 m ni demuestra transitabilidad física."
+      },
+      "sources": [
+        {
+          "title": "Sun & Stack (2020), USGS SIM 3464, GeoUnits_v1 y descripción de unidades",
+          "url": "https://doi.org/10.3133/sim3464",
+          "sourceFid": 983
+        },
+        {
+          "title": "HiRISE: DTM ESP_045994_1985 / ESP_046060_1985 y orto RED_C",
+          "url": "https://www.uahirise.org/dtm/ESP_045994_1985"
+        }
+      ]
+    },
+    {
+      "id": "meowrtian-njf",
+      "label": "M3 · Suelo de Jezero",
+      "designation": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS",
+      "xy": [
+        1377.0,
+        1093063.0
+      ],
+      "cell": {
+        "col": 334,
+        "row": 233
+      },
+      "longitudeEastDeg": 77.45948958267272,
+      "latitudePlanetocentricDeg": 18.44063395802599,
+      "elevationMeters": -2577.984130859375,
+      "routingSlopeMaxDeg": 7.2552690505981445,
+      "routingMask": 1,
+      "sameTraversableComponentAsDemo15Deg": true,
+      "validCandidateCellsInUnit": 76658,
+      "sameComponentCandidateCells": 76645,
+      "unitSymbol": "Njf",
+      "unitName": "Jezero floor unit",
+      "sourceFid": 1146,
+      "distanceToClippedUnitBoundaryM": 584.746788358103,
+      "scientificObjective": "Caracterizar textura, craterización y relieve del suelo cartografiado y compararlos con el abanico y la unidad Nle. No se identifica aquí una muestra ni una estación de Perseverance.",
+      "method": "Team-selected centre of a valid 10 m cell, inside the published polygon, maximizing interior margin; prefer component containing demo start under 15 degree cell/edge and corner constraints",
+      "uncertainty": {
+        "geologyRegistrationOffsetM": [
+          100,
+          200
+        ],
+        "routingCellSizeM": 10,
+        "coordinatePrecisionIsAccuracy": false,
+        "noteEs": "La coordenada del centro de celda está comprobada en la rejilla. La pertenencia geológica hereda el desfase 100–200 m del mapa; no localiza un afloramiento con precisión de 10 m ni demuestra transitabilidad física."
+      },
+      "sources": [
+        {
+          "title": "Sun & Stack (2020), USGS SIM 3464, GeoUnits_v1 y descripción de unidades",
+          "url": "https://doi.org/10.3133/sim3464",
+          "sourceFid": 1146
+        },
+        {
+          "title": "HiRISE: DTM ESP_045994_1985 / ESP_046060_1985 y orto RED_C",
+          "url": "https://www.uahirise.org/dtm/ESP_045994_1985"
+        }
+      ]
+    }
+  ]
+}

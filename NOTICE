@@ -1,0 +1,29 @@
+Mars Pathfinder - The Meowrtian
+Copyright 2026 The Meowrtian contributors
+
+The team explicitly approved Apache-2.0 for the project's original code on
+15 November 2026. See LICENSE. This grant does not relicense NASA/USGS data,
+mission photographs, fonts, icons or third-party software.
+
+HiRISE imagery and stereo products: NASA/JPL/University of Arizona, with
+USGS Astrogeology involvement in the DTM.
+https://www.uahirise.org/media/usage.php
+
+Geology: Sun, V.Z., and Stack, K.M., 2020, Geologic map of Jezero crater
+and the Nili Planum region, Mars: USGS Scientific Investigations Map 3464,
+scale 1:75,000. https://doi.org/10.3133/sim3464
+https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+
+Perseverance Navcam photographs and documented rover positions:
+NASA/JPL-Caltech. Individual image credits and records remain in
+public/data/jezero-science-v1/photos.json.
+https://www.jpl.nasa.gov/jpl-image-use-policy/
+
+Full upstream copyright/license notices remain unchanged in
+public/THIRD_PARTY_NOTICES.txt. Its original-code licensing sentence
+records the pre-approval stage; LICENSE and docs/LICENSING.md state
+the current team-approved license.
+
+Slope, hillshade, masks, crops, display colors, proposed objectives and
+routes are team derivatives, not official agency stations or safety
+recommendations. No agency endorsement is implied.

@@ -1,0 +1,35 @@
+{
+  "schema": "mars-pathfinder-science-v1",
+  "datasetId": "jezero-science-v1",
+  "crsProj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+  "topographyManifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "source": "USGS SIM3464 + NASA/JPL Perseverance raw images and official waypoints",
+  "geologyAffectsRouting": false,
+  "files": [
+    {
+      "file": "geology.json",
+      "bytes": 137470,
+      "sha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27"
+    },
+    {
+      "file": "objectives.json",
+      "bytes": 6932,
+      "sha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245"
+    },
+    {
+      "file": "photos.json",
+      "bytes": 5536,
+      "sha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9"
+    },
+    {
+      "file": "photos/perseverance-sol-14.jpg",
+      "bytes": 42430,
+      "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e"
+    },
+    {
+      "file": "photos/perseverance-sol-107.jpg",
+      "bytes": 57119,
+      "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228"
+    }
+  ]
+}

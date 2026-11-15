@@ -1,0 +1,280 @@
+{
+  "executedAtUtc": "2026-11-14T11:43:50.597Z",
+  "engineVersion": "1.0.0",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "osRelease": "10.0.26300",
+    "cpuModel": "13th Gen Intel(R) Core(TM) i7-13620H",
+    "logicalCpus": 16,
+    "memoryBytes": 16870076416
+  },
+  "dataset": {
+    "id": "jezero-hirise-v1",
+    "provenance": "official-HiRISE-team-derived",
+    "manifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+    "assets": {
+      "routing_valid.u8": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52",
+      "routing_elevation.f32": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147",
+      "routing_slope_max.f32": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53"
+    },
+    "crsWkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",18.45,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Longitude of natural origin\",77.435,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+    "crsProj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+    "verticalReference": "Mars equipotential surface, Mars 2000 datum, per official PDS label; unchanged heights"
+  },
+  "grid": {
+    "width": 394,
+    "height": 356,
+    "transform": [
+      -1968,
+      10,
+      0,
+      1095398,
+      0,
+      -10
+    ],
+    "manifestBytes": 15599
+  },
+  "selection": {
+    "start": {
+      "col": 59,
+      "row": 302
+    },
+    "goal": {
+      "col": 334,
+      "row": 53
+    },
+    "largestComponentCells": 128649,
+    "components": 43,
+    "method": "Nearest cells in the largest four-connected component to fixed normalized targets (0.15,0.85) and (0.85,0.15), with centre-segment constraints; no scientific POI or NASA base implied"
+  },
+  "selectedOrigin": {
+    "col": 59,
+    "row": 302,
+    "x": -1373,
+    "y": 1092373,
+    "elevationMeters": -2550.068115234375,
+    "longitudeEastDeg": 77.41058155627479,
+    "planetocentricLatitudeDeg": 18.428993240673893
+  },
+  "selectedDestination": {
+    "col": 334,
+    "row": 53,
+    "x": 1377,
+    "y": 1094863,
+    "elevationMeters": -2560.765869140625,
+    "longitudeEastDeg": 77.4594895826727,
+    "planetocentricLatitudeDeg": 18.471001046770603
+  },
+  "routes": {
+    "route-a": {
+      "file": "data/routes/jezero-hirise-v1/route-a.json",
+      "parameters": {
+        "mode": "distance",
+        "lambda": 0,
+        "maxSlopeDeg": 15,
+        "thetaRefDeg": 15,
+        "exposureBinsDeg": [
+          0,
+          5,
+          10,
+          15,
+          90
+        ]
+      },
+      "metrics": {
+        "horizontalMeters": 3781.391770309028,
+        "terrainMeters": 3785.908439075555,
+        "ascentMeters": 56.72998046875,
+        "descentMeters": 67.427734375,
+        "netElevationMeters": -10.69775390625,
+        "maxSlopeDeg": 14.388531684875488,
+        "totalCost": 3781.391770309028,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1280.3657992645944,
+            "fractionOfHorizontalLength": 0.3385964420079009
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 2009.188309203686,
+            "fractionOfHorizontalLength": 0.5313356645506976
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 491.8376618407357,
+            "fractionOfHorizontalLength": 0.13006789344139846
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "expandedCells": 8553,
+      "discoveredCells": 9777,
+      "peakOpenCells": 1686,
+      "pathCells": 276,
+      "computeTimeMs": 17.891899999999964
+    },
+    "route-b": {
+      "file": "data/routes/jezero-hirise-v1/route-b.json",
+      "parameters": {
+        "mode": "slope-penalty",
+        "lambda": 4,
+        "maxSlopeDeg": 15,
+        "thetaRefDeg": 15,
+        "exposureBinsDeg": [
+          0,
+          5,
+          10,
+          15,
+          90
+        ]
+      },
+      "metrics": {
+        "horizontalMeters": 4003.990616607248,
+        "terrainMeters": 4005.098075253276,
+        "ascentMeters": 28.269775390625,
+        "descentMeters": 38.967529296875,
+        "netElevationMeters": -10.69775390625,
+        "maxSlopeDeg": 8.874288558959961,
+        "totalCost": 4932.615239510466,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 3462.152954766509,
+            "fractionOfHorizontalLength": 0.864675591497799
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 541.8376618407357,
+            "fractionOfHorizontalLength": 0.1353244085022002
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "expandedCells": 51534,
+      "discoveredCells": 52722,
+      "peakOpenCells": 1287,
+      "pathCells": 314,
+      "computeTimeMs": 39.13589999999999
+    }
+  },
+  "edgeAudits": {
+    "route-a": {
+      "passed": true,
+      "checkedCells": 276,
+      "checkedEdges": 275,
+      "violations": [],
+      "independentMetrics": {
+        "horizontalMeters": 3781.391770309028,
+        "terrainMeters": 3785.908439075555,
+        "ascentMeters": 56.72998046875,
+        "descentMeters": 67.427734375,
+        "netElevationMeters": -10.69775390625,
+        "totalCost": 3781.391770309028,
+        "maxSlopeDeg": 14.388531684875488
+      },
+      "absoluteDifferences": {
+        "horizontalMeters": 0,
+        "terrainMeters": 0,
+        "ascentMeters": 0,
+        "descentMeters": 0,
+        "netElevationMeters": 0,
+        "totalCost": 0,
+        "maxSlopeDeg": 0
+      }
+    },
+    "route-b": {
+      "passed": true,
+      "checkedCells": 314,
+      "checkedEdges": 313,
+      "violations": [],
+      "independentMetrics": {
+        "horizontalMeters": 4003.990616607248,
+        "terrainMeters": 4005.098075253276,
+        "ascentMeters": 28.269775390625,
+        "descentMeters": 38.967529296875,
+        "netElevationMeters": -10.69775390625,
+        "totalCost": 4932.615239510466,
+        "maxSlopeDeg": 8.874288558959961
+      },
+      "absoluteDifferences": {
+        "horizontalMeters": 0,
+        "terrainMeters": 0,
+        "ascentMeters": 0,
+        "descentMeters": 0,
+        "netElevationMeters": 0,
+        "totalCost": 0,
+        "maxSlopeDeg": 0
+      }
+    }
+  },
+  "performance": {
+    "route-a": {
+      "firstRunMs": 17.891899999999964,
+      "repeatTimesMs": [
+        9.942199999999957,
+        6.938600000000065,
+        6.1200000000000045,
+        8.037400000000048,
+        8.612100000000055,
+        6.003500000000031,
+        5.746300000000019,
+        7.267799999999966,
+        6.455900000000042,
+        6.398299999999949
+      ],
+      "repeatCount": 10,
+      "medianMs": 6.697250000000054,
+      "p95NearestRankMs": 9.942199999999957,
+      "maxIncludingFirstMs": 17.891899999999964,
+      "targetMs": 2000,
+      "allUnderTarget": true
+    },
+    "route-b": {
+      "firstRunMs": 39.13589999999999,
+      "repeatTimesMs": [
+        30.664300000000026,
+        40.155200000000036,
+        41.31330000000003,
+        36.60209999999995,
+        30.99509999999998,
+        32.343200000000024,
+        30.9461,
+        34.26479999999992,
+        37.26609999999994,
+        34.45719999999994
+      ],
+      "repeatCount": 10,
+      "medianMs": 34.36099999999993,
+      "p95NearestRankMs": 41.31330000000003,
+      "maxIncludingFirstMs": 41.31330000000003,
+      "targetMs": 2000,
+      "allUnderTarget": true
+    }
+  },
+  "sourceDataUnchanged": true,
+  "benchmarkScope": "Synchronous TypeScript core, including arrays/search/reconstruction/metrics; excludes file loading and worker transport. Same pair, first recorded A* run plus ten repetitions per mode. Endpoint component selection runs beforehand, so this is not a full cold-start benchmark."
+}

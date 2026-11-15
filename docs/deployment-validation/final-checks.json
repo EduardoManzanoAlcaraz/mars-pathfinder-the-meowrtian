@@ -1,0 +1,179 @@
+{
+  "checkedAtUtc": "2026-11-15T09:52:36.832Z",
+  "publicUrl": "https://mars-pathfinder-the-meowrtian.netlify.app",
+  "deployId": "6af97dee2c4df4cb0f9da6cc",
+  "version": "0.1.0",
+  "commit": null,
+  "payloadSha256": "2f151b3b1e6a29d8089ef17b14615b23b5891c8a639edb94c440495abbf34c74",
+  "vitestPassed": 64,
+  "pytestPassed": 22,
+  "publicAssetsHashVerified": 66,
+  "publicBytes": 6115416,
+  "filesByteExact": 62,
+  "htmlWithExactNonExecutableNetlifyComment": 4,
+  "netlifyProductionReady": true,
+  "passwordOrSsoRequired": false,
+  "optionalBadgeDisabled": true,
+  "httpRedirectsToHttps": true,
+  "privateBrowserSessionsWithoutCredentialsPassed": 2,
+  "noRuntimeExternalDependencies": true,
+  "scenarios": [
+    {
+      "viewport": "1440x900",
+      "mapAndScienceReadyMs": 1162.0964000000001,
+      "bothRoutesUiMs": 168.21730000000025,
+      "initialBodyBytes": 2896642,
+      "routeAComputeTimeMs": 24.600000023841858,
+      "routeBComputeTimeMs": 58.30000001192093,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      }
+    },
+    {
+      "viewport": "390x844",
+      "mapAndScienceReadyMs": 1790.5172999999995,
+      "bothRoutesUiMs": 323.77100000000064,
+      "initialBodyBytes": 2896642,
+      "routeAComputeTimeMs": 26,
+      "routeBComputeTimeMs": 54.10000002384186,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      }
+    }
+  ],
+  "decision": "Public educational demo verified over HTTPS. No operational EVA safety certification."
+}

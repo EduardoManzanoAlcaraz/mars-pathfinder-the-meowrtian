@@ -1,0 +1,26 @@
+[
+  {
+    "sol": 14,
+    "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=100&page=0&order=sol%20asc&condition_2=14:sol:gte&condition_3=14:sol:lte",
+    "status": 200,
+    "returnedSols": [
+      14
+    ],
+    "filterApplied": true,
+    "returned": 99,
+    "total": 99,
+    "atUtc": "2026-11-14T13:13:18.294Z"
+  },
+  {
+    "sol": 107,
+    "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=100&page=0&order=sol%20asc&condition_2=107:sol:gte&condition_3=107:sol:lte",
+    "status": 200,
+    "returnedSols": [
+      107
+    ],
+    "filterApplied": true,
+    "returned": 100,
+    "total": 429,
+    "atUtc": "2026-11-14T13:13:18.556Z"
+  }
+]

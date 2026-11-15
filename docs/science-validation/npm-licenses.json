@@ -1,0 +1,1401 @@
+{
+  "auditedAtUtc": "2026-11-14T13:25:09.478Z",
+  "installedPackages": 88,
+  "packages": [
+    {
+      "name": "@esbuild/win32-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/evanw/esbuild.git"
+      },
+      "notices": [
+        {
+          "file": "node_modules/esbuild/LICENSE.md",
+          "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+          "relationship": "Same upstream suite; SPDX matches"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource-variable/manrope",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fontsource/font-files.git",
+        "directory": "fonts/variable/manrope"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        }
+      ]
+    },
+    {
+      "name": "@img/colour",
+      "version": "1.1.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lovell/colour.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "e2eaa4603c14cb26f301e88648c12a853fa3f0f5da6d4b0972958c666e7f2ab8"
+        }
+      ]
+    },
+    {
+      "name": "@img/sharp-win32-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lovell/sharp.git",
+        "directory": "npm/win32-x64"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "dc1f5d2d43c5531dfe0acaf4e950ea5dbe3e61e1850cf0e983bda7efc10d6693"
+        }
+      ]
+    },
+    {
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.3",
+      "license": "MIT",
+      "dev": true,
+      "repository": "https://github.com/jridgewell/resolve-uri",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "b8778b155bfde5a28b023a558753c0fa058a52bb9de35c343c250be1bbcdedab"
+        }
+      ]
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jridgewell/sourcemaps.git",
+        "directory": "packages/sourcemap-codec"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+        }
+      ]
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jridgewell/sourcemaps.git",
+        "directory": "packages/trace-mapping"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+        }
+      ]
+    },
+    {
+      "name": "@next/env",
+      "version": "16.4.6",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/vercel/next.js",
+        "directory": "packages/next-env"
+      },
+      "notices": [
+        {
+          "file": "node_modules/next/license.md",
+          "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+          "relationship": "Same upstream suite; SPDX matches"
+        }
+      ]
+    },
+    {
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.4.6",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/vercel/next.js",
+        "directory": "crates/next-napi-bindings/npm/win32-x64-msvc"
+      },
+      "notices": [
+        {
+          "file": "node_modules/next/license.md",
+          "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+          "relationship": "Same upstream suite; SPDX matches"
+        }
+      ]
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.156.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oxc-project/oxc.git",
+        "directory": "npm/oxc-types"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        }
+      ]
+    },
+    {
+      "name": "@petamoriken/float16",
+      "version": "3.9.3",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/petamoriken/float16.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "3b833441ea7e5766f591a927e9f26960be46670a8fbc302732b72afd5623c0e9"
+        }
+      ]
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.19",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "notices": [
+        {
+          "file": "node_modules/rolldown/LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "relationship": "Same upstream suite; SPDX matches"
+        }
+      ]
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.1.1",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/plugins.git",
+        "directory": "packages/pluginutils"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        }
+      ]
+    },
+    {
+      "name": "@swc/helpers",
+      "version": "0.5.23",
+      "license": "Apache-2.0",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/swc-project/swc.git",
+        "directory": "packages/helpers"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "d96eba1f1881334d50ffc144276dfa98e147a415e7c591ecdfcb81680361dc91"
+        }
+      ]
+    },
+    {
+      "name": "@types/chai",
+      "version": "5.2.3",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/chai"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/deep-eql",
+      "version": "4.0.2",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/deep-eql"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.10",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/estree"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/node",
+      "version": "26.6.6",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/node"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/rbush",
+      "version": "4.0.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/rbush"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/react"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/react-dom"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@typescript/typescript-win32-x64",
+      "version": "7.0.2",
+      "license": "Apache-2.0",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "file": "NOTICE.txt",
+          "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/mocker",
+      "version": "5.1.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitest-dev/vitest.git",
+        "directory": "packages/mocker"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/spy",
+      "version": "5.1.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitest-dev/vitest.git",
+        "directory": "packages/spy"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551"
+        }
+      ]
+    },
+    {
+      "name": "@zarrita/storage",
+      "version": "0.2.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": "https://github.com/manzt/zarrita.js",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5cf6038da98164b5e3de3c38b6361b81a3cfd3bee73e56c9dae28798dbe19892"
+        }
+      ]
+    },
+    {
+      "name": "assertion-error",
+      "version": "2.0.1",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:chaijs/assertion-error.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "2130216d5ab4c02134f8247f32999feda0abe1eaf028218baeac445c19ce4cea"
+        }
+      ]
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "version": "2.11.37",
+      "license": "Apache-2.0",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/web-platform-dx/baseline-browser-mapping.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "caniuse-lite",
+      "version": "1.0.30001826",
+      "license": "CC-BY-4.0",
+      "dev": false,
+      "repository": "browserslist/caniuse-lite",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e"
+        }
+      ]
+    },
+    {
+      "name": "chai",
+      "version": "6.3.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/chaijs/chai"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "b181da80336ff9dd1043fc8be1a764d7382363433319aa872e4d2cb5ce2a3066"
+        }
+      ]
+    },
+    {
+      "name": "client-only",
+      "version": "0.0.1",
+      "license": "MIT",
+      "dev": false,
+      "repository": null,
+      "notices": [
+        {
+          "file": "node_modules/react/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "relationship": "Same upstream suite; SPDX matches"
+        }
+      ]
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "license": "MIT",
+      "dev": false,
+      "repository": "https://github.com/frenic/csstype",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+        }
+      ]
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/lovell/detect-libc.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ]
+    },
+    {
+      "name": "earcut",
+      "version": "3.2.4",
+      "license": "ISC",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mapbox/earcut.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808"
+        }
+      ]
+    },
+    {
+      "name": "es-module-lexer",
+      "version": "2.3.2",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/guybedford/es-module-lexer.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "8a4b6c44eebfb026d23719a348145a661a555568dbfdc11618ff2d0dd9306b00"
+        }
+      ]
+    },
+    {
+      "name": "esbuild",
+      "version": "0.28.2",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/evanw/esbuild.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+        }
+      ]
+    },
+    {
+      "name": "estree-walker",
+      "version": "3.0.3",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Rich-Harris/estree-walker"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "8a6dcbabe7179f9c8489c08a7d874d0f1e093ae7449e03756ccf87cb9d0e296e"
+        }
+      ]
+    },
+    {
+      "name": "expect-type",
+      "version": "1.4.0",
+      "license": "Apache-2.0",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mmkal/expect-type.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "7c6cc83c84eaa249a85bf12fe3eedd831bb50c696e8890b5248223ae68c7b408"
+        }
+      ]
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thecodrr/fdir.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ]
+    },
+    {
+      "name": "fflate",
+      "version": "0.8.3",
+      "license": "MIT",
+      "dev": false,
+      "repository": "https://github.com/101arrowz/fflate",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+        }
+      ]
+    },
+    {
+      "name": "geotiff",
+      "version": "3.1.0-beta.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geotiffjs/geotiff.js.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "da0811089f254e909f69f75fa496ca97e5167a8eaa945d9a6bffdd8499b47a49"
+        }
+      ]
+    },
+    {
+      "name": "lerc",
+      "version": "3.0.0",
+      "license": "Apache-2.0",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Esri/lerc.git"
+      },
+      "notices": [
+        {
+          "file": "LercDecode.js header",
+          "sha256": "4b0c1700fd37108470fc28f1b7846b2d55427777bc0fe431c220f107bfd6671a"
+        }
+      ]
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "name": "lucide-react",
+      "version": "1.73.0",
+      "license": "ISC",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/lucide-icons/lucide.git",
+        "directory": "packages/lucide-react"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+        }
+      ]
+    },
+    {
+      "name": "magic-string",
+      "version": "1.4.5",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rich-Harris/magic-string.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "1cbe51b907662f6cb1492b16c359384a595180bf0e4d101603ed525e75c4e484"
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "license": "MIT",
+      "dev": false,
+      "repository": "ai/nanoid",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ]
+    },
+    {
+      "name": "next",
+      "version": "16.4.6",
+      "license": "MIT",
+      "dev": false,
+      "repository": "vercel/next.js",
+      "notices": [
+        {
+          "file": "license.md",
+          "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224"
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.23",
+      "license": "MIT",
+      "dev": false,
+      "repository": "postcss/postcss",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ]
+    },
+    {
+      "name": "numcodecs",
+      "version": "0.3.2",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/manzt/numcodecs.js.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "785e5823c2471046f06ae8f64f0374557f1a14ec786febf690e2dbc65e804ce7"
+        }
+      ]
+    },
+    {
+      "name": "obug",
+      "version": "3.0.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sxzz/obug.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "ee48679d379ca6b4493d5e231094d85f818dd9be40b1a4f234fb7ff657ee35d9"
+        }
+      ]
+    },
+    {
+      "name": "ol",
+      "version": "10.11.0",
+      "license": "BSD-2-Clause",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/openlayers/openlayers.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "6c4347b83a8c9feef18d57b18e3b6c44cf901b3c344a4a1fbd837e421555ab8e"
+        }
+      ]
+    },
+    {
+      "name": "pako",
+      "version": "2.2.0",
+      "license": "(MIT AND Zlib)",
+      "dev": false,
+      "repository": "nodeca/pako",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539"
+        }
+      ]
+    },
+    {
+      "name": "parse-headers",
+      "version": "2.0.6",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kesla/parse-headers.git"
+      },
+      "notices": [
+        {
+          "file": "LICENCE",
+          "sha256": "b1c5db90de223cc6ca40bab4ade764220f86c5b0335f56f1ab3baa6e62fe18bd"
+        }
+      ]
+    },
+    {
+      "name": "pbf",
+      "version": "5.1.2",
+      "license": "BSD-3-Clause",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/mapbox/pbf.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "fdf1d5279107d760c7df8c6edab1faab2b72ba17528273a8b417b08f1e12ebbe"
+        }
+      ]
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "dev": false,
+      "repository": "alexeyraspopov/picocolors",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT",
+      "dev": true,
+      "repository": "micromatch/picomatch",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ]
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.65.1",
+      "license": "Apache-2.0",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/microsoft/playwright.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+        },
+        {
+          "file": "NOTICE",
+          "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.33",
+      "license": "MIT",
+      "dev": true,
+      "repository": "postcss/postcss",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ]
+    },
+    {
+      "name": "protocol-buffers-schema",
+      "version": "3.6.1",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/protocol-buffers-schema"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "3fe8d55a98dbf260eace67c00cf9bc53edb46234e840098a0b93df3096b97fb6"
+        }
+      ]
+    },
+    {
+      "name": "quick-lru",
+      "version": "6.1.2",
+      "license": "MIT",
+      "dev": false,
+      "repository": "sindresorhus/quick-lru",
+      "notices": [
+        {
+          "file": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "quickselect",
+      "version": "3.0.0",
+      "license": "ISC",
+      "dev": false,
+      "repository": "github:mourner/quickselect",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "238ddb00e12a420a54e060afa19bdab4f70bf49e0e2a8ebb1a5e851f9ef447df"
+        }
+      ]
+    },
+    {
+      "name": "rbush",
+      "version": "4.0.1",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mourner/rbush.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "bf20b07b8e41f306d22b73bfa6b0e248e81ee8caaa6a04285acb0b8e963c01ec"
+        }
+      ]
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/react"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/react-dom"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "reference-spec-reader",
+      "version": "0.2.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": null,
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5944274cc3522057cd8d96ba2767340dd7a8aa8987ccf8836985f21496b7d86c"
+        }
+      ]
+    },
+    {
+      "name": "resolve-protobuf-schema",
+      "version": "2.1.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/resolve-protobuf-schema.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "c0993ca46cd47c09710a977d3a3d51602cff96f19e8d2eb8d5887aa20a7beead"
+        }
+      ]
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.19",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        }
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/scheduler"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "semver",
+      "version": "7.8.6",
+      "license": "ISC",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/npm/node-semver.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ]
+    },
+    {
+      "name": "sharp",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lovell/sharp.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "license": "BSD-3-Clause",
+      "dev": false,
+      "repository": "7rulnik/source-map-js",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ]
+    },
+    {
+      "name": "std-env",
+      "version": "4.3.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "unjs/std-env"
+      },
+      "notices": [
+        {
+          "file": "LICENCE",
+          "sha256": "a6f36438e46fb911859f3b9c4cad045ba64e1af3d8f4512c60258fa2d7552d28"
+        }
+      ]
+    },
+    {
+      "name": "styled-jsx",
+      "version": "5.1.6",
+      "license": "MIT",
+      "dev": false,
+      "repository": "vercel/styled-jsx",
+      "notices": [
+        {
+          "file": "license.md",
+          "sha256": "24d4a4580df855c345705b3016404f0c9da7e7674dc3b21a3ce7d0e5d0c37e2d"
+        }
+      ]
+    },
+    {
+      "name": "tinybench",
+      "version": "6.2.3",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "tinylibs/tinybench"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "cebc084d54e6dd99e53292ddb4bc1cdb63d9bfcd9ce438fe3aa6eb106d79e2ea"
+        }
+      ]
+    },
+    {
+      "name": "tinyexec",
+      "version": "1.3.1",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tinylibs/tinyexec.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "f95f668fe64081ddb4153b322e34fdd719b991285ed08177d5ad7133b7988d92"
+        }
+      ]
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuperchupuDev/tinyglobby.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ]
+    },
+    {
+      "name": "tslib",
+      "version": "2.9.1",
+      "license": "0BSD",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Microsoft/tslib.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751"
+        }
+      ]
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.15",
+      "license": "MIT",
+      "dev": true,
+      "repository": "privatenumber/tsx",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "8dded67841a9261a622c739fb61c81785e93765de852828ceeb9403d20a74581"
+        }
+      ]
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "license": "Apache-2.0",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "file": "NOTICE.txt",
+          "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+        }
+      ]
+    },
+    {
+      "name": "undici-types",
+      "version": "8.9.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nodejs/undici.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27"
+        }
+      ]
+    },
+    {
+      "name": "unzipit",
+      "version": "2.0.0",
+      "license": "MIT",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/greggman/unzipit.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "aca087d5c608c0bac12db2fc9e7b5743d4ac99ed43bb00be5a8719703c12139f"
+        }
+      ]
+    },
+    {
+      "name": "vite",
+      "version": "8.3.8",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite.git",
+        "directory": "packages/vite"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13"
+        }
+      ]
+    },
+    {
+      "name": "vitest",
+      "version": "5.1.0",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitest-dev/vitest.git",
+        "directory": "packages/vitest"
+      },
+      "notices": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "7f3ddf93a2280ef07bddd352939f5a09d345e1ffe619c518c010021344f22312"
+        }
+      ]
+    },
+    {
+      "name": "web-worker",
+      "version": "1.5.0",
+      "license": "Apache-2.0",
+      "dev": false,
+      "repository": "developit/web-worker",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+        }
+      ]
+    },
+    {
+      "name": "why-is-node-running",
+      "version": "3.2.1",
+      "license": "MIT",
+      "dev": true,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/why-is-node-running.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "6a134e51aa31496c15a741592fc5d782b2dbf8d8b6b8524e15c8520ae0cd6374"
+        }
+      ]
+    },
+    {
+      "name": "xml-utils",
+      "version": "1.10.2",
+      "license": "CC0-1.0",
+      "dev": false,
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DanielJDufour/xml-utils.git"
+      },
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        }
+      ]
+    },
+    {
+      "name": "zarrita",
+      "version": "0.7.5",
+      "license": "MIT",
+      "dev": false,
+      "repository": "https://github.com/manzt/zarrita.js",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "5cf6038da98164b5e3de3c38b6361b81a3cfd3bee73e56c9dae28798dbe19892"
+        }
+      ]
+    },
+    {
+      "name": "zstddec",
+      "version": "0.2.0",
+      "license": "MIT AND BSD-3-Clause",
+      "dev": false,
+      "repository": "github:donmccurdy/zstddec",
+      "notices": [
+        {
+          "file": "LICENSE",
+          "sha256": "8d078b49fc02bd63c1beaf4ddc629a8b48e4ba6a435415408c8209e2a5c3aacf"
+        }
+      ]
+    }
+  ],
+  "resolvedMissingNotices": [
+    "@esbuild/win32-x64",
+    "@next/env",
+    "@next/swc-win32-x64-msvc",
+    "@rolldown/binding-win32-x64-msvc",
+    "client-only",
+    "lerc"
+  ],
+  "missingDeclaredLicense": [],
+  "missingNoticeFiles": []
+}

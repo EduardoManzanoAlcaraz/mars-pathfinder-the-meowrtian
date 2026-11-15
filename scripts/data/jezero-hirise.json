@@ -1,0 +1,10 @@
+{
+  "dataset_id": "jezero-hirise-v1",
+  "aoi_lon_lat": [77.40, 18.42, 77.47, 18.48],
+  "resolution_m": 2.0,
+  "block_size": 512,
+  "source_margin_pixels": 8,
+  "hillshade_azimuth_deg": 315.0,
+  "hillshade_altitude_deg": 45.0,
+  "connectivity_demo_slope_limit_deg": 15.0
+}

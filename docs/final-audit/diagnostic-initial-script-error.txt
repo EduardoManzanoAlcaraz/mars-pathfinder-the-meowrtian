@@ -1,0 +1,1 @@
+Error: Click-to-grid mismatch

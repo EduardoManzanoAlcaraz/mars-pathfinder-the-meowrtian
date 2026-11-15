@@ -1,0 +1,902 @@
+{
+  "executedAtUtc": "2026-11-14T13:57:27.811Z",
+  "browser": "157.0.8103.51",
+  "runs": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "readyMs": 372.1627000000001,
+      "layout": {
+        "overflowX": false,
+        "card": {
+          "rect": {
+            "x": 1033,
+            "y": -526,
+            "width": 316,
+            "height": 316
+          },
+          "clientHeight": 314,
+          "scrollHeight": 554
+        },
+        "legend": {
+          "x": 370,
+          "y": -516,
+          "width": 184,
+          "height": 167.890625
+        },
+        "textSizes": [
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NHjf2Jezero fan 2 unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NueUpper etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NleLower etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "AebEolian bedform unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NjfJezero floor unit",
+            "size": 8
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Sun & Stack, 2020 · SIM 3464 · 1:75.000GeoUnits_v1 · OBJECTID 983",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "",
+            "text": "Documentar morfología y relaciones de erosión de la unidad Nle; contrastar con las interpr",
+            "size": 11
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Centro de celda válido · -2556.8 m de alturaPendiente máxima de celda: 7.85°",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS. La preci",
+            "size": 10
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "SIM 3464: desfases documentados de 100–200 m frente al CTX de operaciones. Reproyectar no ",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Métrica",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta A",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta B",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ascenso",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Descenso",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Pendiente máxima",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Distancia sobre el terreno",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Coste topográfico",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Tiempo de cálculo",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "FOOTER",
+            "css": "workspace-footer",
+            "text": "Datos reales · derivados identificadosOptimización del modelo. Sin certificación de seguri",
+            "size": 9
+          }
+        ]
+      },
+      "assignError": null,
+      "errors": [],
+      "badResponses": [],
+      "externalRequests": []
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "readyMs": 315.77840000000015,
+      "layout": {
+        "overflowX": false,
+        "card": {
+          "rect": {
+            "x": 873,
+            "y": -706,
+            "width": 316,
+            "height": 298
+          },
+          "clientHeight": 296,
+          "scrollHeight": 554
+        },
+        "legend": {
+          "x": 370,
+          "y": -696,
+          "width": 184,
+          "height": 167.890625
+        },
+        "textSizes": [
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NHjf2Jezero fan 2 unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NueUpper etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NleLower etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "AebEolian bedform unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NjfJezero floor unit",
+            "size": 8
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Sun & Stack, 2020 · SIM 3464 · 1:75.000GeoUnits_v1 · OBJECTID 983",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "",
+            "text": "Documentar morfología y relaciones de erosión de la unidad Nle; contrastar con las interpr",
+            "size": 11
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Centro de celda válido · -2556.8 m de alturaPendiente máxima de celda: 7.85°",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS. La preci",
+            "size": 10
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "SIM 3464: desfases documentados de 100–200 m frente al CTX de operaciones. Reproyectar no ",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Métrica",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta A",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta B",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ascenso",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Descenso",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Pendiente máxima",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Distancia sobre el terreno",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Coste topográfico",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Tiempo de cálculo",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 11
+          },
+          {
+            "kind": "FOOTER",
+            "css": "workspace-footer",
+            "text": "Datos reales · derivados identificadosOptimización del modelo. Sin certificación de seguri",
+            "size": 9
+          }
+        ]
+      },
+      "assignError": null,
+      "errors": [],
+      "badResponses": [],
+      "externalRequests": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "readyMs": 354.66349999999966,
+      "layout": {
+        "overflowX": false,
+        "card": {
+          "rect": {
+            "x": 30,
+            "y": 182,
+            "width": 290,
+            "height": 273
+          },
+          "clientHeight": 271,
+          "scrollHeight": 543
+        },
+        "legend": {
+          "x": 25,
+          "y": 178,
+          "width": 157,
+          "height": 162.890625
+        },
+        "textSizes": [
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NHjf2Jezero fan 2 unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NueUpper etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NleLower etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "AebEolian bedform unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NjfJezero floor unit",
+            "size": 8
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Sun & Stack, 2020 · SIM 3464 · 1:75.000GeoUnits_v1 · OBJECTID 983",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "",
+            "text": "Documentar morfología y relaciones de erosión de la unidad Nle; contrastar con las interpr",
+            "size": 11
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Centro de celda válido · -2556.8 m de alturaPendiente máxima de celda: 7.85°",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS. La preci",
+            "size": 10
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "SIM 3464: desfases documentados de 100–200 m frente al CTX de operaciones. Reproyectar no ",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Métrica",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta A",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta B",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ascenso",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Descenso",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Pendiente máxima",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Distancia sobre el terreno",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Coste topográfico",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Tiempo de cálculo",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "FOOTER",
+            "css": "workspace-footer",
+            "text": "Datos reales · derivados identificadosOptimización del modelo. Sin certificación de seguri",
+            "size": 9
+          }
+        ]
+      },
+      "assignError": null,
+      "errors": [],
+      "badResponses": [],
+      "externalRequests": []
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "readyMs": 335.59249999999975,
+      "layout": {
+        "overflowX": false,
+        "card": {
+          "rect": {
+            "x": 30,
+            "y": 213,
+            "width": 260,
+            "height": 273
+          },
+          "clientHeight": 271,
+          "scrollHeight": 597
+        },
+        "legend": {
+          "x": 25,
+          "y": 209,
+          "width": 157,
+          "height": 162.890625
+        },
+        "textSizes": [
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NHjf2Jezero fan 2 unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NueUpper etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NleLower etched unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "AebEolian bedform unit",
+            "size": 8
+          },
+          {
+            "kind": "BUTTON",
+            "css": "",
+            "text": "NjfJezero floor unit",
+            "size": 8
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Sun & Stack, 2020 · SIM 3464 · 1:75.000GeoUnits_v1 · OBJECTID 983",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "",
+            "text": "Documentar morfología y relaciones de erosión de la unidad Nle; contrastar con las interpr",
+            "size": 11
+          },
+          {
+            "kind": "P",
+            "css": "science-citation",
+            "text": "Centro de celda válido · -2556.8 m de alturaPendiente máxima de celda: 7.85°",
+            "size": 9
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "Objetivo propuesto por The Meowrtian; no es nombre ni estación oficial NASA/USGS. La preci",
+            "size": 10
+          },
+          {
+            "kind": "P",
+            "css": "science-warning",
+            "text": "SIM 3464: desfases documentados de 100–200 m frente al CTX de operaciones. Reproyectar no ",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Métrica",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta A",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ruta B",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Ascenso",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Descenso",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Pendiente máxima",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Distancia sobre el terreno",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Coste topográfico",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TH",
+            "css": "",
+            "text": "Tiempo de cálculo",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "TD",
+            "css": "",
+            "text": "—",
+            "size": 10
+          },
+          {
+            "kind": "FOOTER",
+            "css": "workspace-footer",
+            "text": "Datos reales · derivados identificadosOptimización del modelo. Sin certificación de seguri",
+            "size": 9
+          }
+        ]
+      },
+      "assignError": null,
+      "errors": [],
+      "badResponses": [],
+      "externalRequests": []
+    }
+  ]
+}

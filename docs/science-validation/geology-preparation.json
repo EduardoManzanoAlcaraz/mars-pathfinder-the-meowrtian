@@ -1,0 +1,35 @@
+{
+  "sourceFeatures": 1304,
+  "bboxCandidates": 6,
+  "clippedFeatures": 6,
+  "sourceInvalidRepairedFids": [],
+  "allClippedValid": true,
+  "areaM2": 14012160,
+  "geologyUnionAreaM2": 14012160,
+  "uncoveredAreaM2": 0,
+  "overlappingAreaM2": 5.587935447692871e-9,
+  "unitAreasM2": {
+    "NHjf2": 2468210.4785084715,
+    "Nue": 133066.03116439653,
+    "Nle": 3249357.7646238133,
+    "Aeb": 221271.778230065,
+    "Njf": 7940253.947473259
+  },
+  "maxNumericalRoundtripErrorM": 1.39775370049489e-9,
+  "sourceWkt": "PROJCS[\"MTM_clon77.5E\",GEOGCS[\"Mars_2000_(Sphere)\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_(Sphere)\",3396190,0],AUTHORITY[\"ESRI\",\"106971\"]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",77.5],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "targetProj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+  "filterBoundsSourceM": [
+    -5623.804128691416,
+    1091838.13956196,
+    -1686.5242276428157,
+    1095399.555074761
+  ],
+  "extent": [
+    -1968,
+    1091838,
+    1968,
+    1095398
+  ],
+  "outputSha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+  "outputBytes": 137470
+}

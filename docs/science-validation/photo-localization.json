@@ -1,0 +1,120 @@
+{
+  "schema": "mars-pathfinder-documented-photos-v1",
+  "crsProj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+  "topographyManifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "photos": [
+    {
+      "id": "perseverance-sol-14",
+      "label": "Perseverance · sol 14",
+      "imageId": "NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+      "instrument": "NAVCAM_LEFT",
+      "utc": "2021-03-05T03:47:52.335Z",
+      "sol": 14,
+      "rmc": "3_110",
+      "xy": [
+        896.6536932649171,
+        1093294.7298050001
+      ],
+      "longitudeEastDeg": 77.45094675,
+      "latitudePlanetocentricDeg": 18.44454338,
+      "cell": {
+        "col": 286,
+        "row": 210
+      },
+      "routingMask": 1,
+      "file": "photos/perseverance-sol-14.jpg",
+      "bytes": 42430,
+      "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e",
+      "sourceImageUrl": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00014/ids/edr/browse/ncam/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ01_800.jpg",
+      "sourcePageUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+      "metadataUrl": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&id=NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+      "credit": "NASA/JPL-Caltech",
+      "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 5, 2021 (Sol 14) at the local mean solar time of 13:46:37.",
+      "waypoint": {
+        "rmc": "3_110",
+        "sol": 14,
+        "site": 3,
+        "drive": 110,
+        "note": "First localization!",
+        "coordinates": [
+          77.45094675,
+          18.44454338,
+          -2569.861816
+        ]
+      },
+      "waypointSourceUrl": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json",
+      "waypointSourceSha256": "bd143ee69241229926abd373e6305b8bbb326d6b5a7b4a8d6935262696f93dc4",
+      "localizationMethod": "Exact site+drive (RMC) and same-sol join between official raw image record and unique official waypoint; Mars 2000 sphere from official map configuration",
+      "locationMeaningEs": "Posición documentada del rover al adquirir la imagen; no es la posición del terreno fotografiado. El centro óptico está desplazado respecto al rover. No se deduce la ubicación de rocas visibles.",
+      "uncertainty": {
+        "absoluteAccuracyM": null,
+        "noteEs": "El servicio de waypoints no proporciona exactitud absoluta por punto. Se conserva su posición documentada, sin asignar una precisión métrica inventada ni asociar la imagen a un blanco geológico."
+      }
+    },
+    {
+      "id": "perseverance-sol-107",
+      "label": "Perseverance · sol 107",
+      "imageId": "NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+      "instrument": "NAVCAM_LEFT",
+      "utc": "2021-06-08T19:20:40.929Z",
+      "sol": 107,
+      "rmc": "4_644",
+      "xy": [
+        881.6475673987152,
+        1093136.7153163424
+      ],
+      "longitudeEastDeg": 77.45067987,
+      "latitudePlanetocentricDeg": 18.44187758,
+      "cell": {
+        "col": 284,
+        "row": 226
+      },
+      "routingMask": 1,
+      "file": "photos/perseverance-sol-107.jpg",
+      "bytes": 57119,
+      "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+      "sourceImageUrl": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00107/ids/edr/browse/ncam/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J01_800.jpg",
+      "sourcePageUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+      "metadataUrl": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&id=NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+      "credit": "NASA/JPL-Caltech",
+      "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on June 8, 2021 (Sol 107) at the local mean solar time of 15:54:19.",
+      "waypoint": {
+        "rmc": "4_644",
+        "sol": 107,
+        "site": 4,
+        "drive": 644,
+        "note": "End-of-drive localization",
+        "coordinates": [
+          77.45067987,
+          18.44187758,
+          -2568.522461
+        ]
+      },
+      "waypointSourceUrl": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json",
+      "waypointSourceSha256": "bd143ee69241229926abd373e6305b8bbb326d6b5a7b4a8d6935262696f93dc4",
+      "localizationMethod": "Exact site+drive (RMC) and same-sol join between official raw image record and unique official waypoint; Mars 2000 sphere from official map configuration",
+      "locationMeaningEs": "Posición documentada del rover al adquirir la imagen; no es la posición del terreno fotografiado. El centro óptico está desplazado respecto al rover. No se deduce la ubicación de rocas visibles.",
+      "uncertainty": {
+        "absoluteAccuracyM": null,
+        "noteEs": "El servicio de waypoints no proporciona exactitud absoluta por punto. Se conserva su posición documentada, sin asignar una precisión métrica inventada ni asociar la imagen a un blanco geológico."
+      }
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=100&page=1&order=sol%20asc&condition_2=107:sol:gte&condition_3=107:sol:lte",
+      "status": 200,
+      "bytes": 220156
+    },
+    {
+      "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=100&page=2&order=sol%20asc&condition_2=107:sol:gte&condition_3=107:sol:lte",
+      "status": 200,
+      "bytes": 219677
+    },
+    {
+      "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=100&page=3&order=sol%20asc&condition_2=107:sol:gte&condition_3=107:sol:lte",
+      "status": 200,
+      "bytes": 219037
+    }
+  ]
+}

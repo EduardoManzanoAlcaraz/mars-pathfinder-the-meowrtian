@@ -1,0 +1,9 @@
+# Direct dependencies validated on Windows x64 / CPython 3.14.
+# Full environment is recorded in requirements-geospatial.lock.txt after installation.
+rasterio==1.5.2
+pyproj==3.8.0
+numpy==2.5.4
+pillow==13.0.0
+scipy==1.18.1
+pytest==9.2.0
+matplotlib==3.11.2

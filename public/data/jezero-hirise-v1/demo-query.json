@@ -1,0 +1,13 @@
+{
+  "start": {
+    "col": 59,
+    "row": 302
+  },
+  "goal": {
+    "col": 334,
+    "row": 53
+  },
+  "datasetId": "jezero-hirise-v1",
+  "manifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "method": "Team-selected endpoints from the independently validated route demo; runtime routes are computed again"
+}

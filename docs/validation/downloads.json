@@ -1,0 +1,58 @@
+{
+  "checkedAtUtc": "2026-11-14T10:59:46.647Z",
+  "freeBytesBeforeDownload": "113474019328",
+  "integrity": "Exact expected size, local SHA-256, matching research prefix. No publisher full-file checksum was supplied in the product labels.",
+  "files": [
+    {
+      "name": "DTEEC_045994_1985_046060_1985_U01.IMG",
+      "path": "data/raw/hirise-pds/DTEEC_045994_1985_046060_1985_U01.IMG",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.IMG",
+      "bytes": 380814764,
+      "sha256": "b40739b4d32516ef9b3cd849f519a6a20df9720b5369a9c141047ced27c57654",
+      "researchPrefixBytes": 65536,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a74cf-16b2c5ac\"",
+        "last-modified": "Thu, 27 Jul 2017 23:18:39 GMT",
+        "content-type": "application/octet-stream",
+        "content-length": "380814764"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:43.598Z"
+    },
+    {
+      "name": "ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "path": "data/raw/hirise-pds/ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "bytes": 33534820,
+      "sha256": "7dc1d5ccfc7ad368b2651e9aa476733e83a1814ed88d11b2bad62c677eca6ed2",
+      "researchPrefixBytes": 65536,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a749f-1ffb364\"",
+        "last-modified": "Thu, 27 Jul 2017 23:17:51 GMT",
+        "content-type": "image/jp2",
+        "content-length": "33534820"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:46.433Z"
+    },
+    {
+      "name": "ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "path": "data/raw/hirise-pds/ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "bytes": 5432,
+      "sha256": "25be59938b86f73e3d7479bc16388d033059f3961f42f18381e2a5e4735d96c2",
+      "researchPrefixBytes": 5432,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a749d-1538\"",
+        "last-modified": "Thu, 27 Jul 2017 23:17:49 GMT",
+        "content-type": "text/plain",
+        "content-length": "5432"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:46.643Z"
+    }
+  ]
+}

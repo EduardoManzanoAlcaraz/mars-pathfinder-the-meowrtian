@@ -1,0 +1,219 @@
+{
+  "schema": "mars-pathfinder-web-visuals-v1",
+  "datasetId": "jezero-hirise-v1",
+  "preparedManifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "crsProj": "+proj=eqc +lat_ts=18.45 +lat_0=0 +lon_0=77.435 +R=3396190 +units=m +no_defs +type=crs",
+  "extent": [
+    -1968.0,
+    1091838.0,
+    1968.0,
+    1095398.0
+  ],
+  "gridTransform": [
+    -1968.0,
+    2.0,
+    0.0,
+    1095398.0,
+    0.0,
+    -2.0
+  ],
+  "routingTransform": [
+    -1968.0,
+    10.0,
+    0.0,
+    1095398.0,
+    0.0,
+    -10.0
+  ],
+  "credit": "NASA/JPL/University of Arizona · DEM: University of Arizona / USGS-Astrogeology",
+  "sourceProducts": [
+    {
+      "name": "DTEEC_045994_1985_046060_1985_U01.IMG",
+      "path": "data/raw/hirise-pds/DTEEC_045994_1985_046060_1985_U01.IMG",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.IMG",
+      "bytes": 380814764,
+      "sha256": "b40739b4d32516ef9b3cd849f519a6a20df9720b5369a9c141047ced27c57654",
+      "researchPrefixBytes": 65536,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a74cf-16b2c5ac\"",
+        "last-modified": "Thu, 27 Jul 2017 23:18:39 GMT",
+        "content-type": "application/octet-stream",
+        "content-length": "380814764"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:43.598Z"
+    },
+    {
+      "name": "ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "path": "data/raw/hirise-pds/ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/ESP_046060_1985_RED_C_01_ORTHO.JP2",
+      "bytes": 33534820,
+      "sha256": "7dc1d5ccfc7ad368b2651e9aa476733e83a1814ed88d11b2bad62c677eca6ed2",
+      "researchPrefixBytes": 65536,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a749f-1ffb364\"",
+        "last-modified": "Thu, 27 Jul 2017 23:17:51 GMT",
+        "content-type": "image/jp2",
+        "content-length": "33534820"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:46.433Z"
+    },
+    {
+      "name": "ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "path": "data/raw/hirise-pds/ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_045900_045999/ESP_045994_1985_ESP_046060_1985/ESP_046060_1985_RED_C_01_ORTHO.LBL",
+      "bytes": 5432,
+      "sha256": "25be59938b86f73e3d7479bc16388d033059f3961f42f18381e2a5e4735d96c2",
+      "researchPrefixBytes": 5432,
+      "researchPrefixMatches": true,
+      "action": "downloaded",
+      "responseHeaders": {
+        "etag": "\"597a749d-1538\"",
+        "last-modified": "Thu, 27 Jul 2017 23:17:49 GMT",
+        "content-type": "text/plain",
+        "content-length": "5432"
+      },
+      "downloadedAtUtc": "2026-11-14T10:59:46.643Z"
+    }
+  ],
+  "layers": [
+    {
+      "id": "ortho",
+      "title": "Ortoimagen",
+      "file": "ortho.webp",
+      "width": 984,
+      "height": 890,
+      "extent": [
+        -1968.0,
+        1091838.0,
+        1968.0,
+        1095398.0
+      ],
+      "displayResolutionM": 4.0,
+      "sourceResolutionM": 2,
+      "sourceFile": "ortho.tif",
+      "sourceSha256": "fad3be72440dd08b0ba212c0295f6bb39eb1199d1b9f6f22f9ff72c18aa71dd1",
+      "sha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d",
+      "bytes": 510442,
+      "provenance": "Real · imagen orbital procesada",
+      "method": "RED_C monochrome DN, average of 2x2 prepared pixels; lossless WebP",
+      "colors": null,
+      "minimum": null,
+      "maximum": null,
+      "units": "DN/display",
+      "alpha": "Only fully valid 2x2 source stencils are visible; row 0 north"
+    },
+    {
+      "id": "hillshade",
+      "title": "Relieve sombreado",
+      "file": "hillshade.webp",
+      "width": 984,
+      "height": 890,
+      "extent": [
+        -1968.0,
+        1091838.0,
+        1968.0,
+        1095398.0
+      ],
+      "displayResolutionM": 4.0,
+      "sourceResolutionM": 2,
+      "sourceFile": "hillshade.tif",
+      "sourceSha256": "f7f0d52d0dfdbd0312b39a472e488970fcec570fe307ac6fec6d4daf4b56f90a",
+      "sha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3",
+      "bytes": 431374,
+      "provenance": "Derivado · The Meowrtian",
+      "method": "Average of prepared synthetic hillshade; azimuth 315 degrees, altitude 45 degrees; not actual sunlight",
+      "colors": null,
+      "minimum": null,
+      "maximum": null,
+      "units": "DN/display",
+      "alpha": "Only fully valid 2x2 source stencils are visible; row 0 north"
+    },
+    {
+      "id": "elevation",
+      "title": "Elevación",
+      "file": "elevation.webp",
+      "width": 984,
+      "height": 890,
+      "extent": [
+        -1968.0,
+        1091838.0,
+        1968.0,
+        1095398.0
+      ],
+      "displayResolutionM": 4.0,
+      "sourceResolutionM": 2,
+      "sourceFile": "dem.tif",
+      "sourceSha256": "daf194283c3f21db593d6afe0fc0b530313d3a24ea5f5d69c065e3e5c81bd523",
+      "sha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9",
+      "bytes": 284396,
+      "provenance": "Real · DEM estéreo / visualización derivada",
+      "method": "Average of 2x2 prepared elevations, linear display color ramp; no vertical datum conversion",
+      "colors": [
+        "#17394c",
+        "#39837e",
+        "#a9bda0",
+        "#d4b88e",
+        "#e8a06d",
+        "#f2e5d5"
+      ],
+      "minimum": -2614.888671875,
+      "maximum": -2442.878662109375,
+      "units": "m",
+      "alpha": "Only fully valid 2x2 source stencils are visible; row 0 north"
+    },
+    {
+      "id": "slope",
+      "title": "Pendiente",
+      "file": "slope.webp",
+      "width": 984,
+      "height": 890,
+      "extent": [
+        -1968.0,
+        1091838.0,
+        1968.0,
+        1095398.0
+      ],
+      "displayResolutionM": 4.0,
+      "sourceResolutionM": 2,
+      "sourceFile": "slope_deg.tif",
+      "sourceSha256": "139917287c230bac2499158c021e8e2b362e80802974ee478edd8182815728ca",
+      "sha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d",
+      "bytes": 1070642,
+      "provenance": "Derivado · The Meowrtian",
+      "method": "Maximum of each 2x2 prepared slope block; display saturates at 30 degrees; route calculations use original binaries",
+      "colors": [
+        "#203c4b",
+        "#467c77",
+        "#b6a45d",
+        "#dc834d",
+        "#a43e3d"
+      ],
+      "minimum": 0,
+      "maximum": 30,
+      "units": "degrees",
+      "alpha": "Only fully valid 2x2 source stencils are visible; row 0 north"
+    }
+  ],
+  "noData": {
+    "file": "nodata.webp",
+    "width": 394,
+    "height": 356,
+    "extent": [
+      -1968.0,
+      1091838.0,
+      1972.0,
+      1095398.0
+    ],
+    "resolutionM": 10,
+    "sha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287",
+    "bytes": 368,
+    "sourceFile": "routing_valid_10m.tif",
+    "sourceSha256": "66f649849a997417279988876721045acf67cc3e43b5ec4462136464e48ebca6",
+    "meaning": "Pink cells are excluded by the prepared routing mask, including partial boundary cells; no slope threshold is added here"
+  },
+  "distinction": "Official real imagery and stereo DEM; team-derived display colors, slopes and illumination; no simulated terrain"
+}

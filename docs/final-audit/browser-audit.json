@@ -1,0 +1,4534 @@
+{
+  "executedAtUtc": "2026-11-14T14:14:59.044Z",
+  "browser": "157.0.8103.51",
+  "source": "Actual out/ over local HTTP; fresh isolated browser contexts, cache disabled; no fabricated science",
+  "scenarios": [
+    {
+      "config": {
+        "width": 1440,
+        "height": 900,
+        "network": "loopback"
+      },
+      "mapAndScienceReadyMs": 737.1753000000001,
+      "bothRoutesUiMs": 91.56049999999959,
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 382.559,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 28.12,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 27.958,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 27.883,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 28.005,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 32.141,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 27.411,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 28.302,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 17.842,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 81.895,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 8.845,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 9.468,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.237,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 10.952,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 8.095,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 8.525,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 9.129,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 8.321,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 12.469,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 10.922,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 7.465,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 7.489,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 8.001,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 6.988,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 8.319,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 382.559,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 28.12,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 27.958,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 27.883,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 28.005,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 32.141,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 27.411,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 28.302,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 17.842,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 81.895,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 8.845,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 9.468,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.237,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 10.952,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 8.095,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 8.525,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 9.129,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 8.321,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 12.469,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 10.922,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 7.465,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 7.489,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 8.001,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 6.988,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 8.319,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 7.702,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 7.34,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 29.375,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 10.87,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 10.928,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 5.916,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 7.591,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "durationMs": 28,
+          "transferSize": 42634,
+          "encodedBodySize": 42334,
+          "decodedBodySize": 42334
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "durationMs": 28,
+          "transferSize": 3750,
+          "encodedBodySize": 3450,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 27.399999976158142,
+          "transferSize": 204021,
+          "encodedBodySize": 203721,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "durationMs": 27.900000005960464,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "durationMs": 28,
+          "transferSize": 13576,
+          "encodedBodySize": 13276,
+          "decodedBodySize": 13276
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 28.299999982118607,
+          "transferSize": 242582,
+          "encodedBodySize": 242282,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "durationMs": 32.099999994039536,
+          "transferSize": 46796,
+          "encodedBodySize": 46496,
+          "decodedBodySize": 46496
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 81.80000001192093,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 17.900000005960464,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 8.800000011920929,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 9,
+          "transferSize": 15899,
+          "encodedBodySize": 15599,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 10.800000011920929,
+          "transferSize": 7873,
+          "encodedBodySize": 7573,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 9,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 8.099999994039536,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 9.199999988079071,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 8.400000005960464,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "durationMs": 10.699999988079071,
+          "transferSize": 326425,
+          "encodedBodySize": 326125,
+          "decodedBodySize": 326125
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "durationMs": 12.5,
+          "transferSize": 10665,
+          "encodedBodySize": 10365,
+          "decodedBodySize": 10365
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 8.099999994039536,
+          "transferSize": 1496,
+          "encodedBodySize": 1196,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 7.4000000059604645,
+          "transferSize": 137770,
+          "encodedBodySize": 137470,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 8.099999994039536,
+          "transferSize": 7232,
+          "encodedBodySize": 6932,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 7.5,
+          "transferSize": 5836,
+          "encodedBodySize": 5536,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 8.300000011920929,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 7,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 7.5999999940395355,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 7.299999982118607,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 29.200000017881393,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -3.4000000059604645,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -3.0999999940395355,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 5.9000000059604645,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 7.5,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 26.80000001192093,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/1440-loopback-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 54.099999994039536,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/1440-loopback-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    },
+    {
+      "config": {
+        "width": 1280,
+        "height": 720,
+        "network": "loopback"
+      },
+      "mapAndScienceReadyMs": 350.5562,
+      "bothRoutesUiMs": 94.44499999999971,
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 6.767,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 17.119,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 17.433,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 20.182,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 19.048,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 20.478,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 18.374,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 19.796,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 67.318,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 16.513,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 6.289,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 9.606,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 9.12,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.418,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 5.892,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 7.305,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 7.516,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 9.277,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 4.975,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 10.152,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 12.828,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 14.117,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 14.551,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 7.196,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 8.381,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 6.767,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 17.119,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 17.433,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 20.182,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 19.048,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 20.478,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 18.374,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 19.796,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 67.318,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 16.513,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 6.289,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 9.606,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 9.12,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.418,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 5.892,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 7.305,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 7.516,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 9.277,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 4.975,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 10.152,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 12.828,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 14.117,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 14.551,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 7.196,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 8.381,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 17.109,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 6.675,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 20.197,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 13.494,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 12.899,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 5.98,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 3.972,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "durationMs": 17.100000023841858,
+          "transferSize": 42634,
+          "encodedBodySize": 42334,
+          "decodedBodySize": 42334
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "durationMs": 17.400000005960464,
+          "transferSize": 3750,
+          "encodedBodySize": 3450,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 18.400000005960464,
+          "transferSize": 204021,
+          "encodedBodySize": 203721,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 19.80000001192093,
+          "transferSize": 242582,
+          "encodedBodySize": 242282,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "durationMs": 20.100000023841858,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "durationMs": 19,
+          "transferSize": 13576,
+          "encodedBodySize": 13276,
+          "decodedBodySize": 13276
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "durationMs": 20.5,
+          "transferSize": 46796,
+          "encodedBodySize": 46496,
+          "decodedBodySize": 46496
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 67.2000000178814,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 16.399999976158142,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 6.300000011920929,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 9.099999994039536,
+          "transferSize": 15899,
+          "encodedBodySize": 15599,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 9,
+          "transferSize": 7873,
+          "encodedBodySize": 7573,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 9.400000005960464,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 7.5,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 5.9000000059604645,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 7.200000017881393,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "durationMs": 9.900000005960464,
+          "transferSize": 326425,
+          "encodedBodySize": 326125,
+          "decodedBodySize": 326125
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "durationMs": 9.299999982118607,
+          "transferSize": 10665,
+          "encodedBodySize": 10365,
+          "decodedBodySize": 10365
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 4.799999982118607,
+          "transferSize": 1496,
+          "encodedBodySize": 1196,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 14.5,
+          "transferSize": 137770,
+          "encodedBodySize": 137470,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 14,
+          "transferSize": 7232,
+          "encodedBodySize": 6932,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 12.700000017881393,
+          "transferSize": 5836,
+          "encodedBodySize": 5536,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 8.300000011920929,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 7.0999999940395355,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 17,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 6.5,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 20.200000017881393,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -3.300000011920929,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -4.799999982118607,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 5.9000000059604645,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 3.9000000059604645,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 24.899999976158142,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/1280-loopback-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 50,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/1280-loopback-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    },
+    {
+      "config": {
+        "width": 390,
+        "height": 844,
+        "network": "loopback"
+      },
+      "mapAndScienceReadyMs": 331.6419999999998,
+      "bothRoutesUiMs": 121.0705999999991,
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 7.18,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 18.697,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 18.672,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 19.706,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 20.286,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 22.33,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 21.012,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 21.719,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 70.139,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 33.785,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 9.493,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 6.513,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 9.248,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.502,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 6.805,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 8.208,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 8.434,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 8.356,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 3.983,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 9.251,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 9.814,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 10.306,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 10.538,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 6.651,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 7.347,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 7.18,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 18.697,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 18.672,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 19.706,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 20.286,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 22.33,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 21.012,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 21.719,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 70.139,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 33.785,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 9.493,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 6.513,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 9.248,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.502,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 6.805,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 8.208,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 8.434,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 8.356,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 3.983,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 9.251,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 9.814,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 10.306,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 10.538,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 6.651,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 7.347,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 6.46,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 28.763,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 7.419,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 20.622,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 24.304,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 27.082,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 5.95,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "durationMs": 18.600000023841858,
+          "transferSize": 42634,
+          "encodedBodySize": 42334,
+          "decodedBodySize": 42334
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "durationMs": 18.5,
+          "transferSize": 3750,
+          "encodedBodySize": 3450,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 21,
+          "transferSize": 204021,
+          "encodedBodySize": 203721,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 21.700000017881393,
+          "transferSize": 242582,
+          "encodedBodySize": 242282,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "durationMs": 19.69999998807907,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "durationMs": 20.19999998807907,
+          "transferSize": 13576,
+          "encodedBodySize": 13276,
+          "decodedBodySize": 13276
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "durationMs": 22.299999982118607,
+          "transferSize": 46796,
+          "encodedBodySize": 46496,
+          "decodedBodySize": 46496
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 70,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 33.70000001788139,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 9,
+          "transferSize": 15899,
+          "encodedBodySize": 15599,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 9.099999994039536,
+          "transferSize": 7873,
+          "encodedBodySize": 7573,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 9.5,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 6.5,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 8.400000005960464,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 6.799999982118607,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 8.199999988079071,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "durationMs": 9.099999994039536,
+          "transferSize": 326425,
+          "encodedBodySize": 326125,
+          "decodedBodySize": 326125
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "durationMs": 8.400000005960464,
+          "transferSize": 10665,
+          "encodedBodySize": 10365,
+          "decodedBodySize": 10365
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 3.800000011920929,
+          "transferSize": 1496,
+          "encodedBodySize": 1196,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 10.5,
+          "transferSize": 137770,
+          "encodedBodySize": 137470,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 9.800000011920929,
+          "transferSize": 7232,
+          "encodedBodySize": 6932,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 10.200000017881393,
+          "transferSize": 5836,
+          "encodedBodySize": 5536,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 6.699999988079071,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 7.299999982118607,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 6.399999976158142,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 28.700000017881393,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 7.4000000059604645,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -10.5,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -12,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 26.899999976158142,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 5.9000000059604645,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 39.400000005960464,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/390-loopback-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 60.69999998807907,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/390-loopback-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    },
+    {
+      "config": {
+        "width": 360,
+        "height": 740,
+        "network": "loopback"
+      },
+      "mapAndScienceReadyMs": 322.0255000000034,
+      "bothRoutesUiMs": 92.18919999999707,
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 5.546,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 13.05,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 13.895,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 15.851,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 16.694,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 17.548,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 16.915,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 17.029,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 26.287,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 60.839,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 6.366,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 7.201,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 7.731,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 8.379,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 4.612,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 16.635,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 16.685,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 8.36,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 5.6,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 8.258,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 4.596,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 5.024,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 5.506,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 7.695,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 8.709,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 5.546,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 13.05,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 13.895,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 15.851,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 16.694,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 17.548,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 16.915,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 17.029,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 26.287,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 60.839,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 6.366,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 7.201,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 7.731,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 8.379,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 4.612,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 16.635,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 16.685,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 8.36,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 5.6,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 8.258,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 4.596,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 5.024,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 5.506,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 7.695,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 8.709,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 6.624,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 7.066,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 7.914,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 11.503,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 10.897,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 7.063,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 3.701,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "durationMs": 12.900000005960464,
+          "transferSize": 42634,
+          "encodedBodySize": 42334,
+          "decodedBodySize": 42334
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "durationMs": 13.799999982118607,
+          "transferSize": 3750,
+          "encodedBodySize": 3450,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 17,
+          "transferSize": 204021,
+          "encodedBodySize": 203721,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "durationMs": 15.799999982118607,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "durationMs": 16.799999982118607,
+          "transferSize": 13576,
+          "encodedBodySize": 13276,
+          "decodedBodySize": 13276
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "durationMs": 17.599999994039536,
+          "transferSize": 46796,
+          "encodedBodySize": 46496,
+          "decodedBodySize": 46496
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 16.900000005960464,
+          "transferSize": 242582,
+          "encodedBodySize": 242282,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 60.599999994039536,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 26.19999998807907,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 6.300000011920929,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 7.9000000059604645,
+          "transferSize": 15899,
+          "encodedBodySize": 15599,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 7.5,
+          "transferSize": 7873,
+          "encodedBodySize": 7573,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 7,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 16.600000023841858,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 16.69999998807907,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 4.5999999940395355,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "durationMs": 8.099999994039536,
+          "transferSize": 326425,
+          "encodedBodySize": 326125,
+          "decodedBodySize": 326125
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "durationMs": 8.299999982118607,
+          "transferSize": 10665,
+          "encodedBodySize": 10365,
+          "decodedBodySize": 10365
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 5.4000000059604645,
+          "transferSize": 1496,
+          "encodedBodySize": 1196,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 5.5,
+          "transferSize": 137770,
+          "encodedBodySize": 137470,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 4.600000023841858,
+          "transferSize": 5836,
+          "encodedBodySize": 5536,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 5,
+          "transferSize": 7232,
+          "encodedBodySize": 6932,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 8.599999994039536,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 7.699999988079071,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 6.5999999940395355,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 7,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 7.800000011920929,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -4.0999999940395355,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -3.5,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 7,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 3.7000000178813934,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 23.900000005960464,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/360-loopback-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 49.60000002384186,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/360-loopback-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    },
+    {
+      "config": {
+        "width": 1440,
+        "height": 900,
+        "network": "emulated-10Mbps-50ms"
+      },
+      "mapAndScienceReadyMs": 3009.2438,
+      "bothRoutesUiMs": 169.45430000000488,
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 87.951,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 86.504,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 86.771,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 133.031,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 209.387,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 286.598,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 116.055,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 203.448,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 534.864,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 565.512,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 82.309,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 77.297,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 92.662,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 109.993,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 400.878,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 1086.527,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 1086.749,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 73.915,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 85.94,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 76.211,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 91.978,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 309.665,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 483.773,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 83.867,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 504.351,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 87.951,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 86.504,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 86.771,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 133.031,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 209.387,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 286.598,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 116.055,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 203.448,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 534.864,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 565.512,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 82.309,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 77.297,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 92.662,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 109.993,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 400.878,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 1086.527,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 1086.749,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 73.915,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 85.94,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 76.211,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 91.978,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 309.665,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 483.773,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 83.867,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 504.351,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 732.091,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 954.055,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 1451.834,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 88.982,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 88.672,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 113.13,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 115.246,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "durationMs": 209.40000000596046,
+          "transferSize": 42634,
+          "encodedBodySize": 42334,
+          "decodedBodySize": 42334
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "durationMs": 86.80000001192093,
+          "transferSize": 3750,
+          "encodedBodySize": 3450,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 534.9000000059605,
+          "transferSize": 204021,
+          "encodedBodySize": 203721,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 565.5,
+          "transferSize": 242582,
+          "encodedBodySize": 242282,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "durationMs": 86.5,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "durationMs": 133,
+          "transferSize": 13576,
+          "encodedBodySize": 13276,
+          "decodedBodySize": 13276
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "durationMs": 286.5,
+          "transferSize": 46796,
+          "encodedBodySize": 46496,
+          "decodedBodySize": 46496
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 203.40000000596046,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 116,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 82.2000000178814,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 109.5,
+          "transferSize": 15899,
+          "encodedBodySize": 15599,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 92.2999999821186,
+          "transferSize": 7873,
+          "encodedBodySize": 7573,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 77.10000002384186,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 1086.7000000178814,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 400.90000000596046,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 1086.5,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "durationMs": 483.69999998807907,
+          "transferSize": 326425,
+          "encodedBodySize": 326125,
+          "decodedBodySize": 326125
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "durationMs": 85.90000000596046,
+          "transferSize": 10665,
+          "encodedBodySize": 10365,
+          "decodedBodySize": 10365
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 73.59999999403954,
+          "transferSize": 1496,
+          "encodedBodySize": 1196,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 309.59999999403954,
+          "transferSize": 137770,
+          "encodedBodySize": 137470,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 91.90000000596046,
+          "transferSize": 7232,
+          "encodedBodySize": 6932,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 76.2000000178814,
+          "transferSize": 5836,
+          "encodedBodySize": 5536,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 504.40000000596046,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 83.90000000596046,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 954,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 732.0999999940395,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 1451.800000011921,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": 0.5,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -2.5,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 113.09999999403954,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 115.19999998807907,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 26.799999982118607,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/1440-emulated-10Mbps-50ms-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 55.30000001192093,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-audit/1440-emulated-10Mbps-50ms-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    }
+  ],
+  "staticInventory": {
+    "files": 66,
+    "totalBytes": 6115416,
+    "hypotheticalGzipBytes": 3996105,
+    "gzipIsMeasuredTransfer": false,
+    "entries": [
+      {
+        "path": "404/index.html",
+        "extension": ".html",
+        "bytes": 6364,
+        "gzipBytes": 2098,
+        "sha256": "12f86da878b1a4ad40ca9773e40623dd1513eb0412fff5db41dea811bf9f7a28",
+        "status": 200
+      },
+      {
+        "path": "404.html",
+        "extension": ".html",
+        "bytes": 6364,
+        "gzipBytes": 2098,
+        "sha256": "12f86da878b1a4ad40ca9773e40623dd1513eb0412fff5db41dea811bf9f7a28",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/demo-query.json",
+        "extension": ".json",
+        "bytes": 339,
+        "gzipBytes": 247,
+        "sha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/elevation.webp",
+        "extension": ".webp",
+        "bytes": 284396,
+        "gzipBytes": 284504,
+        "sha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/elevation.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/hillshade.webp",
+        "extension": ".webp",
+        "bytes": 431374,
+        "gzipBytes": 431527,
+        "sha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/hillshade.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/manifest.json",
+        "extension": ".json",
+        "bytes": 15599,
+        "gzipBytes": 4597,
+        "sha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/nodata.webp",
+        "extension": ".webp",
+        "bytes": 368,
+        "gzipBytes": 391,
+        "sha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/ortho.webp",
+        "extension": ".webp",
+        "bytes": 510442,
+        "gzipBytes": 510620,
+        "sha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/ortho.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_elevation.f32",
+        "extension": ".f32",
+        "bytes": 561056,
+        "gzipBytes": 411837,
+        "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_slope_max.f32",
+        "extension": ".f32",
+        "bytes": 561056,
+        "gzipBytes": 490892,
+        "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_valid.u8",
+        "extension": ".u8",
+        "bytes": 140264,
+        "gzipBytes": 1325,
+        "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/slope.webp",
+        "extension": ".webp",
+        "bytes": 1070642,
+        "gzipBytes": 1070990,
+        "sha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/slope.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-hirise-v1/visuals.json",
+        "extension": ".json",
+        "bytes": 7573,
+        "gzipBytes": 2388,
+        "sha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-science-v1/geology.json",
+        "extension": ".json",
+        "bytes": 137470,
+        "gzipBytes": 62018,
+        "sha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-science-v1/manifest.json",
+        "extension": ".json",
+        "bytes": 1196,
+        "gzipBytes": 641,
+        "sha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-science-v1/objectives.json",
+        "extension": ".json",
+        "bytes": 6932,
+        "gzipBytes": 1954,
+        "sha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+        "extension": ".jpg",
+        "bytes": 57119,
+        "gzipBytes": 56499,
+        "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+        "extension": ".jpg",
+        "bytes": 42430,
+        "gzipBytes": 42077,
+        "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e",
+        "status": 200
+      },
+      {
+        "path": "data/jezero-science-v1/photos.json",
+        "extension": ".json",
+        "bytes": 5536,
+        "gzipBytes": 1765,
+        "sha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+        "status": 200
+      },
+      {
+        "path": "icon.svg",
+        "extension": ".svg",
+        "bytes": 362,
+        "gzipBytes": 233,
+        "sha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492",
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "extension": ".html",
+        "bytes": 25281,
+        "gzipBytes": 6541,
+        "sha256": "2d740661181aa06893757a99e3d3d9cbc5ca6ac6d69e8ad7cf5ccdba7a77bf8a",
+        "status": 200
+      },
+      {
+        "path": "index.txt",
+        "extension": ".txt",
+        "bytes": 3286,
+        "gzipBytes": 1454,
+        "sha256": "33217b06c27020c71c0089d167b2e8c60331f29c4da5cbb89b5e3853d20635b1",
+        "status": 200
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.txt",
+        "extension": ".txt",
+        "bytes": 768086,
+        "gzipBytes": 105305,
+        "sha256": "3301d9743f4187b551b56b3e99799853e8137e87912f98bd7be50f05ca6ca3cf",
+        "status": 200
+      },
+      {
+        "path": "workers/routing.worker.js",
+        "extension": ".js",
+        "bytes": 11550,
+        "gzipBytes": 3630,
+        "sha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/301-0f98a524ee766e38.js",
+        "extension": ".js",
+        "bytes": 13276,
+        "gzipBytes": 4534,
+        "sha256": "321085f6f5661b7f7eb0c877ac4c290a3256c723080627e2bd50372c9ff5533c",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/32.1981a12b7cf5cf4d.js",
+        "extension": ".js",
+        "bytes": 10365,
+        "gzipBytes": 3998,
+        "sha256": "448656199ced61f1ca3b568170f408e930070bab147b901cec9d1a819b19c199",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "extension": ".js",
+        "bytes": 203721,
+        "gzipBytes": 64057,
+        "sha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/606.24769dec59620480.js",
+        "extension": ".js",
+        "bytes": 326125,
+        "gzipBytes": 96196,
+        "sha256": "cee931ed49053199b05076f77d0429a498b7fdfc0f557c798e3e719d9616e9a8",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/794-96ab5d7caefc5d69.js",
+        "extension": ".js",
+        "bytes": 242282,
+        "gzipBytes": 67462,
+        "sha256": "7f02f17d6dfebe33a8867c308fb0e842474ff1d0ebe5ca623eda48fa4dd0f8c3",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/899.5ce6b3cbad015b59.js",
+        "extension": ".js",
+        "bytes": 4752,
+        "gzipBytes": 1995,
+        "sha256": "12b23761a7567937753843f56b2c72493d50928d7753d25f1db4e84e97e3d018",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/966.1775eb621d8d3e09.js",
+        "extension": ".js",
+        "bytes": 753,
+        "gzipBytes": 419,
+        "sha256": "4e64e06b8deba77cbbf9487c6d48373939b8a99f235a67a4f71a6b45ad68b055",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/app/layout-7f70928d4a0f58c7.js",
+        "extension": ".js",
+        "bytes": 251,
+        "gzipBytes": 183,
+        "sha256": "4e0a51f4d8f6da08eb7b4616b2b45c5385767cf11b118476000b12e2bca5225d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+        "extension": ".js",
+        "bytes": 46496,
+        "gzipBytes": 15400,
+        "sha256": "bc66c702bced84c18ea87af8945bb18fa16725352c3cc8127b0c1ca7720d13e7",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/app/_global-error/page-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/app/_not-found/page-7204d786281ec257.js",
+        "extension": ".js",
+        "bytes": 2667,
+        "gzipBytes": 994,
+        "sha256": "c3942c2da23061f0d987aba5d003b62405aa2a105aa6b83869b1b0b2e2dd649d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/framework-ea4f97ca039bd777.js",
+        "extension": ".js",
+        "bytes": 218916,
+        "gzipBytes": 68866,
+        "sha256": "61b92d4a1510be156591a4f12a6b5bcf70f338cf5f8db1d50e2be1305b6b761d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/main-979b8a22e7502c64.js",
+        "extension": ".js",
+        "bytes": 131956,
+        "gzipBytes": 38835,
+        "sha256": "9ab418bad3507ba85e184e97049c0759fd8d03b27958fa9c4115d12e86ff0463",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+        "extension": ".js",
+        "bytes": 513,
+        "gzipBytes": 222,
+        "sha256": "e6ee39e6444b11026e12b449653b9b23e2108e2dae7788d9c437f6cf4d0a226d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/global-error-c61aaf16b9cbf7c8.js",
+        "extension": ".js",
+        "bytes": 179,
+        "gzipBytes": 160,
+        "sha256": "780aecdb93c0a6fae7b9606e3d9a853ba445484adc5ee616f516a21b7dbfd323",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "extension": ".js",
+        "bytes": 112594,
+        "gzipBytes": 39627,
+        "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+        "status": 200
+      },
+      {
+        "path": "_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+        "extension": ".js",
+        "bytes": 3450,
+        "gzipBytes": 1784,
+        "sha256": "a9bbffdb0202229f5e6b907a38c2fd744b71c2d49d3fca5a8e5a442c3484f5c9",
+        "status": 200
+      },
+      {
+        "path": "_next/static/css/a77984b16bf6cd3c.css",
+        "extension": ".css",
+        "bytes": 42334,
+        "gzipBytes": 10026,
+        "sha256": "264481a0e08bc83571c0f1d09a190269f5925b4be67166fde2930eff3079c5cb",
+        "status": 200
+      },
+      {
+        "path": "_next/static/EU82YEJa6jnWLgM6Slo8J/_buildManifest.js",
+        "extension": ".js",
+        "bytes": 477,
+        "gzipBytes": 248,
+        "sha256": "2946a3b8b6c271b02c695496e7eba84afcc892712964c5740c18776131404312",
+        "status": 200
+      },
+      {
+        "path": "_next/static/EU82YEJa6jnWLgM6Slo8J/_ssgManifest.js",
+        "extension": ".js",
+        "bytes": 80,
+        "gzipBytes": 64,
+        "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+        "status": 200
+      },
+      {
+        "path": "_next/static/media/manrope-cyrillic-ext-wght-normal.d1990364.woff2",
+        "extension": ".woff2",
+        "bytes": 2552,
+        "gzipBytes": 2575,
+        "sha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d",
+        "status": 200
+      },
+      {
+        "path": "_next/static/media/manrope-cyrillic-wght-normal.2ffcac4f.woff2",
+        "extension": ".woff2",
+        "bytes": 14500,
+        "gzipBytes": 14523,
+        "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+        "status": 200
+      },
+      {
+        "path": "_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+        "extension": ".woff2",
+        "bytes": 9444,
+        "gzipBytes": 9467,
+        "sha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be",
+        "status": 200
+      },
+      {
+        "path": "_next/static/media/manrope-latin-ext-wght-normal.f5cc7610.woff2",
+        "extension": ".woff2",
+        "bytes": 15120,
+        "gzipBytes": 15143,
+        "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "status": 200
+      },
+      {
+        "path": "_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+        "extension": ".woff2",
+        "bytes": 24836,
+        "gzipBytes": 24864,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "status": 200
+      },
+      {
+        "path": "_next/static/media/manrope-vietnamese-wght-normal.383b32a0.woff2",
+        "extension": ".woff2",
+        "bytes": 8520,
+        "gzipBytes": 8543,
+        "sha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5",
+        "status": 200
+      },
+      {
+        "path": "_not-found/index.html",
+        "extension": ".html",
+        "bytes": 6364,
+        "gzipBytes": 2098,
+        "sha256": "12f86da878b1a4ad40ca9773e40623dd1513eb0412fff5db41dea811bf9f7a28",
+        "status": 200
+      },
+      {
+        "path": "_not-found/index.txt",
+        "extension": ".txt",
+        "bytes": 3624,
+        "gzipBytes": 1420,
+        "sha256": "f706a03724afffd33c6de3536d024e1f5919f7fa30ec05df16dac16f0f9eee48",
+        "status": 200
+      },
+      {
+        "path": "_not-found/__next._full.txt",
+        "extension": ".txt",
+        "bytes": 3624,
+        "gzipBytes": 1420,
+        "sha256": "f706a03724afffd33c6de3536d024e1f5919f7fa30ec05df16dac16f0f9eee48",
+        "status": 200
+      },
+      {
+        "path": "_not-found/__next._not-found/__PAGE__.txt",
+        "extension": ".txt",
+        "bytes": 3061,
+        "gzipBytes": 1327,
+        "sha256": "3745361fbd33292eb654bc158ae9033ade56abbb27a3e6dfe5f6e334794e00bc",
+        "status": 200
+      },
+      {
+        "path": "_not-found/__next._tree.txt",
+        "extension": ".txt",
+        "bytes": 217,
+        "gzipBytes": 183,
+        "sha256": "c8dd6ccbe8eb1b118edfa77c3e1af778b21decf3194e46c7c53846960613015b",
+        "status": 200
+      },
+      {
+        "path": "__next._full.txt",
+        "extension": ".txt",
+        "bytes": 3286,
+        "gzipBytes": 1454,
+        "sha256": "33217b06c27020c71c0089d167b2e8c60331f29c4da5cbb89b5e3853d20635b1",
+        "status": 200
+      },
+      {
+        "path": "__next._tree.txt",
+        "extension": ".txt",
+        "bytes": 164,
+        "gzipBytes": 163,
+        "sha256": "22a0217ce8ffc02fb720d1099c1e1f8a33e83ab913bd9f3f1277a3a84f52dbf4",
+        "status": 200
+      },
+      {
+        "path": "__next.__PAGE__.txt",
+        "extension": ".txt",
+        "bytes": 2949,
+        "gzipBytes": 1368,
+        "sha256": "29f04443dc9ca917ca16305cfb448d465121da254fec14eae0e90d82a4167109",
+        "status": 200
+      }
+    ]
+  },
+  "allPassed": true
+}

@@ -1,0 +1,217 @@
+{
+  "browserVersion": "157.0.8103.51",
+  "executedAtUtc": "2026-11-15T06:36:29.508Z",
+  "realJezero": {
+    "results": [
+      {
+        "lambda": 0,
+        "metrics": {
+          "horizontalMeters": 3781.391770309028,
+          "terrainMeters": 3785.908439075555,
+          "ascentMeters": 56.72998046875,
+          "descentMeters": 67.427734375,
+          "netElevationMeters": -10.69775390625,
+          "maxSlopeDeg": 14.388531684875488,
+          "totalCost": 3781.391770309028,
+          "exposure": [
+            {
+              "lowerInclusiveDeg": 0,
+              "upperExclusiveDeg": 5,
+              "horizontalMeters": 1280.3657992645944,
+              "fractionOfHorizontalLength": 0.3385964420079009
+            },
+            {
+              "lowerInclusiveDeg": 5,
+              "upperExclusiveDeg": 10,
+              "horizontalMeters": 2009.188309203686,
+              "fractionOfHorizontalLength": 0.5313356645506976
+            },
+            {
+              "lowerInclusiveDeg": 10,
+              "upperExclusiveDeg": 15,
+              "horizontalMeters": 491.8376618407357,
+              "fractionOfHorizontalLength": 0.13006789344139846
+            },
+            {
+              "lowerInclusiveDeg": 15,
+              "upperExclusiveDeg": 90,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            }
+          ]
+        },
+        "computeTimeMs": 21.80000001192093,
+        "roundTripMs": 32.10000002384186,
+        "pathCells": 276,
+        "expandedCells": 8553,
+        "audit": {
+          "passed": true,
+          "checkedCells": 276,
+          "checkedEdges": 275,
+          "violations": [],
+          "independentMetrics": {
+            "horizontalMeters": 3781.391770309028,
+            "terrainMeters": 3785.908439075555,
+            "ascentMeters": 56.72998046875,
+            "descentMeters": 67.427734375,
+            "netElevationMeters": -10.69775390625,
+            "totalCost": 3781.391770309028,
+            "maxSlopeDeg": 14.388531684875488
+          },
+          "absoluteDifferences": {
+            "horizontalMeters": 0,
+            "terrainMeters": 0,
+            "ascentMeters": 0,
+            "descentMeters": 0,
+            "netElevationMeters": 0,
+            "totalCost": 0,
+            "maxSlopeDeg": 0
+          }
+        },
+        "requestId": 1
+      },
+      {
+        "lambda": 4,
+        "metrics": {
+          "horizontalMeters": 4003.990616607248,
+          "terrainMeters": 4005.098075253276,
+          "ascentMeters": 28.269775390625,
+          "descentMeters": 38.967529296875,
+          "netElevationMeters": -10.69775390625,
+          "maxSlopeDeg": 8.874288558959961,
+          "totalCost": 4932.615239510466,
+          "exposure": [
+            {
+              "lowerInclusiveDeg": 0,
+              "upperExclusiveDeg": 5,
+              "horizontalMeters": 3462.152954766509,
+              "fractionOfHorizontalLength": 0.864675591497799
+            },
+            {
+              "lowerInclusiveDeg": 5,
+              "upperExclusiveDeg": 10,
+              "horizontalMeters": 541.8376618407357,
+              "fractionOfHorizontalLength": 0.1353244085022002
+            },
+            {
+              "lowerInclusiveDeg": 10,
+              "upperExclusiveDeg": 15,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            },
+            {
+              "lowerInclusiveDeg": 15,
+              "upperExclusiveDeg": 90,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            }
+          ]
+        },
+        "computeTimeMs": 56.39999997615814,
+        "roundTripMs": 56.5,
+        "pathCells": 314,
+        "expandedCells": 51534,
+        "audit": {
+          "passed": true,
+          "checkedCells": 314,
+          "checkedEdges": 313,
+          "violations": [],
+          "independentMetrics": {
+            "horizontalMeters": 4003.990616607248,
+            "terrainMeters": 4005.098075253276,
+            "ascentMeters": 28.269775390625,
+            "descentMeters": 38.967529296875,
+            "netElevationMeters": -10.69775390625,
+            "totalCost": 4932.615239510466,
+            "maxSlopeDeg": 8.874288558959961
+          },
+          "absoluteDifferences": {
+            "horizontalMeters": 0,
+            "terrainMeters": 0,
+            "ascentMeters": 0,
+            "descentMeters": 0,
+            "netElevationMeters": 0,
+            "totalCost": 0,
+            "maxSlopeDeg": 0
+          }
+        },
+        "requestId": 2
+      }
+    ],
+    "observations": {
+      "created": 1,
+      "terminated": 1,
+      "started": 2,
+      "resultMessages": 2
+    },
+    "originalArrayBytes": 561056
+  },
+  "cancelBusy": {
+    "firstStatus": "cancelled",
+    "firstReason": "user",
+    "secondStatus": "completed",
+    "secondRouteStatus": "success",
+    "beforeReplacementResults": 0,
+    "latestOnly": true,
+    "observations": {
+      "created": 2,
+      "terminated": 1,
+      "started": 2,
+      "resultMessages": 1
+    },
+    "arrayBytesAfterRestart": 16000000,
+    "lifecycle": [
+      {
+        "event": "created",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      },
+      {
+        "event": "created",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      },
+      {
+        "event": "closed",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      },
+      {
+        "event": "closed",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      }
+    ],
+    "browserObservedTerminatedWorkerClose": true
+  },
+  "supersedeBusy": {
+    "firstStatus": "cancelled",
+    "firstReason": "superseded",
+    "secondStatus": "completed",
+    "secondRouteStatus": "success",
+    "beforeReplacementResults": 0,
+    "latestOnly": true,
+    "observations": {
+      "created": 2,
+      "terminated": 1,
+      "started": 2,
+      "resultMessages": 1
+    },
+    "arrayBytesAfterRestart": 16000000,
+    "lifecycle": [
+      {
+        "event": "created",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      },
+      {
+        "event": "created",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      },
+      {
+        "event": "closed",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      },
+      {
+        "event": "closed",
+        "url": "http://127.0.0.1:53586/routing.worker.js"
+      }
+    ],
+    "browserObservedTerminatedWorkerClose": true
+  }
+}

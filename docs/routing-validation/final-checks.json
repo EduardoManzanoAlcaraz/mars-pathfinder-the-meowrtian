@@ -1,0 +1,14 @@
+{
+  "checkedAtUtc": "2026-11-15T06:39:16.894Z",
+  "originalNASAProductsHashVerified": 3,
+  "preparedOutputsHashVerified": 19,
+  "preparedManifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "originalAndPreparedDataUnchanged": true,
+  "documentLocalTargetsExist": true,
+  "recordedVitestPassed": 37,
+  "recordedPytestPassed": 16,
+  "independentDijkstraAndAllEdgeAuditsPassed": true,
+  "realBrowserTerminationAndReplacementPassed": true,
+  "browserWorkerBundleBytes": 11550,
+  "browserWorkerBundleSha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421"
+}

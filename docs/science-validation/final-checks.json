@@ -1,0 +1,18 @@
+{
+  "checkedAtUtc": "2026-11-15T06:39:18.029Z",
+  "vitestRoutingPassed": 37,
+  "vitestInterfaceSciencePassed": 27,
+  "pytestPassed": 22,
+  "scientificManifestSha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+  "scienceAssetsAndStaticCopiesVerified": 5,
+  "officialUsgsInputsHashVerified": 4,
+  "extractedSourceFilesHashVerified": 136,
+  "allZipMembersCrcPassed": true,
+  "reproducibleSciencePackage": true,
+  "npmPackagesAudited": 88,
+  "originalRoutingBehaviourPreserved": true,
+  "threeObjectivesAndTwoPhotosDocumented": true,
+  "geologyExcludedFromNavigation": true,
+  "documentationTargetsAndIdentifiersChecked": true,
+  "productionDeploymentPerformed": false
+}

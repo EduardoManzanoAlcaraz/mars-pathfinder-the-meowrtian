@@ -1,0 +1,21 @@
+{
+  "reviewed_artifacts": [
+    "data/processed/jezero-hirise-v1/preview.png",
+    "data/processed/jezero-hirise-v1/alignment_overlay.png",
+    "data/processed/jezero-hirise-v1/alignment_windows.png"
+  ],
+  "review_type": "Assistant visual inspection of generated raster figures; not independent field control or a numerical registration RMSE",
+  "observations": [
+    "The NW escarpment and branching elevated structures in the image correspond to the hillshade and closely spaced DEM contours.",
+    "The central and eastern circular depressions correspond to closed low-elevation contours at the same broad positions.",
+    "The isolated SW elevated feature corresponds to closed high-elevation contours and local steep slopes; image saturation/invalid neighbours are excluded.",
+    "The five distributed 512 m windows show consistent broad terrain structures; fine image texture and physical shadow boundaries are not reproduced exactly by the stereo DEM."
+  ],
+  "conclusion": "No gross relative displacement was apparent in the reviewed area. Sufficient spatial compatibility for a prototype using the official PDS-labelled grid and a 10 m route mesh.",
+  "limits": [
+    "No independent ground control, external accuracy estimate or subpixel alignment measurement.",
+    "Synthetic hillshade illumination differs from the observation illumination.",
+    "Black zero pixels in the detail hillshade windows may be NoData; the overview and contour overlay mark joint-invalid pixels pink.",
+    "This is not route or EVA safety validation."
+  ]
+}

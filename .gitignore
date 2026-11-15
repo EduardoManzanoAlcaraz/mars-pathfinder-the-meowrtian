@@ -1,0 +1,33 @@
+# Local interpreters, packages and caches
+/.venv/
+/.cache/
+/.tools/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+/node_modules/
+/.vitest/
+/dist/
+/.next/
+/.netlify/
+# Credentials and local-only editor/OS state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.git-credentials
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+/out/
+*.tsbuildinfo
+# Original scientific products are downloaded, not versioned.
+/data/raw/
+# Reproducible rasters; retain configuration, reports, hashes and previews.
+/data/processed/**/*.tif
+/data/processed/**/*.tif.aux.xml
+/data/processed/**/*.npy

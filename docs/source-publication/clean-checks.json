@@ -1,0 +1,90 @@
+{
+  "checkedAtUtc": "2026-11-15T11:10:13.718Z",
+  "isolatedOutsideOriginalWorkspace": true,
+  "passed": true,
+  "results": [
+    {
+      "check": "isolated-build",
+      "command": [
+        "node.exe",
+        "npm",
+        "run",
+        "build"
+      ],
+      "startedAtUtc": "2026-11-15T11:08:28.478Z",
+      "durationMs": 42551,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "isolated-typecheck",
+      "command": [
+        "node.exe",
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "startedAtUtc": "2026-11-15T11:09:11.043Z",
+      "durationMs": 1015,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "isolated-routing",
+      "command": [
+        "node.exe",
+        "npm",
+        "test"
+      ],
+      "startedAtUtc": "2026-11-15T11:09:12.063Z",
+      "durationMs": 16554,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "isolated-interface",
+      "command": [
+        "node.exe",
+        "npm",
+        "run",
+        "test:interface"
+      ],
+      "startedAtUtc": "2026-11-15T11:09:28.622Z",
+      "durationMs": 35009,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "isolated-python-primitives",
+      "command": [
+        "python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/test_geospatial.py",
+        "-q"
+      ],
+      "startedAtUtc": "2026-11-15T11:10:03.640Z",
+      "durationMs": 10077,
+      "exitCode": 0,
+      "passed": true
+    }
+  ],
+  "appVersion": "0.1.0",
+  "engineVersion": "1.0.0",
+  "dataVersion": "jezero-hirise-v1",
+  "runtime": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "browser": "Chrome 157.0.8103.51"
+  },
+  "routingTestsPassed": 37,
+  "interfaceScienceTestsPassed": 27,
+  "pythonSyntheticTestsPassed": 8,
+  "full22TestPythonSuiteRerun": false,
+  "testedCodeAndScientificAssetsEqualPublicSelection": true,
+  "pythonScope": "Existing isolated pinned environment; original-data tests require deliberately excluded NASA/USGS inputs.",
+  "netlifyMutation": false
+}

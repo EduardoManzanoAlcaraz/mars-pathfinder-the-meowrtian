@@ -1,0 +1,121 @@
+# Mars Pathfinder
+
+**The Meowrtian · NASA Space Apps Challenge 2026**  
+Challenge: **Interplanetary Survival Guide: Martian Map**
+
+## [Open the public demo](https://mars-pathfinder-the-meowrtian.netlify.app)
+
+[Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md)
+
+A working browser application for exploring a verified region of Jezero crater and comparing scientific traverse candidates on real Martian terrain. HiRISE imagery and stereo topography meet published USGS geology, three team-proposed science objectives and two documented Perseverance photographs.
+
+**Educational and mission-concept prototype. Neither route certifies astronaut safety.**
+
+![Real production map and route metrics](docs/deployment-validation/1440-production-routes.png)
+
+## Quick start
+
+Prerequisites: **Node.js 24+** and npm. The compact scientific assets are included. No Python, API keys, database, NASA service or large original raster is required for the web build.
+
+```sh
+npm ci
+npm run build
+npm start
+```
+
+Open **http://127.0.0.1:3000**. Development: `npm run dev`. Next.js `output: 'export'` generates `out/`; no Next.js server or Netlify Function is required. Serve the export through HTTP/HTTPS, rather than `file://`.
+
+The UI currently uses Spanish labels. Select **Usar ejemplo validado** to load endpoints, then **Calcular rutas**. Compare A/B, switch Ortoimagen/Relieve/Elevación/Pendiente, inspect M1–M3 and the geology/photo cards, and use **Exportar JSON**. Routes are calculated afresh.
+
+## Architecture
+
+| Path | Responsibility |
+|---|---|
+| `app/`, `components/mission/` | Next.js/React interface and OpenLayers in a local Martian CRS |
+| `lib/routing/` | Pure TypeScript A*, indexed binary min-heap, eight neighbors, validation and metrics |
+| `workers/` | Two module workers; cancellation terminates/recreates workers and rejects stale results |
+| `lib/science/`, `lib/map/` | Versioned scientific contracts, source checks, coordinates and exports |
+| `scripts/data/` | Python/GDAL preparation and official-source download/discovery scripts |
+| `scripts/web/` | Hash-checked asset synchronization and static HTTP server |
+| `data/processed/`, `public/data/` | Manifest, compact routing binaries, map visuals and science assets |
+| `tests/` | Independent Dijkstra, constraints, metrics, workers, UI and geospatial checks |
+
+The real grid is **394 × 356 cells at 10 m**, north-first, row-major. Elevation/slope use Float32 little-endian; validity uses Uint8. The manifest defines units, coordinates, mask codes and SHA-256 checks. Coordinates use local equirectangular **Mars** metres, not terrestrial WGS84.
+
+## Route model
+
+Both modes block NoData, excessive cell slopes, excessive center-to-center grades and diagonals through blocked corners. Unknown terrain is never filled or treated as traversable.
+
+```text
+theta = max(cellSlope_i, cellSlope_j, centerToCenterGrade)
+edgeCost = horizontalDistance * (1 + lambda * (theta / thetaReference)^2)
+heuristic = horizontal Euclidean distance to the goal
+```
+
+**A:** minimum horizontal distance, λ=0. **B:** slope penalty, initial λ=4. The documented comparison uses a 15° cap and 15° reference angle. These are team assumptions, not NASA EVA limits. Exports include horizontal/approximate terrain length, ascent/descent, net elevation, maximum slope, exposure, algorithm cost, measured time, parameters and dataset identity.
+
+## Verified production results
+
+Origin **(column 59, row 302)** to team objective **M3 (334,233)**, dataset `jezero-hirise-v1`, engine 1.0.0. This differs from the default example's destination.
+
+| Metric | Route A, λ=0 | Route B, λ=4 |
+|---|---:|---:|
+| Horizontal distance | 3,035.81 m | 3,118.65 m |
+| Cumulative ascent | 36.39 m | 31.88 m |
+| Maximum modeled slope | 14.54° | 9.02° |
+
+The downloaded JSON matches the local engine and passes independent edge audits. Two private Chrome sessions at 1440 × 900 and 390 × 844 passed the full production flow without authentication. Measured readiness was 1.16 s and 1.79 s on the tested machine/network, not a worldwide performance guarantee. [Deployment evidence](docs/DESPLIEGUE_FINAL.md).
+
+## Scientific sources
+
+| Official source | Actual use |
+|---|---|
+| [MRO HiRISE stereo products](https://www.uahirise.org/dtm/ESP_045994_1985) | DTM `DTEEC_045994_1985_046060_1985_U01`; orthoimage `ESP_046060_1985_RED_C_01_ORTHO` through its LBL. Prepared 2 m crops, 4 m web display, 10 m routing |
+| [USGS SIM 3464, Sun & Stack (2020)](https://doi.org/10.3133/sim3464) | Six clipped polygons representing five units, original names and identifiers preserved |
+| [Perseverance raw images](https://mars.nasa.gov/mars2020/multimedia/raw-images/) and [waypoints](https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json) | Two authentic Navcam photos with exact same-sol/site/drive joins locating the rover |
+| [Mars Trek](https://trek.nasa.gov/mars/) | Catalog/services consulted; no additional Trek raster incorporated |
+
+HiRISE: **NASA/JPL/University of Arizona**. Perseverance: **NASA/JPL-Caltech**. Geology: **USGS, Vivian Z. Sun and Kathryn M. Stack**. Crops, slope, hillshade, masks, display colors, proposed objectives and routes are team derivatives, not extra independent NASA datasets.
+
+Geology retains **100–200 m positional offsets** and never acts as a precise navigation barrier. M1–M3 are team proposals, not official stations. Photos locate rover poses, not visible rock targets. Cell size is not absolute accuracy. Soil stability, sand, small obstacles, radiation, weather and EVA endurance remain outside this model. [Full sources and limits](docs/NASA_RESOURCES.md).
+
+## Tests and reproduction
+
+Chrome/Edge, or `MARS_TEST_BROWSER` pointing to installed Chromium, is required for browser tests. Missing browsers cause failure rather than silently skipped tests.
+
+```sh
+npm run typecheck
+npm run build
+npm test
+npm run test:interface
+npm run demo:routes
+```
+
+The clean source checkout passed **37 routing/worker + 27 interface/science Vitest tests**, **8 synthetic geospatial Python tests**, typecheck and the static build. Independent Dijkstra comparisons supplement the suite. [Executed source-release checks](docs/SOURCE_RELEASE_CHECKS.md). Historical release records also contain **22 pytest tests** with the full original-data environment; that full suite was not rerun on the compact checkout.
+
+For optional Python work, create an isolated environment, install the pinned geospatial dependencies, and run the synthetic-primitives suite:
+
+```sh
+python -m venv .venv
+# Activate the environment for your shell, then:
+python -m pip install -r requirements-geospatial.lock.txt
+python -m pytest tests/test_geospatial.py -q
+```
+
+The remaining Python checks require original downloads, retained official metadata and prepared GeoTIFFs. They are not web-build prerequisites. Large originals, caches, environments and generated builds are excluded from Git. [Reproduction scope](docs/REPRODUCIBILITY.md), [geospatial preparation](docs/VALIDACION_GEOESPACIAL.md), [science preparation](docs/NASA_RESOURCES.md).
+
+## Screenshots and documentation
+
+- [Mobile route flow](docs/deployment-validation/390-production-routes.png)
+- [Geological uncertainty](docs/deployment-validation/390-production-geology.png)
+- [Documented Perseverance image](docs/deployment-validation/390-production-perseverance.png)
+- [Plan](PLAN.md), [routes](docs/VALIDACION_RUTAS.md), [scientific sources](docs/NASA_RESOURCES.md), [deployment](docs/DESPLIEGUE_FINAL.md)
+- [English submission text](deliverables/spaceapps-2026/SUBMISSION_TEXT_EN.md), [editable seven-slide presentation](deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian.pptx), [seven-page PDF](deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian-Submission.pdf)
+
+Earlier detailed validation reports retain their original language and historical scope. Public copies redact personal workstation paths; scientific values, outcomes and data hashes remain intact.
+
+## License and AI transparency
+
+The team explicitly approved **Apache-2.0 for original code on 15 November 2026**. See [LICENSE](LICENSE), [NOTICE](NOTICE), [licensing scope](docs/LICENSING.md) and [full upstream notices](public/THIRD_PARTY_NOTICES.txt). Third-party software, agency datasets, photographs, fonts and icons retain their own conditions. Earlier reports/slides retain their historical pending-license status; `docs/LICENSING.md` records the current decision.
+
+**OpenAI Codex** assisted implementation, processing scripts, A*, integration, automated tests, debugging, deployment and documentation. **ChatGPT** assisted planning, challenge interpretation, architecture, instructions and methodology/presentation advice. NASA/USGS supply the observations and published interpretation. No generative image tool created the scientific imagery or measured outcomes, and no LLM service calculates routes at runtime. No agency endorsement is implied.

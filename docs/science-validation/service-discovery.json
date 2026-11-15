@@ -1,0 +1,30 @@
+[
+  {
+    "name": "trek-config.json",
+    "url": "https://trek.nasa.gov/mars/jpl/config/config.json",
+    "status": 200,
+    "bytes": 11732,
+    "atUtc": "2026-11-14T13:06:10.336Z"
+  },
+  {
+    "name": "rover-waypoints.json",
+    "url": "https://mars.nasa.gov/maps/location/geojson/mars2020/waypoints.json",
+    "status": 404,
+    "bytes": 5546,
+    "atUtc": "2026-11-14T13:06:10.633Z"
+  },
+  {
+    "name": "rover-traverse.json",
+    "url": "https://mars.nasa.gov/maps/location/geojson/mars2020/traverse.json",
+    "status": 404,
+    "bytes": 5546,
+    "atUtc": "2026-11-14T13:06:10.835Z"
+  },
+  {
+    "name": "raw-sol-84.json",
+    "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=5&page=0&order=sol%20asc&condition_2=84:sol:gte&condition_3=84:sol:lte",
+    "status": 200,
+    "bytes": 10207,
+    "atUtc": "2026-11-14T13:06:11.063Z"
+  }
+]

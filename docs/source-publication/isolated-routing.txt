@@ -1,0 +1,13 @@
+
+> mars-pathfinder@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 <isolated-checkout>
+
+
+ Test Files  4 passed (4)
+      Tests  37 passed (37)
+   Start at  12:09:13
+   Duration  15.48s (tests 96%, import 2%, transform 1%)
+

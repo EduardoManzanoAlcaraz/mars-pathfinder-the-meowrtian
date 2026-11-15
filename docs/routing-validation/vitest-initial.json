@@ -1,0 +1,542 @@
+{
+  "numTotalTestSuites": 8,
+  "numPassedTestSuites": 7,
+  "numFailedTestSuites": 1,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 37,
+  "numPassedTests": 35,
+  "numFailedTests": 2,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1794656813476,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "existing real data contract"
+          ],
+          "fullName": "existing real data contract loads verified binary hashes, dimensions, orientation and Float32 values",
+          "status": "passed",
+          "title": "loads verified binary hashes, dimensions, orientation and Float32 values",
+          "duration": 13.885999999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "existing real data contract"
+          ],
+          "fullName": "existing real data contract rejects a corrupted binary and a truncated array before routing",
+          "status": "passed",
+          "title": "rejects a corrupted binary and a truncated array before routing",
+          "duration": 6.955200000000019,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "existing real data contract"
+          ],
+          "fullName": "existing real data contract rejects alternative byte order, layout, dimensions, units or mask contracts",
+          "status": "passed",
+          "title": "rejects alternative byte order, layout, dimensions, units or mask contracts",
+          "duration": 5.363900000000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "existing real data contract"
+          ],
+          "fullName": "existing real data contract calculates and independently audits both modes on a fixed real Jezero pair",
+          "status": "passed",
+          "title": "calculates and independently audits both modes on a fixed real Jezero pair",
+          "duration": 68.38149999999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794656813882,
+      "endTime": 1794656813976.3816,
+      "status": "passed",
+      "message": "",
+      "name": "<workspace>/tests/routing/data.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "heap"
+          ],
+          "fullName": "heap orders entries deterministically and decreases keys without duplicates",
+          "status": "passed",
+          "title": "orders entries deterministically and decreases keys without duplicates",
+          "duration": 2.2192000000000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints minimizes metric horizontal distance on flat terrain",
+          "status": "passed",
+          "title": "minimizes metric horizontal distance on flat terrain",
+          "duration": 1.108699999999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints uses diagonal movement with its real sqrt(2) length",
+          "status": "passed",
+          "title": "uses diagonal movement with its real sqrt(2) length",
+          "duration": 0.37170000000000414,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints routes around obstacles without crossing closed corners",
+          "status": "passed",
+          "title": "routes around obstacles without crossing closed corners",
+          "duration": 0.5408999999999935,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints blocks a diagonal when both orthogonal corner cells are unknown",
+          "status": "passed",
+          "title": "blocks a diagonal when both orthogonal corner cells are unknown",
+          "duration": 0.22159999999999513,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints cannot cut even a single blocked corner but can take the other two steps",
+          "status": "passed",
+          "title": "cannot cut even a single blocked corner but can take the other two steps",
+          "duration": 0.28600000000000136,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects slopes above the configured maximum",
+          "status": "passed",
+          "title": "rejects slopes above the configured maximum",
+          "duration": 0.29920000000001323,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints evaluates centre-to-centre slope even when supplied cell slopes are flat",
+          "status": "passed",
+          "title": "evaluates centre-to-centre slope even when supplied cell slopes are flat",
+          "duration": 0.33440000000001646,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints blocks invalid elevation -9999 even if the mask claims validity",
+          "status": "passed",
+          "title": "blocks invalid elevation -9999 even if the mask claims validity",
+          "duration": 0.19220000000001392,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints blocks invalid elevation NaN even if the mask claims validity",
+          "status": "passed",
+          "title": "blocks invalid elevation NaN even if the mask claims validity",
+          "duration": 0.14330000000001064,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints blocks invalid elevation Infinity even if the mask claims validity",
+          "status": "passed",
+          "title": "blocks invalid elevation Infinity even if the mask claims validity",
+          "duration": 0.06730000000001723,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints blocks NoData and invalid slope values",
+          "status": "passed",
+          "title": "blocks NoData and invalid slope values",
+          "duration": 0.15680000000000405,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints returns a zero-length route only when the identical endpoint is valid",
+          "status": "passed",
+          "title": "returns a zero-length route only when the identical endpoint is valid",
+          "duration": 0.19370000000000687,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects invalid destination {\"col\":-1,\"row\":0} without clamping",
+          "status": "passed",
+          "title": "rejects invalid destination {\"col\":-1,\"row\":0} without clamping",
+          "duration": 0.06880000000001019,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects invalid destination {\"col\":2,\"row\":0} without clamping",
+          "status": "passed",
+          "title": "rejects invalid destination {\"col\":2,\"row\":0} without clamping",
+          "duration": 0.06790000000000873,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects invalid destination {\"col\":0,\"row\":2} without clamping",
+          "status": "passed",
+          "title": "rejects invalid destination {\"col\":0,\"row\":2} without clamping",
+          "duration": 0.02939999999998122,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects invalid destination {\"col\":0.5,\"row\":0} without clamping",
+          "status": "passed",
+          "title": "rejects invalid destination {\"col\":0.5,\"row\":0} without clamping",
+          "duration": 0.02349999999998431,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects invalid destination {\"col\":null,\"row\":0} without clamping",
+          "status": "passed",
+          "title": "rejects invalid destination {\"col\":null,\"row\":0} without clamping",
+          "duration": 0.022600000000011278,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects invalid/steep endpoints and disconnected destinations explicitly",
+          "status": "passed",
+          "title": "rejects invalid/steep endpoints and disconnected destinations explicitly",
+          "duration": 0.0882000000000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints rejects inconsistent array sizes and invalid configuration",
+          "status": "passed",
+          "title": "rejects inconsistent array sizes and invalid configuration",
+          "duration": 0.2115000000000009,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "navigation constraints"
+          ],
+          "fullName": "navigation constraints maps north-up cell centres correctly and rejects the east/south boundary",
+          "status": "passed",
+          "title": "maps north-up cell centres correctly and rejects the east/south boundary",
+          "duration": 0.19309999999998695,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics calculates a known up/down profile and exposure intervals independently",
+          "status": "passed",
+          "title": "calculates a known up/down profile and exposure intervals independently",
+          "duration": 0.2627999999999986,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics lambda=0 finds the short route; lambda=4 takes a lower-penalty detour in this fixture",
+          "status": "passed",
+          "title": "lambda=0 finds the short route; lambda=4 takes a lower-penalty detour in this fixture",
+          "duration": 0.8785000000000025,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics matches independent Dijkstra on 30 seeded maps for lambda=0",
+          "status": "passed",
+          "title": "matches independent Dijkstra on 30 seeded maps for lambda=0",
+          "duration": 5.935999999999979,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics matches independent Dijkstra on 30 seeded maps for lambda=0.25",
+          "status": "passed",
+          "title": "matches independent Dijkstra on 30 seeded maps for lambda=0.25",
+          "duration": 2.3422999999999945,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics matches independent Dijkstra on 30 seeded maps for lambda=1",
+          "status": "passed",
+          "title": "matches independent Dijkstra on 30 seeded maps for lambda=1",
+          "duration": 2.7717999999999847,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics matches independent Dijkstra on 30 seeded maps for lambda=4",
+          "status": "passed",
+          "title": "matches independent Dijkstra on 30 seeded maps for lambda=4",
+          "duration": 1.6222999999999956,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "cost and metrics"
+          ],
+          "fullName": "cost and metrics matches independent Dijkstra on 30 seeded maps for lambda=20",
+          "status": "passed",
+          "title": "matches independent Dijkstra on 30 seeded maps for lambda=20",
+          "duration": 1.6925000000000239,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794656814179,
+      "endTime": 1794656814201.6924,
+      "status": "passed",
+      "message": "",
+      "name": "<workspace>/tests/routing/engine.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "terminates an active request, recreates the worker and ignores a queued stale callback",
+          "status": "passed",
+          "title": "terminates an active request, recreates the worker and ignores a queued stale callback",
+          "duration": 3.359800000000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "supports explicit cancel, worker errors and permanent disposal",
+          "status": "passed",
+          "title": "supports explicit cancel, worker errors and permanent disposal",
+          "duration": 1.1824000000000012,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794656831269,
+      "endTime": 1794656831273.1824,
+      "status": "passed",
+      "message": "",
+      "name": "<workspace>/tests/routing/worker-client.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "executes the production Web Worker on real Jezero data with matching metrics",
+          "status": "passed",
+          "title": "executes the production Web Worker on real Jezero data with matching metrics",
+          "duration": 1468.1761,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "cancelBusy: closes a real actively computing worker and successfully recreates it",
+          "status": "failed",
+          "title": "cancelBusy: closes a real actively computing worker and successfully recreates it",
+          "duration": 1401.5588999999995,
+          "failureMessages": [
+            "Error: expected false to be true // Object.is equality\n    at Proxy.__VITEST_POLL_CHAIN__ (file:///<local-runtime>)\n    at <workspace>/tests/routing/worker.browser.test.ts:79:45\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:541:9)\n    at async file:///<local-runtime>"
+          ],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "supersedeBusy: closes a real actively computing worker and successfully recreates it",
+          "status": "failed",
+          "title": "supersedeBusy: closes a real actively computing worker and successfully recreates it",
+          "duration": 1530.3849,
+          "failureMessages": [
+            "Error: expected false to be true // Object.is equality\n    at Proxy.__VITEST_POLL_CHAIN__ (file:///<local-runtime>)\n    at <workspace>/tests/routing/worker.browser.test.ts:79:45\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:541:9)\n    at async file:///<local-runtime>"
+          ],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794656815585,
+      "endTime": 1794656819985.385,
+      "status": "failed",
+      "message": "",
+      "name": "<workspace>/tests/routing/worker.browser.test.ts"
+    }
+  ]
+}

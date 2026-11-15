@@ -1,0 +1,421 @@
+{
+  "checkedAtUtc": "2026-11-14T17:00:01.892Z",
+  "antivirusReviewRequired": false,
+  "antivirusCheckedAtUtc": "2026-11-14T16:59:59.8033304Z",
+  "compilerIntegrityVerifiedAndScanCompleted": true,
+  "vitestPassed": 64,
+  "pytestPassed": 22,
+  "fullBrowserFlowScenariosPassed": 5,
+  "staticFilesVerified": 66,
+  "staticBytes": 6115416,
+  "initialBodyBytes": 2896316,
+  "completeFlowBodyBytes": 4805377,
+  "hypotheticalGzipBytes": 3996105,
+  "gzipIsActualTransfer": false,
+  "resourceTimingNotes": "Full resource load durations are in scenario.resourceTiming[].durationMs. resources[].durationMs was sampled on the response event: responseEnd if available, otherwise responseStart. Readiness is elapsed real browser time, not a network forecast.",
+  "scenarios": [
+    {
+      "viewport": "1440x900",
+      "network": "loopback",
+      "mapAndScienceReadyMs": 737.1753000000001,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "bothRoutesUiMs": 91.56049999999959,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeAComputeTimeMs": 26.80000001192093,
+      "routeBComputeTimeMs": 54.099999994039536
+    },
+    {
+      "viewport": "1280x720",
+      "network": "loopback",
+      "mapAndScienceReadyMs": 350.5562,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "bothRoutesUiMs": 94.44499999999971,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeAComputeTimeMs": 24.899999976158142,
+      "routeBComputeTimeMs": 50
+    },
+    {
+      "viewport": "390x844",
+      "network": "loopback",
+      "mapAndScienceReadyMs": 331.6419999999998,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "bothRoutesUiMs": 121.0705999999991,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeAComputeTimeMs": 39.400000005960464,
+      "routeBComputeTimeMs": 60.69999998807907
+    },
+    {
+      "viewport": "360x740",
+      "network": "loopback",
+      "mapAndScienceReadyMs": 322.0255000000034,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "bothRoutesUiMs": 92.18919999999707,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeAComputeTimeMs": 23.900000005960464,
+      "routeBComputeTimeMs": 49.60000002384186
+    },
+    {
+      "viewport": "1440x900",
+      "network": "emulated-10Mbps-50ms",
+      "mapAndScienceReadyMs": 3009.2438,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "bothRoutesUiMs": 169.45430000000488,
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeAComputeTimeMs": 26.799999982118607,
+      "routeBComputeTimeMs": 55.30000001192093
+    }
+  ],
+  "originalScientificDataUnchanged": true,
+  "productionDeploymentPerformed": false,
+  "decision": "Ready for a static educational demo deployment; hosted HTTPS smoke test and project-code license decision remain outstanding."
+}

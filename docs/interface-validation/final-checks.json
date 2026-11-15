@@ -1,0 +1,20 @@
+{
+  "checkedAtUtc": "2026-11-15T06:39:17.050Z",
+  "purpose": "Validate actual build and recorded evidence; not a replacement for executing tests",
+  "vitestRoutingPassed": 37,
+  "vitestInterfacePassed": 27,
+  "pytestPassed": 16,
+  "manifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "staticScientificCopiesIdentical": true,
+  "staticVisualHashesVerified": true,
+  "existingWorkerBundleIdentical": true,
+  "staticOutput": {
+    "bytes": 6115416,
+    "files": 66
+  },
+  "documentLinksExist": true,
+  "downloadedRoutesIndependentlyAudited": true,
+  "measuredMarkerAlignmentPassed": true,
+  "browserCancellationAndReplacementPassed": true,
+  "productionDeploymentPerformed": false
+}

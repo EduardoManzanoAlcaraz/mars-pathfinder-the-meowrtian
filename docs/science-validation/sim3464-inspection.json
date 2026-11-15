@@ -1,0 +1,1887 @@
+{
+  "zipCRCAllMembersPassed": true,
+  "zipMembers": [
+    {
+      "name": "sim3464_JezeroNili_FINAL/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/.DS_Store",
+      "bytes": 6148,
+      "compressedBytes": 214
+    },
+    {
+      "name": "__MACOSX/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "__MACOSX/sim3464_JezeroNili_FINAL/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "__MACOSX/sim3464_JezeroNili_FINAL/._.DS_Store",
+      "bytes": 120,
+      "compressedBytes": 53
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/sim3464_JezeroNili_FINAL.mxd",
+      "bytes": 3452928,
+      "compressedBytes": 602606
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/CoordinateSystems/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/CoordinateSystems/MTM_clon77_5E.prj",
+      "bytes": 408,
+      "compressedBytes": 235
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/CoordinateSystems/Mars2000_Sphere.prj",
+      "bytes": 193,
+      "compressedBytes": 140
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/LinearFeatures.lyr",
+      "bytes": 18432,
+      "compressedBytes": 4200
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/GeoContacts.lyr",
+      "bytes": 10240,
+      "compressedBytes": 2934
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/GeologicUnits.lyr",
+      "bytes": 18944,
+      "compressedBytes": 4101
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/SurfaceFeatures.lyr",
+      "bytes": 12800,
+      "compressedBytes": 3847
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/LocationFeatures.lyr",
+      "bytes": 10240,
+      "compressedBytes": 2905
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Metadata/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Metadata/SIM3464_metadata.xml",
+      "bytes": 20351,
+      "compressedBytes": 4185
+    },
+    {
+      "name": "__MACOSX/sim3464_JezeroNili_FINAL/Metadata/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "__MACOSX/sim3464_JezeroNili_FINAL/Metadata/._SIM3464_metadata.xml",
+      "bytes": 2002,
+      "compressedBytes": 1361
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/CrossSections.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.AnnoClassID_Index_66.atx",
+      "bytes": 4118,
+      "compressedBytes": 34
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.freelist",
+      "bytes": 4440,
+      "compressedBytes": 832
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 133
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 197
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/SurfaceFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.freelist",
+      "bytes": 8536,
+      "compressedBytes": 85
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbtable",
+      "bytes": 8746,
+      "compressedBytes": 7735
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.FDO_UUID.atx",
+      "bytes": 4118,
+      "compressedBytes": 760
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.GDB_84_FeatureID.atx",
+      "bytes": 16406,
+      "compressedBytes": 2250
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.freelist",
+      "bytes": 16728,
+      "compressedBytes": 200
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.freelist",
+      "bytes": 8536,
+      "compressedBytes": 155
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbindexes",
+      "bytes": 296,
+      "compressedBytes": 114
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 38
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbtable",
+      "bytes": 1906,
+      "compressedBytes": 1185
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbtable",
+      "bytes": 770078,
+      "compressedBytes": 62287
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/gdb",
+      "bytes": 4,
+      "compressedBytes": 6
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.spx",
+      "bytes": 4118,
+      "compressedBytes": 68
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.Status_Index_84.atx",
+      "bytes": 16406,
+      "compressedBytes": 2017
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByName.atx",
+      "bytes": 12310,
+      "compressedBytes": 545
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.spx",
+      "bytes": 1138710,
+      "compressedBytes": 24033
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.spx",
+      "bytes": 4118,
+      "compressedBytes": 236
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/timestamps",
+      "bytes": 400,
+      "compressedBytes": 34
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByOriginID.atx",
+      "bytes": 4118,
+      "compressedBytes": 270
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.GDB_69_FeatureID.atx",
+      "bytes": 4118,
+      "compressedBytes": 80
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 67
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/MapBoundary.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.Status_Index_66.atx",
+      "bytes": 4118,
+      "compressedBytes": 59
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LocationFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.CatItemsByType.atx",
+      "bytes": 4118,
+      "compressedBytes": 267
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.spx",
+      "bytes": 12310,
+      "compressedBytes": 1163
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.freelist",
+      "bytes": 90456,
+      "compressedBytes": 6325
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByDestinationID.atx",
+      "bytes": 4118,
+      "compressedBytes": 556
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbindexes",
+      "bytes": 602,
+      "compressedBytes": 173
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+      "bytes": 4118,
+      "compressedBytes": 285
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.freelist",
+      "bytes": 65880,
+      "compressedBytes": 16026
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000002.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 133
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 41
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbtable",
+      "bytes": 2257,
+      "compressedBytes": 774
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbtable",
+      "bytes": 5176,
+      "compressedBytes": 2347
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByType.atx",
+      "bytes": 4118,
+      "compressedBytes": 223
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+      "bytes": 4118,
+      "compressedBytes": 313
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbindexes",
+      "bytes": 276,
+      "compressedBytes": 127
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbtable",
+      "bytes": 81659,
+      "compressedBytes": 38918
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbtable",
+      "bytes": 2000071,
+      "compressedBytes": 1748434
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LandingEllipse.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LinearFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.freelist",
+      "bytes": 12632,
+      "compressedBytes": 244
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 1011
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 897
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByUUID.atx",
+      "bytes": 4118,
+      "compressedBytes": 585
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.freelist",
+      "bytes": 41304,
+      "compressedBytes": 481
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbindexes",
+      "bytes": 348,
+      "compressedBytes": 151
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000002.gdbtable",
+      "bytes": 2055,
+      "compressedBytes": 641
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbtable",
+      "bytes": 1021,
+      "compressedBytes": 522
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 37
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 88
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.spx",
+      "bytes": 28694,
+      "compressedBytes": 3078
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.spx",
+      "bytes": 12310,
+      "compressedBytes": 1371
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbindexes",
+      "bytes": 110,
+      "compressedBytes": 80
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/Figures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.TablesByName.atx",
+      "bytes": 16406,
+      "compressedBytes": 421
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/megabreccia_fig2.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbtable",
+      "bytes": 15752676,
+      "compressedBytes": 14198669
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.CatItemsByPhysicalName.atx",
+      "bytes": 16406,
+      "compressedBytes": 641
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.spx",
+      "bytes": 12310,
+      "compressedBytes": 815
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+      "bytes": 4118,
+      "compressedBytes": 270
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.spx",
+      "bytes": 16406,
+      "compressedBytes": 1353
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbtablx",
+      "bytes": 10272,
+      "compressedBytes": 4634
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.AnnoClassID_Index_69.atx",
+      "bytes": 4118,
+      "compressedBytes": 61
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbindexes",
+      "bytes": 348,
+      "compressedBytes": 151
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbtablx",
+      "bytes": 10272,
+      "compressedBytes": 4297
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbtable",
+      "bytes": 50234,
+      "compressedBytes": 8475
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbtable",
+      "bytes": 5462,
+      "compressedBytes": 3590
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByUUID.atx",
+      "bytes": 4118,
+      "compressedBytes": 915
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/FiguresAnno.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/GeoUnitsAnno.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.spx",
+      "bytes": 4118,
+      "compressedBytes": 69
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbtable",
+      "bytes": 10871,
+      "compressedBytes": 2808
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbtable",
+      "bytes": 3042,
+      "compressedBytes": 1494
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 150
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 103
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.freelist",
+      "bytes": 33112,
+      "compressedBytes": 231
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.freelist",
+      "bytes": 8536,
+      "compressedBytes": 76
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbindexes",
+      "bytes": 310,
+      "compressedBytes": 131
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/Nomenclature.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 38
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 111
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/_gdb.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbtable",
+      "bytes": 3568864,
+      "compressedBytes": 408984
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.spx",
+      "bytes": 65558,
+      "compressedBytes": 11127
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.freelist",
+      "bytes": 8536,
+      "compressedBytes": 81
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.freelist",
+      "bytes": 12632,
+      "compressedBytes": 207
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.spx",
+      "bytes": 4118,
+      "compressedBytes": 79
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 651
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.freelist",
+      "bytes": 69976,
+      "compressedBytes": 2612
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbtablx",
+      "bytes": 15520,
+      "compressedBytes": 6869
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbtable",
+      "bytes": 13686,
+      "compressedBytes": 5505
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbindexes",
+      "bytes": 42,
+      "compressedBytes": 33
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbtable",
+      "bytes": 1154,
+      "compressedBytes": 505
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 76
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.spx",
+      "bytes": 65558,
+      "compressedBytes": 8472
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.spx",
+      "bytes": 4118,
+      "compressedBytes": 102
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+      "bytes": 4118,
+      "compressedBytes": 343
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+      "bytes": 4118,
+      "compressedBytes": 445
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.spx",
+      "bytes": 4118,
+      "compressedBytes": 246
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 118
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbtable",
+      "bytes": 9088,
+      "compressedBytes": 3615
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbtablx",
+      "bytes": 5152,
+      "compressedBytes": 731
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.Status_Index_69.atx",
+      "bytes": 4118,
+      "compressedBytes": 68
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbtable",
+      "bytes": 6580024,
+      "compressedBytes": 5942558
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbtable",
+      "bytes": 25647,
+      "compressedBytes": 10184
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/GeoContacts.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbindexes",
+      "bytes": 116,
+      "compressedBytes": 66
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.FDO_UUID.atx",
+      "bytes": 4118,
+      "compressedBytes": 848
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbindexes",
+      "bytes": 318,
+      "compressedBytes": 128
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.AnnoClassID_Index_84.atx",
+      "bytes": 16406,
+      "compressedBytes": 1970
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByName.atx",
+      "bytes": 4118,
+      "compressedBytes": 353
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_XN_18N282W_6m_ORTHO.tif",
+      "bytes": 121962914,
+      "compressedBytes": 65328117
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B18_016575_1978_B17_016219_1978_20m_DTM.tif.ovr",
+      "bytes": 5034472,
+      "compressedBytes": 5029012
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B17_016219_1978_XN_17N282W_6m_ORTHO.tif",
+      "bytes": 70755826,
+      "compressedBytes": 41327297
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_J03_046060_1986_20m_DTM.tif.ovr",
+      "bytes": 7603246,
+      "compressedBytes": 7589122
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B18_016575_1978_B17_016219_1978_20m_DTM.tif",
+      "bytes": 25470186,
+      "compressedBytes": 15896306
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_XN_18N282W_6m_ORTHO.tif.ovr",
+      "bytes": 21672726,
+      "compressedBytes": 21627102
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B17_016219_1978_XN_17N282W_6m_ORTHO.tif.ovr",
+      "bytes": 14162449,
+      "compressedBytes": 14141274
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_J03_046060_1986_20m_DTM.tif",
+      "bytes": 43912626,
+      "compressedBytes": 23617348
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif.ovr",
+      "bytes": 27976469,
+      "compressedBytes": 27795347
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tfw",
+      "bytes": 90,
+      "compressedBytes": 48
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif",
+      "bytes": 75816056,
+      "compressedBytes": 75519444
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif.aux.xml",
+      "bytes": 1976,
+      "compressedBytes": 932
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif.aux.xml",
+      "bytes": 2067,
+      "compressedBytes": 959
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif.ovr",
+      "bytes": 116280,
+      "compressedBytes": 112318
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tfw",
+      "bytes": 94,
+      "compressedBytes": 50
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif",
+      "bytes": 390342,
+      "compressedBytes": 371771
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tfw",
+      "bytes": 94,
+      "compressedBytes": 50
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif.ovr",
+      "bytes": 132894,
+      "compressedBytes": 125116
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif",
+      "bytes": 330431,
+      "compressedBytes": 321781
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif.aux.xml",
+      "bytes": 1971,
+      "compressedBytes": 921
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/",
+      "bytes": 0,
+      "compressedBytes": 0
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif.ovr",
+      "bytes": 524787,
+      "compressedBytes": 220272
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif.aux.xml",
+      "bytes": 2043,
+      "compressedBytes": 970
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif",
+      "bytes": 1379971,
+      "compressedBytes": 508096
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tfw",
+      "bytes": 92,
+      "compressedBytes": 50
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif.xml",
+      "bytes": 543,
+      "compressedBytes": 353
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif",
+      "bytes": 366691,
+      "compressedBytes": 366005
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tfw",
+      "bytes": 92,
+      "compressedBytes": 50
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/h0988_0000.da4.53.tif",
+      "bytes": 62804265,
+      "compressedBytes": 26197212
+    },
+    {
+      "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif.aux.xml",
+      "bytes": 453,
+      "compressedBytes": 191
+    }
+  ],
+  "extracted": [
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/CoordinateSystems/MTM_clon77_5E.prj",
+      "bytes": 408,
+      "sha256": "d8eb567773a607cfa993f9934de6c81f1f86e9b15c5302cf6184e2f6058fc3a0"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/CoordinateSystems/Mars2000_Sphere.prj",
+      "bytes": 193,
+      "sha256": "b1a91e94dcf78fdd3f81f570cf64ac110a859fae6b3cc03f6c30a7ce8cf7f4cc"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Metadata/SIM3464_metadata.xml",
+      "bytes": 20351,
+      "sha256": "5f686fbcf1d0d90e0d106bfafea28f950095b7564e580a85119d46b29842f078"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/__MACOSX/sim3464_JezeroNili_FINAL/Metadata/._SIM3464_metadata.xml",
+      "bytes": 2002,
+      "sha256": "cb801ba73fee0c59d53f0a1b7e086234e7a04791630131d8e6924473924fee07"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/CrossSections.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.AnnoClassID_Index_66.atx",
+      "bytes": 4118,
+      "sha256": "0a4180bd20fb59d6efad8273f43d9bb4d69b5615a989c5521202dfc25758fee6"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.freelist",
+      "bytes": 4440,
+      "sha256": "b46a1e569464ad9cea30b1cb94b4bdc904061907cdff28ba77b57e9e877f8326"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbtablx",
+      "bytes": 5152,
+      "sha256": "b6c82c8e01c5ef65d2b60ab8843085fe7d3d769d07d2a83683c4fdb0bcb4073f"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbtablx",
+      "bytes": 5152,
+      "sha256": "71e3730956b3cb8f3a7cbd3874502795d6e5db64cb5df9482f95ab265eaceada"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/SurfaceFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.freelist",
+      "bytes": 8536,
+      "sha256": "56ec0a44e195949d1652e4b52446d06d25411a871d73814b1b7d5862b7b8ba58"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbtable",
+      "bytes": 8746,
+      "sha256": "f8feeb4c140a8d831a8cd2d0890a49398a9eaa59435f92c09a6161ba6ff3be82"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.FDO_UUID.atx",
+      "bytes": 4118,
+      "sha256": "a868a2ca1fb520c6ff159ec193af11b5b86c9a6ce6566daeeeec3d9435e94d1c"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.GDB_84_FeatureID.atx",
+      "bytes": 16406,
+      "sha256": "d7684f4878ed03545b1a6020c0c16a71f3e367898907e3025d146480282b7569"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.freelist",
+      "bytes": 16728,
+      "sha256": "8ff7149f7994ad8723cf6d38afbcf12e36b5b8d0458ffcb8748ab33c95087dd8"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.freelist",
+      "bytes": 8536,
+      "sha256": "ebb8cb1b11f68f786f0bc9931b77c73f788bec7acec6c5fa19711836ec2dc74e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbindexes",
+      "bytes": 296,
+      "sha256": "c21e650994b48cc72d174b3caf2ac1bd19e2d7305c8087aaae97e24caecf98a5"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbtablx",
+      "bytes": 5152,
+      "sha256": "57158019ed090ea61e0ec8747506b732db9732ff7b6c7d65be5b6cd5a18b486c"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbtable",
+      "bytes": 1906,
+      "sha256": "898c1b5e925c70bb037c60289b49fd2e22c149aeac6fe3931a6fec85fef6f683"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbtable",
+      "bytes": 770078,
+      "sha256": "71fe13fd6d39930b35a061e1420230638a925c8a6a1901d6eabd61a053539a0e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/gdb",
+      "bytes": 4,
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.spx",
+      "bytes": 4118,
+      "sha256": "09c8d6973f551d3243cf5eb0bca68ed868a50bbbc849284e5f4783bbab8111f2"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.Status_Index_84.atx",
+      "bytes": 16406,
+      "sha256": "c89a68c14dd004a57dbc67d29af87d19a2904e8383be92b5baecac22d36729b7"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByName.atx",
+      "bytes": 12310,
+      "sha256": "28e80863dc417483add2244500839505879fe0a3ac0aa1e253fc920e6fd49bc5"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.spx",
+      "bytes": 1138710,
+      "sha256": "2e660cb740e8b5e2e1fdf358cc62847d4d2a3d121d7539726ddad94733ef7231"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.spx",
+      "bytes": 4118,
+      "sha256": "1626adbc57e384d4f10ac29c0565e7428d68101eb92c544a520ec96eeead9c22"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/timestamps",
+      "bytes": 400,
+      "sha256": "a407c9c421e626d201d813b5878654183f8c081be493c6ba373b3d8946f9c41f"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByOriginID.atx",
+      "bytes": 4118,
+      "sha256": "d75429b4da5c11f9366e85d1fe7bc4468c035c59b42b54f26c128e4ff3598d7b"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.GDB_69_FeatureID.atx",
+      "bytes": 4118,
+      "sha256": "82b52409cce1389ebe1758eb28b5caa4e5f7f45ebbcb923c42f80c3309157bac"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbindexes",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/MapBoundary.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.Status_Index_66.atx",
+      "bytes": 4118,
+      "sha256": "eccca4154a67521170a81d881731ca01e876670d851221e09c91434f99624afd"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LocationFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.CatItemsByType.atx",
+      "bytes": 4118,
+      "sha256": "5c1b54a45116baedf71cc432bff2a5b340bd0f0e1e63a42ede60babe6c351a8f"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.spx",
+      "bytes": 12310,
+      "sha256": "8b43b04a21aa5a10f74896a7166ed39c139aa574f2201262eb08531d0388e14e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.freelist",
+      "bytes": 90456,
+      "sha256": "37df56938b48db93bb71421daed62e2ae4eadb9dc386d33ddc72bf210cdda7eb"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByDestinationID.atx",
+      "bytes": 4118,
+      "sha256": "e5f6f235665429b3dabf884c75cc64160d26219f4299c11b43fa9fd7d22c3b1b"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbindexes",
+      "bytes": 602,
+      "sha256": "dc98e24d04eddd7f38905d176c1ea43c547a3a2daa0c80091a20d3443c726621"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+      "bytes": 4118,
+      "sha256": "a013449e1f84b85c5b5c8428cfdbfe3d4bc214c374541be60e1714c1b85ea849"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.freelist",
+      "bytes": 65880,
+      "sha256": "d1f69c671104c329f22836ba83f13c3c22710220c35255d4ae83d1db6f373f10"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000002.gdbtablx",
+      "bytes": 5152,
+      "sha256": "f3ac9865dec6ab40e73d91dd1f5c2eef0248e66e359d4abb1d97edba92b5df88"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbtablx",
+      "bytes": 5152,
+      "sha256": "d63fd5f8a490aa6aeffde1336e80ce35b5399af5752a72b316570a670b09d167"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbtable",
+      "bytes": 2257,
+      "sha256": "1230365df85409a21196b6103a2dab63fc35e571da4dec3c6691823c2cede36f"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbtable",
+      "bytes": 5176,
+      "sha256": "9f97781ab4f8a85e254665cdaca0b5422b89d0b71e9d552a844da7887b3715ee"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByType.atx",
+      "bytes": 4118,
+      "sha256": "50d20ca4722dd66603f57d721e2509e3c07989b64068a0f0e6adf3678dd44f03"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+      "bytes": 4118,
+      "sha256": "6a2a75083f3b91da1a8742720d9530c184b2cd98e56941bae28db7df69c477ff"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbindexes",
+      "bytes": 276,
+      "sha256": "b8163b04dc7f6a7d8f45d7fb548d4638766c3ddc3288951d37460ebfd12c4b8b"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbtable",
+      "bytes": 81659,
+      "sha256": "470b99cd0daea6b932ec17377ed139d381ecee20c7be84c001a8fca11092c662"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbtable",
+      "bytes": 2000071,
+      "sha256": "f9c2d68b94ce26b1ea8d0746bd093bfb109bf87fc558c98938cefe6846fcf6e2"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LandingEllipse.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LinearFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.freelist",
+      "bytes": 12632,
+      "sha256": "f26cc28440114d65d86b8703e3c155d358db52e86961013c6d0d69a1b26e46ba"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbtablx",
+      "bytes": 5152,
+      "sha256": "c66c378969eedfc0acaf99182785d4b74768f5929d330165fcbba278107ed771"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbtablx",
+      "bytes": 5152,
+      "sha256": "46ad63284fc7b3b05025386106230f4138c8a89b22ed9d0614998ee1a8a54790"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByUUID.atx",
+      "bytes": 4118,
+      "sha256": "44367f6ab4f20c8ec4eba8186db5e1699c94f06edcbba324ec64f84a8da6d7ea"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.freelist",
+      "bytes": 41304,
+      "sha256": "3a70e57559fb3b540891a4bb6099aded45b4f7b6f94dc2a7414998152d3de628"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbindexes",
+      "bytes": 348,
+      "sha256": "3c8eb383ff594978552e62eedb72f958705f80aab2b59c0fb9f861eab531f467"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000002.gdbtable",
+      "bytes": 2055,
+      "sha256": "9efa50dc62a40e109a546054943ae5ad4b3d41aa81ece0dfa026b7b23cb09da8"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbtable",
+      "bytes": 1021,
+      "sha256": "68179b2a32963856bd07ea3ad450c7a3fa9f03ba9faf830dd3d2f03f0ebd1778"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbtablx",
+      "bytes": 5152,
+      "sha256": "706ee27f633252377a0efda53b0b2a2c619ad3467c9090ead23179f3dbc41a15"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbtablx",
+      "bytes": 5152,
+      "sha256": "253dc39103f6d57c4590374227a598b31aa80a31b0664afad948b91f313fae20"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.spx",
+      "bytes": 28694,
+      "sha256": "1ac0d3b58ca9205e12777e74f18c6ab3ce523b6b6d4231502cdf774527658c7e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.spx",
+      "bytes": 12310,
+      "sha256": "6142450901212baf8cd9e9de45366d6ec9a5c73f0f634779b00dfe83cade2805"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbindexes",
+      "bytes": 110,
+      "sha256": "80ba95b873e151074244f7655f9e29ce8967aab1bd57ff4c06a329b723a3d46c"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/Figures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.TablesByName.atx",
+      "bytes": 16406,
+      "sha256": "9754dc04029ffd97fe729fe10ed0ea3d3ffbf505cf3ae9e5ec7a8a426f9478cf"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/megabreccia_fig2.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbtable",
+      "bytes": 15752676,
+      "sha256": "a192e8f13fbd7b0d074725eaecb9d25ce4868911d288dbc40c2686b8b07b0e0a"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.CatItemsByPhysicalName.atx",
+      "bytes": 16406,
+      "sha256": "34772d6eee066d42265baa19dddc305c2fd43a97964ad827e01efca1af06ea39"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.spx",
+      "bytes": 12310,
+      "sha256": "690cf0c09700e47933c3ac5fe199c00d8dd52a89500cee6d7fcfa565f142486b"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+      "bytes": 4118,
+      "sha256": "8996a0e42b1391cb821c33f854794147e2983e8aa6a8b69bf2a863c068df7cbf"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.spx",
+      "bytes": 16406,
+      "sha256": "d2767734fa134971c7fd2828ffbd4b0ad2564357f4b6f36b7ed0dd18bf878098"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbtablx",
+      "bytes": 10272,
+      "sha256": "e22f6ca65e5256d85d883da9b8ea24d5036490bd0923625f44bf0be36914fbe4"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.AnnoClassID_Index_69.atx",
+      "bytes": 4118,
+      "sha256": "f635a4de17fc76d9fab63e984665d61b4a0591b5df5d9b573773030f9844ef83"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbindexes",
+      "bytes": 348,
+      "sha256": "52251faf43018214e0cb326660932a2cf2388f2b254435461d9bf43922928c1e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbtablx",
+      "bytes": 10272,
+      "sha256": "9b334d759343193b3a486dd7bfaeaaea608575e31a7266ddfd71d0049aa89cff"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbtable",
+      "bytes": 50234,
+      "sha256": "8bcceb9f23bd1762f0cb8489d8c4af16b317d497006b2db144150c214e8ce96a"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbtable",
+      "bytes": 5462,
+      "sha256": "9192f88a3f24c90d9c03e82e93b043c4f7ea6491c544828cb8f9b84b2dbad165"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByUUID.atx",
+      "bytes": 4118,
+      "sha256": "610e198ef32da28e04ac17c6a811d0134b5294a66748ab5c609aa13faff0a765"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/FiguresAnno.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/GeoUnitsAnno.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.spx",
+      "bytes": 4118,
+      "sha256": "ff36fa8f99b5cfd3aef19da5f2085b00b5eb4a75fa9ba7ec9ae12d5e21f98afb"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbtable",
+      "bytes": 10871,
+      "sha256": "43b795bb6ad914a4d35a19cb251d83abf824039ea1bf94cdc5f5c9544ca23c92"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbtable",
+      "bytes": 3042,
+      "sha256": "75d54ad13fefe693d6e3c106fd61ca3a0978bcb9727d476c7cbdd543b9566108"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbtablx",
+      "bytes": 5152,
+      "sha256": "17b4451c7c730dc9022dcc916b9cdcb0c2cb67e06b758a4b0fd35ecac4c926cc"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbtablx",
+      "bytes": 5152,
+      "sha256": "dac6dbc426b8f32367d5ed0872ce45253e7ea830a9a8ad0533b63e71f2d21d37"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.freelist",
+      "bytes": 33112,
+      "sha256": "1621e0c804bc7ff115b5e9ee13e333adb29250bb2dc5afe8f219f8dfc6d650bd"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.freelist",
+      "bytes": 8536,
+      "sha256": "0b0bce8cc0de87d6466c6f6304947819fcdd3270aff2e469417f08dd98416ccf"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbindexes",
+      "bytes": 310,
+      "sha256": "f29887c93b126a3feb0e20958cd73cc774f76ab79284b9c7286dc12eb05db858"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/Nomenclature.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "85d0455a958a7411e7030ad0b29588546b53db85388ccf665f403cf62ff7c5e3"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbtablx",
+      "bytes": 5152,
+      "sha256": "5191e22f05cc4e4549baba4ee7d76aad3515624d9efa097190bf61709db9ee6d"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/_gdb.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbtable",
+      "bytes": 3568864,
+      "sha256": "470c7425658bee2e92705286fe6e64a292075207c302632bf4e8633a1356347d"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.spx",
+      "bytes": 65558,
+      "sha256": "0404ed5456043265add65c0282c32e89ba3e128f3b60cf6cc2636fcb475c274c"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.freelist",
+      "bytes": 8536,
+      "sha256": "0114e3ca9534af3fdb299e72e56fc5c009dd80e36f67883157271e8760cc6a86"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.freelist",
+      "bytes": 12632,
+      "sha256": "295b17709814bd14ff5590600cc527de18b761687544c996618d8165ab8b0219"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.spx",
+      "bytes": 4118,
+      "sha256": "f3dfd9c980f6795a4e9c98838f7ece58c27cbeeb302e0772fdfc5e93d1cb7b34"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbtablx",
+      "bytes": 5152,
+      "sha256": "5b8e65a8865e134061ebf0fc967a6b2692a6aba8ab3bf58e03ea0c89926677cd"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.freelist",
+      "bytes": 69976,
+      "sha256": "e5a445d2d37d65bf7e0eda0480f104bbc2a677fa6b20eae3aef3b251944d1452"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbtablx",
+      "bytes": 15520,
+      "sha256": "45f221db56c5bee234cfc6da12c3e83611bb3946fb2fe482cda4cfda63641f68"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbtable",
+      "bytes": 13686,
+      "sha256": "cf5c0134058c0df023ab589cb9b39dfdab66a76fe35cbc73846e3a79cd70ecf1"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbindexes",
+      "bytes": 42,
+      "sha256": "de0911d18e2f304380c04ae123ea18057d262d788301f7cc3148298231c7c618"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbtable",
+      "bytes": 1154,
+      "sha256": "8a4951ecc611727bd77f40839761935aeda985bc761ec01ab1efa6d26a47d78e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbtablx",
+      "bytes": 5152,
+      "sha256": "fa50f6795fcb3e743b4464fb553a27e4a65245aea4fad65da5de7402b0ded05f"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.spx",
+      "bytes": 65558,
+      "sha256": "0dee2383064e2837f1c3225d22ddc084c50ec07a0f3501a50f57898031a7d1e3"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.spx",
+      "bytes": 4118,
+      "sha256": "1cda623062e59f4195a540173840eb8710890c423ebafc74e34c9fd3a6625de2"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+      "bytes": 4118,
+      "sha256": "1888ba03af7c8e9789f90dfa7d5de62c4ca21e62c5e4b56405a5989610238107"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+      "bytes": 4118,
+      "sha256": "a2630c198b560b54e807310fe231e5d3168e0035c16e5b32ecf1271873f6dd07"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.spx",
+      "bytes": 4118,
+      "sha256": "ce9b468ae224f33c5924897f4c5fce062cab4066925f98f82240483638601770"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbtablx",
+      "bytes": 5152,
+      "sha256": "494330e77e24f0358d63ee1d358796fec0dad83bfe0d3cb7fbd8170e77338b96"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbtable",
+      "bytes": 9088,
+      "sha256": "c1022ea85a9b56681eda21180fe0edc7f1b4b7ad759b9b8907dae5cd2f776bb3"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbtablx",
+      "bytes": 5152,
+      "sha256": "3cadcf7263c8bf8e568b6456e937d9ddfaf2b127c25fb37e05dd4e0096aa0c77"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.Status_Index_69.atx",
+      "bytes": 4118,
+      "sha256": "06849505b863dfcf9898ba21afef18953e5d59607146a74c75a59bd3e2a46648"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbtable",
+      "bytes": 6580024,
+      "sha256": "1f8146cea680616d3f9bc0f050572fa0340f841d186ebd324833f4fa0a1b3487"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbtable",
+      "bytes": 25647,
+      "sha256": "fdd5e03ff9a65835479dc5b5acf0b3861f6d84a07b49557547d238a6dc2b3833"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/GeoContacts.DESKTOP-730BHRJ.1532.10104.sr.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbindexes",
+      "bytes": 116,
+      "sha256": "c12bbe6b47cd58d64a4d9b93ce7a015938308b01a7483f5b8680064ca552eeef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.FDO_UUID.atx",
+      "bytes": 4118,
+      "sha256": "e54531f6ca8724afd08367b9f87701c39c7c57d05ffabb16230e4d2ddd91991e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbindexes",
+      "bytes": 318,
+      "sha256": "1919a00326f198a90dc97545ec448c10b2b90d367020222212f7b00433fe09b5"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.AnnoClassID_Index_84.atx",
+      "bytes": 16406,
+      "sha256": "c132a6be7011d790e195673770b0d5f84035990f256f8018196ebc6d3ee19c7e"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByName.atx",
+      "bytes": 4118,
+      "sha256": "8aa40b28156495870bf8d125221d59cf38f79044e28c1506dbf694b6830537a9"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif.aux.xml",
+      "bytes": 1976,
+      "sha256": "850a3dbe17cca96e23eb456f58b369f13c39d573caf32e468176e6704177e964"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif.aux.xml",
+      "bytes": 2067,
+      "sha256": "0440f143ac7f905fc8ea9a12ace2f9563dc639a68aa6b15b9805e0657297ed3d"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif.aux.xml",
+      "bytes": 1971,
+      "sha256": "6465dbc519ee49bd10eb96e547d0a06f4d1a8881f9c826183a638d058fccf3ef"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif.aux.xml",
+      "bytes": 2043,
+      "sha256": "263093fb94a62f14e5cb33c70e7e38ae97a7b3b9c8e84f82f579059ed4f535b9"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif.xml",
+      "bytes": 543,
+      "sha256": "6d681b3f10cff4fd995ae44137f308ad3b1c3b557cdd5fcc777e902102f70a1d"
+    },
+    {
+      "path": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif.aux.xml",
+      "bytes": 453,
+      "sha256": "2aa1a430d3717c7bbf06b803d9c036f1ce01c91393c0ba62b75935e31e1195b9"
+    }
+  ],
+  "gdb": "data/raw/usgs-sim3464/extracted/sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb",
+  "pyogrio": "0.13.0",
+  "gdal": "3.12.4",
+  "layers": [
+    [
+      "MapBoundary",
+      "MultiPolygon"
+    ],
+    [
+      "Nomenclature",
+      "MultiPolygon"
+    ],
+    [
+      "CrossSections",
+      "MultiLineString"
+    ],
+    [
+      "Figures",
+      "MultiPolygon"
+    ],
+    [
+      "FiguresAnno",
+      "MultiPolygon"
+    ],
+    [
+      "GeoContacts",
+      "MultiLineString"
+    ],
+    [
+      "SurfaceFeatures",
+      "MultiPolygon"
+    ],
+    [
+      "LinearFeatures",
+      "MultiLineString"
+    ],
+    [
+      "LocationFeatures",
+      "Point"
+    ],
+    [
+      "GeoUnitsAnno",
+      "MultiPolygon"
+    ],
+    [
+      "LandingEllipse",
+      "MultiPolygon"
+    ],
+    [
+      "megabreccia_fig2",
+      "Point"
+    ],
+    [
+      "GeoUnits_v1",
+      "MultiPolygon"
+    ]
+  ],
+  "info": {
+    "layer_name": "GeoUnits_v1",
+    "crs": "PROJCS[\"MTM_clon77.5E\",GEOGCS[\"Mars_2000_(Sphere)\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_(Sphere)\",3396190,0],AUTHORITY[\"ESRI\",\"106971\"]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",77.5],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "encoding": "UTF-8",
+    "fields": [
+      "unit",
+      "name",
+      "symbol_noSub",
+      "subscript",
+      "symbol",
+      "ORIG_FID",
+      "SHAPE_Length",
+      "SHAPE_Area",
+      "Color_ID"
+    ],
+    "dtypes": [
+      "object",
+      "object",
+      "object",
+      "object",
+      "object",
+      "int32",
+      "float64",
+      "float64",
+      "int16"
+    ],
+    "ogr_types": [
+      "OFTString",
+      "OFTString",
+      "OFTString",
+      "OFTString",
+      "OFTString",
+      "OFTInteger",
+      "OFTReal",
+      "OFTReal",
+      "OFTInteger"
+    ],
+    "ogr_subtypes": [
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTNone",
+      "OFSTInt16"
+    ],
+    "fid_column": "OBJECTID",
+    "geometry_name": "SHAPE",
+    "geometry_type": "MultiPolygon",
+    "features": 1304,
+    "total_bounds": [
+      -39529.35594832897,
+      1049162.1464110818,
+      16941.189408895032,
+      1108513.8211999973
+    ],
+    "driver": "OpenFileGDB",
+    "capabilities": {
+      "random_read": true,
+      "fast_set_next_by_index": true,
+      "fast_spatial_filter": true,
+      "fast_feature_count": true,
+      "fast_total_bounds": true
+    },
+    "layer_metadata": null,
+    "dataset_metadata": null
+  },
+  "samples": [
+    {
+      "fid": 1,
+      "unit": "10",
+      "name": "Upper etched unit",
+      "symbol_noSub": "Nue",
+      "subscript": null,
+      "symbol": "Nue",
+      "ORIG_FID": 1,
+      "SHAPE_Length": 1598.9945781742824,
+      "SHAPE_Area": 100615.0722156217,
+      "Color_ID": 74
+    },
+    {
+      "fid": 2,
+      "unit": "7",
+      "name": "Eolian bedform unit",
+      "symbol_noSub": "Aeb",
+      "subscript": null,
+      "symbol": "Aeb",
+      "ORIG_FID": 2,
+      "SHAPE_Length": 805.2272424406505,
+      "SHAPE_Area": 32005.98122947145,
+      "Color_ID": 51
+    },
+    {
+      "fid": 3,
+      "unit": "8",
+      "name": "Smooth unit, undivided",
+      "symbol_noSub": "su",
+      "subscript": null,
+      "symbol": "su",
+      "ORIG_FID": 3,
+      "SHAPE_Length": 1260.2848425957689,
+      "SHAPE_Area": 61045.499430728545,
+      "Color_ID": 250
+    },
+    {
+      "fid": 4,
+      "unit": "7",
+      "name": "Eolian bedform unit",
+      "symbol_noSub": "Aeb",
+      "subscript": null,
+      "symbol": "Aeb",
+      "ORIG_FID": 4,
+      "SHAPE_Length": 2010.156125557044,
+      "SHAPE_Area": 125112.43961189808,
+      "Color_ID": 51
+    },
+    {
+      "fid": 5,
+      "unit": "5",
+      "name": "Nili Planum 2 unit",
+      "symbol_noSub": "Nnp",
+      "subscript": "2",
+      "symbol": "Nnp2",
+      "ORIG_FID": 5,
+      "SHAPE_Length": 5555.7889055434325,
+      "SHAPE_Area": 493311.2312739229,
+      "Color_ID": 206
+    },
+    {
+      "fid": 6,
+      "unit": "7",
+      "name": "Eolian bedform unit",
+      "symbol_noSub": "Aeb",
+      "subscript": null,
+      "symbol": "Aeb",
+      "ORIG_FID": 6,
+      "SHAPE_Length": 1244.097159874322,
+      "SHAPE_Area": 92901.95609383515,
+      "Color_ID": 51
+    },
+    {
+      "fid": 7,
+      "unit": "7",
+      "name": "Eolian bedform unit",
+      "symbol_noSub": "Aeb",
+      "subscript": null,
+      "symbol": "Aeb",
+      "ORIG_FID": 7,
+      "SHAPE_Length": 1143.6663122815303,
+      "SHAPE_Area": 93963.06701033167,
+      "Color_ID": 51
+    },
+    {
+      "fid": 8,
+      "unit": "9",
+      "name": "Rugged bright unit",
+      "symbol_noSub": "Nrb",
+      "subscript": null,
+      "symbol": "Nrb",
+      "ORIG_FID": 8,
+      "SHAPE_Length": 597.0301343869994,
+      "SHAPE_Area": 26294.2633478092,
+      "Color_ID": 203
+    }
+  ],
+  "unitFields": {
+    "unit": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "name": [
+      "Crater ejecta unit",
+      "Crater interior unit",
+      "Crater riim unit",
+      "Crater rim unit",
+      "Eolian bedform unit",
+      "Jezero fan 1 unit",
+      "Jezero fan 2 unit",
+      "Jezero floor unit",
+      "Lower etched unit",
+      "Nili Planum 1 unit",
+      "Nili Planum 2 unit",
+      "Nili Planum fan unit",
+      "Rugged bright unit",
+      "Smooth unit, undivided",
+      "Upper etched unit"
+    ],
+    "symbol_noSub": [
+      "Aeb",
+      "Hnpf",
+      "NHjf",
+      "Njf",
+      "Nle",
+      "Nnp",
+      "Nrb",
+      "Nue",
+      "ce",
+      "ci",
+      "cr",
+      "su"
+    ],
+    "subscript": [
+      "",
+      "1",
+      "2",
+      "None"
+    ],
+    "symbol": [
+      "Aeb",
+      "Hnpf",
+      "NHjf1",
+      "NHjf2",
+      "Njf",
+      "Nle",
+      "Nnp1",
+      "Nnp2",
+      "Nrb",
+      "Nue",
+      "ce",
+      "ci",
+      "cr",
+      "su"
+    ]
+  }
+}

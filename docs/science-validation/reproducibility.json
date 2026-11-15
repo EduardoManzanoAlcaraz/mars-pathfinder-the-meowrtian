@@ -1,0 +1,20 @@
+{
+  "operation": "Repeat vector reprojection, clipping and objective selection from same official inputs; photos preserved",
+  "allScienceFilesIdentical": true,
+  "beforeSha256": {
+    "geology.json": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+    "manifest.json": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+    "objectives.json": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+    "photos.json": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+    "photos/perseverance-sol-107.jpg": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+    "photos/perseverance-sol-14.jpg": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e"
+  },
+  "afterSha256": {
+    "geology.json": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+    "manifest.json": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+    "objectives.json": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+    "photos.json": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+    "photos/perseverance-sol-107.jpg": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+    "photos/perseverance-sol-14.jpg": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e"
+  }
+}

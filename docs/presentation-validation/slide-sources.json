@@ -1,0 +1,85 @@
+[
+  {
+    "slide": 1,
+    "file": "<workspace>\\.cache\\presentation-2026\\ortho-canvas-0.png",
+    "alt": "Real HiRISE terrain rendered by the production application",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  },
+  {
+    "slide": 2,
+    "file": "<workspace>\\.cache\\presentation-2026\\slope-canvas-0.png",
+    "alt": "Actual slope layer and NoData mask rendered by the web app",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  },
+  {
+    "slide": 3,
+    "file": "<workspace>\\.cache\\presentation-2026\\ortho-canvas-0.png",
+    "alt": "HiRISE orthoimage in the application",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  },
+  {
+    "slide": 3,
+    "file": "<workspace>\\.cache\\presentation-2026\\hillshade-canvas-0.png",
+    "alt": "DEM-derived hillshade in the application",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  },
+  {
+    "slide": 3,
+    "file": "<workspace>\\.cache\\presentation-2026\\geology-canvas-0.png",
+    "alt": "SIM 3464 units reprojected and clipped in the application",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  },
+  {
+    "slide": 3,
+    "file": "public/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+    "alt": "Authentic Perseverance Navcam image acquired on sol 107",
+    "crop": null
+  },
+  {
+    "slide": 5,
+    "file": "<workspace>\\.cache\\presentation-2026\\routes-canvas-0.png",
+    "alt": "Both real routes to M3 rendered by the production application",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  },
+  {
+    "slide": 7,
+    "file": "<workspace>\\.cache\\presentation-2026\\geology-canvas-0.png",
+    "alt": "Actual public application map combining HiRISE terrain and published geology",
+    "crop": {
+      "left": 0.2639593908629442,
+      "top": 0.04293381037567084,
+      "right": 0.2639593908629442,
+      "bottom": 0.05366726296958855
+    }
+  }
+]

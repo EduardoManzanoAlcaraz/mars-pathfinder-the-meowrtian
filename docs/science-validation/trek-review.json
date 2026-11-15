@@ -1,0 +1,180 @@
+{
+  "queriedAoiLonLat": [
+    77.4,
+    18.42,
+    77.47,
+    18.48
+  ],
+  "queryPredicate": "intersects=true (within returns no products for this small AOI)",
+  "catalogCounts": {
+    "jezero": 11,
+    "crism": 20,
+    "themis": 8
+  },
+  "reviewed": [
+    {
+      "productLabel": "THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+      "title": "MO THEMIS-IR Night, Global Mosaic",
+      "catalogUuid": "ecbd1840-2302-49c8-be40-86740c21ea98",
+      "bbox": "-179.9999997,-65.0006576,179.9998849,65.0007535",
+      "projectionIdentifier": "urn:ogc:def:crs:EPSG::104905",
+      "catalogResolution": 0,
+      "description": "This data was acquired using the Thermal Emission Imaging System instrument aboard NASA's Mars Odyssey spacecraft. Odyssey was launched on April 7, 2001 and arrived at Mars on October 24, 2001. It maintains a polar orbit around Mars with an altitude of about 3,800 km or 2,400 miles. Odyssey's mission includes studying the mineralogy of Mars' surface (especially looking at minerals formed in the presence of water), detecting water and shallow buried ice, and studying the radiation environment. The Thermal Emission Imaging System (THEMIS) instrument is a camera system that gathers data in infrared and visible light. The infrared images sample nine different wavelengths allowing spectra to be constructed and compositions of imaged surfaces to be inferred. Daytime infrared Themis images typically emphasize topography, with warmer sunward slopes being brighter than cooler shaded slopes. Nighttime Themis images emphasize differences in thermal inertia between areas being observed, giving insights into the physical characteristics of the surfaces. This map is a THEMIS nighttime infrared map. The 2017 release featured preliminary geodetically controlled mosaics tied to a known coordinate system (USGS Viking Orbiter MDIM 2.1), spatially adjusted to align feature boundaries, and orthoprojected at 100 m/pixel scale. Further adjustments have been processed for the 2018 release of this final mosaic.",
+      "serviceRequest": {
+        "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/getLayerServices?uuid=ecbd1840-2302-49c8-be40-86740c21ea98",
+        "status": 200
+      },
+      "services": {
+        "responseHeader": {
+          "status": 0,
+          "QTime": 0,
+          "params": {
+            "q": "item_UUID:ecbd1840-2302-49c8-be40-86740c21ea98",
+            "indent": "on",
+            "version": "2.2",
+            "wt": "json"
+          }
+        },
+        "response": {
+          "numFound": 1,
+          "start": 0,
+          "docs": [
+            {
+              "serviceType": "Mosaic",
+              "endPoint": "https://trek.nasa.gov/tiles/Mars/EQ/THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+              "protocol": "WMTS",
+              "item_UUID": "ecbd1840-2302-49c8-be40-86740c21ea98",
+              "wmts_mode": "rest",
+              "layerId": "THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+              "item_DBID": 294359,
+              "id": "0432b47f-8d9e-455e-b8e8-adb468ba3483",
+              "_version_": 1670512953734987800
+            }
+          ]
+        }
+      },
+      "incorporated": false
+    },
+    {
+      "productLabel": "frt_07_brcarj_mtr3_ll",
+      "title": "MRO CRISM, Carbonate Minerals V1 Fe-Mg",
+      "catalogUuid": "15bc7e53-9047-45a9-a577-b098a089c9ab",
+      "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+      "projectionIdentifier": "GEOGCS[\"GCS_Mars_2000_Sphere\", DATUM[\"Mars_2000_Sphere\", SPHEROID[\"Mars_2000_Sphere_IAU_IAG\",3396190,0]], PRIMEM[\"Reference_Meridian\",0], UNIT[\"degree\",0.0174532925199433]]\n",
+      "catalogResolution": 0.000322,
+      "description": "This particular mosaic is composed of CAR browse products, which show information related to Mg carbonate minerals. Blueish or yellowish-white colors often indicate carbonate, while red/magenta colors may indicate Fe/Mg-phyllosilicates. Blue colors are likely indicative of other hydrated minerals such as sulfates, clays, hydrated silica or hydrated carbonate.",
+      "serviceRequest": {
+        "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/getLayerServices?uuid=15bc7e53-9047-45a9-a577-b098a089c9ab",
+        "status": 200
+      },
+      "services": {
+        "responseHeader": {
+          "status": 0,
+          "QTime": 0,
+          "params": {
+            "q": "item_UUID:15bc7e53-9047-45a9-a577-b098a089c9ab",
+            "indent": "on",
+            "version": "2.2",
+            "wt": "json"
+          }
+        },
+        "response": {
+          "numFound": 1,
+          "start": 0,
+          "docs": [
+            {
+              "serviceType": "Feature",
+              "endPoint": "https://trek.nasa.gov/mars/trekarcgis/rest/services/mars_mro_crism_mtrdr_c0a_humex_frt_sites/MapServer/0",
+              "protocol": "ArcGISFeature",
+              "item_UUID": "15bc7e53-9047-45a9-a577-b098a089c9ab",
+              "item_DBID": 295913,
+              "id": "frt_07_brcarj_mtr3_ll",
+              "_version_": 1670512847227977700
+            }
+          ]
+        }
+      },
+      "incorporated": false
+    },
+    {
+      "productLabel": "JEZ_hirise_soc_006_DTM_MOLAtopography_DeltaGeoid_1m_Eqc_latTs0_lon0_blend40",
+      "title": "MRO HiRISE, Jezero DEM, Controlled",
+      "catalogUuid": "c3935915-9abe-4d8c-a87c-b96d195a8cfd",
+      "bbox": "77.2229331,18.3067994,77.583964,18.669315",
+      "projectionIdentifier": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"D_Mars_2000_Sphere\",DATUM[\"Mars_2000_Sphere\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Equirectangular\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+      "catalogResolution": 0.000017,
+      "description": "The Mars 2020 rover will explore Jezero crater, Mars to investigate an ancient delta for evidence of past microbial life and to better understand the geologic history of the region. The landing system onboard Mars 2020 will use technology developed at the Jet Propulsion Laboratory (JPL) called Terrain Relative Navigation (TRN), which will enable the spacecraft to autonomously avoid hazards (e.g., rock fields, crater rims) that exceed the safety requirements of the landing system. This capability allows small-scale hazards to be present in the landing ellipse, providing greater flexibility in selecting a landing location. In support of TRN, the USGS Astrogeology Science Center has generated and delivered a High-Resolution Imaging Science Experiment (HiRISE) digital terrain model (DTM) mosaic and orthomosaic that is the basemap onto which surface hazards were mapped. The hazard map will be onboard the spacecraft and used by TRN to help identify the final, hazard-free landing location.",
+      "serviceRequest": {
+        "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/getLayerServices?uuid=c3935915-9abe-4d8c-a87c-b96d195a8cfd",
+        "status": 200
+      },
+      "services": {
+        "responseHeader": {
+          "status": 0,
+          "QTime": 0,
+          "params": {
+            "q": "item_UUID:c3935915-9abe-4d8c-a87c-b96d195a8cfd",
+            "indent": "on",
+            "version": "2.2",
+            "wt": "json"
+          }
+        },
+        "response": {
+          "numFound": 0,
+          "start": 0,
+          "docs": []
+        }
+      },
+      "incorporated": false
+    },
+    {
+      "productLabel": "JEZ_ctx_B_soc_008_orthoMosaic_6m_Eqc_latTs0_lon0",
+      "title": "MRO CTX, Jezero Mosaic, Controlled",
+      "catalogUuid": "32003f69-a6f6-4441-bb46-4c46689c42eb",
+      "bbox": "77.1604655,18.2110274,77.6991776,18.7211945",
+      "projectionIdentifier": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_Sphere\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Equirectangular\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+      "catalogResolution": 0.000083,
+      "description": "This is a visible image mosaic generated from the Context Camera (CTX) images from the Mars Reconnaissance Orbiter mission. This product is the Lander Visions System (LVS) map that will be onboard the spacecraft and will be considered the truth dataset that TRN will use to orient itself relative to the surface during Entry, Decent, and Landing. The images were orthorectified using digital terrain models (DTMs) created from CTX stereo images. The mosaic is generated at the same resolution at which the individual CTX images were acquired, which is approximately 6 meters per pixel. This mosaic was created in support of the Mars 2020 rover, which will explore Jezero crater, Mars to investigate an ancient delta for evidence of past microbial life and to better understand the geologic history of the region. The landing system onboard Mars 2020 will use technology developed at the Jet Propulsion Laboratory (JPL) called Terrain Relative Navigation (TRN), which will enable the spacecraft to autonomously avoid hazards (e.g., rock fields, crater rims) that exceed the safety requirements of the landing system. This capability allows small-scale hazards to be present in the landing ellipse, providing greater flexibility in selecting a landing location. In support of TRN, the USGS Astrogeology Science Center has generated and delivered this product, which is the Lander Vision System (LVS) map.",
+      "serviceRequest": {
+        "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/getLayerServices?uuid=32003f69-a6f6-4441-bb46-4c46689c42eb",
+        "status": 200
+      },
+      "services": {
+        "responseHeader": {
+          "status": 0,
+          "QTime": 0,
+          "params": {
+            "q": "item_UUID:32003f69-a6f6-4441-bb46-4c46689c42eb",
+            "indent": "on",
+            "version": "2.2",
+            "wt": "json"
+          }
+        },
+        "response": {
+          "numFound": 1,
+          "start": 0,
+          "docs": [
+            {
+              "serviceType": "Mosaic",
+              "endPoint": "https://trek.nasa.gov/tiles/Mars/EQ/JEZ_ctx_B_soc_008_orthoMosaic_6m_Eqc_latTs0_lon0",
+              "protocol": "WMTS",
+              "item_UUID": "32003f69-a6f6-4441-bb46-4c46689c42eb",
+              "wmts_mode": "rest",
+              "layerId": "JEZ_ctx_B_soc_008_orthoMosaic_6m_Eqc_latTs0_lon0",
+              "item_DBID": 295942,
+              "id": "65a8822e-276a-470c-a678-849cbecf844b",
+              "_version_": 1674045587320733700
+            }
+          ]
+        }
+      },
+      "incorporated": false
+    }
+  ],
+  "wmts": {
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018/1.0.0/WMTSCapabilities.xml",
+    "status": 200
+  },
+  "rasterIntegrated": false,
+  "conclusion": "THEMIS night can add thermal context at 100 m; CRISM catalog intersection does not prove valid spectra or mineral detections in crop; controlled HiRISE/CTX duplicate available terrain data. No Trek pixels are used in route calculations or map layers."
+}

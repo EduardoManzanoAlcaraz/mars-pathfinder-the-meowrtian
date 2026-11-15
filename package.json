@@ -1,0 +1,44 @@
+{
+  "name": "mars-pathfinder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The Meowrtian: independently tested topographic route engine for Jezero",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "prepare:web": "npm run build:worker && node scripts/web/sync-assets.mjs",
+    "predev": "npm run prepare:web",
+    "dev": "next dev --webpack",
+    "build": "npm run prepare:web && next build --webpack",
+    "start": "node scripts/web/serve-static.mjs",
+    "preview": "node scripts/web/serve-static.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:report": "vitest run --reporter=default --reporter=json --reporter=junit --outputFile.json=docs/routing-validation/vitest.json --outputFile.junit=docs/routing-validation/vitest.xml",
+    "demo:routes": "tsx scripts/routing/jezero-demo.ts",
+    "build:worker": "node scripts/routing/build-worker.mjs",
+    "test:interface": "vitest run --config vitest.interface.config.ts",
+    "test:interface:report": "vitest run --config vitest.interface.config.ts --reporter=default --reporter=json --reporter=junit --outputFile.json=docs/interface-validation/vitest.json --outputFile.junit=docs/interface-validation/vitest.xml"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "esbuild": "0.28.2",
+    "playwright-core": "1.65.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "lucide-react": "1.73.0",
+    "next": "16.4.6",
+    "ol": "10.11.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,63 @@
+{
+  "capturedAtUtc": "2026-11-15T10:13:05.384Z",
+  "sourceUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/",
+  "browser": "157.0.8103.51",
+  "errors": [],
+  "evidence": [
+    {
+      "name": "ortho",
+      "canvas": 0,
+      "file": ".cache/presentation-2026/ortho-canvas-0.png",
+      "width": 1182,
+      "height": 559,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "sha256": "28e8c30db7a1cb9388be7b44b099a41f9cdb372131ba707eb6b0520cc7414c5f",
+      "method": "Unmodified PNG serialization of a real OpenLayers rendering canvas in production; HTML controls are outside this canvas"
+    },
+    {
+      "name": "slope",
+      "canvas": 0,
+      "file": ".cache/presentation-2026/slope-canvas-0.png",
+      "width": 1182,
+      "height": 559,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "sha256": "fe33bf3af88142349129752508755d6d110be9656714fd643066f6b196d43b0d",
+      "method": "Unmodified PNG serialization of a real OpenLayers rendering canvas in production; HTML controls are outside this canvas"
+    },
+    {
+      "name": "hillshade",
+      "canvas": 0,
+      "file": ".cache/presentation-2026/hillshade-canvas-0.png",
+      "width": 1182,
+      "height": 559,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "sha256": "6addd0a834aa7c3a118255ac50de58f9fc504b0b0218b0f4707e4c46d15c6a0c",
+      "method": "Unmodified PNG serialization of a real OpenLayers rendering canvas in production; HTML controls are outside this canvas"
+    },
+    {
+      "name": "geology",
+      "canvas": 0,
+      "file": ".cache/presentation-2026/geology-canvas-0.png",
+      "width": 1182,
+      "height": 559,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "sha256": "1f72412ac35782aff51bda410946fc024d5b9d967cc9999dc6496bc88770627d",
+      "method": "Unmodified PNG serialization of a real OpenLayers rendering canvas in production; HTML controls are outside this canvas"
+    },
+    {
+      "name": "routes",
+      "canvas": 0,
+      "file": ".cache/presentation-2026/routes-canvas-0.png",
+      "width": 1182,
+      "height": 559,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "sha256": "a6f03201a43133baf23f17bc0de449f20700707d9cb793d48a61033055fb9ead",
+      "method": "Unmodified PNG serialization of a real OpenLayers rendering canvas in production; HTML controls are outside this canvas"
+    }
+  ]
+}

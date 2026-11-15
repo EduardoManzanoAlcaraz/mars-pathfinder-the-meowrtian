@@ -1,0 +1,299 @@
+[
+  {
+    "name": "trek-crism-intersects.json",
+    "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/eq/searchItems?bbox=77.40,18.42,77.47,18.48&key=CRISM&start=0&rows=30&proj=eq&intersects=true",
+    "status": 200,
+    "atUtc": "2026-11-14T13:11:54.286Z",
+    "summary": {
+      "found": 20,
+      "docs": [
+        {
+          "label": "Aqueous_Mineral_Distribution_Options_clon0",
+          "title": "Aqueous Mineral Distribution",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "Hydrous_Mineral_Detections_CRISM_clon0",
+          "title": "Hydrous Mineral Detections (OMEGA, CRISM)",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "frt_07_brhydj_mtr3_ll",
+          "title": "MRO CRISM, Bound Water Polyhydrated Sulfates",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_bricej_mtr3_ll",
+          "title": "MRO CRISM, Carbon Dioxide Frost Or Ice V1",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_bric2j_mtr3_ll",
+          "title": "MRO CRISM, Carbon Dioxide Frost Or Ice V2",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brcarj_mtr3_ll",
+          "title": "MRO CRISM, Carbonate Minerals V1 Fe-Mg",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brcr2j_mtr3_ll",
+          "title": "MRO CRISM, Carbonate Minerals V2 Mg",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brchlj_mtr3_ll",
+          "title": "MRO CRISM, Chloride Deposits",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brtruj_mtr3_ll",
+          "title": "MRO CRISM, Enhanced True Color",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brtanj_mtr3_ll",
+          "title": "MRO CRISM, False Color",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brfemj_mtr3_ll",
+          "title": "MRO CRISM, Fe Iron Minerals V1 Ferric And Ferrous Minerals",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brfm2j_mtr3_ll",
+          "title": "MRO CRISM, Fe Iron Minerals V2 Olivine And Pyroxene Minerals",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brhysj_mtr3_ll",
+          "title": "MRO CRISM, Hydrated Silica And Al-Oh Minerals",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brpalj_mtr3_ll",
+          "title": "MRO CRISM, Hydroxylated Minerals Including Al-Phyllosilicates And Hydrated Silica",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brphyj_mtr3_ll",
+          "title": "MRO CRISM, Hydroxylated Minerals Including Fe-Mg-Oh Phyllosilicates",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brpfmj_mtr3_ll",
+          "title": "MRO CRISM, Hydroxylated Minerals Including Fe-Mg-Phyllosilicates",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brfalj_mtr3_ll",
+          "title": "MRO CRISM, Infrared False Color",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brmafj_mtr3_ll",
+          "title": "MRO CRISM, Mafic Minerals",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_brvnaj_mtr3_ll",
+          "title": "MRO CRISM, Photometrically Corrected",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        },
+        {
+          "label": "frt_07_briraj_mtr3_ll",
+          "title": "MRO CRISM, Photometrically-Corrected If Values 1330 Nm",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        }
+      ]
+    }
+  },
+  {
+    "name": "trek-themis-intersects.json",
+    "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/eq/searchItems?bbox=77.40,18.42,77.47,18.48&key=THEMIS&start=0&rows=30&proj=eq&intersects=true",
+    "status": 200,
+    "atUtc": "2026-11-14T13:11:54.621Z",
+    "summary": {
+      "found": 8,
+      "docs": [
+        {
+          "label": "FanSurvey_2005_2008_clon0",
+          "title": "Alluvial Fans",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "Aqueous_Mineral_Distribution_Options_clon0",
+          "title": "Aqueous Mineral Distribution",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "Chloride_Salt-bearing_Material_THEMIS_clon0",
+          "title": "Chloride Salt-bearing Materials",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "Dune_Field",
+          "title": "Dune Field",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "THEMIS_DayIR_ControlledMosaics_100m_v2_oct2018",
+          "title": "MO THEMIS-IR Day, Global Mosaic",
+          "bbox": "-179.9999997,-65.0006576,179.9998849,65.0007535"
+        },
+        {
+          "label": "THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+          "title": "MO THEMIS-IR Night, Global Mosaic",
+          "bbox": "-179.9999997,-65.0006576,179.9998849,65.0007535"
+        },
+        {
+          "label": "Hynek_Valley_Networks",
+          "title": "Valley Networks",
+          "bbox": "-180,-90,180,90",
+          "resolution": 0
+        },
+        {
+          "label": "frt_07_brchlj_mtr3_ll",
+          "title": "MRO CRISM, Chloride Deposits",
+          "bbox": "-167.3639656,-49.0060896,176.0687656,40.2287496",
+          "resolution": 0.000322
+        }
+      ]
+    }
+  },
+  {
+    "name": "trek-jezero-intersects.json",
+    "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/eq/searchItems?bbox=77.40,18.42,77.47,18.48&key=Jezero&start=0&rows=30&proj=eq&intersects=true",
+    "status": 200,
+    "atUtc": "2026-11-14T13:11:54.953Z",
+    "summary": {
+      "found": 11,
+      "docs": [
+        {
+          "label": "Perseverance (Mars 2020)_bookmark",
+          "title": "Jezero Crater Features and Landforms",
+          "bbox": "75.1537692,15.9058484,78.8717121,19.4453003"
+        },
+        {
+          "label": "Mastcam Z_bookmark",
+          "title": "Perseverance Landing Site",
+          "bbox": "77.3315,18.3936,77.4597,18.5364"
+        },
+        {
+          "label": "NES_JEZ_MID_DEM_Mosaic_HiRISE_CTX_HRSC_GCS_MARS_07-10-2018",
+          "title": "MRO HiRISE, DEM Jezero NE Syrtis Midway",
+          "bbox": "76.7912656,17.5791481,77.7314457,18.6926322"
+        },
+        {
+          "label": "mars2020",
+          "title": "Mars 2020 Candidate Landing Site",
+          "bbox": "53,-30,180,30",
+          "resolution": 0
+        },
+        {
+          "label": "Perseverance_Traverse_Path",
+          "title": "Perseverance (Mars 2020) Path",
+          "bbox": "77.303808,18.427253,77.463133,18.499663",
+          "resolution": 0
+        },
+        {
+          "label": "JEZ_hirise_soc_006_orthoMosaic_25cm_Eqc_latTs0_lon0_first_dd",
+          "title": "MRO HiRISE, Jezero Mosaic, Controlled",
+          "bbox": "77.2229331,18.3067994,77.583964,18.669315",
+          "resolution": 0.0000039
+        },
+        {
+          "label": "NES_JEZ_MID_Visible_Mosaic_HiRISE_CTX_HRSC_GCS_MARS_07-10-2018",
+          "title": "MRO HiRISE, Mosaic Jezero NE Syrtis Midway",
+          "bbox": "76.7912789,17.5791654,77.7314417,18.6926322",
+          "resolution": 0.000005
+        },
+        {
+          "label": "JEZ_hirise_soc_006_DTM_MOLAtopography_DeltaGeoid_1m_Eqc_latTs0_lon0_blend40",
+          "title": "MRO HiRISE, Jezero DEM, Controlled",
+          "bbox": "77.2229331,18.3067994,77.583964,18.669315",
+          "resolution": 0.000017
+        },
+        {
+          "label": "JEZ_ctx_B_soc_008_orthoMosaic_6m_Eqc_latTs0_lon0",
+          "title": "MRO CTX, Jezero Mosaic, Controlled",
+          "bbox": "77.1604655,18.2110274,77.6991776,18.7211945",
+          "resolution": 0.000083
+        },
+        {
+          "label": "Jezero_CTX_BlockAdj_dd",
+          "title": "MRO CTX, Jezero Mosaic, Preliminary",
+          "bbox": "75.1537692,15.9058484,78.8717121,19.4453003",
+          "resolution": 0.0001
+        },
+        {
+          "label": "JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0",
+          "title": "MRO CTX, Jezero DEM, Controlled",
+          "bbox": "77.1604655,18.2110274,77.6989752,18.7211945",
+          "resolution": 0.000337
+        }
+      ]
+    }
+  },
+  {
+    "name": "raw-sol-107.json",
+    "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&ver=1.2&num=100&page=0&order=date_taken%20asc&search=NAVCAM_LEFT&condition_2=107:sol:gte&condition_3=107:sol:lte",
+    "status": 200,
+    "atUtc": "2026-11-14T13:12:05.765Z",
+    "summary": {
+      "found": 579518,
+      "images": [
+        {
+          "id": "LRF_2031_0847237865_241EBY_N0930000SCAM01031_0100I4J",
+          "sol": 2031,
+          "site": 93,
+          "drive": "0",
+          "utc": "2026-11-06T12:16:25.848",
+          "instrument": "SUPERCAM_RMI"
+        },
+        {
+          "id": "LRF_2031_0847236596_261EBY_N0930000SCAM01031_0050I4J",
+          "sol": 2031,
+          "site": 93,
+          "drive": "0",
+          "utc": "2026-11-06T11:55:16.868",
+          "instrument": "SUPERCAM_RMI"
+        },
+        {
+          "id": "LRF_2031_0847235763_228EBY_N0930000SCAM01031_0010I4J",
+          "sol": 2031,
+          "site": 93,
+          "drive": "0",
+          "utc": "2026-11-06T11:41:23.813",
+          "instrument": "SUPERCAM_RMI"
+        }
+      ]
+    }
+  }
+]

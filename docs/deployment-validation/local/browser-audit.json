@@ -1,0 +1,1606 @@
+{
+  "executedAtUtc": "2026-11-15T06:44:09.734Z",
+  "browser": "157.0.8103.51",
+  "source": "http://127.0.0.1:54489; actual out/ over local HTTP; fresh isolated private browser contexts without credentials, cache disabled; no fabricated science",
+  "scenarios": [
+    {
+      "config": {
+        "width": 390,
+        "height": 844,
+        "network": "loopback"
+      },
+      "mapAndScienceReadyMs": 520.5677999999998,
+      "bothRoutesUiMs": 124.07849999999962,
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2896316,
+      "completeFlowBodyBytes": 4805377,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 13.016,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 16.41,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 16.486,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 18.6,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 18.268,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 21.118,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 17.342,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 18.082,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 93.246,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 32.412,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 4.052,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 9.342,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 10.513,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.63,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 5.095,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 6.035,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 6.447,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 12.782,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 6.364,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 14.117,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 5.796,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 6.163,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 6.121,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 12.021,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 28.317,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 25281,
+          "durationMs": 13.016,
+          "contentType": "text/html; charset=utf-8"
+        },
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "status": 200,
+          "bodyBytes": 42334,
+          "durationMs": 16.41,
+          "contentType": "text/css"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 16.486,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 18.6,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "status": 200,
+          "bodyBytes": 13276,
+          "durationMs": 18.268,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "status": 200,
+          "bodyBytes": 46496,
+          "durationMs": 21.118,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 17.342,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 18.082,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 93.246,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 32.412,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 4.052,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 9.342,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 10.513,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 9.63,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 5.095,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 6.035,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 6.447,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "status": 200,
+          "bodyBytes": 10365,
+          "durationMs": 12.782,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 6.364,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "status": 200,
+          "bodyBytes": 326125,
+          "durationMs": 14.117,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 5.796,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 6.163,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 6.121,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 12.021,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 28.317,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 24.363,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 6.312,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 9.954,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 21.937,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 19.816,
+          "contentType": "text/javascript"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 5.951,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 5.346,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/a77984b16bf6cd3c.css",
+          "durationMs": 16.399999976158142,
+          "transferSize": 42634,
+          "encodedBodySize": 42334,
+          "decodedBodySize": 42334
+        },
+        {
+          "path": "/_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+          "durationMs": 16.5,
+          "transferSize": 3750,
+          "encodedBodySize": 3450,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+          "durationMs": 18.700000047683716,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/301-0f98a524ee766e38.js",
+          "durationMs": 18.30000001192093,
+          "transferSize": 13576,
+          "encodedBodySize": 13276,
+          "decodedBodySize": 13276
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 17.30000001192093,
+          "transferSize": 204021,
+          "encodedBodySize": 203721,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 18.100000023841858,
+          "transferSize": 242582,
+          "encodedBodySize": 242282,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+          "durationMs": 21.100000023841858,
+          "transferSize": 46796,
+          "encodedBodySize": 46496,
+          "decodedBodySize": 46496
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 93.19999998807907,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 32.30000001192093,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 4.099999964237213,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 9.899999976158142,
+          "transferSize": 15899,
+          "encodedBodySize": 15599,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 9.099999964237213,
+          "transferSize": 7873,
+          "encodedBodySize": 7573,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 9.5,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 6,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 5,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 6.399999976158142,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/_next/static/chunks/606.24769dec59620480.js",
+          "durationMs": 13.900000035762787,
+          "transferSize": 326425,
+          "encodedBodySize": 326125,
+          "decodedBodySize": 326125
+        },
+        {
+          "path": "/_next/static/chunks/32.1981a12b7cf5cf4d.js",
+          "durationMs": 12.699999988079071,
+          "transferSize": 10665,
+          "encodedBodySize": 10365,
+          "decodedBodySize": 10365
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 6.199999988079071,
+          "transferSize": 1496,
+          "encodedBodySize": 1196,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 5.699999988079071,
+          "transferSize": 137770,
+          "encodedBodySize": 137470,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 6.099999964237213,
+          "transferSize": 7232,
+          "encodedBodySize": 6932,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 6.100000023841858,
+          "transferSize": 5836,
+          "encodedBodySize": 5536,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 28.299999952316284,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 12,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 24.19999998807907,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 6.300000011920929,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 9.899999976158142,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -10.5,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -10.699999988079071,
+          "transferSize": 11850,
+          "encodedBodySize": 11550,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 6,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 5.300000011920929,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 33.30000001192093,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/deployment-validation/local/390-loopback-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 62.5,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/deployment-validation/local/390-loopback-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    }
+  ],
+  "staticInventory": {
+    "files": 66,
+    "totalBytes": 6115416,
+    "hypotheticalGzipBytes": 3996101,
+    "gzipIsMeasuredTransfer": false,
+    "entries": [
+      {
+        "path": "404/index.html",
+        "extension": ".html",
+        "bytes": 6364,
+        "gzipBytes": 2096,
+        "sha256": "f13a397c148efda9157209358a058798d73d3afdc3df03a56aa88a1bcd256a9d",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/404/index.html"
+      },
+      {
+        "path": "404.html",
+        "extension": ".html",
+        "bytes": 6364,
+        "gzipBytes": 2096,
+        "sha256": "f13a397c148efda9157209358a058798d73d3afdc3df03a56aa88a1bcd256a9d",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/404.html"
+      },
+      {
+        "path": "data/jezero-hirise-v1/demo-query.json",
+        "extension": ".json",
+        "bytes": 339,
+        "gzipBytes": 247,
+        "sha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/demo-query.json"
+      },
+      {
+        "path": "data/jezero-hirise-v1/elevation.webp",
+        "extension": ".webp",
+        "bytes": 284396,
+        "gzipBytes": 284504,
+        "sha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9",
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/elevation.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/elevation.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/elevation.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/hillshade.webp",
+        "extension": ".webp",
+        "bytes": 431374,
+        "gzipBytes": 431527,
+        "sha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3",
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/hillshade.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/hillshade.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/hillshade.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/manifest.json",
+        "extension": ".json",
+        "bytes": 15599,
+        "gzipBytes": 4597,
+        "sha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/manifest.json"
+      },
+      {
+        "path": "data/jezero-hirise-v1/nodata.webp",
+        "extension": ".webp",
+        "bytes": 368,
+        "gzipBytes": 391,
+        "sha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287",
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/nodata.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/ortho.webp",
+        "extension": ".webp",
+        "bytes": 510442,
+        "gzipBytes": 510620,
+        "sha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d",
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/ortho.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/ortho.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/ortho.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_elevation.f32",
+        "extension": ".f32",
+        "bytes": 561056,
+        "gzipBytes": 411837,
+        "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/routing_elevation.f32"
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_slope_max.f32",
+        "extension": ".f32",
+        "bytes": 561056,
+        "gzipBytes": 490892,
+        "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/routing_slope_max.f32"
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_valid.u8",
+        "extension": ".u8",
+        "bytes": 140264,
+        "gzipBytes": 1325,
+        "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/routing_valid.u8"
+      },
+      {
+        "path": "data/jezero-hirise-v1/slope.webp",
+        "extension": ".webp",
+        "bytes": 1070642,
+        "gzipBytes": 1070990,
+        "sha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d",
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/slope.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/slope.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/slope.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/visuals.json",
+        "extension": ".json",
+        "bytes": 7573,
+        "gzipBytes": 2388,
+        "sha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-hirise-v1/visuals.json"
+      },
+      {
+        "path": "data/jezero-science-v1/geology.json",
+        "extension": ".json",
+        "bytes": 137470,
+        "gzipBytes": 62018,
+        "sha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-science-v1/geology.json"
+      },
+      {
+        "path": "data/jezero-science-v1/manifest.json",
+        "extension": ".json",
+        "bytes": 1196,
+        "gzipBytes": 641,
+        "sha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-science-v1/manifest.json"
+      },
+      {
+        "path": "data/jezero-science-v1/objectives.json",
+        "extension": ".json",
+        "bytes": 6932,
+        "gzipBytes": 1954,
+        "sha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-science-v1/objectives.json"
+      },
+      {
+        "path": "data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+        "extension": ".jpg",
+        "bytes": 57119,
+        "gzipBytes": 56499,
+        "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-science-v1/photos/perseverance-sol-107.jpg"
+      },
+      {
+        "path": "data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+        "extension": ".jpg",
+        "bytes": 42430,
+        "gzipBytes": 42077,
+        "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-science-v1/photos/perseverance-sol-14.jpg"
+      },
+      {
+        "path": "data/jezero-science-v1/photos.json",
+        "extension": ".json",
+        "bytes": 5536,
+        "gzipBytes": 1765,
+        "sha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/data/jezero-science-v1/photos.json"
+      },
+      {
+        "path": "icon.svg",
+        "extension": ".svg",
+        "bytes": 362,
+        "gzipBytes": 233,
+        "sha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492",
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/icon.svg"
+      },
+      {
+        "path": "index.html",
+        "extension": ".html",
+        "bytes": 25281,
+        "gzipBytes": 6540,
+        "sha256": "f2c679d3b8a2a76304838f2bc8d961d275e973cfa34482fee37623bdf5f3f600",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/index.html"
+      },
+      {
+        "path": "index.txt",
+        "extension": ".txt",
+        "bytes": 3286,
+        "gzipBytes": 1457,
+        "sha256": "c9073d9858b388b3a2fc10e479b4afffcc278313cc1dfd9948f9d4fe1eb4d346",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/index.txt"
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.txt",
+        "extension": ".txt",
+        "bytes": 768086,
+        "gzipBytes": 105305,
+        "sha256": "3301d9743f4187b551b56b3e99799853e8137e87912f98bd7be50f05ca6ca3cf",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/THIRD_PARTY_NOTICES.txt"
+      },
+      {
+        "path": "workers/routing.worker.js",
+        "extension": ".js",
+        "bytes": 11550,
+        "gzipBytes": 3630,
+        "sha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/workers/routing.worker.js"
+      },
+      {
+        "path": "_next/static/83PxFtIV7onKiykhTS4d_/_buildManifest.js",
+        "extension": ".js",
+        "bytes": 477,
+        "gzipBytes": 248,
+        "sha256": "2946a3b8b6c271b02c695496e7eba84afcc892712964c5740c18776131404312",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/83PxFtIV7onKiykhTS4d_/_buildManifest.js"
+      },
+      {
+        "path": "_next/static/83PxFtIV7onKiykhTS4d_/_ssgManifest.js",
+        "extension": ".js",
+        "bytes": 80,
+        "gzipBytes": 64,
+        "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/83PxFtIV7onKiykhTS4d_/_ssgManifest.js"
+      },
+      {
+        "path": "_next/static/chunks/301-0f98a524ee766e38.js",
+        "extension": ".js",
+        "bytes": 13276,
+        "gzipBytes": 4534,
+        "sha256": "321085f6f5661b7f7eb0c877ac4c290a3256c723080627e2bd50372c9ff5533c",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/301-0f98a524ee766e38.js"
+      },
+      {
+        "path": "_next/static/chunks/32.1981a12b7cf5cf4d.js",
+        "extension": ".js",
+        "bytes": 10365,
+        "gzipBytes": 3998,
+        "sha256": "448656199ced61f1ca3b568170f408e930070bab147b901cec9d1a819b19c199",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/32.1981a12b7cf5cf4d.js"
+      },
+      {
+        "path": "_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "extension": ".js",
+        "bytes": 203721,
+        "gzipBytes": 64057,
+        "sha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/4bd1b696-c7408084347438ae.js"
+      },
+      {
+        "path": "_next/static/chunks/606.24769dec59620480.js",
+        "extension": ".js",
+        "bytes": 326125,
+        "gzipBytes": 96196,
+        "sha256": "cee931ed49053199b05076f77d0429a498b7fdfc0f557c798e3e719d9616e9a8",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/606.24769dec59620480.js"
+      },
+      {
+        "path": "_next/static/chunks/794-96ab5d7caefc5d69.js",
+        "extension": ".js",
+        "bytes": 242282,
+        "gzipBytes": 67462,
+        "sha256": "7f02f17d6dfebe33a8867c308fb0e842474ff1d0ebe5ca623eda48fa4dd0f8c3",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/794-96ab5d7caefc5d69.js"
+      },
+      {
+        "path": "_next/static/chunks/899.5ce6b3cbad015b59.js",
+        "extension": ".js",
+        "bytes": 4752,
+        "gzipBytes": 1995,
+        "sha256": "12b23761a7567937753843f56b2c72493d50928d7753d25f1db4e84e97e3d018",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/899.5ce6b3cbad015b59.js"
+      },
+      {
+        "path": "_next/static/chunks/966.1775eb621d8d3e09.js",
+        "extension": ".js",
+        "bytes": 753,
+        "gzipBytes": 419,
+        "sha256": "4e64e06b8deba77cbbf9487c6d48373939b8a99f235a67a4f71a6b45ad68b055",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/966.1775eb621d8d3e09.js"
+      },
+      {
+        "path": "_next/static/chunks/app/layout-7f70928d4a0f58c7.js",
+        "extension": ".js",
+        "bytes": 251,
+        "gzipBytes": 183,
+        "sha256": "4e0a51f4d8f6da08eb7b4616b2b45c5385767cf11b118476000b12e2bca5225d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/app/layout-7f70928d4a0f58c7.js"
+      },
+      {
+        "path": "_next/static/chunks/app/page-7ee10e3702eeeef1.js",
+        "extension": ".js",
+        "bytes": 46496,
+        "gzipBytes": 15400,
+        "sha256": "bc66c702bced84c18ea87af8945bb18fa16725352c3cc8127b0c1ca7720d13e7",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/app/page-7ee10e3702eeeef1.js"
+      },
+      {
+        "path": "_next/static/chunks/app/_global-error/page-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/app/_global-error/page-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/app/_not-found/page-7204d786281ec257.js",
+        "extension": ".js",
+        "bytes": 2667,
+        "gzipBytes": 994,
+        "sha256": "c3942c2da23061f0d987aba5d003b62405aa2a105aa6b83869b1b0b2e2dd649d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/app/_not-found/page-7204d786281ec257.js"
+      },
+      {
+        "path": "_next/static/chunks/framework-ea4f97ca039bd777.js",
+        "extension": ".js",
+        "bytes": 218916,
+        "gzipBytes": 68866,
+        "sha256": "61b92d4a1510be156591a4f12a6b5bcf70f338cf5f8db1d50e2be1305b6b761d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/framework-ea4f97ca039bd777.js"
+      },
+      {
+        "path": "_next/static/chunks/main-979b8a22e7502c64.js",
+        "extension": ".js",
+        "bytes": 131956,
+        "gzipBytes": 38835,
+        "sha256": "9ab418bad3507ba85e184e97049c0759fd8d03b27958fa9c4115d12e86ff0463",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/main-979b8a22e7502c64.js"
+      },
+      {
+        "path": "_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+        "extension": ".js",
+        "bytes": 513,
+        "gzipBytes": 222,
+        "sha256": "e6ee39e6444b11026e12b449653b9b23e2108e2dae7788d9c437f6cf4d0a226d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/main-app-bafb0d3f73ef38d7.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/global-error-c61aaf16b9cbf7c8.js",
+        "extension": ".js",
+        "bytes": 179,
+        "gzipBytes": 160,
+        "sha256": "780aecdb93c0a6fae7b9606e3d9a853ba445484adc5ee616f516a21b7dbfd323",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/next/dist/client/components/builtin/global-error-c61aaf16b9cbf7c8.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "extension": ".js",
+        "bytes": 112594,
+        "gzipBytes": 39627,
+        "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/polyfills-42372ed130431b0a.js"
+      },
+      {
+        "path": "_next/static/chunks/webpack-0b53ac75e082cdf8.js",
+        "extension": ".js",
+        "bytes": 3450,
+        "gzipBytes": 1784,
+        "sha256": "a9bbffdb0202229f5e6b907a38c2fd744b71c2d49d3fca5a8e5a442c3484f5c9",
+        "status": 200,
+        "contentType": "text/javascript",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/chunks/webpack-0b53ac75e082cdf8.js"
+      },
+      {
+        "path": "_next/static/css/a77984b16bf6cd3c.css",
+        "extension": ".css",
+        "bytes": 42334,
+        "gzipBytes": 10026,
+        "sha256": "264481a0e08bc83571c0f1d09a190269f5925b4be67166fde2930eff3079c5cb",
+        "status": 200,
+        "contentType": "text/css",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/css/a77984b16bf6cd3c.css"
+      },
+      {
+        "path": "_next/static/media/manrope-cyrillic-ext-wght-normal.d1990364.woff2",
+        "extension": ".woff2",
+        "bytes": 2552,
+        "gzipBytes": 2575,
+        "sha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d",
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/media/manrope-cyrillic-ext-wght-normal.d1990364.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-cyrillic-wght-normal.2ffcac4f.woff2",
+        "extension": ".woff2",
+        "bytes": 14500,
+        "gzipBytes": 14523,
+        "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/media/manrope-cyrillic-wght-normal.2ffcac4f.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+        "extension": ".woff2",
+        "bytes": 9444,
+        "gzipBytes": 9467,
+        "sha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be",
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-latin-ext-wght-normal.f5cc7610.woff2",
+        "extension": ".woff2",
+        "bytes": 15120,
+        "gzipBytes": 15143,
+        "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/media/manrope-latin-ext-wght-normal.f5cc7610.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+        "extension": ".woff2",
+        "bytes": 24836,
+        "gzipBytes": 24864,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-vietnamese-wght-normal.383b32a0.woff2",
+        "extension": ".woff2",
+        "bytes": 8520,
+        "gzipBytes": 8543,
+        "sha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5",
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_next/static/media/manrope-vietnamese-wght-normal.383b32a0.woff2"
+      },
+      {
+        "path": "_not-found/index.html",
+        "extension": ".html",
+        "bytes": 6364,
+        "gzipBytes": 2096,
+        "sha256": "f13a397c148efda9157209358a058798d73d3afdc3df03a56aa88a1bcd256a9d",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_not-found/index.html"
+      },
+      {
+        "path": "_not-found/index.txt",
+        "extension": ".txt",
+        "bytes": 3624,
+        "gzipBytes": 1421,
+        "sha256": "778f8564a30d5ddf6c5ea827088ab8e95e16aad290973da15ca9a7d7422b5ebc",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_not-found/index.txt"
+      },
+      {
+        "path": "_not-found/__next._full.txt",
+        "extension": ".txt",
+        "bytes": 3624,
+        "gzipBytes": 1421,
+        "sha256": "778f8564a30d5ddf6c5ea827088ab8e95e16aad290973da15ca9a7d7422b5ebc",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_not-found/__next._full.txt"
+      },
+      {
+        "path": "_not-found/__next._not-found/__PAGE__.txt",
+        "extension": ".txt",
+        "bytes": 3061,
+        "gzipBytes": 1325,
+        "sha256": "143e3bedcb8d4e6f0db269fb5d9fe490668b58d0221c10045921f7a763504e92",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_not-found/__next._not-found/__PAGE__.txt"
+      },
+      {
+        "path": "_not-found/__next._tree.txt",
+        "extension": ".txt",
+        "bytes": 217,
+        "gzipBytes": 182,
+        "sha256": "b5a6e326570134c41b8e67ae637505baf151b482586682505cc105903f06640f",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/_not-found/__next._tree.txt"
+      },
+      {
+        "path": "__next._full.txt",
+        "extension": ".txt",
+        "bytes": 3286,
+        "gzipBytes": 1457,
+        "sha256": "c9073d9858b388b3a2fc10e479b4afffcc278313cc1dfd9948f9d4fe1eb4d346",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/__next._full.txt"
+      },
+      {
+        "path": "__next._tree.txt",
+        "extension": ".txt",
+        "bytes": 164,
+        "gzipBytes": 162,
+        "sha256": "fd4cf1f375239a26f48c79381cf077950b8838cb7b8f033bc61dfdea136cb4bd",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/__next._tree.txt"
+      },
+      {
+        "path": "__next.__PAGE__.txt",
+        "extension": ".txt",
+        "bytes": 2949,
+        "gzipBytes": 1367,
+        "sha256": "2344fdf775bd8cf1582478cd15989461aa4fcb37ebcd1f4d38c2885b2d8d2a6c",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cacheControl": "no-store",
+        "contentEncoding": null,
+        "finalUrl": "http://127.0.0.1:54489/__next.__PAGE__.txt"
+      }
+    ]
+  },
+  "allPassed": true
+}

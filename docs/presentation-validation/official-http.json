@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://www.spaceappschallenge.org/legal/",
+    "error": "TypeError: fetch failed"
+  },
+  {
+    "url": "https://www.spaceappschallenge.org/resources/project-submission-guide/",
+    "error": "TypeError: fetch failed"
+  },
+  {
+    "url": "https://www.spaceappschallenge.org/resources/participant-faqs/",
+    "error": "TypeError: fetch failed"
+  }
+]

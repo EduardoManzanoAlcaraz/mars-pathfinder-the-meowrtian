@@ -1,0 +1,30 @@
+[
+  {
+    "name": "trek-jezero-equirect.json",
+    "url": "https://trek.nasa.gov/mars/TrekServices/ws/index/equirect/searchItems?serviceType=&bbox=77.40,18.42,77.47,18.48&shape=&point=&radius=&key=Jezero&proj=&start=0&rows=30&facetKeys=&facetValues=&intersects=&resolutionMin=&resolutionMax=",
+    "status": 404,
+    "bytes": 0,
+    "atUtc": "2026-11-14T13:08:52.890Z"
+  },
+  {
+    "name": "rover-config-map-relative.json",
+    "url": "https://mars.nasa.gov/maps/location/Missions/M20/config.json",
+    "status": 404,
+    "bytes": 5544,
+    "atUtc": "2026-11-14T13:08:53.161Z"
+  },
+  {
+    "name": "rover-config-api.json",
+    "url": "https://mars.nasa.gov/maps/location/api/configure/get?mission=M20",
+    "status": 200,
+    "bytes": 7640,
+    "atUtc": "2026-11-14T13:08:53.334Z"
+  },
+  {
+    "name": "trek-basemaps.json",
+    "url": "https://trek.nasa.gov/mars/jpl/config/basemaps.json",
+    "status": 200,
+    "bytes": 1537,
+    "atUtc": "2026-11-14T13:08:53.500Z"
+  }
+]

@@ -1,0 +1,1680 @@
+[
+  {
+    "id": "usgs-hirise-dem-catalog-name",
+    "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/HiRISE/JEZ_hirise_soc_006_DTM_MOLAtopography_DeltaGeoid_1m_Eqc_latTs0_lon0_blend40.tif",
+    "tiff": {
+      "bigTiff": false,
+      "tags": {
+        "256": [
+          21400
+        ],
+        "257": [
+          21488
+        ],
+        "258": [
+          32
+        ],
+        "259": [
+          1
+        ],
+        "277": [
+          1
+        ],
+        "339": [
+          3
+        ],
+        "33550": [
+          1,
+          1,
+          0
+        ],
+        "33922": [
+          0,
+          0,
+          0,
+          4577366,
+          1106618,
+          0
+        ],
+        "34735": [
+          1,
+          1,
+          0,
+          20,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          37,
+          0,
+          2048,
+          0,
+          1,
+          32767,
+          2049,
+          34737,
+          119,
+          37,
+          2050,
+          0,
+          1,
+          32767,
+          2054,
+          0,
+          1,
+          9102,
+          2056,
+          0,
+          1,
+          32767,
+          2057,
+          34736,
+          1,
+          5,
+          2058,
+          34736,
+          1,
+          6,
+          2061,
+          34736,
+          1,
+          7,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          17,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3082,
+          34736,
+          1,
+          3,
+          3083,
+          34736,
+          1,
+          4,
+          3088,
+          34736,
+          1,
+          1,
+          3089,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3396190,
+          3396190,
+          0
+        ],
+        "34737": "Equirectangular Mars 2000 Sphere IAU|GCS Name = D_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+        "42113": "-3.40282265508890445e+38"
+      }
+    },
+    "projectedBounds": [
+      4577366,
+      1085130,
+      4598766,
+      1106618
+    ],
+    "geoKeys": {
+      "1024": 1,
+      "1025": 1,
+      "1026": "Equirectangular Mars 2000 Sphere IAU|",
+      "2048": 32767,
+      "2049": "GCS Name = D_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+      "2050": 32767,
+      "2054": 9102,
+      "2056": 32767,
+      "2057": [
+        3396190
+      ],
+      "2058": [
+        3396190
+      ],
+      "2061": [
+        0
+      ],
+      "3072": 32767,
+      "3074": 32767,
+      "3075": 17,
+      "3076": 9001,
+      "3078": [
+        0
+      ],
+      "3082": [
+        0
+      ],
+      "3083": [
+        0
+      ],
+      "3088": [
+        0
+      ],
+      "3089": [
+        0
+      ]
+    },
+    "lonLatBoundingRectangle": [
+      77.22293307697142,
+      18.30679944968657,
+      77.5839640209351,
+      18.669315006877746
+    ],
+    "aoiRectangleContained": true
+  },
+  {
+    "id": "usgs-hirise-ortho",
+    "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/HiRISE/JEZ_hirise_soc_006_orthoMosaic_25cm_Eqc_latTs0_lon0_first.tif",
+    "tiff": {
+      "bigTiff": true,
+      "tags": {
+        "256": [
+          85600
+        ],
+        "257": [
+          85952
+        ],
+        "258": [
+          8
+        ],
+        "259": [
+          1
+        ],
+        "277": [
+          1
+        ],
+        "339": [
+          1
+        ],
+        "33550": [
+          0.25,
+          0.25,
+          0
+        ],
+        "33922": [
+          0,
+          0,
+          0,
+          4577366,
+          1106618,
+          0
+        ],
+        "34735": [
+          1,
+          1,
+          0,
+          20,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          37,
+          0,
+          2048,
+          0,
+          1,
+          32767,
+          2049,
+          34737,
+          119,
+          37,
+          2050,
+          0,
+          1,
+          32767,
+          2054,
+          0,
+          1,
+          9102,
+          2056,
+          0,
+          1,
+          32767,
+          2057,
+          34736,
+          1,
+          5,
+          2058,
+          34736,
+          1,
+          6,
+          2061,
+          34736,
+          1,
+          7,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          17,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3082,
+          34736,
+          1,
+          3,
+          3083,
+          34736,
+          1,
+          4,
+          3088,
+          34736,
+          1,
+          1,
+          3089,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3396190,
+          3396190,
+          0
+        ],
+        "34737": "Equirectangular Mars 2000 Sphere IAU|GCS Name = D_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+        "42113": "0"
+      }
+    },
+    "projectedBounds": [
+      4577366,
+      1085130,
+      4598766,
+      1106618
+    ],
+    "geoKeys": {
+      "1024": 1,
+      "1025": 1,
+      "1026": "Equirectangular Mars 2000 Sphere IAU|",
+      "2048": 32767,
+      "2049": "GCS Name = D_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+      "2050": 32767,
+      "2054": 9102,
+      "2056": 32767,
+      "2057": [
+        3396190
+      ],
+      "2058": [
+        3396190
+      ],
+      "2061": [
+        0
+      ],
+      "3072": 32767,
+      "3074": 32767,
+      "3075": 17,
+      "3076": 9001,
+      "3078": [
+        0
+      ],
+      "3082": [
+        0
+      ],
+      "3083": [
+        0
+      ],
+      "3088": [
+        0
+      ],
+      "3089": [
+        0
+      ]
+    },
+    "lonLatBoundingRectangle": [
+      77.22293307697142,
+      18.30679944968657,
+      77.5839640209351,
+      18.669315006877746
+    ],
+    "aoiRectangleContained": true
+  },
+  {
+    "id": "usgs-ctx-dem",
+    "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/CTX/ScienceInvestigationMaps_JPL/M20_JezeroCrater_CTXDEM_20m.tif",
+    "tiff": {
+      "bigTiff": false,
+      "tags": {
+        "256": [
+          4456
+        ],
+        "257": [
+          5067
+        ],
+        "258": [
+          32
+        ],
+        "259": [
+          1
+        ],
+        "277": [
+          1
+        ],
+        "339": [
+          3
+        ],
+        "33550": [
+          20,
+          20,
+          0
+        ],
+        "33922": [
+          0,
+          0,
+          0,
+          4328999.999999998,
+          1143420.0000000028,
+          0
+        ],
+        "34735": [
+          1,
+          1,
+          0,
+          20,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          25,
+          0,
+          2048,
+          0,
+          1,
+          32767,
+          2049,
+          34737,
+          117,
+          25,
+          2050,
+          0,
+          1,
+          32767,
+          2054,
+          0,
+          1,
+          9102,
+          2056,
+          0,
+          1,
+          32767,
+          2057,
+          34736,
+          1,
+          5,
+          2058,
+          34736,
+          1,
+          6,
+          2061,
+          34736,
+          1,
+          7,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          17,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3082,
+          34736,
+          1,
+          3,
+          3083,
+          34736,
+          1,
+          4,
+          3088,
+          34736,
+          1,
+          1,
+          3089,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          0,
+          0,
+          18.4663,
+          0,
+          0,
+          3396190,
+          3396190,
+          0
+        ],
+        "34737": "Jezero_Crater_Projection|GCS Name = GCS_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere|Primem = Reference_Meridian||",
+        "42113": "-3.4028234663852886e+38"
+      }
+    },
+    "projectedBounds": [
+      4328999.999999998,
+      1042080.0000000028,
+      4418119.999999998,
+      1143420.0000000028
+    ],
+    "geoKeys": {
+      "1024": 1,
+      "1025": 1,
+      "1026": "Jezero_Crater_Projection|",
+      "2048": 32767,
+      "2049": "GCS Name = GCS_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere|Primem = Reference_Meridian||",
+      "2050": 32767,
+      "2054": 9102,
+      "2056": 32767,
+      "2057": [
+        3396190
+      ],
+      "2058": [
+        3396190
+      ],
+      "2061": [
+        0
+      ],
+      "3072": 32767,
+      "3074": 32767,
+      "3075": 17,
+      "3076": 9001,
+      "3078": [
+        18.4663
+      ],
+      "3082": [
+        0
+      ],
+      "3083": [
+        0
+      ],
+      "3088": [
+        0
+      ],
+      "3089": [
+        0
+      ]
+    },
+    "lonLatBoundingRectangle": [
+      76.99743706146002,
+      17.580519910544755,
+      78.58256332408818,
+      19.29018700686615
+    ],
+    "aoiRectangleContained": true
+  },
+  {
+    "id": "usgs-ctx-ortho",
+    "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/CTX/JEZ_ctx_B_soc_008_orthoMosaic_6m_Eqc_latTs0_lon0.tif",
+    "tiff": {
+      "bigTiff": false,
+      "tags": {
+        "256": [
+          5322
+        ],
+        "257": [
+          5040
+        ],
+        "258": [
+          8
+        ],
+        "259": [
+          1
+        ],
+        "277": [
+          1
+        ],
+        "339": [
+          1
+        ],
+        "33550": [
+          6,
+          6,
+          0
+        ],
+        "33922": [
+          0,
+          0,
+          0,
+          4573663.250853,
+          1109693.140188,
+          0
+        ],
+        "34735": [
+          1,
+          1,
+          0,
+          20,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          37,
+          0,
+          2048,
+          0,
+          1,
+          32767,
+          2049,
+          34737,
+          121,
+          37,
+          2050,
+          0,
+          1,
+          32767,
+          2054,
+          0,
+          1,
+          9102,
+          2056,
+          0,
+          1,
+          32767,
+          2057,
+          34736,
+          1,
+          5,
+          2058,
+          34736,
+          1,
+          6,
+          2061,
+          34736,
+          1,
+          7,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          17,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3082,
+          34736,
+          1,
+          3,
+          3083,
+          34736,
+          1,
+          4,
+          3088,
+          34736,
+          1,
+          1,
+          3089,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3396190,
+          3396190,
+          0
+        ],
+        "34737": "Equirectangular Mars 2000 Sphere IAU|GCS Name = GCS_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+        "42113": "0"
+      }
+    },
+    "projectedBounds": [
+      4573663.250853,
+      1079453.140188,
+      4605595.250853,
+      1109693.140188
+    ],
+    "geoKeys": {
+      "1024": 1,
+      "1025": 1,
+      "1026": "Equirectangular Mars 2000 Sphere IAU|",
+      "2048": 32767,
+      "2049": "GCS Name = GCS_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+      "2050": 32767,
+      "2054": 9102,
+      "2056": 32767,
+      "2057": [
+        3396190
+      ],
+      "2058": [
+        3396190
+      ],
+      "2061": [
+        0
+      ],
+      "3072": 32767,
+      "3074": 32767,
+      "3075": 17,
+      "3076": 9001,
+      "3078": [
+        0
+      ],
+      "3082": [
+        0
+      ],
+      "3083": [
+        0
+      ],
+      "3088": [
+        0
+      ],
+      "3089": [
+        0
+      ]
+    },
+    "lonLatBoundingRectangle": [
+      77.16046545922367,
+      18.211027390963398,
+      77.69917761355299,
+      18.721194481872804
+    ],
+    "aoiRectangleContained": true
+  },
+  {
+    "id": "usgs-ctx-ortho-direct",
+    "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/CTX/JEZ_ctx_B_soc_008_orthoMosaic_6m_Eqc_latTs0_lon0.tif",
+    "tiff": {
+      "bigTiff": false,
+      "tags": {
+        "256": [
+          5322
+        ],
+        "257": [
+          5040
+        ],
+        "258": [
+          8
+        ],
+        "259": [
+          1
+        ],
+        "277": [
+          1
+        ],
+        "339": [
+          1
+        ],
+        "33550": [
+          6,
+          6,
+          0
+        ],
+        "33922": [
+          0,
+          0,
+          0,
+          4573663.250853,
+          1109693.140188,
+          0
+        ],
+        "34735": [
+          1,
+          1,
+          0,
+          20,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          37,
+          0,
+          2048,
+          0,
+          1,
+          32767,
+          2049,
+          34737,
+          121,
+          37,
+          2050,
+          0,
+          1,
+          32767,
+          2054,
+          0,
+          1,
+          9102,
+          2056,
+          0,
+          1,
+          32767,
+          2057,
+          34736,
+          1,
+          5,
+          2058,
+          34736,
+          1,
+          6,
+          2061,
+          34736,
+          1,
+          7,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          17,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3082,
+          34736,
+          1,
+          3,
+          3083,
+          34736,
+          1,
+          4,
+          3088,
+          34736,
+          1,
+          1,
+          3089,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3396190,
+          3396190,
+          0
+        ],
+        "34737": "Equirectangular Mars 2000 Sphere IAU|GCS Name = GCS_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+        "42113": "0"
+      }
+    },
+    "projectedBounds": [
+      4573663.250853,
+      1079453.140188,
+      4605595.250853,
+      1109693.140188
+    ],
+    "geoKeys": {
+      "1024": 1,
+      "1025": 1,
+      "1026": "Equirectangular Mars 2000 Sphere IAU|",
+      "2048": 32767,
+      "2049": "GCS Name = GCS_Mars_2000_Sphere|Datum = Mars_2000_(Sphere)|Ellipsoid = Mars_2000_Sphere_IAU|Primem = Reference_Meridian||",
+      "2050": 32767,
+      "2054": 9102,
+      "2056": 32767,
+      "2057": [
+        3396190
+      ],
+      "2058": [
+        3396190
+      ],
+      "2061": [
+        0
+      ],
+      "3072": 32767,
+      "3074": 32767,
+      "3075": 17,
+      "3076": 9001,
+      "3078": [
+        0
+      ],
+      "3082": [
+        0
+      ],
+      "3083": [
+        0
+      ],
+      "3088": [
+        0
+      ],
+      "3089": [
+        0
+      ]
+    },
+    "lonLatBoundingRectangle": [
+      77.16046545922367,
+      18.211027390963398,
+      77.69917761355299,
+      18.721194481872804
+    ],
+    "aoiRectangleContained": true
+  },
+  {
+    "id": "sim3464-database",
+    "url": "https://pubs.usgs.gov/sim/3464/sim3464_database.zip",
+    "entries": [
+      {
+        "name": "sim3464_JezeroNili_FINAL/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/.DS_Store",
+        "uncompressedBytes": 6148
+      },
+      {
+        "name": "__MACOSX/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "__MACOSX/sim3464_JezeroNili_FINAL/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "__MACOSX/sim3464_JezeroNili_FINAL/._.DS_Store",
+        "uncompressedBytes": 120
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/sim3464_JezeroNili_FINAL.mxd",
+        "uncompressedBytes": 3452928
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/CoordinateSystems/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/CoordinateSystems/MTM_clon77_5E.prj",
+        "uncompressedBytes": 408,
+        "extractedEvidence": "MTM_clon77_5E.prj"
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/CoordinateSystems/Mars2000_Sphere.prj",
+        "uncompressedBytes": 193,
+        "extractedEvidence": "Mars2000_Sphere.prj"
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/LinearFeatures.lyr",
+        "uncompressedBytes": 18432
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/GeoContacts.lyr",
+        "uncompressedBytes": 10240
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/GeologicUnits.lyr",
+        "uncompressedBytes": 18944
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/SurfaceFeatures.lyr",
+        "uncompressedBytes": 12800
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/FeatureLayerSymbology/LocationFeatures.lyr",
+        "uncompressedBytes": 10240
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Metadata/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Metadata/SIM3464_metadata.xml",
+        "uncompressedBytes": 20351,
+        "extractedEvidence": "SIM3464_metadata.xml"
+      },
+      {
+        "name": "__MACOSX/sim3464_JezeroNili_FINAL/Metadata/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "__MACOSX/sim3464_JezeroNili_FINAL/Metadata/._SIM3464_metadata.xml",
+        "uncompressedBytes": 2002
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/CrossSections.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.AnnoClassID_Index_66.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.freelist",
+        "uncompressedBytes": 4440
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/SurfaceFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.freelist",
+        "uncompressedBytes": 8536
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbtable",
+        "uncompressedBytes": 8746
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.FDO_UUID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.GDB_84_FeatureID.atx",
+        "uncompressedBytes": 16406
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.freelist",
+        "uncompressedBytes": 16728
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.freelist",
+        "uncompressedBytes": 8536
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbindexes",
+        "uncompressedBytes": 296
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.gdbtable",
+        "uncompressedBytes": 1906
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbtable",
+        "uncompressedBytes": 770078
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/gdb",
+        "uncompressedBytes": 4
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.spx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.Status_Index_84.atx",
+        "uncompressedBytes": 16406
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByName.atx",
+        "uncompressedBytes": 12310
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.spx",
+        "uncompressedBytes": 1138710
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.spx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/timestamps",
+        "uncompressedBytes": 400
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByOriginID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.GDB_69_FeatureID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/MapBoundary.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.Status_Index_66.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LocationFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.CatItemsByType.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.spx",
+        "uncompressedBytes": 12310
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.freelist",
+        "uncompressedBytes": 90456
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByDestinationID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbindexes",
+        "uncompressedBytes": 602
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.freelist",
+        "uncompressedBytes": 65880
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000002.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbtable",
+        "uncompressedBytes": 2257
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbtable",
+        "uncompressedBytes": 5176
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.CatRelsByType.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbindexes",
+        "uncompressedBytes": 276
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbtable",
+        "uncompressedBytes": 81659
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbtable",
+        "uncompressedBytes": 2000071
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LandingEllipse.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/LinearFeatures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.freelist",
+        "uncompressedBytes": 12632
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByUUID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.freelist",
+        "uncompressedBytes": 41304
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbindexes",
+        "uncompressedBytes": 348
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000002.gdbtable",
+        "uncompressedBytes": 2055
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbtable",
+        "uncompressedBytes": 1021
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.spx",
+        "uncompressedBytes": 28694
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.spx",
+        "uncompressedBytes": 12310
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbindexes",
+        "uncompressedBytes": 110
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/Figures.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.TablesByName.atx",
+        "uncompressedBytes": 16406
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/megabreccia_fig2.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbtable",
+        "uncompressedBytes": 15752676
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.CatItemsByPhysicalName.atx",
+        "uncompressedBytes": 16406
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.spx",
+        "uncompressedBytes": 12310
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.spx",
+        "uncompressedBytes": 16406
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000058.gdbtablx",
+        "uncompressedBytes": 10272
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.AnnoClassID_Index_69.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbindexes",
+        "uncompressedBytes": 348
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbtablx",
+        "uncompressedBytes": 10272
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbtable",
+        "uncompressedBytes": 50234
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbtable",
+        "uncompressedBytes": 5462
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000005.CatItemTypesByUUID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/FiguresAnno.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/GeoUnitsAnno.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000046.spx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbtable",
+        "uncompressedBytes": 10871
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbtable",
+        "uncompressedBytes": 3042
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000041.freelist",
+        "uncompressedBytes": 33112
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000040.freelist",
+        "uncompressedBytes": 8536
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.gdbindexes",
+        "uncompressedBytes": 310
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/Nomenclature.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000000c.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/_gdb.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.gdbtable",
+        "uncompressedBytes": 3568864
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.spx",
+        "uncompressedBytes": 65558
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.freelist",
+        "uncompressedBytes": 8536
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.freelist",
+        "uncompressedBytes": 12632
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000036.spx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.freelist",
+        "uncompressedBytes": 69976
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbtablx",
+        "uncompressedBytes": 15520
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbtable",
+        "uncompressedBytes": 13686
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000003.gdbindexes",
+        "uncompressedBytes": 42
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbtable",
+        "uncompressedBytes": 1154
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.spx",
+        "uncompressedBytes": 65558
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000037.spx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.spx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000001.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000035.gdbtable",
+        "uncompressedBytes": 9088
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000049.gdbtablx",
+        "uncompressedBytes": 5152
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000038.Status_Index_69.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a0000003a.gdbtable",
+        "uncompressedBytes": 6580024
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbtable",
+        "uncompressedBytes": 25647
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/GeoContacts.DESKTOP-730BHRJ.1532.10104.sr.lock",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000042.gdbindexes",
+        "uncompressedBytes": 116
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000004.FDO_UUID.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000006.gdbindexes",
+        "uncompressedBytes": 318
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000045.AnnoClassID_Index_84.atx",
+        "uncompressedBytes": 16406
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb/a00000007.CatRelTypesByName.atx",
+        "uncompressedBytes": 4118
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_XN_18N282W_6m_ORTHO.tif",
+        "uncompressedBytes": 121962914
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B18_016575_1978_B17_016219_1978_20m_DTM.tif.ovr",
+        "uncompressedBytes": 5034472
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B17_016219_1978_XN_17N282W_6m_ORTHO.tif",
+        "uncompressedBytes": 70755826
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_J03_046060_1986_20m_DTM.tif.ovr",
+        "uncompressedBytes": 7603246
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B18_016575_1978_B17_016219_1978_20m_DTM.tif",
+        "uncompressedBytes": 25470186
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_XN_18N282W_6m_ORTHO.tif.ovr",
+        "uncompressedBytes": 21672726
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/B17_016219_1978_XN_17N282W_6m_ORTHO.tif.ovr",
+        "uncompressedBytes": 14162449
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_CTX_Stereo_DTMs/J03_045994_1986_J03_046060_1986_20m_DTM.tif",
+        "uncompressedBytes": 43912626
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif.ovr",
+        "uncompressedBytes": 27976469
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tfw",
+        "uncompressedBytes": 90
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif",
+        "uncompressedBytes": 75816056
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/Caltech_CTX_mosaic_feb2018/Nili_CTX_Mosaic_Beta01_Feb2018_MTM.tif.aux.xml",
+        "uncompressedBytes": 1976
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif.aux.xml",
+        "uncompressedBytes": 2067
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif.ovr",
+        "uncompressedBytes": 116280
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tfw",
+        "uncompressedBytes": 94
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif",
+        "uncompressedBytes": 390342
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tfw",
+        "uncompressedBytes": 94
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_NightIR_Controlled_oct2018.tif.ovr",
+        "uncompressedBytes": 132894
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif",
+        "uncompressedBytes": 330431
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/USGS_THEMIS_IR_controlled_mosaic_oct2018/nili_THEMIS_DayIR_Controlled_oct2018.tif.aux.xml",
+        "uncompressedBytes": 1971
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/",
+        "uncompressedBytes": 0
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif.ovr",
+        "uncompressedBytes": 524787
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif.aux.xml",
+        "uncompressedBytes": 2043
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tif",
+        "uncompressedBytes": 1379971
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_da4_clip.tfw",
+        "uncompressedBytes": 92
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif.xml",
+        "uncompressedBytes": 543
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif",
+        "uncompressedBytes": 366691
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tfw",
+        "uncompressedBytes": 92
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/h0988_0000.da4.53.tif",
+        "uncompressedBytes": 62804265
+      },
+      {
+        "name": "sim3464_JezeroNili_FINAL/Rasters/HRSC/nili_h0988_0000_hillshade_clip.tif.aux.xml",
+        "uncompressedBytes": 453
+      }
+    ]
+  }
+]
