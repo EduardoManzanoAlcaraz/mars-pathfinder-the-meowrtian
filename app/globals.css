@@ -33,6 +33,7 @@
 .metrics-table,.metrics-table td,.metrics-table th{font-size:11px}
 .metrics-table th,.metrics-table td{padding-top:7px;padding-bottom:7px}
 .metrics-table th{padding-right:8px}
+.metrics-table td{white-space:normal}
 .route-summary-cell small,.summary-label,.export-button,.profile-tabs button,.profile-caption,.workspace-footer{font-size:9px}
 .profile-chart text{font-size:10px}
 .profile-chart .axis-unit{font-size:8px}

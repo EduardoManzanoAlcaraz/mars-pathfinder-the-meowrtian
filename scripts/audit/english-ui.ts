@@ -16,4 +16,7 @@ export async function assertEnglishUI(page: Page): Promise<void> {
     return values;
   });
   for (const value of strings) assert.ok(!spanishUI.test(value), `Untranslated UI copy: ${value.match(spanishUI)?.[0]}`);
+  const clipped = await page.locator('.metrics-table td').evaluateAll(cells => cells
+    .filter(cell => cell.scrollWidth > cell.clientWidth + 1).map(cell => cell.textContent));
+  assert.deepEqual(clipped, [], 'Translated metric values and units must fit each table cell');
 }
