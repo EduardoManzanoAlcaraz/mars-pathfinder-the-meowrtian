@@ -23,10 +23,10 @@ export const ROUTE_COLORS = { a: '#43e1ed', b: '#ffbf59' } as const;
 
 export function selectEndpoint(grid: RoutingGrid, xy: XY, maxSlopeDeg: number): { endpoint: Endpoint; error: null } | { endpoint: null; error: string } {
   const cell = projectedToCell(grid, xy);
-  if (!cell) return { endpoint: null, error: 'El punto está fuera de la región cartografiada. Selecciona otra posición.' };
+  if (!cell) return { endpoint: null, error: 'The point is outside the mapped region. Select another position.' };
   const id = indexOf(grid, cell), reason = cellBlockReason(grid, id, maxSlopeDeg);
-  if (reason === 'no-data') return { endpoint: null, error: `La celda ${cell.col}, ${cell.row} no tiene datos válidos para planificar. No se ha desplazado el punto.` };
-  if (reason) return { endpoint: null, error: `Pendiente de celda ${grid.slope[id]!.toFixed(1)}°, superior al límite de ${maxSlopeDeg}°. Selecciona otra celda.` };
+  if (reason === 'no-data') return { endpoint: null, error: `Cell ${cell.col}, ${cell.row} has no valid planning data. The point has not been moved.` };
+  if (reason) return { endpoint: null, error: `Cell slope ${grid.slope[id]!.toFixed(1)}°, above the ${maxSlopeDeg}° limit. Select another cell.` };
   const center = cellCenter(grid, cell);
   return { endpoint: { cell, clicked: { ...xy }, center, snapMeters: Math.hypot(center.x - xy.x, center.y - xy.y) }, error: null };
 }
@@ -59,10 +59,10 @@ export function makeRouteExport(grid: RoutingGrid, route: RouteSuccess, origin: 
     coordinates: routeCoordinates(grid, route), interpretation: 'Optimized discrete topographic model; no physical EVA safety certification' };
 }
 export function validateCatalog(catalog: VisualCatalog, grid: RoutingGrid): void {
-  if (catalog.datasetId !== grid.dataset.id || catalog.preparedManifestSha256 !== grid.dataset.manifestSha256 || catalog.crsProj !== grid.dataset.crsProj) throw new Error('Las capas visuales y el motor pertenecen a versiones de datos diferentes.');
+  if (catalog.datasetId !== grid.dataset.id || catalog.preparedManifestSha256 !== grid.dataset.manifestSha256 || catalog.crsProj !== grid.dataset.crsProj) throw new Error('The visual layers and engine belong to different data versions.');
   for (const layer of catalog.layers) {
-    if (layer.extent.some((value, i) => value !== catalog.extent[i]) || (layer.extent[2] - layer.extent[0]) / layer.width !== layer.displayResolutionM || (layer.extent[3] - layer.extent[1]) / layer.height !== layer.displayResolutionM) throw new Error(`Georreferenciación visual inconsistente: ${layer.id}`);
+    if (layer.extent.some((value, i) => value !== catalog.extent[i]) || (layer.extent[2] - layer.extent[0]) / layer.width !== layer.displayResolutionM || (layer.extent[3] - layer.extent[1]) / layer.height !== layer.displayResolutionM) throw new Error(`Inconsistent visual georeferencing: ${layer.id}`);
   }
   const expected = [grid.transform[0], grid.transform[3] + grid.height * grid.transform[5], grid.transform[0] + grid.width * grid.transform[1], grid.transform[3]];
-  if (catalog.noData.width !== grid.width || catalog.noData.height !== grid.height || catalog.noData.extent.some((x, i) => x !== expected[i])) throw new Error('La máscara visual no coincide con la malla de rutas.');
+  if (catalog.noData.width !== grid.width || catalog.noData.height !== grid.height || catalog.noData.extent.some((x, i) => x !== expected[i])) throw new Error('The visual mask does not match the routing grid.');
 }

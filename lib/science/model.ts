@@ -41,36 +41,36 @@ export interface ScienceData { manifest: ScienceManifest; manifestSha256: string
 export type ScienceSelection = { kind: 'unit'; id: number } | { kind: 'objective' | 'photo'; id: string } | null;
 
 export function validateScience(data: ScienceData, grid: RoutingGrid): void {
-  if (data.manifest.schema !== 'mars-pathfinder-science-v1' || data.manifest.datasetId !== 'jezero-science-v1' || data.manifest.crsProj !== grid.dataset.crsProj || data.manifest.topographyManifestSha256 !== grid.dataset.manifestSha256 || data.geology.topographyManifestSha256 !== grid.dataset.manifestSha256 || data.geology.crsProj !== grid.dataset.crsProj) throw new Error('La ciencia no corresponde a la versión topográfica cargada.');
+  if (data.manifest.schema !== 'mars-pathfinder-science-v1' || data.manifest.datasetId !== 'jezero-science-v1' || data.manifest.crsProj !== grid.dataset.crsProj || data.manifest.topographyManifestSha256 !== grid.dataset.manifestSha256 || data.geology.topographyManifestSha256 !== grid.dataset.manifestSha256 || data.geology.crsProj !== grid.dataset.crsProj) throw new Error('The science data do not match the loaded topography version.');
   for (const point of [...data.objectives, ...data.photos]) {
     const cell = projectedToCell(grid, { x: point.xy[0], y: point.xy[1] });
-    if (!cell || cell.col !== point.cell.col || cell.row !== point.cell.row || cellBlockReason(grid, indexOf(grid, cell), 89)) throw new Error(`Punto científico sin celda válida: ${point.id}`);
+    if (!cell || cell.col !== point.cell.col || cell.row !== point.cell.row || cellBlockReason(grid, indexOf(grid, cell), 89)) throw new Error(`Science point without a valid cell: ${point.id}`);
     const geographic = marsLonLat(grid, { x: point.xy[0], y: point.xy[1] });
-    if (Math.abs(geographic.longitudeEastDeg - point.longitudeEastDeg) > 1e-8 || Math.abs(geographic.latitudeNorthDeg - point.latitudePlanetocentricDeg) > 1e-8) throw new Error(`Coordenadas inconsistentes: ${point.id}`);
+    if (Math.abs(geographic.longitudeEastDeg - point.longitudeEastDeg) > 1e-8 || Math.abs(geographic.latitudeNorthDeg - point.latitudePlanetocentricDeg) > 1e-8) throw new Error(`Inconsistent coordinates: ${point.id}`);
   }
   for (const objective of data.objectives) {
     const p = cellCenter(grid, objective.cell);
     const feature = data.geology.features.find(x => x.id === objective.sourceFid);
-    if (p.x !== objective.xy[0] || p.y !== objective.xy[1] || feature?.properties.symbol !== objective.unitSymbol || feature.properties.name !== objective.unitName) throw new Error(`Trazabilidad geológica inconsistente: ${objective.id}`);
+    if (p.x !== objective.xy[0] || p.y !== objective.xy[1] || feature?.properties.symbol !== objective.unitSymbol || feature.properties.name !== objective.unitName) throw new Error(`Inconsistent geological provenance: ${objective.id}`);
   }
-  for (const photo of data.photos) if (photo.waypoint.rmc !== photo.rmc || photo.waypoint.sol !== photo.sol || photo.rmc !== `${photo.waypoint.site}_${photo.waypoint.drive}` || !photo.imageId.includes(`N${String(photo.waypoint.site).padStart(3, '0')}${String(photo.waypoint.drive).padStart(4, '0')}`)) throw new Error(`Fotografía sin correspondencia RMC: ${photo.id}`);
+  for (const photo of data.photos) if (photo.waypoint.rmc !== photo.rmc || photo.waypoint.sol !== photo.sol || photo.rmc !== `${photo.waypoint.site}_${photo.waypoint.drive}` || !photo.imageId.includes(`N${String(photo.waypoint.site).padStart(3, '0')}${String(photo.waypoint.drive).padStart(4, '0')}`)) throw new Error(`Photograph without an RMC match: ${photo.id}`);
 }
 export async function loadScience(grid: RoutingGrid, signal?: AbortSignal): Promise<ScienceData> {
   const get = async (file: string) => {
     const response = await fetch(SCIENCE_URL + file, signal ? { signal } : {});
-    if (!response.ok) throw new Error(`No se pudo cargar ciencia: ${file} (${response.status}).`);
+    if (!response.ok) throw new Error(`Could not load science data: ${file} (${response.status}).`);
     return response.arrayBuffer();
   };
   const manifestBytes = await get('manifest.json'), manifest = JSON.parse(new TextDecoder().decode(manifestBytes)) as ScienceManifest;
   const json = async (file: string) => {
-    const entry = manifest.files.find(x => x.file === file); if (!entry) throw new Error(`Falta contrato científico: ${file}`);
+    const entry = manifest.files.find(x => x.file === file); if (!entry) throw new Error(`Missing science contract: ${file}`);
     const bytes = await get(file);
-    if (bytes.byteLength !== entry.bytes || await sha256(bytes) !== entry.sha256) throw new Error(`Integridad científica incorrecta: ${file}`);
+    if (bytes.byteLength !== entry.bytes || await sha256(bytes) !== entry.sha256) throw new Error(`Science integrity check failed: ${file}`);
     return JSON.parse(new TextDecoder().decode(bytes));
   };
   const [geology, objectives, photos] = await Promise.all([json('geology.json'), json('objectives.json'), json('photos.json')]);
-  if (objectives.geologySha256 !== manifest.files.find(x => x.file === 'geology.json')?.sha256) throw new Error('Objetivos de otra versión geológica.');
-  for (const source of [objectives, photos]) if (source.crsProj !== manifest.crsProj || source.topographyManifestSha256 !== manifest.topographyManifestSha256) throw new Error('CRS o versión científica incompatible.');
+  if (objectives.geologySha256 !== manifest.files.find(x => x.file === 'geology.json')?.sha256) throw new Error('Objectives belong to a different geology version.');
+  for (const source of [objectives, photos]) if (source.crsProj !== manifest.crsProj || source.topographyManifestSha256 !== manifest.topographyManifestSha256) throw new Error('Incompatible CRS or science version.');
   const data: ScienceData = { manifest, manifestSha256: await sha256(manifestBytes), geology, objectives: objectives.objectives, photos: photos.photos };
   validateScience(data, grid); return data;
 }

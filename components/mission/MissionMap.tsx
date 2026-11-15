@@ -27,6 +27,7 @@ import { UNIT_COLORS } from '../../lib/science/model';
 import type { ScienceData, ScienceObjective, ScienceSelection } from '../../lib/science/model';
 import { ScienceInspector } from './SciencePanel';
 import RegionalOverview from './RegionalOverview';
+import { LAYER_COPY } from '../../lib/map/display-copy';
 
 export interface MissionMapProps {
   grid: RoutingGrid; catalog: VisualCatalog; activeLayer: LayerId;
@@ -66,7 +67,7 @@ export default function MissionMap(props: MissionMapProps) {
       getPointResolution: resolution => resolution });
     const layers = catalog.layers.map(layer => {
       const source = new Static({ url: DATA_URL + layer.file, projection, imageExtent: [...layer.extent], interpolate: layer.id !== 'slope' });
-      source.on('imageloaderror', () => current.current.onError(`No se pudo cargar la capa ${layer.title}.`));
+      source.on('imageloaderror', () => current.current.onError(`Could not load the ${LAYER_COPY[layer.id].title} layer.`));
       const raster = new ImageLayer({ source, visible: layer.id === current.current.activeLayer });
       rasters.current[layer.id] = raster;
       return raster;
@@ -100,8 +101,8 @@ export default function MissionMap(props: MissionMapProps) {
     map.current = instance;
     const makeMarker = (kind: 'start' | 'goal') => {
       const element = document.createElement('div'); element.className = `map-marker ${kind}`;
-      element.setAttribute('role', 'img'); element.setAttribute('aria-label', kind === 'start' ? 'Marcador origen' : 'Marcador destino');
-      element.innerHTML = `<span class="marker-number">${kind === 'start' ? '1' : '2'}</span><span class="marker-label">${kind === 'start' ? 'ORIGEN' : 'DESTINO'}</span>`;
+      element.setAttribute('role', 'img'); element.setAttribute('aria-label', kind === 'start' ? 'Origin marker' : 'Destination marker');
+      element.innerHTML = `<span class="marker-number">${kind === 'start' ? '1' : '2'}</span><span class="marker-label">${kind === 'start' ? 'ORIGIN' : 'DESTINATION'}</span>`;
       const overlay = new Overlay({ element, positioning: 'center-center', stopEvent: false });
       instance.addOverlay(overlay); return overlay;
     };
@@ -166,23 +167,23 @@ export default function MissionMap(props: MissionMapProps) {
       data-geology-features={props.showGeology ? props.science?.geology.features.length ?? 0 : 0} data-science-points={(props.showObjectives ? props.science?.objectives.length ?? 0 : 0) + (props.showPhotos ? props.science?.photos.length ?? 0 : 0)}
       data-resolution={viewState.resolution} data-route-a-nodes={props.routes.a?.cells.length ?? 0} data-route-b-nodes={props.routes.b?.cells.length ?? 0}
       data-origin-cell={props.origin ? JSON.stringify(props.origin.cell) : ''} data-destination-cell={props.destination ? JSON.stringify(props.destination.cell) : ''}
-      aria-label="Mapa interactivo de Jezero, coordenadas locales marcianas" />
-    <div className="map-label"><span className="eyebrow">MRO / HIRISE</span><strong>JEZERO CRATER</strong><span>Sector occidental · Marte</span></div>
+      aria-label="Interactive Jezero map, local Martian coordinates" />
+    <div className="map-label"><span className="eyebrow">MRO / HIRISE</span><strong>JEZERO CRATER</strong><span>Western sector · Mars</span></div>
     <RegionalOverview grid={grid} studyExtent={catalog.extent} viewport={viewState.extent} onRecenter={() => map.current?.getView().fit([...catalog.extent], { padding: [24, 30, 30, 30], duration: 0 })} />
-    <div className="map-tools"><span className="north-marker" aria-label="Norte hacia arriba"><Navigation2 size={17} fill="currentColor" /><b>N</b></span>
-      <div className="zoom-buttons"><button title="Acercar" aria-label="Acercar mapa" onClick={() => map.current?.getView().adjustZoom(1)}><Plus size={17} /></button><button title="Alejar" aria-label="Alejar mapa" onClick={() => map.current?.getView().adjustZoom(-1)}><Minus size={17} /></button></div>
-      <button className="map-tool" title="Ajustar región" aria-label="Ajustar región" onClick={() => map.current?.getView().fit([...catalog.extent], { padding: [24, 30, 30, 30], duration: 0 })}><Scan size={17} /></button>
+    <div className="map-tools"><span className="north-marker" aria-label="North up"><Navigation2 size={17} fill="currentColor" /><b>N</b></span>
+      <div className="zoom-buttons"><button title="Zoom in" aria-label="Zoom in map" onClick={() => map.current?.getView().adjustZoom(1)}><Plus size={17} /></button><button title="Zoom out" aria-label="Zoom out map" onClick={() => map.current?.getView().adjustZoom(-1)}><Minus size={17} /></button></div>
+      <button className="map-tool" title="Fit study area" aria-label="Fit study area" onClick={() => map.current?.getView().fit([...catalog.extent], { padding: [24, 30, 30, 30], duration: 0 })}><Scan size={17} /></button>
     </div>
-    {props.selectionMode && <div className="selection-hint"><span className="hint-dot" />Haz clic para elegir {props.selectionMode === 'start' ? 'el origen' : 'el destino'}</div>}
-    {props.showGeology && <div className="geology-map-note">USGS SIM 3464 · desfase documentado ~100–200 m · contexto</div>}
-    {props.showGeology && props.science && <details className="geology-map-key" open={!compact}><summary>Unidades USGS · SIM 3464</summary>{[...new Map(props.science.geology.features.map(f => [f.properties.symbol, f])).values()].map(f => <button key={f.properties.symbol} onClick={() => props.onScienceSelect({ kind: 'unit', id: f.id })}><i style={{ background: UNIT_COLORS[f.properties.symbol] }} /><b>{f.properties.symbol}</b><span>{f.properties.name}</span></button>)}<small>Colores del equipo · contactos orientativos</small></details>}
+    {props.selectionMode && <div className="selection-hint"><span className="hint-dot" />Click to choose {props.selectionMode === 'start' ? 'the origin' : 'the destination'}</div>}
+    {props.showGeology && <div className="geology-map-note">USGS SIM 3464 · documented offset ~100–200 m · context</div>}
+    {props.showGeology && props.science && <details className="geology-map-key" open={!compact}><summary>USGS units · SIM 3464</summary>{[...new Map(props.science.geology.features.map(f => [f.properties.symbol, f])).values()].map(f => <button key={f.properties.symbol} onClick={() => props.onScienceSelect({ kind: 'unit', id: f.id })}><i style={{ background: UNIT_COLORS[f.properties.symbol] }} /><b>{f.properties.symbol}</b><span>{f.properties.name}</span></button>)}<small>Team colors · approximate contacts</small></details>}
     {props.science && <ScienceInspector science={props.science} selection={props.scienceSelection} onClose={() => props.onScienceSelect(null)} onAssign={props.onAssignObjective} />}
     <div className="map-legend">
-      <button className="layer-caption" onClick={props.onSources}><span>{layer.title}</span><Info size={12} /><small>{layer.displayResolutionM} m visual</small></button>
+      <button className="layer-caption" onClick={props.onSources}><span>{LAYER_COPY[layer.id].title}</span><Info size={12} /><small>{layer.displayResolutionM} m visual</small></button>
       {layer.colors && <><div className="color-ramp" style={{ background: `linear-gradient(90deg,${layer.colors.join(',')})` }} /><div className="ramp-labels"><span>{layer.minimum?.toFixed(0)} {layer.units === 'm' ? 'm' : '°'}</span><span>{layer.maximum?.toFixed(0)}{props.activeLayer === 'slope' ? '°+' : ' m'}</span></div></>}
-      {props.showNoData && <span className="mask-key"><i />Sin datos válidos · malla de 10 m</span>}
+      {props.showNoData && <span className="mask-key"><i />No valid data · 10 m grid</span>}
     </div>
-    <div className="map-bottom"><span className="coordinate-readout" data-testid="map-coordinates">{coord.latitudeNorthDeg.toFixed(5)}° N <i />{coord.longitudeEastDeg.toFixed(5)}° E</span><span>Retícula 500 m · CRS marciano local</span></div>
-    {!ready && <div className="map-loading"><span className="loading-ring" /><p>Cargando imagen orbital real</p></div>}
+    <div className="map-bottom"><span className="coordinate-readout" data-testid="map-coordinates">{coord.latitudeNorthDeg.toFixed(5)}° N <i />{coord.longitudeEastDeg.toFixed(5)}° E</span><span>500 m grid · local Martian CRS</span></div>
+    {!ready && <div className="map-loading"><span className="loading-ring" /><p>Loading real orbital imagery</p></div>}
   </div>;
 }

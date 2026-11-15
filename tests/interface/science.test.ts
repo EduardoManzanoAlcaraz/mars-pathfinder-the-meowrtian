@@ -7,6 +7,7 @@ import { auditRoute } from '../../scripts/routing/independent-audit.js';
 import { validateScience } from '../../lib/science/model.js';
 import type { ScienceData } from '../../lib/science/model.js';
 import type { RoutingGrid } from '../../lib/routing/types.js';
+import { englishScienceText } from '../../lib/map/display-copy.js';
 let data: ScienceData, grid: RoutingGrid;
 const json = async (name: string) => JSON.parse(await readFile(`public/data/jezero-science-v1/${name}`, 'utf8'));
 beforeAll(async () => {
@@ -18,6 +19,14 @@ it('accepts the versioned real science package and all five published units', ()
   expect(() => validateScience(data, grid)).not.toThrow();
   expect(new Set(data.geology.features.map(x => x.properties.symbol))).toEqual(new Set(['NHjf2', 'Nue', 'Nle', 'Aeb', 'Njf']));
   expect(data.geology.registration.documentedOffsetMeters).toEqual([100, 200]);
+  const original = JSON.stringify(data);
+  for (const text of [data.geology.registration.warningEs,
+    ...data.objectives.flatMap(o => [o.designation, o.scientificObjective, ...o.sources.map(s => s.title)]),
+    ...data.photos.flatMap(p => [p.locationMeaningEs, p.uncertainty.noteEs])]) {
+    expect(englishScienceText(text)).not.toBe(text);
+    expect(englishScienceText(text)).not.toMatch(/[áéíóúñ]|\b(?:del|las|los|una|por|para)\b/i);
+  }
+  expect(JSON.stringify(data)).toBe(original);
 });
 it('rejects scientific metadata on a different Mars grid or CRS', () => {
   for (const manifest of [{ ...data.manifest, crsProj: '+proj=longlat +datum=WGS84' }, { ...data.manifest, topographyManifestSha256: 'bad' }]) expect(() => validateScience({ ...data, manifest }, grid)).toThrow();

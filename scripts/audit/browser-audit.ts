@@ -14,6 +14,7 @@ import type { RouteSuccess } from '../../lib/routing/types.js';
 import type { ScienceObjective, DocumentedPhoto } from '../../lib/science/model.js';
 import { verifyHostedContent } from './hosted-content.mjs';
 import { compareRoutes } from '../../lib/map/route-comparison.js';
+import { assertEnglishUI } from './english-ui.js';
 
 const dir = process.env.MARS_AUDIT_OUTPUT || 'docs/final-audit'; await mkdir(dir, { recursive: true });
 const security = JSON.parse(await readFile(`${dir}/antivirus.json`, 'utf8'));
@@ -101,6 +102,7 @@ try {
     await page.waitForFunction(() => document.querySelector('[data-map-ready="true"]') && document.querySelector('[data-science-ready="true"]'));
     const mapAndScienceReadyMs = performance.now() - started;
     await page.waitForLoadState('networkidle'); await Promise.all(pending);
+    await assertEnglishUI(page);
     const initialResources = resources.map(x => ({ ...x }));
     await page.screenshot({ path: `${dir}/${name}-initial.png`, fullPage: true });
     // Exercise the actual new guided action before the manual-regression flow.
@@ -108,15 +110,15 @@ try {
     if (await page.getByRole('button', { name: /Start Mission/ }).count()) {
       await page.waitForSelector('[data-overview-ready="true"]');
       const initialResolution = Number(await page.getByTestId('mars-map').getAttribute('data-resolution'));
-      await page.getByRole('button', { name: 'Acercar mapa', exact: true }).click();
-      await page.getByRole('radio', { name: 'Pendiente', exact: true }).click();
+      await page.getByRole('button', { name: 'Zoom in map', exact: true }).click();
+      await page.getByRole('radio', { name: 'Slope', exact: true }).click();
       const startAt = performance.now(); await page.getByRole('button', { name: /Start Mission/ }).click();
       await page.waitForSelector('[data-demo-state="complete"]');
       const elapsedMs = performance.now() - startAt;
       await waitFor(async () => Math.abs(Number(await page.getByTestId('mars-map').getAttribute('data-resolution')) - initialResolution) < 1e-5, 'Guided mission did not restore the camera');
       assert.equal(await page.getByTestId('mars-map').getAttribute('data-origin-cell'), JSON.stringify(demo.start));
       assert.equal(await page.getByTestId('mars-map').getAttribute('data-destination-cell'), JSON.stringify(objectives[2]!.cell));
-      assert.equal(await page.getByRole('radio', { name: 'Ortoimagen', exact: true }).getAttribute('aria-checked'), 'true');
+      assert.equal(await page.getByRole('radio', { name: 'Orthoimage', exact: true }).getAttribute('aria-checked'), 'true');
       const a = planRoute(grid, demo.start, objectives[2]!.cell, { mode: 'distance', lambda: 0, maxSlopeDeg: 15 });
       const b = planRoute(grid, demo.start, objectives[2]!.cell, { mode: 'slope-penalty', lambda: 4, maxSlopeDeg: 15 });
       assert.ok(a.status === 'success' && b.status === 'success');
@@ -134,8 +136,8 @@ try {
       await page.locator('#route-comparison').screenshot({ path: `${dir}/${name}-comparison.png` });
       const exports: Record<string, unknown> = {};
       for (const [id, expected] of [['a', a], ['b', b]] as const) {
-        await page.getByRole('button', { name: `Ver perfil ruta ${id.toUpperCase()}` }).click();
-        const pendingDownload = page.waitForEvent('download'); await page.getByRole('button', { name: 'Exportar JSON' }).click();
+        await page.getByRole('button', { name: `View route profile ${id.toUpperCase()}` }).click();
+        const pendingDownload = page.waitForEvent('download'); await page.getByRole('button', { name: 'Export JSON' }).click();
         const download = await pendingDownload, file = `${dir}/${name}-guided-route-${id}.json`; await download.saveAs(file);
         const actual = JSON.parse(await readFile(file, 'utf8')) as RouteSuccess;
         assert.deepEqual(actual.cells, expected.cells); assert.deepEqual(actual.metrics, expected.metrics);
@@ -144,28 +146,30 @@ try {
       }
       guidedMission = { passed: true, start: demo.start, goal: objectives[2]!.cell, roundTripMs: elapsedMs, cameraRestored: true, overviewVerified: true, summary, routeA: a.metrics, routeB: b.metrics, exports };
       // Start the separate manual regression from genuinely empty endpoints.
-      await page.getByRole('button', { name: 'Reiniciar', exact: true }).click();
+      await page.getByRole('button', { name: 'Reset', exact: true }).click();
     } else if (process.env.MARS_REQUIRE_GUIDED === '1') throw new Error('Required Start Mission action missing in this deployment');
     // Explicit layer interaction, not static screenshots of a cached example.
-    for (const layer of ['Relieve', 'Elevación', 'Pendiente', 'Ortoimagen']) {
+    for (const layer of ['Hillshade', 'Elevation', 'Slope', 'Orthoimage']) {
       await page.getByRole('radio', { name: layer, exact: true }).click(); await page.waitForLoadState('networkidle');
     }
     for (let i = 0; i < 3; i++) {
-      await page.getByRole('button', { name: `Consultar objetivo M${i + 1}` }).click(); await cardInViewport(page);
+      await page.getByRole('button', { name: `Inspect objective M${i + 1}` }).click(); await cardInViewport(page);
       const card = page.getByTestId('science-inspector');
       assert.ok((await card.innerText()).includes(objectives[i]!.unitName));
       assert.ok((await card.innerText()).includes('100–200 m'));
-      assert.ok((await card.innerText()).includes('no es nombre ni estación oficial'));
-      const closeBox = await page.getByRole('button', { name: 'Cerrar ficha científica' }).boundingBox();
+      assert.ok((await card.innerText()).includes('not an official NASA/USGS name or station'));
+      await card.getByText('Objective sources', { exact: true }).click();
+      await assertEnglishUI(page);
+      const closeBox = await page.getByRole('button', { name: 'Close science card' }).boundingBox();
       assert.ok(closeBox && closeBox.y >= 0 && closeBox.y + closeBox.height <= config.height);
       if (i === 2) {
-        const button = page.getByRole('button', { name: 'Usar como destino', exact: true });
+        const button = page.getByRole('button', { name: 'Use as destination', exact: true });
         const b = await button.boundingBox(); assert.ok(b && b.y >= 0 && b.y + b.height <= config.height, 'Action needs inner scrolling');
         await card.screenshot({ path: `${dir}/${name}-objective.png` }); await button.click();
-      } else await page.getByRole('button', { name: 'Cerrar ficha científica' }).click();
+      } else await page.getByRole('button', { name: 'Close science card' }).click();
     }
     // Select origin by a true map click; destination stays at the documented M3 cell.
-    await page.getByRole('button', { name: 'Seleccionar origen', exact: true }).click();
+    await page.getByRole('button', { name: 'Select origin', exact: true }).click();
     await settledMap(page);
     const source = cellCenter(grid, demo.start), click = await pixel(page, source.x, source.y);
     assert.ok(click.y >= 0 && click.y < config.height && click.x >= 0 && click.x < config.width, 'Origin not visible');
@@ -173,13 +177,13 @@ try {
     await waitFor(async () => (await page.getByTestId('mars-map').getAttribute('data-origin-cell')) === JSON.stringify(demo.start), 'Click-to-grid mismatch');
     assert.equal(await page.getByTestId('mars-map').getAttribute('data-destination-cell'), JSON.stringify(objectives[2]!.cell));
     assert.equal(await page.locator('.selection-hint').count(), 0, 'Already-set destination must not be requested again');
-    const computeStarted = performance.now(); await page.getByRole('button', { name: 'Calcular rutas', exact: true }).click();
+    const computeStarted = performance.now(); await page.getByRole('button', { name: 'Calculate routes', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('[data-calculation-state="complete"]'));
     const bothRoutesUiMs = performance.now() - computeStarted;
     const routes: Record<string, unknown> = {};
     for (const [id, lambda] of [['a', 0], ['b', 4]] as const) {
-      await page.getByRole('button', { name: `Ver perfil ruta ${id.toUpperCase()}` }).click();
-      const downloadEvent = page.waitForEvent('download'); await page.getByRole('button', { name: 'Exportar JSON' }).click();
+      await page.getByRole('button', { name: `View route profile ${id.toUpperCase()}` }).click();
+      const downloadEvent = page.waitForEvent('download'); await page.getByRole('button', { name: 'Export JSON' }).click();
       const download = await downloadEvent; const path = `${dir}/${name}-route-${id}.json`; await download.saveAs(path);
       const actual = JSON.parse(await readFile(path, 'utf8')) as RouteSuccess & { scientificContext: { registration: { documentedOffsetMeters: number[] } } };
       const expected = planRoute(grid, demo.start, objectives[2]!.cell, { mode: lambda ? 'slope-penalty' : 'distance', lambda, maxSlopeDeg: 15 });
@@ -194,35 +198,37 @@ try {
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' })); await page.waitForTimeout(200);
     await page.screenshot({ path: `${dir}/${name}-routes.png`, fullPage: true });
     // Geology and photos do not change the computed route model.
-    await page.getByRole('button', { name: 'Geología USGS', exact: false }).first().click();
+    await page.getByRole('button', { name: 'USGS geology', exact: false }).first().click();
     assert.equal(await page.getByTestId('mars-map').getAttribute('data-geology-features'), '6');
     await page.getByRole('button', { name: 'Nle Lower etched unit', exact: false }).first().click(); await cardInViewport(page);
     assert.ok((await page.getByTestId('science-inspector').innerText()).includes('Sun & Stack'));
     await page.getByTestId('science-inspector').screenshot({ path: `${dir}/${name}-geology.png` });
-    await page.getByRole('button', { name: 'Cerrar ficha científica' }).click();
-    await page.getByRole('button', { name: 'Geología USGS', exact: false }).first().click();
-    await page.getByRole('button', { name: 'Registros Perseverance', exact: true }).click();
+    await page.getByRole('button', { name: 'Close science card' }).click();
+    await page.getByRole('button', { name: 'USGS geology', exact: false }).first().click();
+    await page.getByRole('button', { name: 'Perseverance records', exact: true }).click();
     for (const photo of photos) {
       await page.getByRole('button', { name: `${photo.label} RMC ${photo.rmc}`, exact: false }).click(); await cardInViewport(page);
       const card = page.getByTestId('science-inspector');
       await card.locator('img').waitFor(); await page.waitForFunction(() => { const i = document.querySelector('.science-inspector img') as HTMLImageElement | null; return !!i && i.complete && i.naturalWidth > 0; });
       assert.ok((await card.innerText()).includes('NASA/JPL-Caltech')); assert.ok((await card.innerText()).includes(photo.rmc));
       assert.ok((await card.innerText()).includes('no de los blancos'));
-      await card.getByText('Verificación documental', { exact: true }).click();
+      await card.getByText('Documentary verification', { exact: true }).click();
       assert.equal(await card.locator('a[href*="rss/api"]').getAttribute('href'), photo.metadataUrl);
       await card.locator('.science-inspector-body').evaluate(el => { el.scrollTop = 0; });
       if (photo.sol === 107) await card.screenshot({ path: `${dir}/${name}-perseverance.png` });
-      await page.getByRole('button', { name: 'Cerrar ficha científica' }).click();
+      await page.getByRole('button', { name: 'Close science card' }).click();
     }
-    await page.getByRole('button', { name: 'Procedencia y resolución', exact: true }).click();
+    await page.getByRole('button', { name: 'Provenance and resolution', exact: true }).click();
     const dialog = page.getByRole('dialog'); await dialog.waitFor({ state: 'visible' });
     const scientificText = await dialog.innerText();
-    for (const text of ['NASA', 'USGS', '100–200 m', 'no estaciones oficiales', 'Mars Trek']) assert.ok(scientificText.includes(text));
+    for (const text of ['NASA', 'USGS', '100–200 m', 'not official stations', 'Mars Trek']) assert.ok(scientificText.includes(text));
+    await assertEnglishUI(page);
     await page.screenshot({ path: `${dir}/${name}-credits.png`, fullPage: true });
     const creditsResponse = await context.request.get(base + '/THIRD_PARTY_NOTICES.txt'); assert.equal(creditsResponse.status(), 200);
     const credits = await creditsResponse.text(); for (const text of ['Manrope', 'OpenLayers', 'NASA/JPL', 'Sun,', 'React']) assert.ok(credits.includes(text));
-    await page.getByRole('button', { name: 'Cerrar fuentes' }).click();
-    assert.ok((await page.getByRole('note').innerText()).includes('Ninguno de los dos recorridos certifica seguridad'));
+    await page.getByRole('button', { name: 'Close sources' }).click();
+    assert.ok((await page.getByRole('note').innerText()).includes('Neither route certifies astronaut safety'));
+    await assertEnglishUI(page);
     const layout = await page.evaluate(() => ({ horizontalOverflow: document.documentElement.scrollWidth > innerWidth, safetyFontPx: parseFloat(getComputedStyle(document.querySelector('.model-limitations')!).fontSize) }));
     assert.equal(layout.horizontalOverflow, false); assert.ok(layout.safetyFontPx >= 11);
     await page.waitForLoadState('networkidle'); const settled = await Promise.allSettled(pending);
