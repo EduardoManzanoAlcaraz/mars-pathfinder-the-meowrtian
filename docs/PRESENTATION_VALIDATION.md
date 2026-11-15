@@ -1,5 +1,7 @@
 # Presentation and submission-material validation
 
+**Current final revision:** seven slides and seven PDF pages, new production captures, A* and M3 trade-offs, Maximum modeled slope, Model Checks and Limits, source/AI credits and Apache-2.0. Native PowerPoint and all seven rendered PDF pages were inspected. [Current checks](final-review-20261115/materials-validation.json), [release](REVISION_PRESENTACION_FINAL.md). Earlier revision records below are historical.
+
 **Current jury release, 15 November 2026:** the existing deck was updated with current production captures, Start Mission to M3, 72 Vitest tests and the team-approved Apache-2.0 license. PPTX/PDF retain exactly seven slides/pages. Native PowerPoint open/export, embedded image hashes, editable slide-5 table, PDF text/link checks and individual visual review passed. [Current checks](jury-release-20261115/materials-validation.json), [release evidence](MEJORA_FINAL_JURADO.md). The narrative below records the earlier deck revision.
 
 ## Historical first-deck record

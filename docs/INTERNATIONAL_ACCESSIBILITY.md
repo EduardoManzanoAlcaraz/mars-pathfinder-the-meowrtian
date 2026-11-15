@@ -1,5 +1,7 @@
 # English interface preview — 15 November 2026
 
+**Current update:** the English interface has been promoted to production after a new preview and production validation. The original preview record below is historical. See [final review](REVISION_PRESENTACION_FINAL.md).
+
 **Resultado: borrador HTTPS validado; se recomienda publicarlo. Producción no se ha sustituido.** Esta revisión cambia presentación lingüística y ajuste de texto; no añade funcionalidades, datos, dependencias ni algoritmos.
 
 ## Versión y acceso

@@ -5,7 +5,7 @@ Challenge: **Interplanetary Survival Guide: Martian Map**
 
 ## [Open the public demo](https://mars-pathfinder-the-meowrtian.netlify.app)
 
-**English preview on this branch:** [review the validated English interface](https://english-20261115-review--mars-pathfinder-the-meowrtian.netlify.app). This version defaults to English, including manual controls, scientific cards, provenance, errors and accessible labels. Production remains unchanged pending the team's publication decision. [Executed checks and scope](docs/INTERNATIONAL_ACCESSIBILITY.md).
+**English release, 15 November:** the public app now defaults to English, including manual controls, scientific cards, provenance, errors and accessible labels. The corrected Apache-2.0 notice and revised seven-slide presentation accompany the verified Start Mission to M3. [Current release evidence](docs/REVISION_PRESENTACION_FINAL.md).
 
 [Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md) · [Publication evidence](docs/GITHUB_PUBLICATION.md)
 
@@ -15,7 +15,7 @@ A working browser application for exploring a verified region of Jezero crater a
 
 **Educational and mission-concept prototype. Neither route certifies astronaut safety.**
 
-![Real production map and route metrics](docs/jury-release-20261115/production/1440-production-routes.png)
+![Real production map and route metrics](docs/final-review-20261115/production/1440-production-routes.png)
 
 ## Quick start
 
@@ -29,7 +29,7 @@ npm start
 
 Open **http://127.0.0.1:3000**. Development: `npm run dev`. Next.js `output: 'export'` generates `out/`; no Next.js server or Netlify Function is required. Serve the export through HTTP/HTTPS, rather than `file://`.
 
-The English preview uses **Start Mission** for the validated origin-to-M3 traverse: the camera, layers, 15° cap and lambda 4 are set and both routes are calculated afresh. The comparison matches the experiment below and in the presentation. **Load validated example** loads the earlier manual example with its different destination; then select **Calculate routes**. Switch Orthoimage/Hillshade/Elevation/Slope, inspect M1–M3 and the geology/photo cards, and use **Export JSON**. The existing production version retains the corresponding Spanish manual labels until this preview is promoted.
+The app uses **Start Mission** for the validated origin-to-M3 traverse: the camera, layers, 15° cap and lambda 4 are set and both routes are calculated afresh. The comparison matches the experiment below and in the presentation. **Load validated example** loads the earlier manual example with its different destination; then select **Calculate routes**. Switch Orthoimage/Hillshade/Elevation/Slope, inspect M1–M3 and the geology/photo cards, and use **Export JSON**.
 
 ## Architecture
 
@@ -68,7 +68,7 @@ Origin **(column 59, row 302)** to team objective **M3 (334,233)**, dataset `jez
 | Cumulative ascent | 36.39 m | 31.88 m |
 | Maximum modeled slope | 14.54° | 9.02° |
 
-The downloaded JSON matches the local engine and passes independent edge audits. Two fresh private Chrome sessions at 1440 × 900 and 390 × 844 passed Start Mission and the manual production flow without authentication. Observed readiness was **2.79 s desktop / 2.28 s mobile viewport** with an empty browser cache on the tested machine/network; the CDN was not purged and this is not a physical-phone test or worldwide performance guarantee. [Current production evidence](docs/jury-release-20261115/production/browser-audit.json).
+The downloaded JSON matches the local engine and passes independent edge audits. Two fresh private Chrome sessions at 1440 × 900 and 390 × 844 passed Start Mission and the manual production flow without authentication. Observed readiness was **2.46 s desktop / 3.30 s mobile viewport** with an empty browser cache on the tested machine/network; the CDN was not purged and this is not a physical-phone test or worldwide performance guarantee. [Current production evidence](docs/final-review-20261115/production/browser-audit.json).
 
 ## Scientific sources
 
@@ -95,7 +95,7 @@ npm run test:interface
 npm run demo:routes
 ```
 
-The jury release passed **37 routing/worker + 35 interface/science Vitest tests**, typecheck and the static build from the source checkout. The **22-test Python suite** also passed in the full original-data environment, which is deliberately larger than this compact repository. Independent Dijkstra comparisons supplement the suite. [Current executed checks](docs/jury-release-20261115/checks.json). [Initial source-publication checks](docs/SOURCE_RELEASE_CHECKS.md) retain their earlier 27-test UI and 8-test synthetic-Python scope.
+The jury release passed **37 routing/worker + 35 interface/science Vitest tests**, typecheck and the static build from the source checkout. The **22-test Python suite** also passed in the full original-data environment, which is deliberately larger than this compact repository. Independent Dijkstra comparisons supplement the suite. [Current executed checks](docs/final-review-20261115/checks.json). [Initial source-publication checks](docs/SOURCE_RELEASE_CHECKS.md) retain their earlier 27-test UI and 8-test synthetic-Python scope.
 
 For optional Python work, create an isolated environment, install the pinned geospatial dependencies, and run the synthetic-primitives suite:
 
@@ -110,9 +110,9 @@ The remaining Python checks require original downloads, retained official metada
 
 ## Screenshots and documentation
 
-- [Mobile route comparison](docs/jury-release-20261115/production/390-production-comparison.png)
-- [Geological uncertainty](docs/jury-release-20261115/production/390-production-geology.png)
-- [Documented Perseverance image](docs/jury-release-20261115/production/390-production-perseverance.png)
+- [Mobile route comparison](docs/final-review-20261115/production/390-production-comparison.png)
+- [Geological uncertainty](docs/final-review-20261115/production/390-production-geology.png)
+- [Documented Perseverance image](docs/final-review-20261115/production/390-production-perseverance.png)
 - [Plan](PLAN.md), [routes](docs/VALIDACION_RUTAS.md), [scientific sources](docs/NASA_RESOURCES.md), [deployment](docs/DESPLIEGUE_FINAL.md)
 - [English submission text](deliverables/spaceapps-2026/SUBMISSION_TEXT_EN.md), [editable seven-slide presentation](deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian.pptx), [seven-page PDF](deliverables/spaceapps-2026/Mars-Pathfinder-The-Meowrtian-Submission.pdf)
 

@@ -1,0 +1,63 @@
+{
+  "checkedAtUtc": "2026-11-15T16:54:09.184Z",
+  "privateBrowserContext": true,
+  "noCredentials": true,
+  "results": [
+    {
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/",
+      "method": "Browser navigation GET",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/",
+      "title": ""
+    },
+    {
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+      "method": "Browser navigation GET",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+      "title": ""
+    },
+    {
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+      "method": "Browser navigation GET",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+      "title": ""
+    },
+    {
+      "url": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json",
+      "method": "Browser navigation GET",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json",
+      "title": ""
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/jpl-image-use-policy/",
+      "method": "Browser navigation GET",
+      "status": 403,
+      "finalUrl": "https://www.jpl.nasa.gov/jpl-image-use-policy/",
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "url": "https://github.com/sharanda/manrope",
+      "method": "Browser navigation GET",
+      "status": 404,
+      "finalUrl": "https://github.com/sharanda/manrope",
+      "title": "Page not found · GitHub · GitHub"
+    },
+    {
+      "url": "https://fontsource.org/fonts/manrope/about",
+      "method": "Browser navigation GET",
+      "status": 200,
+      "finalUrl": "https://fontsource.org/fonts/manrope/about",
+      "title": "Manrope — Font Details & License | Fontsource"
+    },
+    {
+      "url": "https://science.nasa.gov/mission/mars-2020-perseverance/",
+      "method": "Browser navigation GET",
+      "status": 200,
+      "finalUrl": "https://science.nasa.gov/mission/mars-2020-perseverance/",
+      "title": "Mars 2020: Perseverance Rover - NASA Science"
+    }
+  ]
+}

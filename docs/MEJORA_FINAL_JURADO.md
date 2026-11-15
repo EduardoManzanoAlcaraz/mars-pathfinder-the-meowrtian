@@ -1,5 +1,7 @@
 # Mejora final para el jurado — Mars Pathfinder / The Meowrtian
 
+**Actualización final:** interfaz inglesa y aviso Apache-2.0 publicados, presentación revisada y siete páginas verificadas. Producción `6af9df2e7b6cf78bbc6d135b`, código construido `78e29b9`. [Evidencias actuales](REVISION_PRESENTACION_FINAL.md). El registro siguiente corresponde a la publicación anterior.
+
 **Estado actual, 15 de noviembre de 2026: publicada y verificada en HTTPS en el mismo sitio Netlify, tras superar un despliegue de prueba.** No se han añadido funcionalidades durante esta fase de publicación.
 
 ## Publicación, código y materiales actuales

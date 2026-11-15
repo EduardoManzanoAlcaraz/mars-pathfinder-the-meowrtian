@@ -1,0 +1,28 @@
+{
+  "checkedAtUtc": "2026-11-15T16:57:15.844Z",
+  "passed": true,
+  "productionUrl": "https://mars-pathfinder-the-meowrtian.netlify.app",
+  "productionDeployId": "6af9df2e7b6cf78bbc6d135b",
+  "previewUrl": "https://final-review-20261115--mars-pathfinder-the-meowrtian.netlify.app",
+  "sourceCommit": "78e29b929bc007814ea137043fdb23829f56645b",
+  "runtimeInputsVerified": 64,
+  "runtimeInputsSha256": "8a25b784844890f5ef128f2daf90cb04d4f82f7fdbc5917a3fef6ad0b1a2a63e",
+  "staticFilesVerified": 68,
+  "staticBytes": 6197327,
+  "previewPrivateContextsPassed": 2,
+  "productionPrivateContextsPassed": 2,
+  "englishDefault": true,
+  "apacheNoticeVerifiedOverHTTPS": true,
+  "allUpstreamNoticeBytesPreserved": true,
+  "unchangedProtectedScientificAndRoutingFiles": 54,
+  "tests": {
+    "routing": 37,
+    "interface": 35,
+    "totalVitest": 72,
+    "python": 22
+  },
+  "pptxSlides": 7,
+  "pdfPages": 7,
+  "nasaSubmissionPerformed": false,
+  "scope": "Real tests, private browser flows, hashes and native presentation validation; no EVA safety certification"
+}

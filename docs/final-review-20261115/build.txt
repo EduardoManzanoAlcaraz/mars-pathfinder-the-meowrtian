@@ -1,0 +1,40 @@
+
+> mars-pathfinder@0.1.0 build
+> npm run prepare:web && next build --webpack
+
+
+> mars-pathfinder@0.1.0 prepare:web
+> npm run build:worker && node scripts/web/sync-assets.mjs
+
+
+> mars-pathfinder@0.1.0 build:worker
+> node scripts/routing/build-worker.mjs
+
+Built dist/workers/routing.worker.js
+Verified and synchronized web visuals, untouched routing binaries and existing worker.
+▲ Next.js 16.4.6 (webpack)
+⚠ Warning: Next.js ignored package-lock.json in <workspace> because it is outside the current Git repository (<workspace>).
+ To use this directory, set `outputFileTracingRoot` in your Next.js config.
+
+✓ Running next.config.mjs took 45ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 5.0s
+  Running TypeScript ...
+  Finished TypeScript in 999ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/4) ...
+  Generating static pages using 5 workers (1/4)
+  Generating static pages using 5 workers (2/4)
+  Generating static pages using 5 workers (3/4)
+✓ Generating static pages using 5 workers (4/4) in 4.9s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+└ ○ /icon.svg
+
+
+○  (Static)  prerendered as static content

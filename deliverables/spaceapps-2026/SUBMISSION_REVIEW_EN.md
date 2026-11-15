@@ -1,5 +1,7 @@
 # Submission review and handoff
 
+**Final revision:** the seven-slide deck and seven-page PDF have now been revised, with current English production UI, M3 trade-offs and preserved AI/source credits. Apache-2.0 and public source access are resolved. [Final evidence](../../docs/REVISION_PRESENTACION_FINAL.md). All earlier review statements below describe their historical phase; the team still performs the official submission.
+
 **Source-release update, 15 November 2026:** the team has now explicitly approved Apache-2.0 for original code. The source is public at https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian and has passed anonymous clone/HTTPS checks. The license and source-access items below describe the earlier review and are resolved. Third-party conditions remain intact. See [publication evidence](../../docs/GITHUB_PUBLICATION.md) and [current licensing](../../docs/LICENSING.md). The team still needs to complete its official form review and submission. The seven-slide PPTX/PDF retain their original bytes and historical notes.
 
 ## Historical review before source publication

@@ -1,0 +1,46 @@
+{
+    "version":  "16.0",
+    "method":  "Read-only source open; native slide PNG and PDF export",
+    "existingUserPresentationsWereNotClosed":  true,
+    "slideCount":  7,
+    "checkedAtUtc":  "2026-11-15T16:48:05.6076211Z",
+    "slides":  [
+                   {
+                       "nativeTables":  0,
+                       "editableTextShapes":  7,
+                       "index":  1
+                   },
+                   {
+                       "nativeTables":  0,
+                       "editableTextShapes":  8,
+                       "index":  2
+                   },
+                   {
+                       "nativeTables":  0,
+                       "editableTextShapes":  13,
+                       "index":  3
+                   },
+                   {
+                       "nativeTables":  0,
+                       "editableTextShapes":  14,
+                       "index":  4
+                   },
+                   {
+                       "nativeTables":  1,
+                       "editableTextShapes":  6,
+                       "index":  5
+                   },
+                   {
+                       "nativeTables":  0,
+                       "editableTextShapes":  12,
+                       "index":  6
+                   },
+                   {
+                       "nativeTables":  0,
+                       "editableTextShapes":  7,
+                       "index":  7
+                   }
+               ],
+    "pptxSha256":  "7ECA1D78DB64C8AFD94728466C6FD868D1C031DEE87A33BB33C758879B99BD5A",
+    "application":  "Microsoft PowerPoint"
+}

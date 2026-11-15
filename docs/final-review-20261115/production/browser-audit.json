@@ -1,0 +1,3208 @@
+{
+  "executedAtUtc": "2026-11-15T16:36:41.620Z",
+  "browser": "157.0.8103.51",
+  "source": "https://mars-pathfinder-the-meowrtian.netlify.app; actual public HTTPS deployment; fresh isolated private browser contexts without credentials, cache disabled; no fabricated science",
+  "scenarios": [
+    {
+      "config": {
+        "width": 1440,
+        "height": 900,
+        "network": "production"
+      },
+      "mapAndScienceReadyMs": 2461.5688,
+      "bothRoutesUiMs": 361.95950000000084,
+      "guidedMission": {
+        "passed": true,
+        "start": {
+          "col": 59,
+          "row": 302
+        },
+        "goal": {
+          "col": 334,
+          "row": 233
+        },
+        "roundTripMs": 931.4016000000001,
+        "cameraRestored": true,
+        "overviewVerified": true,
+        "summary": "THE TRADE-OFF / MEASURED, NOT ASSUMED\n\nCompared with Route A, Route B is 82.84 m longer, with 4.51 m less cumulative ascent and 5.52 ° lower maximum modeled slope. These are topographic model results, not a physical safety assessment.\n\nView routes on terrain",
+        "routeA": {
+          "horizontalMeters": 3035.807358037436,
+          "terrainMeters": 3038.973575952494,
+          "ascentMeters": 36.391357421875,
+          "descentMeters": 64.307373046875,
+          "netElevationMeters": -27.916015625,
+          "maxSlopeDeg": 14.535634994506836,
+          "totalCost": 3035.807358037436,
+          "exposure": [
+            {
+              "lowerInclusiveDeg": 0,
+              "upperExclusiveDeg": 5,
+              "horizontalMeters": 791.1269837220809,
+              "fractionOfHorizontalLength": 0.2605985460927014
+            },
+            {
+              "lowerInclusiveDeg": 5,
+              "upperExclusiveDeg": 10,
+              "horizontalMeters": 1803.2590180780453,
+              "fractionOfHorizontalLength": 0.5939965239572387
+            },
+            {
+              "lowerInclusiveDeg": 10,
+              "upperExclusiveDeg": 15,
+              "horizontalMeters": 441.4213562373095,
+              "fractionOfHorizontalLength": 0.1454049299500598
+            },
+            {
+              "lowerInclusiveDeg": 15,
+              "upperExclusiveDeg": 90,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            }
+          ]
+        },
+        "routeB": {
+          "horizontalMeters": 3118.6500705120607,
+          "terrainMeters": 3120.958564881438,
+          "ascentMeters": 31.87841796875,
+          "descentMeters": 59.79443359375,
+          "netElevationMeters": -27.916015625,
+          "maxSlopeDeg": 9.018861770629883,
+          "totalCost": 4487.520852634148,
+          "exposure": [
+            {
+              "lowerInclusiveDeg": 0,
+              "upperExclusiveDeg": 5,
+              "horizontalMeters": 1762.9646455628176,
+              "fractionOfHorizontalLength": 0.5652973580563821
+            },
+            {
+              "lowerInclusiveDeg": 5,
+              "upperExclusiveDeg": 10,
+              "horizontalMeters": 1355.6854249492385,
+              "fractionOfHorizontalLength": 0.43470264194361646
+            },
+            {
+              "lowerInclusiveDeg": 10,
+              "upperExclusiveDeg": 15,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            },
+            {
+              "lowerInclusiveDeg": 15,
+              "upperExclusiveDeg": 90,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            }
+          ]
+        },
+        "exports": {
+          "a": {
+            "file": "docs/final-review-20261115/production/1440-production-guided-route-a.json",
+            "computeTimeMs": 146.5999999642372,
+            "expandedCells": 17569,
+            "audit": {
+              "passed": true,
+              "checkedCells": 276,
+              "checkedEdges": 275,
+              "violations": [],
+              "independentMetrics": {
+                "horizontalMeters": 3035.807358037436,
+                "terrainMeters": 3038.973575952494,
+                "ascentMeters": 36.391357421875,
+                "descentMeters": 64.307373046875,
+                "netElevationMeters": -27.916015625,
+                "totalCost": 3035.807358037436,
+                "maxSlopeDeg": 14.535634994506836
+              },
+              "absoluteDifferences": {
+                "horizontalMeters": 0,
+                "terrainMeters": 0,
+                "ascentMeters": 0,
+                "descentMeters": 0,
+                "netElevationMeters": 0,
+                "totalCost": 0,
+                "maxSlopeDeg": 0
+              }
+            },
+            "parameters": {
+              "mode": "distance",
+              "lambda": 0,
+              "maxSlopeDeg": 15,
+              "thetaRefDeg": 15,
+              "exposureBinsDeg": [
+                0,
+                5,
+                10,
+                15,
+                90
+              ]
+            }
+          },
+          "b": {
+            "file": "docs/final-review-20261115/production/1440-production-guided-route-b.json",
+            "computeTimeMs": 210.30000001192093,
+            "expandedCells": 50939,
+            "audit": {
+              "passed": true,
+              "checkedCells": 276,
+              "checkedEdges": 275,
+              "violations": [],
+              "independentMetrics": {
+                "horizontalMeters": 3118.6500705120607,
+                "terrainMeters": 3120.958564881438,
+                "ascentMeters": 31.87841796875,
+                "descentMeters": 59.79443359375,
+                "netElevationMeters": -27.916015625,
+                "totalCost": 4487.520852634148,
+                "maxSlopeDeg": 9.018861770629883
+              },
+              "absoluteDifferences": {
+                "horizontalMeters": 0,
+                "terrainMeters": 0,
+                "ascentMeters": 0,
+                "descentMeters": 0,
+                "netElevationMeters": 0,
+                "totalCost": 0,
+                "maxSlopeDeg": 0
+              }
+            },
+            "parameters": {
+              "mode": "slope-penalty",
+              "lambda": 4,
+              "maxSlopeDeg": 15,
+              "thetaRefDeg": 15,
+              "exposureBinsDeg": [
+                0,
+                5,
+                10,
+                15,
+                90
+              ]
+            }
+          }
+        }
+      },
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2968463,
+      "completeFlowBodyBytes": 4900624,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 26913,
+          "durationMs": 315.294,
+          "contentType": "text/html; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 167.906,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 254.997,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/css/2c8157898d9e6a02.css",
+          "status": 200,
+          "bodyBytes": 50030,
+          "durationMs": 255.906,
+          "contentType": "text/css; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+          "status": 200,
+          "bodyBytes": 54839,
+          "durationMs": 255.678,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 257.181,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/975-e323ed530151dd26.js",
+          "status": 200,
+          "bodyBytes": 13493,
+          "durationMs": 257.782,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 292.49,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 434.736,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 316.312,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 316.923,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 317.836,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 423.63,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 514.838,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 516.926,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 619.059,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 619.586,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 286.796,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/372.5b1935f8796b27fb.js",
+          "status": 200,
+          "bodyBytes": 15488,
+          "durationMs": 298.015,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/92.37d52bab7f34aa16.js",
+          "status": 200,
+          "bodyBytes": 326279,
+          "durationMs": 297.957,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 269.237,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 282.394,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 232.134,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-overview-v1/context.json",
+          "status": 200,
+          "bodyBytes": 48982,
+          "durationMs": 251.988,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 283.345,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 264.238,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 26913,
+          "durationMs": 315.294,
+          "contentType": "text/html; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 167.906,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 254.997,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/css/2c8157898d9e6a02.css",
+          "status": 200,
+          "bodyBytes": 50030,
+          "durationMs": 255.906,
+          "contentType": "text/css; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+          "status": 200,
+          "bodyBytes": 54839,
+          "durationMs": 255.678,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 257.181,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/975-e323ed530151dd26.js",
+          "status": 200,
+          "bodyBytes": 13493,
+          "durationMs": 257.782,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 292.49,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 434.736,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 316.312,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 316.923,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 317.836,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 423.63,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 514.838,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 516.926,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 619.059,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 619.586,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 286.796,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/372.5b1935f8796b27fb.js",
+          "status": 200,
+          "bodyBytes": 15488,
+          "durationMs": 298.015,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/92.37d52bab7f34aa16.js",
+          "status": 200,
+          "bodyBytes": 326279,
+          "durationMs": 297.957,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 269.237,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 282.394,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 232.134,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-overview-v1/context.json",
+          "status": 200,
+          "bodyBytes": 48982,
+          "durationMs": 251.988,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 283.345,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 264.238,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 310.835,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 296.348,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 295.434,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 319.743,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 225.263,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 87.381,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 96.92,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 274.197,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 318.115,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/2c8157898d9e6a02.css",
+          "durationMs": 255.70000004768372,
+          "transferSize": 11415,
+          "encodedBodySize": 11115,
+          "decodedBodySize": 50030
+        },
+        {
+          "path": "/_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+          "durationMs": 167.89999997615814,
+          "transferSize": 2013,
+          "encodedBodySize": 1713,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 292.5999999642372,
+          "transferSize": 61719,
+          "encodedBodySize": 61419,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 254.9000000357628,
+          "transferSize": 63573,
+          "encodedBodySize": 63273,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+          "durationMs": 255.69999998807907,
+          "transferSize": 17472,
+          "encodedBodySize": 17172,
+          "decodedBodySize": 54839
+        },
+        {
+          "path": "/_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+          "durationMs": 257.0999999642372,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/975-e323ed530151dd26.js",
+          "durationMs": 257.80000001192093,
+          "transferSize": 4773,
+          "encodedBodySize": 4473,
+          "decodedBodySize": 13493
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 434.5999999642372,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 423.60000002384186,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 317.2999999523163,
+          "transferSize": 4648,
+          "encodedBodySize": 4348,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 316.9000000357628,
+          "transferSize": 2598,
+          "encodedBodySize": 2298,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 316.2999999523163,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 619.1000000238419,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 619.5,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 516.8999999761581,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 514.6999999880791,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/_next/static/chunks/92.37d52bab7f34aa16.js",
+          "durationMs": 297.7000000476837,
+          "transferSize": 92699,
+          "encodedBodySize": 92399,
+          "decodedBodySize": 326279
+        },
+        {
+          "path": "/_next/static/chunks/372.5b1935f8796b27fb.js",
+          "durationMs": 298,
+          "transferSize": 5983,
+          "encodedBodySize": 5683,
+          "decodedBodySize": 15488
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 286.5,
+          "transferSize": 911,
+          "encodedBodySize": 611,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 269.10000002384186,
+          "transferSize": 46275,
+          "encodedBodySize": 45975,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 282.30000001192093,
+          "transferSize": 2198,
+          "encodedBodySize": 1898,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 283.30000001192093,
+          "transferSize": 1960,
+          "encodedBodySize": 1660,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-overview-v1/context.json",
+          "durationMs": 251.5,
+          "transferSize": 16471,
+          "encodedBodySize": 16171,
+          "decodedBodySize": 48982
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 264.2000000476837,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 232.10000002384186,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 310.69999998807907,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -35.80000001192093,
+          "transferSize": 3802,
+          "encodedBodySize": 3502,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -38.60000002384186,
+          "transferSize": 3802,
+          "encodedBodySize": 3502,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 319.5999999642372,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 225.0999999642372,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -19.600000023841858,
+          "transferSize": 3802,
+          "encodedBodySize": 3502,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -20.69999998807907,
+          "transferSize": 3802,
+          "encodedBodySize": 3502,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 273.5999999642372,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 318.0999999642372,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 122.69999998807907,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-review-20261115/production/1440-production-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 198.80000001192093,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-review-20261115/production/1440-production-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    },
+    {
+      "config": {
+        "width": 390,
+        "height": 844,
+        "network": "production"
+      },
+      "mapAndScienceReadyMs": 3300.950399999998,
+      "bothRoutesUiMs": 346.670900000001,
+      "guidedMission": {
+        "passed": true,
+        "start": {
+          "col": 59,
+          "row": 302
+        },
+        "goal": {
+          "col": 334,
+          "row": 233
+        },
+        "roundTripMs": 916.0095000000001,
+        "cameraRestored": true,
+        "overviewVerified": true,
+        "summary": "THE TRADE-OFF / MEASURED, NOT ASSUMED\n\nCompared with Route A, Route B is 82.84 m longer, with 4.51 m less cumulative ascent and 5.52 ° lower maximum modeled slope. These are topographic model results, not a physical safety assessment.\n\nView routes on terrain",
+        "routeA": {
+          "horizontalMeters": 3035.807358037436,
+          "terrainMeters": 3038.973575952494,
+          "ascentMeters": 36.391357421875,
+          "descentMeters": 64.307373046875,
+          "netElevationMeters": -27.916015625,
+          "maxSlopeDeg": 14.535634994506836,
+          "totalCost": 3035.807358037436,
+          "exposure": [
+            {
+              "lowerInclusiveDeg": 0,
+              "upperExclusiveDeg": 5,
+              "horizontalMeters": 791.1269837220809,
+              "fractionOfHorizontalLength": 0.2605985460927014
+            },
+            {
+              "lowerInclusiveDeg": 5,
+              "upperExclusiveDeg": 10,
+              "horizontalMeters": 1803.2590180780453,
+              "fractionOfHorizontalLength": 0.5939965239572387
+            },
+            {
+              "lowerInclusiveDeg": 10,
+              "upperExclusiveDeg": 15,
+              "horizontalMeters": 441.4213562373095,
+              "fractionOfHorizontalLength": 0.1454049299500598
+            },
+            {
+              "lowerInclusiveDeg": 15,
+              "upperExclusiveDeg": 90,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            }
+          ]
+        },
+        "routeB": {
+          "horizontalMeters": 3118.6500705120607,
+          "terrainMeters": 3120.958564881438,
+          "ascentMeters": 31.87841796875,
+          "descentMeters": 59.79443359375,
+          "netElevationMeters": -27.916015625,
+          "maxSlopeDeg": 9.018861770629883,
+          "totalCost": 4487.520852634148,
+          "exposure": [
+            {
+              "lowerInclusiveDeg": 0,
+              "upperExclusiveDeg": 5,
+              "horizontalMeters": 1762.9646455628176,
+              "fractionOfHorizontalLength": 0.5652973580563821
+            },
+            {
+              "lowerInclusiveDeg": 5,
+              "upperExclusiveDeg": 10,
+              "horizontalMeters": 1355.6854249492385,
+              "fractionOfHorizontalLength": 0.43470264194361646
+            },
+            {
+              "lowerInclusiveDeg": 10,
+              "upperExclusiveDeg": 15,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            },
+            {
+              "lowerInclusiveDeg": 15,
+              "upperExclusiveDeg": 90,
+              "horizontalMeters": 0,
+              "fractionOfHorizontalLength": 0
+            }
+          ]
+        },
+        "exports": {
+          "a": {
+            "file": "docs/final-review-20261115/production/390-production-guided-route-a.json",
+            "computeTimeMs": 138.69999998807907,
+            "expandedCells": 17569,
+            "audit": {
+              "passed": true,
+              "checkedCells": 276,
+              "checkedEdges": 275,
+              "violations": [],
+              "independentMetrics": {
+                "horizontalMeters": 3035.807358037436,
+                "terrainMeters": 3038.973575952494,
+                "ascentMeters": 36.391357421875,
+                "descentMeters": 64.307373046875,
+                "netElevationMeters": -27.916015625,
+                "totalCost": 3035.807358037436,
+                "maxSlopeDeg": 14.535634994506836
+              },
+              "absoluteDifferences": {
+                "horizontalMeters": 0,
+                "terrainMeters": 0,
+                "ascentMeters": 0,
+                "descentMeters": 0,
+                "netElevationMeters": 0,
+                "totalCost": 0,
+                "maxSlopeDeg": 0
+              }
+            },
+            "parameters": {
+              "mode": "distance",
+              "lambda": 0,
+              "maxSlopeDeg": 15,
+              "thetaRefDeg": 15,
+              "exposureBinsDeg": [
+                0,
+                5,
+                10,
+                15,
+                90
+              ]
+            }
+          },
+          "b": {
+            "file": "docs/final-review-20261115/production/390-production-guided-route-b.json",
+            "computeTimeMs": 218.5,
+            "expandedCells": 50939,
+            "audit": {
+              "passed": true,
+              "checkedCells": 276,
+              "checkedEdges": 275,
+              "violations": [],
+              "independentMetrics": {
+                "horizontalMeters": 3118.6500705120607,
+                "terrainMeters": 3120.958564881438,
+                "ascentMeters": 31.87841796875,
+                "descentMeters": 59.79443359375,
+                "netElevationMeters": -27.916015625,
+                "totalCost": 4487.520852634148,
+                "maxSlopeDeg": 9.018861770629883
+              },
+              "absoluteDifferences": {
+                "horizontalMeters": 0,
+                "terrainMeters": 0,
+                "ascentMeters": 0,
+                "descentMeters": 0,
+                "netElevationMeters": 0,
+                "totalCost": 0,
+                "maxSlopeDeg": 0
+              }
+            },
+            "parameters": {
+              "mode": "slope-penalty",
+              "lambda": 4,
+              "maxSlopeDeg": 15,
+              "thetaRefDeg": 15,
+              "exposureBinsDeg": [
+                0,
+                5,
+                10,
+                15,
+                90
+              ]
+            }
+          }
+        }
+      },
+      "coldBrowserCache": true,
+      "externalNetworkBlocked": true,
+      "initialBodyBytes": 2968463,
+      "completeFlowBodyBytes": 4900624,
+      "initialResources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 26913,
+          "durationMs": 656.454,
+          "contentType": "text/html; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/975-e323ed530151dd26.js",
+          "status": 200,
+          "bodyBytes": 13493,
+          "durationMs": 914.577,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/css/2c8157898d9e6a02.css",
+          "status": 200,
+          "bodyBytes": 50030,
+          "durationMs": 969.248,
+          "contentType": "text/css; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 971.003,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+          "status": 200,
+          "bodyBytes": 54839,
+          "durationMs": 971.201,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 1011.589,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 1070.311,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 1158.085,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 269.096,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 195.242,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 145.4,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 152.134,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 153.512,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 147.071,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 276.499,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 382.052,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 387.073,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/372.5b1935f8796b27fb.js",
+          "status": 200,
+          "bodyBytes": 15488,
+          "durationMs": 301.15,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 390.42,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/92.37d52bab7f34aa16.js",
+          "status": 200,
+          "bodyBytes": 326279,
+          "durationMs": 473.456,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 202.104,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 202.487,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 202.791,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-overview-v1/context.json",
+          "status": 200,
+          "bodyBytes": 48982,
+          "durationMs": 169.598,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 173.444,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 208.765,
+          "contentType": "image/webp"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "bodyBytes": 26913,
+          "durationMs": 656.454,
+          "contentType": "text/html; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/975-e323ed530151dd26.js",
+          "status": 200,
+          "bodyBytes": 13493,
+          "durationMs": 914.577,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/css/2c8157898d9e6a02.css",
+          "status": 200,
+          "bodyBytes": 50030,
+          "durationMs": 969.248,
+          "contentType": "text/css; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+          "status": 200,
+          "bodyBytes": 3450,
+          "durationMs": 971.003,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+          "status": 200,
+          "bodyBytes": 54839,
+          "durationMs": 971.201,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+          "status": 200,
+          "bodyBytes": 513,
+          "durationMs": 1011.589,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "bodyBytes": 203721,
+          "durationMs": 1070.311,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "status": 200,
+          "bodyBytes": 242282,
+          "durationMs": 1158.085,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "status": 200,
+          "bodyBytes": 24836,
+          "durationMs": 269.096,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "status": 200,
+          "bodyBytes": 9444,
+          "durationMs": 195.242,
+          "contentType": "font/woff2"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "status": 200,
+          "bodyBytes": 7573,
+          "durationMs": 145.4,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "status": 200,
+          "bodyBytes": 339,
+          "durationMs": 152.134,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 15599,
+          "durationMs": 153.512,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/icon.svg?d44d58c38bb02a1a",
+          "status": 200,
+          "bodyBytes": 362,
+          "durationMs": 147.071,
+          "contentType": "image/svg+xml"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "status": 200,
+          "bodyBytes": 140264,
+          "durationMs": 276.499,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 382.052,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "status": 200,
+          "bodyBytes": 561056,
+          "durationMs": 387.073,
+          "contentType": "application/octet-stream"
+        },
+        {
+          "path": "/_next/static/chunks/372.5b1935f8796b27fb.js",
+          "status": 200,
+          "bodyBytes": 15488,
+          "durationMs": 301.15,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "status": 200,
+          "bodyBytes": 1196,
+          "durationMs": 390.42,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/_next/static/chunks/92.37d52bab7f34aa16.js",
+          "status": 200,
+          "bodyBytes": 326279,
+          "durationMs": 473.456,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "status": 200,
+          "bodyBytes": 137470,
+          "durationMs": 202.104,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "status": 200,
+          "bodyBytes": 6932,
+          "durationMs": 202.487,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "status": 200,
+          "bodyBytes": 5536,
+          "durationMs": 202.791,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-overview-v1/context.json",
+          "status": 200,
+          "bodyBytes": 48982,
+          "durationMs": 169.598,
+          "contentType": "application/json"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "status": 200,
+          "bodyBytes": 368,
+          "durationMs": 173.444,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "status": 200,
+          "bodyBytes": 510442,
+          "durationMs": 208.765,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "status": 200,
+          "bodyBytes": 1070642,
+          "durationMs": 428.466,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 395.161,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 397.179,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "status": 200,
+          "bodyBytes": 431374,
+          "durationMs": 447.048,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "status": 200,
+          "bodyBytes": 284396,
+          "durationMs": 714.454,
+          "contentType": "image/webp"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 73.571,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "status": 200,
+          "bodyBytes": 11550,
+          "durationMs": 76.074,
+          "contentType": "application/javascript; charset=UTF-8"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "status": 200,
+          "bodyBytes": 42430,
+          "durationMs": 378.377,
+          "contentType": "image/jpeg"
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "status": 200,
+          "bodyBytes": 57119,
+          "durationMs": 486.761,
+          "contentType": "image/jpeg"
+        }
+      ],
+      "resourceTiming": [
+        {
+          "path": "/_next/static/css/2c8157898d9e6a02.css",
+          "durationMs": 969.1000000238419,
+          "transferSize": 11499,
+          "encodedBodySize": 11199,
+          "decodedBodySize": 50030
+        },
+        {
+          "path": "/_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+          "durationMs": 971,
+          "transferSize": 2013,
+          "encodedBodySize": 1713,
+          "decodedBodySize": 3450
+        },
+        {
+          "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "durationMs": 1070.300000011921,
+          "transferSize": 61844,
+          "encodedBodySize": 61544,
+          "decodedBodySize": 203721
+        },
+        {
+          "path": "/_next/static/chunks/975-e323ed530151dd26.js",
+          "durationMs": 914.6000000238419,
+          "transferSize": 4772,
+          "encodedBodySize": 4472,
+          "decodedBodySize": 13493
+        },
+        {
+          "path": "/_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+          "durationMs": 971.3000000119209,
+          "transferSize": 17526,
+          "encodedBodySize": 17226,
+          "decodedBodySize": 54839
+        },
+        {
+          "path": "/_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+          "durationMs": 1011.6000000238419,
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "path": "/_next/static/chunks/794-96ab5d7caefc5d69.js",
+          "durationMs": 1158,
+          "transferSize": 63893,
+          "encodedBodySize": 63593,
+          "decodedBodySize": 242282
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+          "durationMs": 269.10000002384186,
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836
+        },
+        {
+          "path": "/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+          "durationMs": 195.19999998807907,
+          "transferSize": 9744,
+          "encodedBodySize": 9444,
+          "decodedBodySize": 9444
+        },
+        {
+          "path": "/data/jezero-hirise-v1/manifest.json",
+          "durationMs": 153,
+          "transferSize": 4648,
+          "encodedBodySize": 4348,
+          "decodedBodySize": 15599
+        },
+        {
+          "path": "/data/jezero-hirise-v1/visuals.json",
+          "durationMs": 145.30000001192093,
+          "transferSize": 2610,
+          "encodedBodySize": 2310,
+          "decodedBodySize": 7573
+        },
+        {
+          "path": "/data/jezero-hirise-v1/demo-query.json",
+          "durationMs": 152,
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339
+        },
+        {
+          "path": "/icon.svg",
+          "durationMs": 147,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_elevation.f32",
+          "durationMs": 382,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_valid.u8",
+          "durationMs": 276.5,
+          "transferSize": 140564,
+          "encodedBodySize": 140264,
+          "decodedBodySize": 140264
+        },
+        {
+          "path": "/data/jezero-hirise-v1/routing_slope_max.f32",
+          "durationMs": 387,
+          "transferSize": 561356,
+          "encodedBodySize": 561056,
+          "decodedBodySize": 561056
+        },
+        {
+          "path": "/_next/static/chunks/92.37d52bab7f34aa16.js",
+          "durationMs": 473.30000001192093,
+          "transferSize": 92768,
+          "encodedBodySize": 92468,
+          "decodedBodySize": 326279
+        },
+        {
+          "path": "/_next/static/chunks/372.5b1935f8796b27fb.js",
+          "durationMs": 301.0999999642372,
+          "transferSize": 5996,
+          "encodedBodySize": 5696,
+          "decodedBodySize": 15488
+        },
+        {
+          "path": "/data/jezero-science-v1/manifest.json",
+          "durationMs": 390.0999999642372,
+          "transferSize": 911,
+          "encodedBodySize": 611,
+          "decodedBodySize": 1196
+        },
+        {
+          "path": "/data/jezero-science-v1/geology.json",
+          "durationMs": 202,
+          "transferSize": 46192,
+          "encodedBodySize": 45892,
+          "decodedBodySize": 137470
+        },
+        {
+          "path": "/data/jezero-science-v1/objectives.json",
+          "durationMs": 202.5,
+          "transferSize": 2193,
+          "encodedBodySize": 1893,
+          "decodedBodySize": 6932
+        },
+        {
+          "path": "/data/jezero-science-v1/photos.json",
+          "durationMs": 202.80000001192093,
+          "transferSize": 1960,
+          "encodedBodySize": 1660,
+          "decodedBodySize": 5536
+        },
+        {
+          "path": "/data/jezero-overview-v1/context.json",
+          "durationMs": 169,
+          "transferSize": 16475,
+          "encodedBodySize": 16175,
+          "decodedBodySize": 48982
+        },
+        {
+          "path": "/data/jezero-hirise-v1/ortho.webp",
+          "durationMs": 208.69999998807907,
+          "transferSize": 510742,
+          "encodedBodySize": 510442,
+          "decodedBodySize": 510442
+        },
+        {
+          "path": "/data/jezero-hirise-v1/nodata.webp",
+          "durationMs": 173.4000000357628,
+          "transferSize": 668,
+          "encodedBodySize": 368,
+          "decodedBodySize": 368
+        },
+        {
+          "path": "/data/jezero-hirise-v1/slope.webp",
+          "durationMs": 428.39999997615814,
+          "transferSize": 1070942,
+          "encodedBodySize": 1070642,
+          "decodedBodySize": 1070642
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -23.80000001192093,
+          "transferSize": 3801,
+          "encodedBodySize": 3501,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -29.599999964237213,
+          "transferSize": 3801,
+          "encodedBodySize": 3501,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-hirise-v1/hillshade.webp",
+          "durationMs": 447.10000002384186,
+          "transferSize": 431674,
+          "encodedBodySize": 431374,
+          "decodedBodySize": 431374
+        },
+        {
+          "path": "/data/jezero-hirise-v1/elevation.webp",
+          "durationMs": 714.2999999523163,
+          "transferSize": 284696,
+          "encodedBodySize": 284396,
+          "decodedBodySize": 284396
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -11.899999976158142,
+          "transferSize": 3801,
+          "encodedBodySize": 3501,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/workers/routing.worker.js",
+          "durationMs": -16.30000001192093,
+          "transferSize": 3801,
+          "encodedBodySize": 3501,
+          "decodedBodySize": 11550
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+          "durationMs": 378.4000000357628,
+          "transferSize": 42730,
+          "encodedBodySize": 42430,
+          "decodedBodySize": 42430
+        },
+        {
+          "path": "/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+          "durationMs": 486.69999998807907,
+          "transferSize": 57419,
+          "encodedBodySize": 57119,
+          "decodedBodySize": 57119
+        }
+      ],
+      "routes": {
+        "a": {
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3035.807358037436,
+            "terrainMeters": 3038.973575952494,
+            "ascentMeters": 36.391357421875,
+            "descentMeters": 64.307373046875,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 14.535634994506836,
+            "totalCost": 3035.807358037436,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 791.1269837220809,
+                "fractionOfHorizontalLength": 0.2605985460927014
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1803.2590180780453,
+                "fractionOfHorizontalLength": 0.5939965239572387
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 441.4213562373095,
+                "fractionOfHorizontalLength": 0.1454049299500598
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 144,
+          "expandedCells": 17569,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-review-20261115/production/390-production-route-a.json"
+        },
+        "b": {
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          },
+          "metrics": {
+            "horizontalMeters": 3118.6500705120607,
+            "terrainMeters": 3120.958564881438,
+            "ascentMeters": 31.87841796875,
+            "descentMeters": 59.79443359375,
+            "netElevationMeters": -27.916015625,
+            "maxSlopeDeg": 9.018861770629883,
+            "totalCost": 4487.520852634148,
+            "exposure": [
+              {
+                "lowerInclusiveDeg": 0,
+                "upperExclusiveDeg": 5,
+                "horizontalMeters": 1762.9646455628176,
+                "fractionOfHorizontalLength": 0.5652973580563821
+              },
+              {
+                "lowerInclusiveDeg": 5,
+                "upperExclusiveDeg": 10,
+                "horizontalMeters": 1355.6854249492385,
+                "fractionOfHorizontalLength": 0.43470264194361646
+              },
+              {
+                "lowerInclusiveDeg": 10,
+                "upperExclusiveDeg": 15,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              },
+              {
+                "lowerInclusiveDeg": 15,
+                "upperExclusiveDeg": 90,
+                "horizontalMeters": 0,
+                "fractionOfHorizontalLength": 0
+              }
+            ]
+          },
+          "computeTimeMs": 215.30000001192093,
+          "expandedCells": 50939,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "file": "docs/final-review-20261115/production/390-production-route-b.json"
+        }
+      },
+      "layout": {
+        "horizontalOverflow": false,
+        "safetyFontPx": 11
+      },
+      "errors": [],
+      "externalRequests": [],
+      "fullFlowPassed": true
+    }
+  ],
+  "staticInventory": {
+    "files": 68,
+    "totalBytes": 6197327,
+    "hypotheticalGzipBytes": 4022266,
+    "gzipIsMeasuredTransfer": false,
+    "entries": [
+      {
+        "path": "404/index.html",
+        "extension": ".html",
+        "bytes": 6344,
+        "gzipBytes": 2088,
+        "sha256": "ea32efaaa31fa06bbef97ec7717cb38beea2b34e42107a08da25d1fd4737e028",
+        "match": "exact-netlify-hosting-comment-only",
+        "servedBytes": 6670,
+        "servedSha256": "ea2e05ebdd77eebe4500289ab075848c05548a760dec7f476a4ce05cd8ea0ab0",
+        "canonicalSha256": "ea32efaaa31fa06bbef97ec7717cb38beea2b34e42107a08da25d1fd4737e028",
+        "annotationBytes": 326,
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/404/index.html"
+      },
+      {
+        "path": "404.html",
+        "extension": ".html",
+        "bytes": 6344,
+        "gzipBytes": 2088,
+        "sha256": "ea32efaaa31fa06bbef97ec7717cb38beea2b34e42107a08da25d1fd4737e028",
+        "match": "exact-netlify-hosting-comment-only",
+        "servedBytes": 6670,
+        "servedSha256": "ea2e05ebdd77eebe4500289ab075848c05548a760dec7f476a4ce05cd8ea0ab0",
+        "canonicalSha256": "ea32efaaa31fa06bbef97ec7717cb38beea2b34e42107a08da25d1fd4737e028",
+        "annotationBytes": 326,
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/404.html"
+      },
+      {
+        "path": "data/jezero-hirise-v1/demo-query.json",
+        "extension": ".json",
+        "bytes": 339,
+        "gzipBytes": 247,
+        "sha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9",
+        "match": "byte-exact",
+        "servedBytes": 339,
+        "servedSha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9",
+        "canonicalSha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/demo-query.json"
+      },
+      {
+        "path": "data/jezero-hirise-v1/elevation.webp",
+        "extension": ".webp",
+        "bytes": 284396,
+        "gzipBytes": 284504,
+        "sha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9",
+        "match": "byte-exact",
+        "servedBytes": 284396,
+        "servedSha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9",
+        "canonicalSha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/elevation.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/elevation.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "match": "byte-exact",
+        "servedBytes": 37,
+        "servedSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "canonicalSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/elevation.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/hillshade.webp",
+        "extension": ".webp",
+        "bytes": 431374,
+        "gzipBytes": 431527,
+        "sha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3",
+        "match": "byte-exact",
+        "servedBytes": 431374,
+        "servedSha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3",
+        "canonicalSha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/hillshade.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/hillshade.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "match": "byte-exact",
+        "servedBytes": 37,
+        "servedSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "canonicalSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/hillshade.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/manifest.json",
+        "extension": ".json",
+        "bytes": 15599,
+        "gzipBytes": 4597,
+        "sha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+        "match": "byte-exact",
+        "servedBytes": 15599,
+        "servedSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+        "canonicalSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/manifest.json"
+      },
+      {
+        "path": "data/jezero-hirise-v1/nodata.webp",
+        "extension": ".webp",
+        "bytes": 368,
+        "gzipBytes": 391,
+        "sha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287",
+        "match": "byte-exact",
+        "servedBytes": 368,
+        "servedSha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287",
+        "canonicalSha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/nodata.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/ortho.webp",
+        "extension": ".webp",
+        "bytes": 510442,
+        "gzipBytes": 510620,
+        "sha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d",
+        "match": "byte-exact",
+        "servedBytes": 510442,
+        "servedSha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d",
+        "canonicalSha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/ortho.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/ortho.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "match": "byte-exact",
+        "servedBytes": 37,
+        "servedSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "canonicalSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/ortho.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_elevation.f32",
+        "extension": ".f32",
+        "bytes": 561056,
+        "gzipBytes": 411837,
+        "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147",
+        "match": "byte-exact",
+        "servedBytes": 561056,
+        "servedSha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147",
+        "canonicalSha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/routing_elevation.f32"
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_slope_max.f32",
+        "extension": ".f32",
+        "bytes": 561056,
+        "gzipBytes": 490892,
+        "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53",
+        "match": "byte-exact",
+        "servedBytes": 561056,
+        "servedSha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53",
+        "canonicalSha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/routing_slope_max.f32"
+      },
+      {
+        "path": "data/jezero-hirise-v1/routing_valid.u8",
+        "extension": ".u8",
+        "bytes": 140264,
+        "gzipBytes": 1325,
+        "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52",
+        "match": "byte-exact",
+        "servedBytes": 140264,
+        "servedSha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52",
+        "canonicalSha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/routing_valid.u8"
+      },
+      {
+        "path": "data/jezero-hirise-v1/slope.webp",
+        "extension": ".webp",
+        "bytes": 1070642,
+        "gzipBytes": 1070990,
+        "sha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d",
+        "match": "byte-exact",
+        "servedBytes": 1070642,
+        "servedSha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d",
+        "canonicalSha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/webp",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/slope.webp"
+      },
+      {
+        "path": "data/jezero-hirise-v1/slope.wld",
+        "extension": ".wld",
+        "bytes": 37,
+        "gzipBytes": 44,
+        "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "match": "byte-exact",
+        "servedBytes": 37,
+        "servedSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "canonicalSha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/slope.wld"
+      },
+      {
+        "path": "data/jezero-hirise-v1/visuals.json",
+        "extension": ".json",
+        "bytes": 7573,
+        "gzipBytes": 2388,
+        "sha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e",
+        "match": "byte-exact",
+        "servedBytes": 7573,
+        "servedSha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e",
+        "canonicalSha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-hirise-v1/visuals.json"
+      },
+      {
+        "path": "data/jezero-overview-v1/context.json",
+        "extension": ".json",
+        "bytes": 48982,
+        "gzipBytes": 16653,
+        "sha256": "f20ada191ed59a7f053d74fb022e98f317df8de5a530dc49d32d76593c40f8bb",
+        "match": "byte-exact",
+        "servedBytes": 48982,
+        "servedSha256": "f20ada191ed59a7f053d74fb022e98f317df8de5a530dc49d32d76593c40f8bb",
+        "canonicalSha256": "f20ada191ed59a7f053d74fb022e98f317df8de5a530dc49d32d76593c40f8bb",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-overview-v1/context.json"
+      },
+      {
+        "path": "data/jezero-science-v1/geology.json",
+        "extension": ".json",
+        "bytes": 137470,
+        "gzipBytes": 62018,
+        "sha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+        "match": "byte-exact",
+        "servedBytes": 137470,
+        "servedSha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+        "canonicalSha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-science-v1/geology.json"
+      },
+      {
+        "path": "data/jezero-science-v1/manifest.json",
+        "extension": ".json",
+        "bytes": 1196,
+        "gzipBytes": 641,
+        "sha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+        "match": "byte-exact",
+        "servedBytes": 1196,
+        "servedSha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+        "canonicalSha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-science-v1/manifest.json"
+      },
+      {
+        "path": "data/jezero-science-v1/objectives.json",
+        "extension": ".json",
+        "bytes": 6932,
+        "gzipBytes": 1954,
+        "sha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+        "match": "byte-exact",
+        "servedBytes": 6932,
+        "servedSha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+        "canonicalSha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-science-v1/objectives.json"
+      },
+      {
+        "path": "data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+        "extension": ".jpg",
+        "bytes": 57119,
+        "gzipBytes": 56499,
+        "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+        "match": "byte-exact",
+        "servedBytes": 57119,
+        "servedSha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+        "canonicalSha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/jpeg",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-science-v1/photos/perseverance-sol-107.jpg"
+      },
+      {
+        "path": "data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+        "extension": ".jpg",
+        "bytes": 42430,
+        "gzipBytes": 42077,
+        "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e",
+        "match": "byte-exact",
+        "servedBytes": 42430,
+        "servedSha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e",
+        "canonicalSha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/jpeg",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-science-v1/photos/perseverance-sol-14.jpg"
+      },
+      {
+        "path": "data/jezero-science-v1/photos.json",
+        "extension": ".json",
+        "bytes": 5536,
+        "gzipBytes": 1765,
+        "sha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+        "match": "byte-exact",
+        "servedBytes": 5536,
+        "servedSha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+        "canonicalSha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/data/jezero-science-v1/photos.json"
+      },
+      {
+        "path": "icon.svg",
+        "extension": ".svg",
+        "bytes": 362,
+        "gzipBytes": 233,
+        "sha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492",
+        "match": "byte-exact",
+        "servedBytes": 362,
+        "servedSha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492",
+        "canonicalSha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/icon.svg"
+      },
+      {
+        "path": "index.html",
+        "extension": ".html",
+        "bytes": 26587,
+        "gzipBytes": 6726,
+        "sha256": "55217ae91a6f97232dec2fcbca5229ec13cfda58e45b37635fd2b6621ab13b0e",
+        "match": "exact-netlify-hosting-comment-only",
+        "servedBytes": 26913,
+        "servedSha256": "4d697234d9baea10a64f80268195fd5e3d228a6432745c2f09ff95842b166890",
+        "canonicalSha256": "55217ae91a6f97232dec2fcbca5229ec13cfda58e45b37635fd2b6621ab13b0e",
+        "annotationBytes": 326,
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/index.html"
+      },
+      {
+        "path": "index.txt",
+        "extension": ".txt",
+        "bytes": 3276,
+        "gzipBytes": 1450,
+        "sha256": "39658e63cba701bd009db9daa65cc682ded1ce0046ad50ea952e375b9cc4921b",
+        "match": "byte-exact",
+        "servedBytes": 3276,
+        "servedSha256": "39658e63cba701bd009db9daa65cc682ded1ce0046ad50ea952e375b9cc4921b",
+        "canonicalSha256": "39658e63cba701bd009db9daa65cc682ded1ce0046ad50ea952e375b9cc4921b",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/index.txt"
+      },
+      {
+        "path": "release.json",
+        "extension": ".json",
+        "bytes": 10123,
+        "gzipBytes": 3371,
+        "sha256": "ba8139faf4451d35922cfb1cec095cf6717db8d488348ee4767b60abc64f96e0",
+        "match": "byte-exact",
+        "servedBytes": 10123,
+        "servedSha256": "ba8139faf4451d35922cfb1cec095cf6717db8d488348ee4767b60abc64f96e0",
+        "canonicalSha256": "ba8139faf4451d35922cfb1cec095cf6717db8d488348ee4767b60abc64f96e0",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/json",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/release.json"
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.txt",
+        "extension": ".txt",
+        "bytes": 768173,
+        "gzipBytes": 105304,
+        "sha256": "a428de91d9443c54fc5777061720e927f2271da67db5b562e04bf12bca1c8410",
+        "match": "byte-exact",
+        "servedBytes": 768173,
+        "servedSha256": "a428de91d9443c54fc5777061720e927f2271da67db5b562e04bf12bca1c8410",
+        "canonicalSha256": "a428de91d9443c54fc5777061720e927f2271da67db5b562e04bf12bca1c8410",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/THIRD_PARTY_NOTICES.txt"
+      },
+      {
+        "path": "workers/routing.worker.js",
+        "extension": ".js",
+        "bytes": 11550,
+        "gzipBytes": 3630,
+        "sha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421",
+        "match": "byte-exact",
+        "servedBytes": 11550,
+        "servedSha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421",
+        "canonicalSha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/workers/routing.worker.js"
+      },
+      {
+        "path": "_next/static/chunks/372.5b1935f8796b27fb.js",
+        "extension": ".js",
+        "bytes": 15488,
+        "gzipBytes": 5908,
+        "sha256": "5ebb4182465d2b452a97b995b2371605d0049901751fe5150c1888b746ebfb90",
+        "match": "byte-exact",
+        "servedBytes": 15488,
+        "servedSha256": "5ebb4182465d2b452a97b995b2371605d0049901751fe5150c1888b746ebfb90",
+        "canonicalSha256": "5ebb4182465d2b452a97b995b2371605d0049901751fe5150c1888b746ebfb90",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/372.5b1935f8796b27fb.js"
+      },
+      {
+        "path": "_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "extension": ".js",
+        "bytes": 203721,
+        "gzipBytes": 64057,
+        "sha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec",
+        "match": "byte-exact",
+        "servedBytes": 203721,
+        "servedSha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec",
+        "canonicalSha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/4bd1b696-c7408084347438ae.js"
+      },
+      {
+        "path": "_next/static/chunks/794-96ab5d7caefc5d69.js",
+        "extension": ".js",
+        "bytes": 242282,
+        "gzipBytes": 67462,
+        "sha256": "7f02f17d6dfebe33a8867c308fb0e842474ff1d0ebe5ca623eda48fa4dd0f8c3",
+        "match": "byte-exact",
+        "servedBytes": 242282,
+        "servedSha256": "7f02f17d6dfebe33a8867c308fb0e842474ff1d0ebe5ca623eda48fa4dd0f8c3",
+        "canonicalSha256": "7f02f17d6dfebe33a8867c308fb0e842474ff1d0ebe5ca623eda48fa4dd0f8c3",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/794-96ab5d7caefc5d69.js"
+      },
+      {
+        "path": "_next/static/chunks/899.5ce6b3cbad015b59.js",
+        "extension": ".js",
+        "bytes": 4752,
+        "gzipBytes": 1995,
+        "sha256": "12b23761a7567937753843f56b2c72493d50928d7753d25f1db4e84e97e3d018",
+        "match": "byte-exact",
+        "servedBytes": 4752,
+        "servedSha256": "12b23761a7567937753843f56b2c72493d50928d7753d25f1db4e84e97e3d018",
+        "canonicalSha256": "12b23761a7567937753843f56b2c72493d50928d7753d25f1db4e84e97e3d018",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/899.5ce6b3cbad015b59.js"
+      },
+      {
+        "path": "_next/static/chunks/92.37d52bab7f34aa16.js",
+        "extension": ".js",
+        "bytes": 326279,
+        "gzipBytes": 96244,
+        "sha256": "604f3dd91340c9a492b13f4d6a1219f23ae363e2b025ac404b941a656c8992e8",
+        "match": "byte-exact",
+        "servedBytes": 326279,
+        "servedSha256": "604f3dd91340c9a492b13f4d6a1219f23ae363e2b025ac404b941a656c8992e8",
+        "canonicalSha256": "604f3dd91340c9a492b13f4d6a1219f23ae363e2b025ac404b941a656c8992e8",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/92.37d52bab7f34aa16.js"
+      },
+      {
+        "path": "_next/static/chunks/966.1775eb621d8d3e09.js",
+        "extension": ".js",
+        "bytes": 753,
+        "gzipBytes": 419,
+        "sha256": "4e64e06b8deba77cbbf9487c6d48373939b8a99f235a67a4f71a6b45ad68b055",
+        "match": "byte-exact",
+        "servedBytes": 753,
+        "servedSha256": "4e64e06b8deba77cbbf9487c6d48373939b8a99f235a67a4f71a6b45ad68b055",
+        "canonicalSha256": "4e64e06b8deba77cbbf9487c6d48373939b8a99f235a67a4f71a6b45ad68b055",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/966.1775eb621d8d3e09.js"
+      },
+      {
+        "path": "_next/static/chunks/975-e323ed530151dd26.js",
+        "extension": ".js",
+        "bytes": 13493,
+        "gzipBytes": 4592,
+        "sha256": "566336af229fce6a415ab6b202b4f905887e975836758749040c98cb5a6cb4f0",
+        "match": "byte-exact",
+        "servedBytes": 13493,
+        "servedSha256": "566336af229fce6a415ab6b202b4f905887e975836758749040c98cb5a6cb4f0",
+        "canonicalSha256": "566336af229fce6a415ab6b202b4f905887e975836758749040c98cb5a6cb4f0",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/975-e323ed530151dd26.js"
+      },
+      {
+        "path": "_next/static/chunks/app/layout-24f167e4d0cd9d3f.js",
+        "extension": ".js",
+        "bytes": 251,
+        "gzipBytes": 182,
+        "sha256": "7cbe3b85e774417a3c2a6c4fa0321d1611e18e5e4fb6e9e1e0031007268e59dd",
+        "match": "byte-exact",
+        "servedBytes": 251,
+        "servedSha256": "7cbe3b85e774417a3c2a6c4fa0321d1611e18e5e4fb6e9e1e0031007268e59dd",
+        "canonicalSha256": "7cbe3b85e774417a3c2a6c4fa0321d1611e18e5e4fb6e9e1e0031007268e59dd",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/app/layout-24f167e4d0cd9d3f.js"
+      },
+      {
+        "path": "_next/static/chunks/app/page-ecaf243d7fde4cb6.js",
+        "extension": ".js",
+        "bytes": 54839,
+        "gzipBytes": 17863,
+        "sha256": "31f5c6d2c4076cf7bf56e652e4619c291bb10275776d641a1f48a238a5b131de",
+        "match": "byte-exact",
+        "servedBytes": 54839,
+        "servedSha256": "31f5c6d2c4076cf7bf56e652e4619c291bb10275776d641a1f48a238a5b131de",
+        "canonicalSha256": "31f5c6d2c4076cf7bf56e652e4619c291bb10275776d641a1f48a238a5b131de",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/app/page-ecaf243d7fde4cb6.js"
+      },
+      {
+        "path": "_next/static/chunks/app/_global-error/page-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "match": "byte-exact",
+        "servedBytes": 147,
+        "servedSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "canonicalSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/app/_global-error/page-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/app/_not-found/page-ab7286041bd79e66.js",
+        "extension": ".js",
+        "bytes": 2667,
+        "gzipBytes": 992,
+        "sha256": "6fe910b923b0e0b96e555020cb4c4a2901fc4b2564f58fc929aa5a88e900b2e7",
+        "match": "byte-exact",
+        "servedBytes": 2667,
+        "servedSha256": "6fe910b923b0e0b96e555020cb4c4a2901fc4b2564f58fc929aa5a88e900b2e7",
+        "canonicalSha256": "6fe910b923b0e0b96e555020cb4c4a2901fc4b2564f58fc929aa5a88e900b2e7",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/app/_not-found/page-ab7286041bd79e66.js"
+      },
+      {
+        "path": "_next/static/chunks/framework-ea4f97ca039bd777.js",
+        "extension": ".js",
+        "bytes": 218916,
+        "gzipBytes": 68866,
+        "sha256": "61b92d4a1510be156591a4f12a6b5bcf70f338cf5f8db1d50e2be1305b6b761d",
+        "match": "byte-exact",
+        "servedBytes": 218916,
+        "servedSha256": "61b92d4a1510be156591a4f12a6b5bcf70f338cf5f8db1d50e2be1305b6b761d",
+        "canonicalSha256": "61b92d4a1510be156591a4f12a6b5bcf70f338cf5f8db1d50e2be1305b6b761d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/framework-ea4f97ca039bd777.js"
+      },
+      {
+        "path": "_next/static/chunks/main-979b8a22e7502c64.js",
+        "extension": ".js",
+        "bytes": 131956,
+        "gzipBytes": 38835,
+        "sha256": "9ab418bad3507ba85e184e97049c0759fd8d03b27958fa9c4115d12e86ff0463",
+        "match": "byte-exact",
+        "servedBytes": 131956,
+        "servedSha256": "9ab418bad3507ba85e184e97049c0759fd8d03b27958fa9c4115d12e86ff0463",
+        "canonicalSha256": "9ab418bad3507ba85e184e97049c0759fd8d03b27958fa9c4115d12e86ff0463",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/main-979b8a22e7502c64.js"
+      },
+      {
+        "path": "_next/static/chunks/main-app-de8e7b4aad445c2e.js",
+        "extension": ".js",
+        "bytes": 513,
+        "gzipBytes": 222,
+        "sha256": "c505ad39a5c4e99d43f58d70f719939ae6272227779a13a5ac7c7ec0e628601a",
+        "match": "byte-exact",
+        "servedBytes": 513,
+        "servedSha256": "c505ad39a5c4e99d43f58d70f719939ae6272227779a13a5ac7c7ec0e628601a",
+        "canonicalSha256": "c505ad39a5c4e99d43f58d70f719939ae6272227779a13a5ac7c7ec0e628601a",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/main-app-de8e7b4aad445c2e.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "match": "byte-exact",
+        "servedBytes": 147,
+        "servedSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "canonicalSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "match": "byte-exact",
+        "servedBytes": 147,
+        "servedSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "canonicalSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/global-error-f72b14ed11ccbdf0.js",
+        "extension": ".js",
+        "bytes": 179,
+        "gzipBytes": 160,
+        "sha256": "f1d7835ba542cedcb970c3e93d164ac95f0297af6e686e961fd5d5e8b0d46855",
+        "match": "byte-exact",
+        "servedBytes": 179,
+        "servedSha256": "f1d7835ba542cedcb970c3e93d164ac95f0297af6e686e961fd5d5e8b0d46855",
+        "canonicalSha256": "f1d7835ba542cedcb970c3e93d164ac95f0297af6e686e961fd5d5e8b0d46855",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/next/dist/client/components/builtin/global-error-f72b14ed11ccbdf0.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "match": "byte-exact",
+        "servedBytes": 147,
+        "servedSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "canonicalSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js",
+        "extension": ".js",
+        "bytes": 147,
+        "gzipBytes": 136,
+        "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "match": "byte-exact",
+        "servedBytes": 147,
+        "servedSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "canonicalSha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js"
+      },
+      {
+        "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "extension": ".js",
+        "bytes": 112594,
+        "gzipBytes": 39627,
+        "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+        "match": "byte-exact",
+        "servedBytes": 112594,
+        "servedSha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+        "canonicalSha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/polyfills-42372ed130431b0a.js"
+      },
+      {
+        "path": "_next/static/chunks/webpack-92bd8fbf2e565aea.js",
+        "extension": ".js",
+        "bytes": 3450,
+        "gzipBytes": 1782,
+        "sha256": "43cba5a8c8137172bc5be38f2a14e8508a49b1d85dbf4a204628552726c0a477",
+        "match": "byte-exact",
+        "servedBytes": 3450,
+        "servedSha256": "43cba5a8c8137172bc5be38f2a14e8508a49b1d85dbf4a204628552726c0a477",
+        "canonicalSha256": "43cba5a8c8137172bc5be38f2a14e8508a49b1d85dbf4a204628552726c0a477",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/chunks/webpack-92bd8fbf2e565aea.js"
+      },
+      {
+        "path": "_next/static/css/2c8157898d9e6a02.css",
+        "extension": ".css",
+        "bytes": 50030,
+        "gzipBytes": 11575,
+        "sha256": "ddf481a14475fbc06ba09ef93e74659e715c0490ceac926f9400fd7f1ffb167d",
+        "match": "byte-exact",
+        "servedBytes": 50030,
+        "servedSha256": "ddf481a14475fbc06ba09ef93e74659e715c0490ceac926f9400fd7f1ffb167d",
+        "canonicalSha256": "ddf481a14475fbc06ba09ef93e74659e715c0490ceac926f9400fd7f1ffb167d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/css; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/css/2c8157898d9e6a02.css"
+      },
+      {
+        "path": "_next/static/gnZxFYHKNWbRD6z0GDKoq/_buildManifest.js",
+        "extension": ".js",
+        "bytes": 477,
+        "gzipBytes": 248,
+        "sha256": "2946a3b8b6c271b02c695496e7eba84afcc892712964c5740c18776131404312",
+        "match": "byte-exact",
+        "servedBytes": 477,
+        "servedSha256": "2946a3b8b6c271b02c695496e7eba84afcc892712964c5740c18776131404312",
+        "canonicalSha256": "2946a3b8b6c271b02c695496e7eba84afcc892712964c5740c18776131404312",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/gnZxFYHKNWbRD6z0GDKoq/_buildManifest.js"
+      },
+      {
+        "path": "_next/static/gnZxFYHKNWbRD6z0GDKoq/_ssgManifest.js",
+        "extension": ".js",
+        "bytes": 80,
+        "gzipBytes": 64,
+        "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+        "match": "byte-exact",
+        "servedBytes": 80,
+        "servedSha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+        "canonicalSha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/gnZxFYHKNWbRD6z0GDKoq/_ssgManifest.js"
+      },
+      {
+        "path": "_next/static/media/manrope-cyrillic-ext-wght-normal.d1990364.woff2",
+        "extension": ".woff2",
+        "bytes": 2552,
+        "gzipBytes": 2575,
+        "sha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d",
+        "match": "byte-exact",
+        "servedBytes": 2552,
+        "servedSha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d",
+        "canonicalSha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/media/manrope-cyrillic-ext-wght-normal.d1990364.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-cyrillic-wght-normal.2ffcac4f.woff2",
+        "extension": ".woff2",
+        "bytes": 14500,
+        "gzipBytes": 14523,
+        "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+        "match": "byte-exact",
+        "servedBytes": 14500,
+        "servedSha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+        "canonicalSha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/media/manrope-cyrillic-wght-normal.2ffcac4f.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+        "extension": ".woff2",
+        "bytes": 9444,
+        "gzipBytes": 9467,
+        "sha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be",
+        "match": "byte-exact",
+        "servedBytes": 9444,
+        "servedSha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be",
+        "canonicalSha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/media/manrope-greek-wght-normal.6b69666c.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-latin-ext-wght-normal.f5cc7610.woff2",
+        "extension": ".woff2",
+        "bytes": 15120,
+        "gzipBytes": 15143,
+        "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "match": "byte-exact",
+        "servedBytes": 15120,
+        "servedSha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "canonicalSha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/media/manrope-latin-ext-wght-normal.f5cc7610.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+        "extension": ".woff2",
+        "bytes": 24836,
+        "gzipBytes": 24864,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "match": "byte-exact",
+        "servedBytes": 24836,
+        "servedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "canonicalSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2"
+      },
+      {
+        "path": "_next/static/media/manrope-vietnamese-wght-normal.383b32a0.woff2",
+        "extension": ".woff2",
+        "bytes": 8520,
+        "gzipBytes": 8543,
+        "sha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5",
+        "match": "byte-exact",
+        "servedBytes": 8520,
+        "servedSha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5",
+        "canonicalSha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "font/woff2",
+        "cacheControl": "public,max-age=31536000,immutable",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_next/static/media/manrope-vietnamese-wght-normal.383b32a0.woff2"
+      },
+      {
+        "path": "_not-found/index.html",
+        "extension": ".html",
+        "bytes": 6344,
+        "gzipBytes": 2088,
+        "sha256": "ea32efaaa31fa06bbef97ec7717cb38beea2b34e42107a08da25d1fd4737e028",
+        "match": "exact-netlify-hosting-comment-only",
+        "servedBytes": 6670,
+        "servedSha256": "ea2e05ebdd77eebe4500289ab075848c05548a760dec7f476a4ce05cd8ea0ab0",
+        "canonicalSha256": "ea32efaaa31fa06bbef97ec7717cb38beea2b34e42107a08da25d1fd4737e028",
+        "annotationBytes": 326,
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_not-found/index.html"
+      },
+      {
+        "path": "_not-found/index.txt",
+        "extension": ".txt",
+        "bytes": 3614,
+        "gzipBytes": 1411,
+        "sha256": "354460fec2f1a0200b7cb35ce809606f764b431b6c3e663a848f6c61816e3dc5",
+        "match": "byte-exact",
+        "servedBytes": 3614,
+        "servedSha256": "354460fec2f1a0200b7cb35ce809606f764b431b6c3e663a848f6c61816e3dc5",
+        "canonicalSha256": "354460fec2f1a0200b7cb35ce809606f764b431b6c3e663a848f6c61816e3dc5",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_not-found/index.txt"
+      },
+      {
+        "path": "_not-found/__next._full.txt",
+        "extension": ".txt",
+        "bytes": 3614,
+        "gzipBytes": 1411,
+        "sha256": "354460fec2f1a0200b7cb35ce809606f764b431b6c3e663a848f6c61816e3dc5",
+        "match": "byte-exact",
+        "servedBytes": 3614,
+        "servedSha256": "354460fec2f1a0200b7cb35ce809606f764b431b6c3e663a848f6c61816e3dc5",
+        "canonicalSha256": "354460fec2f1a0200b7cb35ce809606f764b431b6c3e663a848f6c61816e3dc5",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_not-found/__next._full.txt"
+      },
+      {
+        "path": "_not-found/__next._not-found/__PAGE__.txt",
+        "extension": ".txt",
+        "bytes": 3051,
+        "gzipBytes": 1318,
+        "sha256": "242c0d86295241d318209601e241094d997831675dd3aa72f9f854e446251b84",
+        "match": "byte-exact",
+        "servedBytes": 3051,
+        "servedSha256": "242c0d86295241d318209601e241094d997831675dd3aa72f9f854e446251b84",
+        "canonicalSha256": "242c0d86295241d318209601e241094d997831675dd3aa72f9f854e446251b84",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_not-found/__next._not-found/__PAGE__.txt"
+      },
+      {
+        "path": "_not-found/__next._tree.txt",
+        "extension": ".txt",
+        "bytes": 217,
+        "gzipBytes": 183,
+        "sha256": "2ff5f7a4f33ae3bd6e1b44727db218cba3cc34d3a470a3e54dd11ec2dc7c66dd",
+        "match": "byte-exact",
+        "servedBytes": 217,
+        "servedSha256": "2ff5f7a4f33ae3bd6e1b44727db218cba3cc34d3a470a3e54dd11ec2dc7c66dd",
+        "canonicalSha256": "2ff5f7a4f33ae3bd6e1b44727db218cba3cc34d3a470a3e54dd11ec2dc7c66dd",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/_not-found/__next._tree.txt"
+      },
+      {
+        "path": "__next._full.txt",
+        "extension": ".txt",
+        "bytes": 3276,
+        "gzipBytes": 1450,
+        "sha256": "39658e63cba701bd009db9daa65cc682ded1ce0046ad50ea952e375b9cc4921b",
+        "match": "byte-exact",
+        "servedBytes": 3276,
+        "servedSha256": "39658e63cba701bd009db9daa65cc682ded1ce0046ad50ea952e375b9cc4921b",
+        "canonicalSha256": "39658e63cba701bd009db9daa65cc682ded1ce0046ad50ea952e375b9cc4921b",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/__next._full.txt"
+      },
+      {
+        "path": "__next._tree.txt",
+        "extension": ".txt",
+        "bytes": 164,
+        "gzipBytes": 164,
+        "sha256": "72246bf94de9d990800206b44203440662997c9e71f08a1282b421423612330b",
+        "match": "byte-exact",
+        "servedBytes": 164,
+        "servedSha256": "72246bf94de9d990800206b44203440662997c9e71f08a1282b421423612330b",
+        "canonicalSha256": "72246bf94de9d990800206b44203440662997c9e71f08a1282b421423612330b",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": null,
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/__next._tree.txt"
+      },
+      {
+        "path": "__next.__PAGE__.txt",
+        "extension": ".txt",
+        "bytes": 2939,
+        "gzipBytes": 1362,
+        "sha256": "45fc9935284492587109bafde6ed228741d66f9435033c662218438a8ef2fa26",
+        "match": "byte-exact",
+        "servedBytes": 2939,
+        "servedSha256": "45fc9935284492587109bafde6ed228741d66f9435033c662218438a8ef2fa26",
+        "canonicalSha256": "45fc9935284492587109bafde6ed228741d66f9435033c662218438a8ef2fa26",
+        "annotationBytes": 0,
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "cacheControl": "public,max-age=0,must-revalidate",
+        "contentEncoding": "br",
+        "finalUrl": "https://mars-pathfinder-the-meowrtian.netlify.app/__next.__PAGE__.txt"
+      }
+    ]
+  },
+  "allPassed": true
+}

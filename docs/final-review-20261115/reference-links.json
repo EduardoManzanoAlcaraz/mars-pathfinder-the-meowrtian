@@ -1,0 +1,182 @@
+{
+  "checkedAtUtc": "2026-11-15T16:52:09.214Z",
+  "privateBrowserContext": true,
+  "noCredentials": true,
+  "scope": "Anonymous availability of official reference URLs; HEAD requests do not download source products",
+  "results": [
+    {
+      "url": "https://www.uahirise.org/dtm/ESP_045994_1985",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://www.uahirise.org/dtm/ESP_045994_1985"
+    },
+    {
+      "url": "https://www.uahirise.org/media/usage.php",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://www.uahirise.org/media/usage.php"
+    },
+    {
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/",
+      "method": "HEAD",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
+    },
+    {
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+      "method": "HEAD",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ"
+    },
+    {
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+      "method": "HEAD",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J"
+    },
+    {
+      "url": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json",
+      "method": "HEAD",
+      "status": 403,
+      "finalUrl": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/jpl-image-use-policy/",
+      "method": "HEAD",
+      "status": 403,
+      "finalUrl": "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    },
+    {
+      "url": "https://trek.nasa.gov/mars/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://trek.nasa.gov/mars/"
+    },
+    {
+      "url": "https://doi.org/10.3133/sim3464",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://pubs.usgs.gov/publication/sim3464"
+    },
+    {
+      "url": "https://pubs.usgs.gov/publication/sim3464",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://pubs.usgs.gov/publication/sim3464"
+    },
+    {
+      "url": "https://nextjs.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://nextjs.org/"
+    },
+    {
+      "url": "https://react.dev/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://react.dev/"
+    },
+    {
+      "url": "https://www.typescriptlang.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://www.typescriptlang.org/"
+    },
+    {
+      "url": "https://openlayers.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://openlayers.org/"
+    },
+    {
+      "url": "https://gdal.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://gdal.org/en/stable/"
+    },
+    {
+      "url": "https://rasterio.readthedocs.io/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://rasterio.readthedocs.io/en/stable/"
+    },
+    {
+      "url": "https://numpy.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://numpy.org/"
+    },
+    {
+      "url": "https://scipy.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://scipy.org/"
+    },
+    {
+      "url": "https://pyproj4.github.io/pyproj/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://pyproj4.github.io/pyproj/"
+    },
+    {
+      "url": "https://pyogrio.readthedocs.io/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://pyogrio.readthedocs.io/en/latest/"
+    },
+    {
+      "url": "https://shapely.readthedocs.io/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://shapely.readthedocs.io/en/stable/"
+    },
+    {
+      "url": "https://vitest.dev/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://vitest.dev/"
+    },
+    {
+      "url": "https://docs.pytest.org/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://docs.pytest.org/en/stable/"
+    },
+    {
+      "url": "https://playwright.dev/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://playwright.dev/"
+    },
+    {
+      "url": "https://github.com/sharanda/manrope",
+      "method": "HEAD",
+      "status": 404,
+      "finalUrl": "https://github.com/sharanda/manrope"
+    },
+    {
+      "url": "https://lucide.dev/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://lucide.dev/"
+    },
+    {
+      "url": "https://www.netlify.com/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://www.netlify.com/"
+    },
+    {
+      "url": "https://openai.com/codex/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://openai.com/codex/"
+    },
+    {
+      "url": "https://chatgpt.com/",
+      "method": "HEAD",
+      "status": 200,
+      "finalUrl": "https://chatgpt.com/"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "verifiedAtUtc": "2026-11-15T16:49:52.463657+00:00",
+  "passed": true,
+  "pptxSlides": 7,
+  "pdfPages": 7,
+  "nativePowerPointOpenAndExport": true,
+  "editableTableOnSlide5": true,
+  "allAuthoredSlideTextEnglish": true,
+  "currentProductionCaptureHashesEmbedded": 6,
+  "uiScreenshotAspectPreserved": true,
+  "originalMissionPhotoBytesPreserved": true,
+  "codeLicense": "Apache-2.0",
+  "teamApproved": true,
+  "aiDisclosure": [
+    "OpenAI Codex",
+    "ChatGPT"
+  ],
+  "testCounts": {
+    "routing": 37,
+    "interface": 35,
+    "totalVitest": 72,
+    "python": 22
+  },
+  "verifiedUnroundedM3Differences": {
+    "additionalHorizontalM": 82.84271247462448,
+    "lessAscentM": 4.512939453125,
+    "lowerMaxModeledSlopeDeg": 5.516773223876953
+  },
+  "files": [
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian.pptx",
+      "bytes": 3080344,
+      "sha256": "7eca1d78db64c8afd94728466c6fd868d1c031dee87a33bb33c758879b99bd5a"
+    },
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian-Submission.pdf",
+      "bytes": 535255,
+      "sha256": "8c0083408a5a0ee676b581bf5195a7f1813a60dd13d740e7efee162d3bddee78"
+    }
+  ],
+  "scope": "Executed source, text, native-open, links, aspect, seven-page rendering and package checks. Visual review recorded separately."
+}

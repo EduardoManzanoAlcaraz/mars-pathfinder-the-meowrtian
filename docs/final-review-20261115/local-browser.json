@@ -1,0 +1,691 @@
+{
+  "executedAtUtc": "2026-11-15T16:25:02.506Z",
+  "browser": "157.0.8103.51",
+  "manifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "served": "Actual out/ export over local HTTP",
+  "map": {
+    "fourDistinctRenderedLayers": true,
+    "canvasHashes": [
+      "177fc842a8aa32bacae57a2da0942635210f185616a51c1651a303c9d2a77042",
+      "212605e55095d9a5f05d840cab22e64494a12dda447a536bca85a613b605f71d",
+      "1dbcab8b95a333977395477c79420fd567344379e9827f4304c5d8afae302e14",
+      "54cf0b4d12cfafca6f58c6c6a3446581cc179e11898e1a0ac34263c855d5c4b8"
+    ],
+    "noExternalRequests": true,
+    "localMetricScale": "1000 m",
+    "provenanceDialogChecked": true
+  },
+  "routes": {
+    "a": {
+      "file": "docs/interface-validation/download-route-a.json",
+      "computeTimeMs": 24.69999998807907,
+      "audit": {
+        "passed": true,
+        "checkedCells": 276,
+        "checkedEdges": 275,
+        "violations": [],
+        "independentMetrics": {
+          "horizontalMeters": 3781.391770309028,
+          "terrainMeters": 3785.908439075555,
+          "ascentMeters": 56.72998046875,
+          "descentMeters": 67.427734375,
+          "netElevationMeters": -10.69775390625,
+          "totalCost": 3781.391770309028,
+          "maxSlopeDeg": 14.388531684875488
+        },
+        "absoluteDifferences": {
+          "horizontalMeters": 0,
+          "terrainMeters": 0,
+          "ascentMeters": 0,
+          "descentMeters": 0,
+          "netElevationMeters": 0,
+          "totalCost": 0,
+          "maxSlopeDeg": 0
+        }
+      },
+      "parameters": {
+        "mode": "distance",
+        "lambda": 0,
+        "maxSlopeDeg": 15,
+        "thetaRefDeg": 15,
+        "exposureBinsDeg": [
+          0,
+          5,
+          10,
+          15,
+          90
+        ]
+      }
+    },
+    "b": {
+      "file": "docs/interface-validation/download-route-b.json",
+      "computeTimeMs": 58.30000001192093,
+      "audit": {
+        "passed": true,
+        "checkedCells": 314,
+        "checkedEdges": 313,
+        "violations": [],
+        "independentMetrics": {
+          "horizontalMeters": 4003.990616607248,
+          "terrainMeters": 4005.098075253276,
+          "ascentMeters": 28.269775390625,
+          "descentMeters": 38.967529296875,
+          "netElevationMeters": -10.69775390625,
+          "totalCost": 4932.615239510466,
+          "maxSlopeDeg": 8.874288558959961
+        },
+        "absoluteDifferences": {
+          "horizontalMeters": 0,
+          "terrainMeters": 0,
+          "ascentMeters": 0,
+          "descentMeters": 0,
+          "netElevationMeters": 0,
+          "totalCost": 0,
+          "maxSlopeDeg": 0
+        }
+      },
+      "parameters": {
+        "mode": "slope-penalty",
+        "lambda": 4,
+        "maxSlopeDeg": 15,
+        "thetaRefDeg": 15,
+        "exposureBinsDeg": [
+          0,
+          5,
+          10,
+          15,
+          90
+        ]
+      }
+    }
+  },
+  "responsiveness": {
+    "frames": 144,
+    "activeFrames": 13,
+    "maxActiveGapMs": 13.800000000000182
+  },
+  "alignment": [
+    {
+      "stage": "initial",
+      "errorPixels": 0.000018917807468410602
+    },
+    {
+      "stage": "zoom",
+      "errorPixels": 0.00003783561496484572
+    },
+    {
+      "stage": "pan",
+      "errorPixels": 0.000021115179286552096
+    },
+    {
+      "stage": "Hillshade",
+      "errorPixels": 0.000021115179286552096
+    },
+    {
+      "stage": "Elevation",
+      "errorPixels": 0.000021115179286552096
+    },
+    {
+      "stage": "Slope",
+      "errorPixels": 0.000021115179286552096
+    },
+    {
+      "stage": "Orthoimage",
+      "errorPixels": 0.000021115179286552096
+    }
+  ],
+  "changedQuery": {
+    "start": {
+      "col": 59,
+      "row": 302
+    },
+    "goal": {
+      "col": 219,
+      "row": 158
+    },
+    "oldHorizontalMeters": 3781.391770309028,
+    "newHorizontalMeters": 2196.467529817266,
+    "lambda": 8,
+    "weightedCost": 3615.434805783421
+  },
+  "rejectedClicks": [
+    {
+      "reason": "NoData",
+      "xy": {
+        "x": -503,
+        "y": 1094753
+      },
+      "notice": "Cell 146, 64 has no valid planning data. The point has not been moved."
+    },
+    {
+      "reason": "slope",
+      "xy": {
+        "x": -913,
+        "y": 1094783
+      },
+      "notice": "Cell slope 16.4°, above the 15° limit. Select another cell."
+    },
+    {
+      "reason": "outside",
+      "xy": {
+        "x": -2200,
+        "y": 1093800
+      },
+      "notice": "The point is outside the mapped region. Select another position."
+    }
+  ],
+  "uiCancellation": {
+    "lifecycle": [
+      "created",
+      "created",
+      "closed",
+      "closed",
+      "created",
+      "created",
+      "closed",
+      "closed"
+    ],
+    "closedBeforeRecalculation": 2,
+    "cancelledStateObserved": true,
+    "emptyMetricsAfterCancellation": true,
+    "recreatedWithLambdaZero": true,
+    "resetClearsResults": true,
+    "controlEvent": "Immediate DOM click while workers active; no CPU throttling"
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "noHorizontalOverflow": true,
+    "realRoutesComputed": true
+  },
+  "noRoute": {
+    "start": {
+      "col": 59,
+      "row": 302
+    },
+    "goal": {
+      "col": 148,
+      "row": 82
+    },
+    "destinationElevationMeters": -2526.85009765625,
+    "destinationSlopeDeg": 14.968354225158691,
+    "validMask": 1,
+    "explicitNoRouteState": true
+  },
+  "corruptResponse": {
+    "explicitlySyntheticHTTPFixture": true,
+    "rejectedBeforeMapCreation": true,
+    "calculationDisabled": true
+  },
+  "juryMissions": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "start": {
+        "col": 59,
+        "row": 302
+      },
+      "goal": {
+        "col": 334,
+        "row": 233
+      },
+      "parameters": {
+        "maxSlopeDeg": 15,
+        "lambdaA": 0,
+        "lambdaB": 4
+      },
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "readyMs": 485.5768999999964,
+      "demoRoundTripMs": 202.5765999999967,
+      "routeExports": [
+        {
+          "file": "docs/jury-improvement/1440-route-a.json",
+          "computeTimeMs": 24.100000023841858,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        },
+        {
+          "file": "docs/jury-improvement/1440-route-b.json",
+          "computeTimeMs": 49.60000002384186,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        }
+      ],
+      "computeTimeMs": {
+        "a": 24.100000023841858,
+        "b": 49.60000002384186
+      },
+      "overviewLoaded": true,
+      "sourceAssetRequestsOnly": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "start": {
+        "col": 59,
+        "row": 302
+      },
+      "goal": {
+        "col": 334,
+        "row": 233
+      },
+      "parameters": {
+        "maxSlopeDeg": 15,
+        "lambdaA": 0,
+        "lambdaB": 4
+      },
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "readyMs": 428.5161999999982,
+      "demoRoundTripMs": 141.6176000000014,
+      "routeExports": [
+        {
+          "file": "docs/jury-improvement/390-route-a.json",
+          "computeTimeMs": 22.799999952316284,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        },
+        {
+          "file": "docs/jury-improvement/390-route-b.json",
+          "computeTimeMs": 49,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        }
+      ],
+      "computeTimeMs": {
+        "a": 22.799999952316284,
+        "b": 49
+      },
+      "overviewLoaded": true,
+      "sourceAssetRequestsOnly": true
+    }
+  ],
+  "geology": {
+    "clickedProjectedXY": {
+      "x": 427,
+      "y": 1093293
+    },
+    "queriedSourceFid": 983,
+    "unit": "Nle",
+    "features": 6,
+    "unchangedCostWhenTogglingLayer": 4932.615239510466,
+    "warningVisible": true
+  },
+  "scienceObjectives": {
+    "markersQueriedAtExactCoordinates": [
+      "meowrtian-nhjf2",
+      "meowrtian-nle",
+      "meowrtian-njf"
+    ],
+    "destination": {
+      "col": 334,
+      "row": 233
+    },
+    "computedMetrics": {
+      "horizontalMeters": 3118.6500705120607,
+      "terrainMeters": 3120.958564881438,
+      "ascentMeters": 31.87841796875,
+      "descentMeters": 59.79443359375,
+      "netElevationMeters": -27.916015625,
+      "maxSlopeDeg": 9.018861770629883,
+      "totalCost": 4487.520852634148,
+      "exposure": [
+        {
+          "lowerInclusiveDeg": 0,
+          "upperExclusiveDeg": 5,
+          "horizontalMeters": 1762.9646455628176,
+          "fractionOfHorizontalLength": 0.5652973580563821
+        },
+        {
+          "lowerInclusiveDeg": 5,
+          "upperExclusiveDeg": 10,
+          "horizontalMeters": 1355.6854249492385,
+          "fractionOfHorizontalLength": 0.43470264194361646
+        },
+        {
+          "lowerInclusiveDeg": 10,
+          "upperExclusiveDeg": 15,
+          "horizontalMeters": 0,
+          "fractionOfHorizontalLength": 0
+        },
+        {
+          "lowerInclusiveDeg": 15,
+          "upperExclusiveDeg": 90,
+          "horizontalMeters": 0,
+          "fractionOfHorizontalLength": 0
+        }
+      ]
+    },
+    "independentAudit": {
+      "passed": true,
+      "checkedCells": 276,
+      "checkedEdges": 275,
+      "violations": [],
+      "independentMetrics": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "totalCost": 4487.520852634148,
+        "maxSlopeDeg": 9.018861770629883
+      },
+      "absoluteDifferences": {
+        "horizontalMeters": 0,
+        "terrainMeters": 0,
+        "ascentMeters": 0,
+        "descentMeters": 0,
+        "netElevationMeters": 0,
+        "totalCost": 0,
+        "maxSlopeDeg": 0
+      }
+    },
+    "exportIncludesUncertainty": true
+  },
+  "photos": {
+    "authenticImagesLoaded": [
+      {
+        "id": "NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ",
+        "rmc": "3_110",
+        "utc": "2021-03-05T03:47:52.335Z",
+        "sourcePage": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLM_0014_0668187969_574ECM_N0030110AUT_04096_00_2LLJ"
+      },
+      {
+        "id": "NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J",
+        "rmc": "4_644",
+        "utc": "2021-06-08T19:20:40.929Z",
+        "sourcePage": "https://mars.nasa.gov/mars2020/multimedia/raw-images/NLF_0107_0676451875_145ECM_N0040644NCAM01107_01_195J"
+      }
+    ],
+    "noGroundTargetsInferred": true,
+    "narrowScienceCardWithoutOverflow": true
+  },
+  "corruptScience": {
+    "syntheticHTTPFixture": true,
+    "integrityErrorVisible": true,
+    "originalPlannerStillComputes": true
+  }
+}
