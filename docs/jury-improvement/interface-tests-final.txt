@@ -1,0 +1,13 @@
+﻿
+> mars-pathfinder@0.1.0 test:interface
+> vitest run --config vitest.interface.config.ts
+
+
+ RUN  v5.1.0 <workspace>
+
+
+ Test Files  4 passed (4)
+      Tests  35 passed (35)
+   Start at  14:58:50
+   Duration  48.17s (tests 99%, import 1%)
+

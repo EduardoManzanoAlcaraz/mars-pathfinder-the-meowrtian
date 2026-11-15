@@ -10,6 +10,7 @@ import { evaluateEdge, normalizeOptions, planRoute } from '../../lib/routing/eng
 import { cellCenter, cellOf } from '../../lib/routing/grid.js';
 import type { Cell, RouteSuccess, RoutingGrid, XY } from '../../lib/routing/types.js';
 import type { DocumentedPhoto, ScienceObjective } from '../../lib/science/model.js';
+import { compareRoutes } from '../../lib/map/route-comparison.js';
 
 let server: Server, browser: Browser, base: string, page: Page, grid: RoutingGrid;
 const evidence: Record<string, unknown> = {}, output = 'docs/interface-validation';
@@ -275,6 +276,79 @@ it('blocks initialization when a scientific binary is truncated instead of prese
 async function scienceReady() {
   await ready(); await page.waitForFunction(() => document.querySelector('[data-science-ready="true"]'));
 }
+for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
+  it(`runs the guided validated mission end to end at ${viewport.width}px with real exports and regional context`, async () => {
+    await mkdir('docs/jury-improvement', { recursive: true });
+    await page.setViewportSize(viewport); const readyBegan = performance.now(); await scienceReady();
+    await page.waitForSelector('[data-overview-ready="true"]');
+    const readyMs = performance.now() - readyBegan;
+    const objectives = JSON.parse(await readFile('public/data/jezero-science-v1/objectives.json', 'utf8')).objectives as ScienceObjective[];
+    const missionGoal = objectives.find(o => o.id === 'meowrtian-njf')!.cell;
+    const initialResolution = Number(await page.getByTestId('mars-map').getAttribute('data-resolution'));
+    await page.getByRole('button', { name: 'Acercar mapa', exact: true }).click();
+    await expect.poll(async () => Number(await page.getByTestId('mars-map').getAttribute('data-resolution'))).toBeLessThan(initialResolution);
+    await page.getByRole('radio', { name: 'Pendiente', exact: true }).click();
+    await page.getByLabel('Límite de pendiente', { exact: true }).selectOption('5');
+    await page.getByLabel('Lambda de la ruta B', { exact: true }).evaluate((el: HTMLInputElement) => { el.value = '8'; el.dispatchEvent(new Event('change', { bubbles: true })); el.dispatchEvent(new Event('input', { bubbles: true })); });
+    const demoBegan = performance.now(); await page.getByRole('button', { name: /Start Mission/ }).click();
+    await page.waitForSelector('[data-demo-state="complete"]');
+    const demoRoundTripMs = performance.now() - demoBegan;
+    expect(await page.getByTestId('mars-map').getAttribute('data-origin-cell')).toBe(JSON.stringify(start));
+    expect(await page.getByTestId('mars-map').getAttribute('data-destination-cell')).toBe(JSON.stringify(missionGoal));
+    expect(await page.getByLabel('Límite de pendiente', { exact: true }).inputValue()).toBe('15');
+    expect(await page.getByLabel('Lambda de la ruta B', { exact: true }).inputValue()).toBe('4');
+    expect(await page.getByRole('radio', { name: 'Ortoimagen', exact: true }).getAttribute('aria-checked')).toBe('true');
+    await expect.poll(async () => Number(await page.getByTestId('mars-map').getAttribute('data-resolution'))).toBeCloseTo(initialResolution, 5);
+    const a = expectedRoute(start, missionGoal, 0), b = expectedRoute(start, missionGoal, 4);
+    expect(await page.getByTestId('route-insight').innerText()).toContain(compareRoutes(a, b));
+    const routeExports = [];
+    for (const [id, route] of [['a', a], ['b', b]] as const) {
+      for (const key of ['horizontalMeters', 'terrainMeters', 'ascentMeters', 'descentMeters', 'maxSlopeDeg'] as const) expect(await metric(`${id}-${key}`)).toBeCloseTo(route.metrics[key], 7);
+      expect(await metric(`${id}-computeTimeMs`)).toBeGreaterThanOrEqual(0);
+      const exported = await exportAndAudit(id, route);
+      const file = `docs/jury-improvement/${viewport.width}-route-${id}.json`;
+      await writeFile(file, await readFile(exported.file)); routeExports.push({ ...exported, file });
+    }
+    const overview = page.getByTestId('regional-overview');
+    if (await overview.getByRole('button', { name: 'JEZERO / CONTEXT' }).getAttribute('aria-expanded') === 'false') await overview.getByRole('button', { name: 'JEZERO / CONTEXT' }).click();
+    expect(await overview.locator('svg[role="img"]').getAttribute('data-study-extent')).toBe(JSON.stringify([-1968, 1091838, 1968, 1095398]));
+    expect(await overview.locator('svg[role="img"] path').count()).toBeGreaterThan(37);
+    await overview.getByRole('button', { name: 'Return to study area' }).click();
+    await mkdir('docs/jury-improvement', { recursive: true });
+    const icon = await overview.locator('.overview-recenter svg').boundingBox();
+    expect(icon!.width).toBeLessThanOrEqual(16); expect(icon!.height).toBeLessThanOrEqual(16);
+    const frame = await overview.boundingBox(), mapFrame = await page.locator('.map-stage').boundingBox();
+    expect(frame!.height).toBeLessThan(mapFrame!.height - 45);
+    const tools = await page.locator('.map-tools').boundingBox();
+    expect(frame!.x + frame!.width).toBeLessThan(tools!.x - 2);
+    await overview.screenshot({ path: `docs/jury-improvement/context-${viewport.width}.png` });
+    if (viewport.width <= 760) await overview.getByRole('button', { name: 'JEZERO / CONTEXT' }).click();
+    await page.locator('#route-comparison').screenshot({ path: `docs/jury-improvement/comparison-${viewport.width}.png` });
+    await page.getByRole('button', { name: 'View routes on terrain' }).click();
+    await page.waitForFunction(() => { const r = document.querySelector('.map-stage')!.getBoundingClientRect(); return Math.abs(r.top + r.height / 2 - innerHeight / 2) < 2; });
+    await page.locator('.map-stage').screenshot({ path: `docs/jury-improvement/map-${viewport.width}.png` });
+    await page.screenshot({ path: `docs/jury-improvement/after-${viewport.width}.png`, fullPage: true });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const scenarios = evidence.juryMissions as unknown[] ?? []; evidence.juryMissions = scenarios;
+    await page.getByRole('button', { name: /03 \/ Inspect M1/ }).click();
+    const card = page.getByTestId('science-inspector'); await card.waitFor();
+    expect(await card.innerText()).toContain('TEAM-SELECTED SCIENCE OBJECTIVE');
+    expect(await card.innerText()).toContain('Scientific objective'); expect(await card.innerText()).toContain('100–200 m');
+    await card.scrollIntoViewIfNeeded(); await card.screenshot({ path: `docs/jury-improvement/objective-${viewport.width}.png` });
+    await page.getByRole('button', { name: 'Cerrar ficha científica' }).click();
+    scenarios.push({ viewport, start, goal: missionGoal, parameters: { maxSlopeDeg: 15, lambdaA: 0, lambdaB: 4 }, routeA: a.metrics, routeB: b.metrics,
+      readyMs, demoRoundTripMs, routeExports, computeTimeMs: { a: await metric('a-computeTimeMs'), b: await metric('b-computeTimeMs') }, overviewLoaded: true, sourceAssetRequestsOnly: true });
+  });
+}
+it('keeps the real planner usable if the optional regional-context response is corrupted', async () => {
+  await page.route('**/jezero-overview-v1/context.json', r => r.fulfill({ status: 200, contentType: 'application/json', body: '{}' }));
+  await scienceReady();
+  await page.getByText('Context unavailable. The HiRISE planner remains usable.', { exact: true }).waitFor();
+  await page.getByRole('button', { name: /Start Mission/ }).click();
+  await page.waitForSelector('[data-demo-state="complete"]');
+  const objectives = JSON.parse(await readFile('public/data/jezero-science-v1/objectives.json', 'utf8')).objectives as ScienceObjective[];
+  expect(await metric('b-horizontalMeters')).toBeCloseTo(expectedRoute(start, objectives.find(o => o.id === 'meowrtian-njf')!.cell).metrics.horizontalMeters, 7);
+});
 it('positions the USGS layer in local coordinates, queries real polygons and leaves route metrics unchanged', async () => {
   await scienceReady(); await page.getByRole('button', { name: 'Usar ejemplo validado' }).click(); await calculate();
   const previous = await metric('b-totalCost');

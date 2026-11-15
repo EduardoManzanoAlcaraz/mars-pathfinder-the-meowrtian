@@ -1,0 +1,718 @@
+{
+  "checkedAtUtc": "2026-11-15T14:00:47.555Z",
+  "deployment": "local static build only; no Netlify mutation",
+  "protectedFilesCompared": 50,
+  "originalScientificAssetsAndEngineUnchanged": true,
+  "originalCodeLicense": "Apache-2.0",
+  "noNewDependencies": true,
+  "staticFiles": 67,
+  "staticBytes": 6185044,
+  "allStaticFilesHttp200AndSha256Equal": true,
+  "newContextBytes": 48982,
+  "testCounts": {
+    "routingWorkers": 37,
+    "interfaceScience": 35,
+    "pythonFullData": 22
+  },
+  "browserMissions": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "start": {
+        "col": 59,
+        "row": 302
+      },
+      "goal": {
+        "col": 334,
+        "row": 233
+      },
+      "parameters": {
+        "maxSlopeDeg": 15,
+        "lambdaA": 0,
+        "lambdaB": 4
+      },
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "readyMs": 535.9979999999996,
+      "demoRoundTripMs": 187.72739999999976,
+      "routeExports": [
+        {
+          "file": "docs/jury-improvement/1440-route-a.json",
+          "computeTimeMs": 25,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        },
+        {
+          "file": "docs/jury-improvement/1440-route-b.json",
+          "computeTimeMs": 55.69999998807907,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        }
+      ],
+      "computeTimeMs": {
+        "a": 25,
+        "b": 55.69999998807907
+      },
+      "overviewLoaded": true,
+      "sourceAssetRequestsOnly": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "start": {
+        "col": 59,
+        "row": 302
+      },
+      "goal": {
+        "col": 334,
+        "row": 233
+      },
+      "parameters": {
+        "maxSlopeDeg": 15,
+        "lambdaA": 0,
+        "lambdaB": 4
+      },
+      "routeA": {
+        "horizontalMeters": 3035.807358037436,
+        "terrainMeters": 3038.973575952494,
+        "ascentMeters": 36.391357421875,
+        "descentMeters": 64.307373046875,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 14.535634994506836,
+        "totalCost": 3035.807358037436,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 791.1269837220809,
+            "fractionOfHorizontalLength": 0.2605985460927014
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1803.2590180780453,
+            "fractionOfHorizontalLength": 0.5939965239572387
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 441.4213562373095,
+            "fractionOfHorizontalLength": 0.1454049299500598
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "routeB": {
+        "horizontalMeters": 3118.6500705120607,
+        "terrainMeters": 3120.958564881438,
+        "ascentMeters": 31.87841796875,
+        "descentMeters": 59.79443359375,
+        "netElevationMeters": -27.916015625,
+        "maxSlopeDeg": 9.018861770629883,
+        "totalCost": 4487.520852634148,
+        "exposure": [
+          {
+            "lowerInclusiveDeg": 0,
+            "upperExclusiveDeg": 5,
+            "horizontalMeters": 1762.9646455628176,
+            "fractionOfHorizontalLength": 0.5652973580563821
+          },
+          {
+            "lowerInclusiveDeg": 5,
+            "upperExclusiveDeg": 10,
+            "horizontalMeters": 1355.6854249492385,
+            "fractionOfHorizontalLength": 0.43470264194361646
+          },
+          {
+            "lowerInclusiveDeg": 10,
+            "upperExclusiveDeg": 15,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          },
+          {
+            "lowerInclusiveDeg": 15,
+            "upperExclusiveDeg": 90,
+            "horizontalMeters": 0,
+            "fractionOfHorizontalLength": 0
+          }
+        ]
+      },
+      "readyMs": 408.71919999999955,
+      "demoRoundTripMs": 166.757999999998,
+      "routeExports": [
+        {
+          "file": "docs/jury-improvement/390-route-a.json",
+          "computeTimeMs": 26.799999952316284,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3035.807358037436,
+              "terrainMeters": 3038.973575952494,
+              "ascentMeters": 36.391357421875,
+              "descentMeters": 64.307373046875,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 3035.807358037436,
+              "maxSlopeDeg": 14.535634994506836
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "distance",
+            "lambda": 0,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        },
+        {
+          "file": "docs/jury-improvement/390-route-b.json",
+          "computeTimeMs": 54.5,
+          "audit": {
+            "passed": true,
+            "checkedCells": 276,
+            "checkedEdges": 275,
+            "violations": [],
+            "independentMetrics": {
+              "horizontalMeters": 3118.6500705120607,
+              "terrainMeters": 3120.958564881438,
+              "ascentMeters": 31.87841796875,
+              "descentMeters": 59.79443359375,
+              "netElevationMeters": -27.916015625,
+              "totalCost": 4487.520852634148,
+              "maxSlopeDeg": 9.018861770629883
+            },
+            "absoluteDifferences": {
+              "horizontalMeters": 0,
+              "terrainMeters": 0,
+              "ascentMeters": 0,
+              "descentMeters": 0,
+              "netElevationMeters": 0,
+              "totalCost": 0,
+              "maxSlopeDeg": 0
+            }
+          },
+          "parameters": {
+            "mode": "slope-penalty",
+            "lambda": 4,
+            "maxSlopeDeg": 15,
+            "thetaRefDeg": 15,
+            "exposureBinsDeg": [
+              0,
+              5,
+              10,
+              15,
+              90
+            ]
+          }
+        }
+      ],
+      "computeTimeMs": {
+        "a": 26.799999952316284,
+        "b": 54.5
+      },
+      "overviewLoaded": true,
+      "sourceAssetRequestsOnly": true
+    }
+  ],
+  "inventory": [
+    {
+      "path": "404/index.html",
+      "bytes": 6364,
+      "sha256": "894e789d950bca77e17fd2021aa3e45ab56cdb744e137e206c33868ad539cf2f"
+    },
+    {
+      "path": "404.html",
+      "bytes": 6364,
+      "sha256": "894e789d950bca77e17fd2021aa3e45ab56cdb744e137e206c33868ad539cf2f"
+    },
+    {
+      "path": "data/jezero-hirise-v1/demo-query.json",
+      "bytes": 339,
+      "sha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9"
+    },
+    {
+      "path": "data/jezero-hirise-v1/elevation.webp",
+      "bytes": 284396,
+      "sha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9"
+    },
+    {
+      "path": "data/jezero-hirise-v1/elevation.wld",
+      "bytes": 37,
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "data/jezero-hirise-v1/hillshade.webp",
+      "bytes": 431374,
+      "sha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3"
+    },
+    {
+      "path": "data/jezero-hirise-v1/hillshade.wld",
+      "bytes": 37,
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "data/jezero-hirise-v1/manifest.json",
+      "bytes": 15599,
+      "sha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85"
+    },
+    {
+      "path": "data/jezero-hirise-v1/nodata.webp",
+      "bytes": 368,
+      "sha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287"
+    },
+    {
+      "path": "data/jezero-hirise-v1/ortho.webp",
+      "bytes": 510442,
+      "sha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d"
+    },
+    {
+      "path": "data/jezero-hirise-v1/ortho.wld",
+      "bytes": 37,
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "data/jezero-hirise-v1/routing_elevation.f32",
+      "bytes": 561056,
+      "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147"
+    },
+    {
+      "path": "data/jezero-hirise-v1/routing_slope_max.f32",
+      "bytes": 561056,
+      "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53"
+    },
+    {
+      "path": "data/jezero-hirise-v1/routing_valid.u8",
+      "bytes": 140264,
+      "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52"
+    },
+    {
+      "path": "data/jezero-hirise-v1/slope.webp",
+      "bytes": 1070642,
+      "sha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d"
+    },
+    {
+      "path": "data/jezero-hirise-v1/slope.wld",
+      "bytes": 37,
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "data/jezero-hirise-v1/visuals.json",
+      "bytes": 7573,
+      "sha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e"
+    },
+    {
+      "path": "data/jezero-overview-v1/context.json",
+      "bytes": 48982,
+      "sha256": "f20ada191ed59a7f053d74fb022e98f317df8de5a530dc49d32d76593c40f8bb"
+    },
+    {
+      "path": "data/jezero-science-v1/geology.json",
+      "bytes": 137470,
+      "sha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27"
+    },
+    {
+      "path": "data/jezero-science-v1/manifest.json",
+      "bytes": 1196,
+      "sha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02"
+    },
+    {
+      "path": "data/jezero-science-v1/objectives.json",
+      "bytes": 6932,
+      "sha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245"
+    },
+    {
+      "path": "data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+      "bytes": 57119,
+      "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228"
+    },
+    {
+      "path": "data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+      "bytes": 42430,
+      "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e"
+    },
+    {
+      "path": "data/jezero-science-v1/photos.json",
+      "bytes": 5536,
+      "sha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 362,
+      "sha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492"
+    },
+    {
+      "path": "index.html",
+      "bytes": 26896,
+      "sha256": "2f7cca2bfaa8573209c9f39c1193b8819bde86af1419acd2fc376452529be3cf"
+    },
+    {
+      "path": "index.txt",
+      "bytes": 3286,
+      "sha256": "73336b0e56c493f898a5abdc64a6ff8e913f6d85d27e9a3d5038f9bd1fd23c68"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 768086,
+      "sha256": "3301d9743f4187b551b56b3e99799853e8137e87912f98bd7be50f05ca6ca3cf"
+    },
+    {
+      "path": "workers/routing.worker.js",
+      "bytes": 11550,
+      "sha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421"
+    },
+    {
+      "path": "_next/static/chunks/372.7f072431836d3b77.js",
+      "bytes": 15514,
+      "sha256": "d9940a832c3b23455c716f9ebc935e10d36e2f159b4f9f3723f6807b624c1c66"
+    },
+    {
+      "path": "_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "bytes": 203721,
+      "sha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec"
+    },
+    {
+      "path": "_next/static/chunks/794-96ab5d7caefc5d69.js",
+      "bytes": 242282,
+      "sha256": "7f02f17d6dfebe33a8867c308fb0e842474ff1d0ebe5ca623eda48fa4dd0f8c3"
+    },
+    {
+      "path": "_next/static/chunks/899.5ce6b3cbad015b59.js",
+      "bytes": 4752,
+      "sha256": "12b23761a7567937753843f56b2c72493d50928d7753d25f1db4e84e97e3d018"
+    },
+    {
+      "path": "_next/static/chunks/92.37d52bab7f34aa16.js",
+      "bytes": 326279,
+      "sha256": "604f3dd91340c9a492b13f4d6a1219f23ae363e2b025ac404b941a656c8992e8"
+    },
+    {
+      "path": "_next/static/chunks/966.1775eb621d8d3e09.js",
+      "bytes": 753,
+      "sha256": "4e64e06b8deba77cbbf9487c6d48373939b8a99f235a67a4f71a6b45ad68b055"
+    },
+    {
+      "path": "_next/static/chunks/975-e323ed530151dd26.js",
+      "bytes": 13493,
+      "sha256": "566336af229fce6a415ab6b202b4f905887e975836758749040c98cb5a6cb4f0"
+    },
+    {
+      "path": "_next/static/chunks/app/layout-7f70928d4a0f58c7.js",
+      "bytes": 251,
+      "sha256": "4e0a51f4d8f6da08eb7b4616b2b45c5385767cf11b118476000b12e2bca5225d"
+    },
+    {
+      "path": "_next/static/chunks/app/page-b62be303993c1764.js",
+      "bytes": 52348,
+      "sha256": "64a6710aa1772e67d4cbe933f5275c0fc09415e8bbf1ac75b8771143dd98019e"
+    },
+    {
+      "path": "_next/static/chunks/app/_global-error/page-aba28f88d5781771.js",
+      "bytes": 147,
+      "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d"
+    },
+    {
+      "path": "_next/static/chunks/app/_not-found/page-7204d786281ec257.js",
+      "bytes": 2667,
+      "sha256": "c3942c2da23061f0d987aba5d003b62405aa2a105aa6b83869b1b0b2e2dd649d"
+    },
+    {
+      "path": "_next/static/chunks/framework-ea4f97ca039bd777.js",
+      "bytes": 218916,
+      "sha256": "61b92d4a1510be156591a4f12a6b5bcf70f338cf5f8db1d50e2be1305b6b761d"
+    },
+    {
+      "path": "_next/static/chunks/main-979b8a22e7502c64.js",
+      "bytes": 131956,
+      "sha256": "9ab418bad3507ba85e184e97049c0759fd8d03b27958fa9c4115d12e86ff0463"
+    },
+    {
+      "path": "_next/static/chunks/main-app-bafb0d3f73ef38d7.js",
+      "bytes": 513,
+      "sha256": "e6ee39e6444b11026e12b449653b9b23e2108e2dae7788d9c437f6cf4d0a226d"
+    },
+    {
+      "path": "_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js",
+      "bytes": 147,
+      "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d"
+    },
+    {
+      "path": "_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js",
+      "bytes": 147,
+      "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d"
+    },
+    {
+      "path": "_next/static/chunks/next/dist/client/components/builtin/global-error-c61aaf16b9cbf7c8.js",
+      "bytes": 179,
+      "sha256": "780aecdb93c0a6fae7b9606e3d9a853ba445484adc5ee616f516a21b7dbfd323"
+    },
+    {
+      "path": "_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js",
+      "bytes": 147,
+      "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d"
+    },
+    {
+      "path": "_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js",
+      "bytes": 147,
+      "sha256": "6b4abe1e19f23770e1f23db931aa4456b149b505e1e8c9c8dfe647b2de4fdd4d"
+    },
+    {
+      "path": "_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "path": "_next/static/chunks/webpack-69c01c3156377b14.js",
+      "bytes": 3450,
+      "sha256": "2943ff53dcbde71833bf7628fa569c03f06dda8121ce4057ac672945c23b4bc5"
+    },
+    {
+      "path": "_next/static/css/962ac6a6350fd853.css",
+      "bytes": 49993,
+      "sha256": "872a9a15b9bc8a3a251c8fe03d47f6729963ad404166ca81d744af8aba6c4927"
+    },
+    {
+      "path": "_next/static/d54enkGn6CbVnthWiSlW_/_buildManifest.js",
+      "bytes": 477,
+      "sha256": "2946a3b8b6c271b02c695496e7eba84afcc892712964c5740c18776131404312"
+    },
+    {
+      "path": "_next/static/d54enkGn6CbVnthWiSlW_/_ssgManifest.js",
+      "bytes": 80,
+      "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00"
+    },
+    {
+      "path": "_next/static/media/manrope-cyrillic-ext-wght-normal.d1990364.woff2",
+      "bytes": 2552,
+      "sha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d"
+    },
+    {
+      "path": "_next/static/media/manrope-cyrillic-wght-normal.2ffcac4f.woff2",
+      "bytes": 14500,
+      "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+    },
+    {
+      "path": "_next/static/media/manrope-greek-wght-normal.6b69666c.woff2",
+      "bytes": 9444,
+      "sha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be"
+    },
+    {
+      "path": "_next/static/media/manrope-latin-ext-wght-normal.f5cc7610.woff2",
+      "bytes": 15120,
+      "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb"
+    },
+    {
+      "path": "_next/static/media/manrope-latin-wght-normal.fedf4c92.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "path": "_next/static/media/manrope-vietnamese-wght-normal.383b32a0.woff2",
+      "bytes": 8520,
+      "sha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5"
+    },
+    {
+      "path": "_not-found/index.html",
+      "bytes": 6364,
+      "sha256": "894e789d950bca77e17fd2021aa3e45ab56cdb744e137e206c33868ad539cf2f"
+    },
+    {
+      "path": "_not-found/index.txt",
+      "bytes": 3624,
+      "sha256": "274ef192ee7ef556f39c71d512f931bf274976c744183c1f0c43931bcc366992"
+    },
+    {
+      "path": "_not-found/__next._full.txt",
+      "bytes": 3624,
+      "sha256": "274ef192ee7ef556f39c71d512f931bf274976c744183c1f0c43931bcc366992"
+    },
+    {
+      "path": "_not-found/__next._not-found/__PAGE__.txt",
+      "bytes": 3061,
+      "sha256": "0bf03b8912c31e2f6cdeffa3b3ceaccd36a60bfd75824075a3c73936abe5b2cf"
+    },
+    {
+      "path": "_not-found/__next._tree.txt",
+      "bytes": 217,
+      "sha256": "0b38cb923a15c20f7e6094a760d5bf6adee9e4a6d446b3e17dfffbc9b3932367"
+    },
+    {
+      "path": "__next._full.txt",
+      "bytes": 3286,
+      "sha256": "73336b0e56c493f898a5abdc64a6ff8e913f6d85d27e9a3d5038f9bd1fd23c68"
+    },
+    {
+      "path": "__next._tree.txt",
+      "bytes": 164,
+      "sha256": "bf0686f86fd186c789865f376d28a02c1fef1383c209b38d4d11c7bd354590b4"
+    },
+    {
+      "path": "__next.__PAGE__.txt",
+      "bytes": 2949,
+      "sha256": "7efca3c4eeb6b46d97d2c39f8f5c26f7f88cd4dbc386390d8ace01c980716a07"
+    }
+  ]
+}

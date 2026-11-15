@@ -2,6 +2,7 @@
 import { BookOpen, Camera, ChevronRight, Flag, Layers, X } from 'lucide-react';
 import { SCIENCE_URL, UNIT_COLORS } from '../../lib/science/model';
 import type { ScienceData, ScienceObjective, ScienceSelection } from '../../lib/science/model';
+import { objectiveStory } from '../../lib/science/objective-story';
 
 interface ControlsProps { science: ScienceData | null; error: string; showGeology: boolean; showObjectives: boolean; showPhotos: boolean; opacity: number;
   onGeology: (show: boolean) => void; onObjectives: (show: boolean) => void; onPhotos: (show: boolean) => void; onOpacity: (opacity: number) => void; onSelect: (selection: ScienceSelection) => void }
@@ -17,7 +18,8 @@ export function ScienceControls(p: ControlsProps) {
         <div className="geology-key" aria-label="Leyenda geológica">{units.map(unit => <button key={unit.symbol} onClick={() => p.onSelect({ kind: 'unit', id: p.science!.geology.features.find(f => f.properties.symbol === unit.symbol)!.id })} title={unit.name}><i style={{ background: UNIT_COLORS[unit.symbol] }} /><b>{unit.symbol}</b><span>{unit.name}</span></button>)}<small>Colores de visualización: The Meowrtian</small></div>
       </>}
       <label className="science-toggle"><input type="checkbox" checked={p.showObjectives} onChange={e => p.onObjectives(e.target.checked)} /><Flag size={14} />Objetivos del equipo</label>
-      <div className="science-objectives">{p.science.objectives.map((o, i) => <button key={o.id} onClick={() => p.onSelect({ kind: 'objective', id: o.id })} aria-label={`Consultar objetivo M${i + 1}`}><b>M{i + 1}</b><span>{o.unitName}<small>{o.unitSymbol} · selección The Meowrtian</small></span><ChevronRight size={12} /></button>)}</div>
+      <p className="science-selection-note">Team-selected science objectives<br />Not official NASA/USGS stations.</p>
+      <div className="science-objectives">{p.science.objectives.map((o, i) => <button key={o.id} onClick={() => p.onSelect({ kind: 'objective', id: o.id })} aria-label={`Consultar objetivo M${i + 1}`}><b>M{i + 1}</b><span>{objectiveStory(o).name}<small>{o.unitSymbol} · {o.unitName}</small></span><ChevronRight size={12} /></button>)}</div>
       <label className="science-toggle"><input type="checkbox" checked={p.showPhotos} onChange={e => p.onPhotos(e.target.checked)} /><Camera size={14} />Fotografías Perseverance</label>
       {p.showPhotos && <div className="science-photo-links">{p.science.photos.map(photo => <button key={photo.id} onClick={() => p.onSelect({ kind: 'photo', id: photo.id })}>{photo.label}<span>RMC {photo.rmc} <ChevronRight size={11} /></span></button>)}</div>}
     </>}
@@ -30,16 +32,19 @@ export function ScienceInspector({ science, selection, onClose, onAssign }: { sc
   const photo = selection.kind === 'photo' ? science.photos.find(o => o.id === selection.id) : null;
   const feature = selection.kind === 'unit' ? science.geology.features.find(f => f.id === selection.id) : objective ? science.geology.features.find(f => f.id === objective.sourceFid) : null;
   return <aside className="science-inspector" aria-label="Ficha científica" data-testid="science-inspector" data-selection-kind={selection.kind}>
-    <div className="science-inspector-heading"><span className="eyebrow">{photo ? 'REGISTRO DOCUMENTADO NASA' : objective ? 'OBJETIVO PROPUESTO · THE MEOWRTIAN' : 'INTERPRETACIÓN PUBLICADA · USGS'}</span><button aria-label="Cerrar ficha científica" onClick={onClose}><X size={16} /></button></div>
+    <div className="science-inspector-heading"><span className="eyebrow">{photo ? 'REGISTRO DOCUMENTADO NASA' : objective ? 'TEAM-SELECTED SCIENCE OBJECTIVE' : 'INTERPRETACIÓN PUBLICADA · USGS'}</span><button aria-label="Cerrar ficha científica" onClick={onClose}><X size={16} /></button></div>
     <div className="science-inspector-body" tabIndex={0} aria-label="Contenido de la ficha; desplázate para leer las referencias">
-    <h3>{objective?.label ?? photo?.label ?? feature?.properties.name}</h3>
+    <h3>{objective ? `${objective.label.split(' · ')[0]} · ${objectiveStory(objective).name}` : photo?.label ?? feature?.properties.name}</h3>
     {feature && <><div className="science-unit-label"><i style={{ background: UNIT_COLORS[feature.properties.symbol] }} /><b>{feature.properties.symbol}</b><span>{feature.properties.name}</span></div><p className="science-citation">Sun &amp; Stack, 2020 · SIM 3464 · 1:75.000<br />GeoUnits_v1 · OBJECTID {feature.id}</p></>}
     {objective && <>
-      <p>{objective.scientificObjective}</p>
+      <p className="science-citation">Original team record: {objective.label}</p>
+      <div className="science-question" lang="en"><h4>Scientific objective</h4><p>{objectiveStory(objective).question}</p></div>
       <div className="science-coordinates">{objective.latitudePlanetocentricDeg.toFixed(6)}° N · {objective.longitudeEastDeg.toFixed(6)}° E<br />x {objective.xy[0]} m · y {objective.xy[1]} m</div>
       <p className="science-citation">Centro de celda válido · {objective.elevationMeters.toFixed(1)} m de altura<br />Pendiente máxima de celda: {objective.routingSlopeMaxDeg.toFixed(2)}°</p>
       <p className="science-warning">{objective.designation}. La precisión numérica no equivale a exactitud de ubicación.</p>
-      <details><summary>Fuentes del objetivo</summary>{objective.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a>)}</details>
+      <p className="science-uncertainty"><b>Location uncertainty</b><br />10 m grid cell ≠ location accuracy.<br />Geological registration offset: 100–200 m.</p>
+      <a className="science-reference" href={objective.sources[0]!.url} target="_blank" rel="noreferrer">Source: Sun &amp; Stack (2020), USGS ↗</a>
+      <details><summary>Fuentes del objetivo</summary>{objective.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a>)}<p>{objective.scientificObjective}</p></details>
     </>}
     {photo && <>
       <a href={photo.sourcePageUrl} target="_blank" rel="noreferrer" title="Abrir fotografía y registro NASA"><img src={SCIENCE_URL + photo.file} width="800" height="600" alt={`${photo.instrument}, Perseverance sol ${photo.sol}; imagen auténtica NASA`} loading="lazy" /></a>

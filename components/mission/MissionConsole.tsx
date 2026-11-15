@@ -12,6 +12,7 @@ import ElevationProfile from './ElevationProfile';
 import { loadScience } from '../../lib/science/model';
 import type { ScienceData, ScienceObjective, ScienceSelection } from '../../lib/science/model';
 import { ScienceControls } from './SciencePanel';
+import { compareRoutes } from '../../lib/map/route-comparison';
 
 const MissionMap = dynamic(() => import('./MissionMap'), { ssr: false, loading: () => <div className="map-skeleton"><span className="loading-ring" />Preparando cartografía</div> });
 type Runtime = { grid: RoutingGrid; catalog: VisualCatalog; demo: { start: Cell; goal: Cell; manifestSha256: string } };
@@ -35,6 +36,7 @@ export default function MissionConsole() {
   const [science, setScience] = useState<ScienceData | null>(null), [scienceError, setScienceError] = useState('');
   const [showGeology, setShowGeology] = useState(false), [showObjectives, setShowObjectives] = useState(true), [showPhotos, setShowPhotos] = useState(false);
   const [geologyOpacity, setGeologyOpacity] = useState(.35), [scienceSelection, setScienceSelection] = useState<ScienceSelection>(null);
+  const [focusVersion, setFocusVersion] = useState(0), [demoState, setDemoState] = useState<'idle' | 'running' | 'complete'>('idle');
 
   useEffect(() => {
     const abort = new AbortController();
@@ -70,7 +72,7 @@ export default function MissionConsole() {
   }, [sourcesOpen]);
   const invalidate = useCallback(() => {
     generation.current++; clients.current?.a.cancel(); clients.current?.b.cancel();
-    setRoutes({ a: null, b: null }); setCalcState('idle');
+    setRoutes({ a: null, b: null }); setCalcState('idle'); setDemoState('idle');
   }, []);
   const beginSelect = (kind: 'start' | 'goal') => {
     setMode(kind); setNotice(null);
@@ -111,13 +113,13 @@ export default function MissionConsole() {
   };
   const cancel = () => { invalidate(); setCalcState('cancelled'); setNotice({ type: 'info', text: 'Cálculo cancelado. Los workers activos se han terminado.' }); };
   const endpointProblem = runtime && ((origin && cellBlockReason(runtime.grid, indexOf(runtime.grid, origin.cell), maxSlope)) || (destination && cellBlockReason(runtime.grid, indexOf(runtime.grid, destination.cell), maxSlope)));
-  const calculate = async () => {
-    if (!runtime || !origin || !destination || !clients.current || endpointProblem) return;
+  const runRoutes = async (start: Endpoint, goal: Endpoint, weight: number, cap: number, guided = false) => {
+    if (!runtime || !clients.current || cellBlockReason(runtime.grid, indexOf(runtime.grid, start.cell), cap) || cellBlockReason(runtime.grid, indexOf(runtime.grid, goal.cell), cap)) return;
     const pair = clients.current, token = ++generation.current;
     pair.a.cancel(); pair.b.cancel(); setRoutes({ a: null, b: null }); setCalcState('working'); setMode(null); setNotice(null);
     const outcomes = await Promise.all([
-      pair.a.request(origin.cell, destination.cell, { mode: 'distance', lambda: 0, maxSlopeDeg: maxSlope, thetaRefDeg: 15 }),
-      pair.b.request(origin.cell, destination.cell, { mode: 'slope-penalty', lambda, maxSlopeDeg: maxSlope, thetaRefDeg: 15 }),
+      pair.a.request(start.cell, goal.cell, { mode: 'distance', lambda: 0, maxSlopeDeg: cap, thetaRefDeg: 15 }),
+      pair.b.request(start.cell, goal.cell, { mode: 'slope-penalty', lambda: weight, maxSlopeDeg: cap, thetaRefDeg: 15 }),
     ]);
     if (token !== generation.current) return;
     const next: Routes = { a: null, b: null }; const failures: string[] = [];
@@ -129,9 +131,29 @@ export default function MissionConsole() {
       else failures.push(routeFailure(outcome.result));
     }
     setRoutes(next);
-    if (next.a && next.b) { setCalcState('complete'); setNotice(null); }
-    else { setCalcState(failures.some(x => x.includes('No existe')) ? 'no-route' : 'error'); setNotice({ type: 'error', text: [...new Set(failures)].join(' ') }); }
+    if (next.a && next.b) { setCalcState('complete'); setNotice(null); if (guided) setDemoState('complete'); }
+    else { setDemoState('idle'); setCalcState(failures.some(x => x.includes('No existe')) ? 'no-route' : 'error'); setNotice({ type: 'error', text: [...new Set(failures)].join(' ') }); }
   };
+  const calculate = () => { if (origin && destination && !endpointProblem) void runRoutes(origin, destination, lambda, maxSlope); };
+  const startMission = () => {
+    const target = science?.objectives.find(o => o.id === 'meowrtian-njf');
+    if (!runtime || !mapReady || !clients.current || !target) return;
+    const start = selectEndpoint(runtime.grid, cellCenter(runtime.grid, runtime.demo.start), 15);
+    // Same origin-to-M3 experiment independently audited in production and used
+    // in the presentation. Coordinates come from the verified objective record.
+    const goal = selectEndpoint(runtime.grid, { x: target.xy[0], y: target.xy[1] }, 15);
+    if (start.error || goal.error || !start.endpoint || !goal.endpoint) { setNotice({ type: 'error', text: start.error ?? goal.error ?? 'Validated scenario unavailable.' }); return; }
+    invalidate(); setLambda(4); setMaxSlope(15); setOrigin(start.endpoint); setDestination(goal.endpoint); setMode(null);
+    setActiveLayer('ortho'); setShowNoData(true); setShowGeology(false); setShowObjectives(true); setShowPhotos(false);
+    setVisibility({ a: true, b: true }); setSelected('b'); setScienceSelection(null); setFocusVersion(v => v + 1); setDemoState('running');
+    document.getElementById('map-workspace')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    void runRoutes(start.endpoint, goal.endpoint, 4, 15, true);
+  };
+  useEffect(() => {
+    if (demoState !== 'complete') return;
+    const frame = requestAnimationFrame(() => document.getElementById('route-comparison')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
+    return () => cancelAnimationFrame(frame);
+  }, [demoState]);
   const exportRoute = () => {
     if (!runtime || !origin || !destination || !routes[selected]) return;
     const content = { ...makeRouteExport(runtime.grid, routes[selected]!, origin, destination, selected), scientificContext: science ? {
@@ -191,14 +213,19 @@ export default function MissionConsole() {
       </aside>
 
       <section className="workspace" id="map-workspace">
-        <div className="workspace-heading"><div><span className="eyebrow">ÁREA DE EXPLORACIÓN</span><h2>Jezero, desde otra perspectiva</h2></div><div className="region-meta"><span>18.45° N · 77.44° E</span><b>HiRISE / v1</b></div></div>
+        <div className="workspace-heading"><div><span className="eyebrow">MARS / JEZERO CRATER</span><h2>Plan the traverse. Explore the science.</h2></div><div className="region-meta"><span>18.45° N · 77.44° E</span><b>HiRISE / v1</b></div></div>
+        <section lang="en" className="mission-briefing" aria-label="Guided mission demo" data-demo-state={demoState}>
+          <div><span className="eyebrow">MISSION BRIEF / THE MEOWRTIAN</span><h3>One terrain. Two ways across.</h3><p>Plan a traverse to M3, our team-selected crater-floor objective. Compare distance and slope on real Mars data.</p></div>
+          <button className="start-mission" onClick={startMission} disabled={!dataReady || !science || calcState === 'working'}>{demoState === 'running' ? <LoaderCircle className="spin" size={18} /> : <Play size={18} />}<span>{demoState === 'running' ? 'Computing A + B…' : 'Start Mission'}<small>{scienceError ? 'Science unavailable · use manual planner' : !science ? 'Verifying science objectives…' : 'Validated origin → M3 · 15° / λ 4'}</small></span><ArrowRight size={16} /></button>
+          <ol className="mission-steps" aria-label="Demo progress"><li className={dataReady ? 'done' : ''}>01 / Real terrain</li><li className={demoState === 'complete' ? 'done' : ''}>02 / Compare A + B</li><li><button disabled={!science} onClick={() => science && selectScience({ kind: 'objective', id: science.objectives[0]!.id })}>03 / Inspect M1–M3 ↗</button></li></ol>
+        </section>
         <div className="science-map-shortcuts" aria-label="Capas científicas del mapa">
           <button disabled={!science} aria-pressed={showGeology} onClick={() => { setShowGeology(value => !value); setMode(null); }}><Layers size={13} />Geología USGS <small>1:75.000</small></button>
           <button disabled={!science} aria-pressed={showObjectives} onClick={() => setShowObjectives(value => !value)}><Flag size={13} />Objetivos M1–M3</button>
           <button disabled={!science} aria-pressed={showPhotos} onClick={() => setShowPhotos(value => !value)}><Eye size={13} />Registros Perseverance</button>
         </div>
         <div className="map-stage">
-          {runtime ? <MissionMap grid={runtime.grid} catalog={runtime.catalog} activeLayer={activeLayer} selectionMode={mode} origin={origin} destination={destination} routes={routes} visibility={visibility} showNoData={showNoData}
+          {runtime ? <MissionMap grid={runtime.grid} catalog={runtime.catalog} activeLayer={activeLayer} selectionMode={mode} origin={origin} destination={destination} routes={routes} visibility={visibility} showNoData={showNoData} focusVersion={focusVersion}
             science={science} showGeology={showGeology} showObjectives={showObjectives} showPhotos={showPhotos} geologyOpacity={geologyOpacity} scienceSelection={scienceSelection} onScienceSelect={selectScience} onAssignObjective={assignObjective}
             onPick={pick} onReady={() => setMapReady(true)} onError={message => setNotice({ type: 'error', text: message })} onSources={() => setSourcesOpen(true)} />
             : <div className="map-skeleton">{loadError ? <><ShieldAlert size={27} /><strong>No se pudieron verificar los datos</strong><p>{loadError}</p><button onClick={() => location.reload()}>Reintentar</button></> : <><span className="loading-ring" /><strong>Conectando con el terreno real</strong><p>Verificando versión, máscaras y binarios de Jezero.</p></>}</div>}
@@ -209,20 +236,24 @@ export default function MissionConsole() {
           <a href="#mission-controls" className="mobile-control-link">Controles</a>
         </div>
 
+        <div id="route-comparison" className="comparison-workspace">
+        {successful && <div lang="en" className="route-insight" role="status" data-testid="route-insight"><span className="eyebrow">THE TRADE-OFF / MEASURED, NOT ASSUMED</span><p>{compareRoutes(routes.a!, routes.b!)}</p><button onClick={() => document.querySelector('.map-stage')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}>View routes on terrain <ArrowRight size={13} /></button></div>}
         <div className="results-row">
           <section className="results-panel">
-            <div className="panel-heading"><h2>Compara tus rutas</h2><button className="export-button" onClick={exportRoute} disabled={!routes[selected]} title={`Exportar ficha de ruta ${selected.toUpperCase()}`}><Download size={13} />Exportar JSON</button></div>
-            <div className="route-summary"><div className="summary-label">MISMO ORIGEN Y DESTINO</div>{(['a', 'b'] as const).map(id => <div className={`route-summary-cell route-${id}`} key={id}>
-              <div className="route-title"><button onClick={() => setSelected(id)} aria-label={`Ver perfil ruta ${id.toUpperCase()}`} className={selected === id ? 'selected' : ''}><i />Ruta {id.toUpperCase()}</button><button className="visibility-button" aria-label={`${visibility[id] ? 'Ocultar' : 'Mostrar'} ruta ${id.toUpperCase()}`} aria-pressed={visibility[id]} onClick={() => setVisibility(value => ({ ...value, [id]: !value[id] }))}>{visibility[id] ? <Eye size={12} /> : <EyeOff size={12} />}</button></div>
+            <div className="panel-heading"><h2 lang="en">Compare the traverses</h2><button className="export-button" onClick={exportRoute} disabled={!routes[selected]} title={`Exportar ficha de ruta ${selected.toUpperCase()}`}><Download size={13} />Exportar JSON</button></div>
+            <div className="route-summary"><div className="summary-label">SAME ENDPOINTS<br />SAME CONSTRAINTS</div>{(['a', 'b'] as const).map(id => <div className={`route-summary-cell route-${id}`} key={id}>
+              <div className="route-title"><button onClick={() => setSelected(id)} aria-label={`Ver perfil ruta ${id.toUpperCase()}`} className={selected === id ? 'selected' : ''}><i />Route {id.toUpperCase()}</button><button className="visibility-button" aria-label={`${visibility[id] ? 'Ocultar' : 'Mostrar'} ruta ${id.toUpperCase()}`} aria-pressed={visibility[id]} onClick={() => setVisibility(value => ({ ...value, [id]: !value[id] }))}>{visibility[id] ? <Eye size={12} /> : <EyeOff size={12} />}</button></div>
+              <b className="route-mode">{id === 'a' ? 'Shortest' : 'Slope-aware'}</b>
               <small>{id === 'a' ? 'Distancia mínima · λ 0' : `Pendiente · λ ${number(routes[id]?.parameters.lambda ?? lambda, 1)}`}</small>
               <strong data-testid={`${id}-horizontalMeters`} data-value={routes[id]?.metrics.horizontalMeters ?? ''}>{routes[id] ? number(routes[id]!.metrics.horizontalMeters / 1000, 2) : '—'} <span>km</span></strong>
             </div>)}</div>
             <table className="metrics-table"><thead className="sr-only"><tr><th>Métrica</th><th>Ruta A</th><th>Ruta B</th></tr></thead><tbody>
-              {([['ascentMeters', 'Ascenso', 'm'], ['descentMeters', 'Descenso', 'm'], ['maxSlopeDeg', 'Pendiente máxima', '°'], ['terrainMeters', 'Distancia sobre el terreno', 'm'], ['totalCost', 'Coste topográfico', 'm pond.']] as const).map(([key, label, unit]) => <tr key={key}><th scope="row">{label}</th>{(['a', 'b'] as const).map(id => <td key={id} data-testid={`${id}-${key}`} data-value={routes[id]?.metrics[key] ?? ''}>{routes[id] ? `${number(routes[id]!.metrics[key], key === 'maxSlopeDeg' ? 2 : 1)} ${unit}` : '—'}</td>)}</tr>)}
-              <tr><th scope="row">Tiempo de cálculo</th>{(['a', 'b'] as const).map(id => <td key={id} data-testid={`${id}-computeTimeMs`} data-value={routes[id]?.computeTimeMs ?? ''}>{routes[id] ? `${number(routes[id]!.computeTimeMs, 1)} ms` : '—'}</td>)}</tr>
+              {([['horizontalMeters', 'Horizontal distance', 'm'], ['terrainMeters', 'Terrain distance ≈', 'm'], ['ascentMeters', 'Elevation gain', 'm'], ['descentMeters', 'Descent', 'm'], ['maxSlopeDeg', 'Max modeled slope', '°'], ['totalCost', 'Model cost', 'm pond.']] as const).map(([key, label, unit]) => <tr key={key}><th scope="row">{label}</th>{(['a', 'b'] as const).map(id => <td key={id} data-testid={`${id}-${key}${key === 'horizontalMeters' ? '-detail' : ''}`} data-value={routes[id]?.metrics[key] ?? ''}>{routes[id] ? `${number(routes[id]!.metrics[key], key === 'maxSlopeDeg' ? 2 : 1)} ${unit}` : '—'}</td>)}</tr>)}
+              <tr><th scope="row">Compute time</th>{(['a', 'b'] as const).map(id => <td key={id} data-testid={`${id}-computeTimeMs`} data-value={routes[id]?.computeTimeMs ?? ''}>{routes[id] ? `${number(routes[id]!.computeTimeMs, 1)} ms` : '—'}</td>)}</tr>
             </tbody></table>
           </section>
           <section className="profile-panel"><div className="panel-heading"><h2>Perfil de elevación</h2><div className="profile-tabs" role="group" aria-label="Recorrido del perfil">{(['a', 'b'] as const).map(id => <button key={id} aria-pressed={selected === id} className={`route-${id} ${selected === id ? 'active' : ''}`} onClick={() => setSelected(id)}>Ruta {id.toUpperCase()}</button>)}</div></div>{runtime ? <ElevationProfile grid={runtime.grid} route={routes[selected]} selected={selected} /> : <div className="profile-empty">Preparando datos de elevación</div>}</section>
+        </div>
         </div>
         <footer className="workspace-footer"><span><span className="tiny-dot" />{dataReady ? 'Datos reales · derivados identificados' : 'Preparando datos científicos'}</span><span><ShieldAlert size={12} />Optimización del modelo. Sin certificación de seguridad EVA.</span></footer>
         <p className="model-limitations" role="note">Prototipo educativo sobre celdas de 10 m. No evalúa estabilidad del suelo, arena, rocas pequeñas, radiación ni autonomía EVA. Ninguno de los dos recorridos certifica seguridad para astronautas.</p>
@@ -234,7 +265,7 @@ export default function MissionConsole() {
       <p>Una región concreta de Jezero. Observaciones orbitales reales, derivados documentados y supuestos de planificación visibles.</p>
       {runtime && <><div className="source-summary"><div><small>DATOS ORBITALES</small><strong>MRO · HiRISE</strong><span>NASA / JPL / University of Arizona</span></div><div><small>VERSIÓN DE TERRENO</small><strong>{runtime.grid.dataset.id}</strong><span>CRS local marciano · metros</span></div></div>
         <div className="source-layer-list">{runtime.catalog.layers.map(layer => <div key={layer.id}><span className={`layer-swatch ${layer.id}`} /><div><strong>{layer.title}</strong><p>{layer.provenance}</p></div><span>{layer.displayResolutionM} m visual<br /><small>{layer.sourceResolutionM} m base</small></span></div>)}</div>
-        <div className="source-explanation"><h3>Qué significan estas capas</h3><p>La ortoimagen RED_C es monocroma. El DEM proviene de estéreo orbital. Las pendientes y el sombreado son derivados de The Meowrtian; la luz del relieve es sintética (315° / 45°).</p><p>La malla de rutas es de 10 m: usa elevación media, pendiente máxima por celda y una máscara conservadora. La resolución de visualización no certifica precisión métrica ni seguridad física.</p><p>Las zonas violetas están excluidas por ausencia de datos válidos. Los límites de pendiente y λ son supuestos del equipo, no límites operativos NASA.</p></div>
+        <div className="source-explanation"><h3>Qué significan estas capas</h3><p>La ortoimagen RED_C es monocroma. El DEM proviene de estéreo orbital. Las pendientes y el sombreado son derivados de The Meowrtian; la luz del relieve es sintética (315° / 45°).</p><p>La malla de rutas es de 10 m: usa elevación media, pendiente máxima por celda y una máscara conservadora. La resolución de visualización no certifica precisión métrica ni seguridad física.</p><p>Las zonas violetas están excluidas por ausencia de datos válidos. Los límites de pendiente y λ son supuestos del equipo, no límites operativos NASA.</p><p>El minimapa representa unidades de suelo y abanico de la misma base USGS SIM 3464, simplificadas para contexto regional; omite otras unidades y no traza el borde del cráter. El rectángulo naranja corresponde al recorte HiRISE, el blanco a la vista actual. Fuera de ese recorte no se habilita navegación.</p></div>
         <details><summary>Identidad y referencias de los productos</summary><code className="manifest-hash">SHA-256 del manifiesto<br />{runtime.grid.dataset.manifestSha256}</code><code className="crs-code">{runtime.grid.dataset.crsProj}</code><ul>{runtime.catalog.sourceProducts.map(product => <li key={product.name}><a href={product.url} target="_blank" rel="noreferrer">{product.name}</a></li>)}</ul><p className="parameter-note">La ortoimagen se georreferencia mediante su LBL oficial. Se conservan las limitaciones de los datos estéreo y de las máscaras.</p></details>
       </>}
       <div className="source-explanation"><h3>Geología y registros de superficie</h3><p>USGS SIM 3464 — Sun &amp; Stack (2020), escala 1:75.000. Interpretación publicada con desfase documentado de 100–200 m frente al CTX de operaciones; excluida de los costes y barreras de A*. M1–M3 son selecciones del equipo, no estaciones oficiales.</p><p>Fotografías Navcam: NASA/JPL-Caltech. Posición del rover comprobada por sol y RMC con waypoints oficiales; no localización de los blancos fotografiados. Mars Trek se consultó para evaluar cobertura y productos complementarios; no se incorporan sus rásteres.</p><a className="science-reference" href="https://doi.org/10.3133/sim3464" target="_blank" rel="noreferrer">USGS SIM 3464 ↗</a><a className="science-reference" href="/THIRD_PARTY_NOTICES.txt" target="_blank" rel="noreferrer">Créditos y licencias de materiales y software ↗</a></div>

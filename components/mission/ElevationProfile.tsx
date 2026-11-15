@@ -8,7 +8,7 @@ export default function ElevationProfile({ grid, route, selected }: { grid: Rout
   const data = useMemo(() => route ? elevationProfile(grid, route) : [], [grid, route]);
   const [hover, setHover] = useState<number | null>(null);
   if (!data.length) return <div className="profile-empty"><Activity size={25} strokeWidth={1.3} /><span>El relieve de tu recorrido</span><p>Calcula las rutas para consultar el perfil.</p></div>;
-  const width = 460, height = 172, left = 48, right = 14, top = 14, bottom = 35;
+  const width = 460, height = 236, left = 53, right = 18, top = 24, bottom = 39;
   const length = data.at(-1)!.distanceMeters;
   let min = Math.floor(Math.min(...data.map(p => p.elevationMeters)) / 5) * 5;
   let max = Math.ceil(Math.max(...data.map(p => p.elevationMeters)) / 5) * 5;
@@ -34,5 +34,6 @@ export default function ElevationProfile({ grid, route, selected }: { grid: Rout
       <text x={left} y="9" className="axis-unit">ALTURA (m)</text><text x={width - right} y={height - 1} textAnchor="end" className="axis-unit">DISTANCIA HORIZONTAL (m)</text>
     </svg>
     <div className="profile-caption"><span>{point ? `${point.distanceMeters.toFixed(0)} m · ${point.elevationMeters.toFixed(1)} m de altura` : 'Alturas del DEM medio de 10 m'}</span><span>Marte · equipotencial</span></div>
+    <p className="profile-model-note">Vertical scale is fitted to this route. Compare numerical ascent and slope; apparent steepness is exaggerated.</p>
   </div>;
 }

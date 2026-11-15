@@ -7,6 +7,8 @@ Challenge: **Interplanetary Survival Guide: Martian Map**
 
 [Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md) · [Publication evidence](docs/GITHUB_PUBLICATION.md)
 
+**Jury-focused working-tree update, 15 November:** the local build now includes a lightweight Jezero overview, **Start Mission** to compute the validated origin-to-M3 scenario, clearer A/B comparisons and science-objective cards. This update has **not been redeployed to Netlify**. [Changes, actual checks and screenshots](docs/MEJORA_FINAL_JURADO.md).
+
 A working browser application for exploring a verified region of Jezero crater and comparing scientific traverse candidates on real Martian terrain. HiRISE imagery and stereo topography meet published USGS geology, three team-proposed science objectives and two documented Perseverance photographs.
 
 **Educational and mission-concept prototype. Neither route certifies astronaut safety.**
@@ -25,7 +27,7 @@ npm start
 
 Open **http://127.0.0.1:3000**. Development: `npm run dev`. Next.js `output: 'export'` generates `out/`; no Next.js server or Netlify Function is required. Serve the export through HTTP/HTTPS, rather than `file://`.
 
-The UI currently uses Spanish labels. Select **Usar ejemplo validado** to load endpoints, then **Calcular rutas**. Compare A/B, switch Ortoimagen/Relieve/Elevación/Pendiente, inspect M1–M3 and the geology/photo cards, and use **Exportar JSON**. Routes are calculated afresh.
+The UI combines English mission/science summaries with Spanish manual controls. Select **Start Mission** for the validated origin-to-M3 traverse: the camera, layers, 15° cap and lambda 4 are set and both routes are calculated afresh. The comparison matches the experiment below and in the presentation. **Usar ejemplo validado** still loads the earlier manual example with its different destination; then select **Calcular rutas**. Switch Ortoimagen/Relieve/Elevación/Pendiente, inspect M1–M3 and the geology/photo cards, and use **Exportar JSON**.
 
 ## Architecture
 

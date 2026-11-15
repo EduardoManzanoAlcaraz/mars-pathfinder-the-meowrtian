@@ -21,11 +21,12 @@ import CircleStyle from 'ol/style/Circle.js';
 import Text from 'ol/style/Text.js';
 import { Info, Minus, Navigation2, Plus, Scan } from 'lucide-react';
 import { DATA_URL, marsLonLat, ROUTE_COLORS, routeCoordinates } from '../../lib/map/model';
-import type { Endpoint, LayerId, VisualCatalog } from '../../lib/map/model';
+import type { Endpoint, LayerId, VisualCatalog, MapExtent } from '../../lib/map/model';
 import type { RoutingGrid, RouteSuccess, XY } from '../../lib/routing/types';
 import { UNIT_COLORS } from '../../lib/science/model';
 import type { ScienceData, ScienceObjective, ScienceSelection } from '../../lib/science/model';
 import { ScienceInspector } from './SciencePanel';
+import RegionalOverview from './RegionalOverview';
 
 export interface MissionMapProps {
   grid: RoutingGrid; catalog: VisualCatalog; activeLayer: LayerId;
@@ -37,6 +38,7 @@ export interface MissionMapProps {
   science: ScienceData | null; showGeology: boolean; showObjectives: boolean; showPhotos: boolean; geologyOpacity: number;
   scienceSelection: ScienceSelection; onScienceSelect: (selection: ScienceSelection) => void;
   onAssignObjective: (objective: ScienceObjective, kind: 'start' | 'goal') => void;
+  focusVersion?: number;
 }
 export default function MissionMap(props: MissionMapProps) {
   const target = useRef<HTMLDivElement>(null), map = useRef<OlMap | null>(null);
@@ -46,7 +48,7 @@ export default function MissionMap(props: MissionMapProps) {
   const vector = useRef<Record<'a' | 'b', VectorLayer<VectorSource<Feature<LineString>>>> | null>(null);
   const markers = useRef<{ start: Overlay; goal: Overlay } | null>(null);
   const geologyLayer = useRef<VectorLayer<VectorSource> | null>(null), sciencePoints = useRef<VectorLayer<VectorSource> | null>(null);
-  const [viewState, setViewState] = useState({ x: 0, y: 0, resolution: 1 });
+  const [viewState, setViewState] = useState({ x: 0, y: 0, resolution: 1, extent: props.catalog.extent });
   const [pointer, setPointer] = useState<XY | null>(null);
   const [ready, setReady] = useState(false);
   const [compact, setCompact] = useState(false);
@@ -104,7 +106,7 @@ export default function MissionMap(props: MissionMapProps) {
       instance.addOverlay(overlay); return overlay;
     };
     markers.current = { start: makeMarker('start'), goal: makeMarker('goal') };
-    const update = () => { const centre = view.getCenter()!; setViewState({ x: centre[0]!, y: centre[1]!, resolution: view.getResolution()! }); };
+    const update = () => { const centre = view.getCenter()!; setViewState({ x: centre[0]!, y: centre[1]!, resolution: view.getResolution()!, extent: view.calculateExtent(instance.getSize()) as MapExtent }); };
     instance.on('moveend', update);
     instance.on('singleclick', event => {
       const selection = instance.forEachFeatureAtPixel(event.pixel, feature => {
@@ -122,6 +124,9 @@ export default function MissionMap(props: MissionMapProps) {
     const resize = new ResizeObserver(() => { instance.updateSize(); update(); }); resize.observe(target.current);
     return () => { resize.disconnect(); instance.setTarget(undefined); instance.dispose(); map.current = null; };
   }, [grid, catalog]);
+  useEffect(() => {
+    if (props.focusVersion) map.current?.getView().fit([...catalog.extent], { padding: [24, 30, 30, 30], duration: 0 });
+  }, [props.focusVersion, catalog]);
   useEffect(() => { for (const id of ['ortho', 'hillshade', 'elevation', 'slope'] as const) rasters.current[id]?.setVisible(props.activeLayer === id); }, [props.activeLayer]);
   useEffect(() => { noData.current?.setVisible(props.showNoData); }, [props.showNoData]);
   useEffect(() => {
@@ -163,6 +168,7 @@ export default function MissionMap(props: MissionMapProps) {
       data-origin-cell={props.origin ? JSON.stringify(props.origin.cell) : ''} data-destination-cell={props.destination ? JSON.stringify(props.destination.cell) : ''}
       aria-label="Mapa interactivo de Jezero, coordenadas locales marcianas" />
     <div className="map-label"><span className="eyebrow">MRO / HIRISE</span><strong>JEZERO CRATER</strong><span>Sector occidental · Marte</span></div>
+    <RegionalOverview grid={grid} studyExtent={catalog.extent} viewport={viewState.extent} onRecenter={() => map.current?.getView().fit([...catalog.extent], { padding: [24, 30, 30, 30], duration: 0 })} />
     <div className="map-tools"><span className="north-marker" aria-label="Norte hacia arriba"><Navigation2 size={17} fill="currentColor" /><b>N</b></span>
       <div className="zoom-buttons"><button title="Acercar" aria-label="Acercar mapa" onClick={() => map.current?.getView().adjustZoom(1)}><Plus size={17} /></button><button title="Alejar" aria-label="Alejar mapa" onClick={() => map.current?.getView().adjustZoom(-1)}><Minus size={17} /></button></div>
       <button className="map-tool" title="Ajustar región" aria-label="Ajustar región" onClick={() => map.current?.getView().fit([...catalog.extent], { padding: [24, 30, 30, 30], duration: 0 })}><Scan size={17} /></button>

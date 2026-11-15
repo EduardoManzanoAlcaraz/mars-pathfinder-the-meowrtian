@@ -83,3 +83,50 @@
   .profile-chart text{font-size:14px}.profile-chart .axis-unit{font-size:12px}
   .profile-caption{font-size:10px}
 }
+
+/* Jury presentation: lightweight context and an executable mission story. */
+.workspace-heading h2{font-size:20px;font-weight:600;letter-spacing:-.6px}
+.mission-briefing{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:16px 24px;padding:20px 22px 12px;margin:0 0 16px;border:1px solid #6d514055;border-radius:8px;background:linear-gradient(110deg,#211c18,#141c24 70%)}
+.mission-briefing .eyebrow{color:#d59a77;font-size:9px;letter-spacing:1.4px}
+.mission-briefing h3{font-size:24px;font-weight:600;letter-spacing:-.8px;margin:7px 0}
+.mission-briefing p{font-size:12px;line-height:1.7;color:#acb9c1;max-width:540px;margin:0}
+.start-mission{display:flex;align-items:center;justify-content:center;gap:12px;align-self:center;padding:14px 17px;background:#ed8c62;color:#161817;border:1px solid #ffb696;border-radius:6px;text-align:left;font-size:15px;font-weight:700;box-shadow:0 4px 22px #0002}
+.start-mission:hover:not(:disabled){background:#ffad84}
+.start-mission span{flex:1}.start-mission small{display:block;font-size:10px;font-weight:500;line-height:1.7;margin-top:3px}
+.mission-steps{grid-column:1/-1;display:flex;gap:24px;list-style:none;margin:0;padding:10px 0 0;border-top:1px solid #54616b44;font-family:var(--mono);font-size:10px;color:#879ba9}
+.mission-steps .done{color:#bcdfc4}.mission-steps .done::before{content:'✓ ';color:#a9d3b6}
+.mission-steps button{font:inherit;color:#c9dcbd;background:none;padding:0;text-decoration:underline;text-underline-offset:3px}
+.regional-overview{position:absolute;top:18px;right:66px;z-index:3;width:206px;border:1px solid #617b8777;border-radius:6px;background:#101a23f5;box-shadow:0 5px 15px #0004;overflow:hidden;color:#c0d1d9}
+.overview-toggle{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:10px;background:#1b2a33;color:#c7d6d9;font:10px var(--mono);letter-spacing:.7px}
+.overview-toggle svg{transition:transform .15s}.regional-overview.is-open .overview-toggle svg{transform:rotate(180deg)}
+.overview-body>svg{display:block;width:100%;height:auto}.overview-body{padding:0 4px 8px}
+.overview-recenter svg{width:12px;height:12px;flex-shrink:0}
+.overview-key{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:9px;padding:2px 6px 7px}
+.overview-key span{display:flex;gap:5px;align-items:center}.overview-key i{width:7px;height:7px;display:inline-block;flex-shrink:0}
+.study-key{border:1px solid #ff926e;background:#ff784944}.fan-key{background:#9d986c}.floor-key{background:#3a535a}.rover-key{background:white;border-radius:50%}
+.overview-recenter{display:flex;align-items:center;justify-content:center;gap:6px;width:calc(100% - 10px);margin:3px 5px;background:#253d47;color:#dce7e9;border:1px solid #607d8555;padding:7px 4px;font-size:10px;border-radius:4px}
+.overview-body p{margin:7px 6px 0;font-size:9px;line-height:1.7;color:#a3b5bd}.overview-body a{text-decoration:underline;text-underline-offset:2px;color:#d5be9b}
+.map-shell:has(.science-inspector) .regional-overview{visibility:hidden}
+.route-mode{font-size:14px;font-weight:600;display:block;color:var(--cyan);margin:4px 0 3px}.route-b .route-mode{color:var(--gold)}
+.route-summary{grid-template-columns:.8fr 1fr 1fr;padding:18px 17px 14px}.summary-label{color:#9bafb9;font-size:10px;max-width:100px;letter-spacing:.2px;line-height:1.7}
+.route-summary-cell small{font-size:10px;line-height:1.7}.route-summary-cell>strong{font-size:29px;letter-spacing:-1px;margin-top:6px}.route-title>button:first-child{font-size:14px;font-weight:600}
+.metrics-table th,.metrics-table td{font-size:12px;padding-top:10px;padding-bottom:10px}.metrics-table th{color:#a6b8c4;width:42%;line-height:1.5}.metrics-table td{color:#dfE7eb;width:29%}.metrics-table td:nth-child(2){color:#97e0e6}.metrics-table td:nth-child(3){color:#edcc92}
+.route-insight{margin:0 0 13px;border:1px solid #4e6a6c;border-left:3px solid #b6d7bb;border-radius:6px;padding:16px 19px;background:linear-gradient(110deg,#1b2b2b,#121d23)}
+.route-insight .eyebrow{color:#b4d4c0;font-size:10px;letter-spacing:1px}.route-insight p{font-size:14px;line-height:1.8;margin:7px 0 5px;color:#dce5e6;max-width:1000px}.route-insight button{display:flex;align-items:center;gap:7px;background:none;padding:4px 0;color:#b2d4df;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.comparison-workspace{scroll-margin-top:18px}.panel-heading{padding:15px 17px}.panel-heading h2{font-size:14px}.export-button,.profile-tabs button{font-size:11px}.profile-tabs button{padding:5px 8px}
+.profile-panel{display:flex;flex-direction:column}.profile-chart{padding:22px 15px 15px;flex:1;display:flex;flex-direction:column;justify-content:center}.profile-chart svg{max-height:290px;min-height:190px}.profile-chart text{fill:#a6becb;font-size:11px}.profile-chart .axis-unit{fill:#8da8b8;font-size:9px}
+.profile-caption{font-size:11px;color:#a5b8c4;line-height:1.6;flex-wrap:wrap;margin-top:10px}.profile-model-note{font-size:11px;line-height:1.8;color:#91a8b7;margin:13px 4px 0;padding-top:12px;border-top:1px solid #394b5755}
+.science-question{margin:16px 0;padding:12px 13px;border-left:2px solid #b4cd9a;background:#21352c66;border-radius:0 4px 4px 0}.science-question h4{font-size:11px;letter-spacing:.7px;color:#c5d9ad;margin:0 0 7px}.science-question p{font-size:12px;line-height:1.8;margin:0}
+.science-selection-note{font-size:11px;line-height:1.8;color:#b6cdad;margin:12px 0}.science-uncertainty{font-size:11px;line-height:1.8;color:#d4c0a2;padding:10px 12px;background:#30271d55;border:1px solid #6b553355;border-radius:4px}.science-uncertainty b{font-weight:600;color:#e2c494}
+.science-inspector{width:360px}.science-inspector h3{font-size:20px}.science-inspector-body{font-size:12px;line-height:1.9}.science-unit-label{flex-wrap:wrap}
+@media(max-width:1220px){.mission-briefing{grid-template-columns:1fr;gap:13px;padding:17px}.start-mission{width:100%;max-width:350px}.mission-steps{gap:15px;flex-wrap:wrap}.results-row{grid-template-columns:1fr}.profile-chart svg{max-height:300px}}
+@media(max-width:760px){
+  .workspace-heading h2{font-size:18px;line-height:1.5}.mission-briefing{padding:15px;margin-bottom:13px}.mission-briefing h3{font-size:23px}.mission-briefing p{font-size:12px}.start-mission{max-width:none;min-height:60px}.mission-steps{gap:10px;font-size:9px;line-height:1.8;justify-content:space-between}
+  .regional-overview{top:14px;right:56px;width:132px}.regional-overview.is-open{top:73px;width:196px}.overview-toggle{font-size:8.5px;letter-spacing:.25px;padding:9px}.overview-key{font-size:10px}.overview-body p{font-size:10px}
+  .map-shell:has(.regional-overview.is-open) .geology-map-key,.map-shell:has(.regional-overview.is-open) .map-legend,.map-shell:has(.regional-overview.is-open) .geology-map-note{visibility:hidden}
+  .route-summary{grid-template-columns:.7fr 1fr 1fr;padding:15px 11px 12px;gap:4px}.summary-label{font-size:9px}.route-summary-cell{padding-left:4px}.route-mode{font-size:13px}.route-summary-cell small{font-size:9px}.route-summary-cell>strong{font-size:27px}.route-title>button:first-child{font-size:13px}
+  .metrics-table th,.metrics-table td{font-size:11px;padding-top:9px;padding-bottom:9px}.metrics-table th{padding-left:12px;padding-right:7px}.metrics-table td{padding-left:6px}
+  .route-insight{padding:14px}.route-insight p{font-size:13px;line-height:1.85}.route-insight .eyebrow{font-size:9px}.panel-heading{padding:13px 12px}.panel-heading h2{font-size:13px}.profile-chart{padding-top:16px}.profile-chart svg{min-height:195px;max-height:290px}.profile-chart text{font-size:13px}.profile-chart .axis-unit{font-size:11px}.profile-tabs button{font-size:10px}
+  .science-inspector{width:calc(100% - 24px)}
+}
+@media(max-width:370px){.mission-steps{font-size:8px}.workspace-heading h2{font-size:17px}.metrics-table th,.metrics-table td{font-size:10px}.route-summary-cell small{font-size:8px}}

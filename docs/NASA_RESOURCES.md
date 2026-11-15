@@ -1,5 +1,7 @@
 # Recursos científicos NASA y USGS — Mars Pathfinder
 
+**Mejora visual del 15 de noviembre de 2026:** se añadió un minimapa vectorial de contexto de la misma base SIM 3464 ya descargada: 37 polígonos de las unidades Njf/NHjf1/NHjf2, reproyectados al mismo CRS y simplificados, 48.982 bytes. No se incorporó un nuevo ráster, servicio externo ni información de navegación fuera del recorte. Las capas científicas anteriores y A* conservan sus hashes. Véanse [preparación medida](jury-improvement/overview-preparation.json) y [MEJORA_FINAL_JURADO.md](MEJORA_FINAL_JURADO.md). La licencia actual del código original es Apache-2.0, aprobada por el equipo; las observaciones sobre licencia pendiente más abajo son históricas: [alcance actual](LICENSING.md).
+
 **Auditoría posterior:** se revisó y corrigió la presentación de estos mismos datos sin modificar los paquetes científicos; véase [AUDITORIA_FINAL.md](AUDITORIA_FINAL.md) para el estado de entrega y las cifras del build actual. Las cifras de esta fase se conservan como registro de su ejecución.
 
 **Fase verificada el 14 de noviembre de 2026.** Se incorporaron polígonos USGS SIM 3464, tres objetivos propuestos por The Meowrtian y dos fotografías Navcam con posición documental del rover. Se conservan HiRISE, su manifiesto, OpenLayers y A*. Mars Trek fue consultado: **no se incorporó ningún ráster Trek**, ni se cuenta una consulta de catálogo como un nuevo dato utilizado en el cálculo.
@@ -150,11 +152,11 @@ Repetir reproyección, recorte y selección desde esos inputs dejó **6/6 archiv
 
 | Comprobación | Resultado real | Evidencia |
 | --- | --- | --- |
-| A*, Dijkstra, métricas y workers originales | **37/37 Vitest** | log (local-only evidence omitted from source release), [JSON](routing-validation/vitest.json) |
-| Interfaz/contratos, con casos nuevos | **27/27 Vitest**: 15 helpers/contratos y **12 pruebas Chrome** | log (local-only evidence omitted from source release), [JSON](interface-validation/vitest.json), [navegador](interface-validation/browser.json) |
-| Datos originales + geología/objetivos/fotos | **22/22 pytest** | log (local-only evidence omitted from source release), JUnit (local-only evidence omitted from source release) |
-| Typecheck | Correcto | log (local-only evidence omitted from source release) |
-| Next.js estático | Correcto, **66 archivos / 6111083 bytes** | build (local-only evidence omitted from source release) |
+| A*, Dijkstra, métricas y workers originales | **37/37 Vitest** | [log](science-validation/vitest-routing.log), [JSON](routing-validation/vitest.json) |
+| Interfaz/contratos, con casos nuevos | **27/27 Vitest**: 15 helpers/contratos y **12 pruebas Chrome** | [log](science-validation/vitest-interface.log), [JSON](interface-validation/vitest.json), [navegador](interface-validation/browser.json) |
+| Datos originales + geología/objetivos/fotos | **22/22 pytest** | [log](science-validation/pytest.log), [JUnit](science-validation/pytest.xml) |
+| Typecheck | Correcto | [log](science-validation/typecheck.log) |
+| Next.js estático | Correcto, **66 archivos / 6111083 bytes** | [build](science-validation/build.log) |
 | Repetición del paquete nuevo | **6/6 hashes idénticos** | [reproducibilidad](science-validation/reproducibility.json) |
 | Integridad de entrega | Copias estáticas, 4 inputs USGS, 136 archivos extraídos, identificadores y enlaces cotejados | [comprobación final](science-validation/final-checks.json) |
 
