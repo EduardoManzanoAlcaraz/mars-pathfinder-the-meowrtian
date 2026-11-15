@@ -1,0 +1,41 @@
+{
+  "verifiedAtUtc": "2026-11-15T11:16:26.972Z",
+  "passed": true,
+  "repository": "https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+  "commit": "b3dd5a548f4a0340dea17ba16c2b1f3cfdd05a39",
+  "anonymousClone": true,
+  "globalAndSystemGitConfigurationDisabled": true,
+  "comparedFiles": 296,
+  "comparedBytes": 40401979,
+  "allFilesSha256Equal": true,
+  "readmeLocalLinksValid": true,
+  "http": [
+    {
+      "url": "https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+      "status": 200,
+      "bytes": 300757,
+      "noAuthorizationHeader": true
+    },
+    {
+      "url": "https://api.github.com/repos/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+      "status": 200,
+      "bytes": 6895,
+      "noAuthorizationHeader": true,
+      "visibility": "public",
+      "license": "Apache-2.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/b3dd5a548f4a0340dea17ba16c2b1f3cfdd05a39/README.md",
+      "status": 200,
+      "bytes": 9032,
+      "noAuthorizationHeader": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian/b3dd5a548f4a0340dea17ba16c2b1f3cfdd05a39/LICENSE",
+      "status": 200,
+      "bytes": 11358,
+      "noAuthorizationHeader": true
+    }
+  ],
+  "netlifyMutation": false
+}

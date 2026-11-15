@@ -5,7 +5,7 @@ Challenge: **Interplanetary Survival Guide: Martian Map**
 
 ## [Open the public demo](https://mars-pathfinder-the-meowrtian.netlify.app)
 
-[Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md)
+[Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md) · [Publication evidence](docs/GITHUB_PUBLICATION.md)
 
 A working browser application for exploring a verified region of Jezero crater and comparing scientific traverse candidates on real Martian terrain. HiRISE imagery and stereo topography meet published USGS geology, three team-proposed science objectives and two documented Perseverance photographs.
 
