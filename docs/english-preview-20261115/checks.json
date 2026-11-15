@@ -1,0 +1,49 @@
+{
+  "checkedAtUtc": "2026-11-15T15:54:55.023Z",
+  "sourceCommit": "10ba4dcf0eb3442e19ada0f75ad6975fcd90d26d",
+  "passed": true,
+  "results": [
+    {
+      "check": "build",
+      "startedAtUtc": "2026-11-15T15:53:21.850Z",
+      "durationMs": 28649,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "typecheck",
+      "startedAtUtc": "2026-11-15T15:53:50.512Z",
+      "durationMs": 904,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "routing",
+      "startedAtUtc": "2026-11-15T15:53:51.423Z",
+      "durationMs": 11696,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "interface",
+      "startedAtUtc": "2026-11-15T15:54:03.122Z",
+      "durationMs": 46256,
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "check": "python",
+      "startedAtUtc": "2026-11-15T15:54:49.380Z",
+      "durationMs": 5635,
+      "exitCode": 0,
+      "passed": true
+    }
+  ],
+  "tests": {
+    "routing": 37,
+    "interface": 35,
+    "totalVitest": 72,
+    "python": 22
+  },
+  "pythonScope": "Full 22-test original-data suite in existing isolated environment; source checkout web tests need only included optimized assets."
+}

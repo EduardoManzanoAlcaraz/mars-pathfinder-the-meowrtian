@@ -5,6 +5,8 @@ Challenge: **Interplanetary Survival Guide: Martian Map**
 
 ## [Open the public demo](https://mars-pathfinder-the-meowrtian.netlify.app)
 
+**English preview on this branch:** [review the validated English interface](https://english-20261115-review--mars-pathfinder-the-meowrtian.netlify.app). This version defaults to English, including manual controls, scientific cards, provenance, errors and accessible labels. Production remains unchanged pending the team's publication decision. [Executed checks and scope](docs/INTERNATIONAL_ACCESSIBILITY.md).
+
 [Public source on GitHub](https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian) · [Clean source-release checks](docs/SOURCE_RELEASE_CHECKS.md) · [Publication evidence](docs/GITHUB_PUBLICATION.md)
 
 **Jury release, 15 November:** the public demo now includes the lightweight Jezero overview, **Start Mission** to compute the validated origin-to-M3 scenario, clearer A/B comparisons and science-objective cards. The preview and production HTTPS deployments passed fresh desktop/mobile browser checks. [Release evidence and recovery instructions](docs/MEJORA_FINAL_JURADO.md).
@@ -27,7 +29,7 @@ npm start
 
 Open **http://127.0.0.1:3000**. Development: `npm run dev`. Next.js `output: 'export'` generates `out/`; no Next.js server or Netlify Function is required. Serve the export through HTTP/HTTPS, rather than `file://`.
 
-The UI combines English mission/science summaries with Spanish manual controls. Select **Start Mission** for the validated origin-to-M3 traverse: the camera, layers, 15° cap and lambda 4 are set and both routes are calculated afresh. The comparison matches the experiment below and in the presentation. **Usar ejemplo validado** still loads the earlier manual example with its different destination; then select **Calcular rutas**. Switch Ortoimagen/Relieve/Elevación/Pendiente, inspect M1–M3 and the geology/photo cards, and use **Exportar JSON**.
+The English preview uses **Start Mission** for the validated origin-to-M3 traverse: the camera, layers, 15° cap and lambda 4 are set and both routes are calculated afresh. The comparison matches the experiment below and in the presentation. **Load validated example** loads the earlier manual example with its different destination; then select **Calculate routes**. Switch Orthoimage/Hillshade/Elevation/Slope, inspect M1–M3 and the geology/photo cards, and use **Export JSON**. The existing production version retains the corresponding Spanish manual labels until this preview is promoted.
 
 ## Architecture
 

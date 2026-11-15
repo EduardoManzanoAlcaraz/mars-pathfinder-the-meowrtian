@@ -1,0 +1,17 @@
+{
+  "recordedAtUtc": "2026-11-15T15:55:55.501Z",
+  "site_id": "89d24aa6-4300-4b08-afcc-84f51da7f164",
+  "deploy_id": "6af9d5feb12795269823ab52",
+  "state": "ready",
+  "context": "branch-deploy",
+  "previewUrl": "https://english-20261115-review--mars-pathfinder-the-meowrtian.netlify.app",
+  "immutableUrl": "https://6af9d5feb12795269823ab52--mars-pathfinder-the-meowrtian.netlify.app",
+  "sourceCommit": "10ba4dcf0eb3442e19ada0f75ad6975fcd90d26d",
+  "payloadSha256": "4547a1a7b97dd755b40d0627f5fcd661bdad8131509e491ef951ce29fcfc7104",
+  "productionUrl": "https://mars-pathfinder-the-meowrtian.netlify.app",
+  "productionDeployBefore": "6af9c6aa89bcb0bfe5fb7e09",
+  "productionDeployAfter": "6af9c6aa89bcb0bfe5fb7e09",
+  "productionReleaseMarkerUnchanged": true,
+  "repositoryLinked": false,
+  "productionMutation": false
+}

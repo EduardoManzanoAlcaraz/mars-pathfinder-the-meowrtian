@@ -1,0 +1,43 @@
+{
+  "checkedAtUtc": "2026-11-15T16:00:49.745Z",
+  "passed": true,
+  "productionUrl": "https://mars-pathfinder-the-meowrtian.netlify.app",
+  "productionDeployId": "6af9c6aa89bcb0bfe5fb7e09",
+  "productionNotReplaced": true,
+  "productionHtmlAndReleaseMatchPreservedPackage": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "match": "exact-netlify-hosting-comment-only",
+      "servedBytes": 27222,
+      "servedSha256": "3476ad31d6b0d2aabe8425bbfd9e12ef7445f828559dd59bd4f9f0152761843c",
+      "canonicalSha256": "a62c408d27014e4a219e38108847d313cb0f4bbe3ab6604faee3268487c41da1",
+      "annotationBytes": 326
+    },
+    {
+      "file": "release.json",
+      "status": 200,
+      "match": "byte-exact",
+      "servedBytes": 9947,
+      "servedSha256": "91b8ebc86b6f63b70f3384a82ae70d996abe7c7056dce195aaa25bb1b2bff4ff",
+      "canonicalSha256": "91b8ebc86b6f63b70f3384a82ae70d996abe7c7056dce195aaa25bb1b2bff4ff",
+      "annotationBytes": 0
+    }
+  ],
+  "previewUrl": "https://english-20261115-review--mars-pathfinder-the-meowrtian.netlify.app",
+  "previewDeployId": "6af9d5feb12795269823ab52",
+  "sourceCommit": "10ba4dcf0eb3442e19ada0f75ad6975fcd90d26d",
+  "privateBrowserContextsPassed": 2,
+  "staticFilesHashVerified": 68,
+  "payloadBytes": 6197156,
+  "protectedFilesUnchanged": 55,
+  "tests": {
+    "routing": 37,
+    "interface": 35,
+    "totalVitest": 72,
+    "python": 22
+  },
+  "uiLanguage": "en",
+  "englishCopyAndMetricCellFitAssertionsPassed": true,
+  "scope": "Language/UI presentation only; no production deploy, scientific-data, coordinate, dependency or routing-algorithm change"
+}

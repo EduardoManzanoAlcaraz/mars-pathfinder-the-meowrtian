@@ -1,0 +1,276 @@
+{
+  "schema": "mars-pathfinder-release-v1",
+  "generatedAtUtc": "2026-11-15T15:55:19.534Z",
+  "sourceCommit": "10ba4dcf0eb3442e19ada0f75ad6975fcd90d26d",
+  "sourceRepository": "https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian",
+  "runtimeInputsSha256": "b1c1d6495632dbf9b5370ed09c6f3233c1fcfbed7f3a11a24d10b50cff32ab34",
+  "appVersion": "0.1.0",
+  "engineVersion": "1.0.0",
+  "dataset": "jezero-hirise-v1",
+  "topographyManifestSha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85",
+  "tests": {
+    "routing": 37,
+    "interface": 35,
+    "totalVitest": 72,
+    "python": 22
+  },
+  "runtimeInputs": [
+    {
+      "path": "app/globals.css",
+      "sha256": "16237a0b303e1437f14935c5cca8f53530aaad66a4e96e8e34ff1301a380b5bd"
+    },
+    {
+      "path": "app/icon.svg",
+      "sha256": "9da16b588782d86e0a6abf478ac9bad57101534efee20f4ab47db8f10dcdb492"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "ff1eed634087e72a147d4a55e1f88d0fcad400c0548be8a40de770f3526b7c5b"
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "3dc782227c729646f4bf5bdc45d3ee65bc990b0f8ca3b695a37c9a620a4263b8"
+    },
+    {
+      "path": "components/mission/ElevationProfile.tsx",
+      "sha256": "85d395987654d4ce294689e7f5950ca7a8298fdafcf98059af86aa636027099a"
+    },
+    {
+      "path": "components/mission/MissionConsole.tsx",
+      "sha256": "94a7d7b009004e32141fe678859f6e6e1cc05b90f3cddbb6c2c4e923038aed85"
+    },
+    {
+      "path": "components/mission/MissionMap.tsx",
+      "sha256": "359fe7d7fe56996868baf382003393dccaefb00b1a0796af577ee4b0d9428384"
+    },
+    {
+      "path": "components/mission/RegionalOverview.tsx",
+      "sha256": "215956087a89d02b9aed3e85fd51cebc0ca8c0d53ee2150bc7ea818eb644a833"
+    },
+    {
+      "path": "components/mission/SciencePanel.tsx",
+      "sha256": "142d8c8cb0f7ead15c3dcf45591c287c417c6e77666c5e5ae94d834ed03a42a9"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/manifest.json",
+      "sha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_elevation.f32",
+      "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_slope_max.f32",
+      "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53"
+    },
+    {
+      "path": "data/processed/jezero-hirise-v1/routing_valid.u8",
+      "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52"
+    },
+    {
+      "path": "data/routes/jezero-hirise-v1/route-a.json",
+      "sha256": "d0a1731d0be863417e8ad99d6bb44546f1a6db737a1cf792a671b38590f96599"
+    },
+    {
+      "path": "lib/map/display-copy.ts",
+      "sha256": "9d0da96ed1db72bc074fbdea93a0b835fb4b00da46cf75f45d8c89847a743f41"
+    },
+    {
+      "path": "lib/map/model.ts",
+      "sha256": "b88e0cff57fbfb56c961d2d6168057c151b013fcb96d942c461e22d544c632b3"
+    },
+    {
+      "path": "lib/map/overview.ts",
+      "sha256": "75e955a1213e9cc55d92aadc5d0bf3c941dd87e4d17aa28d0f1b13b6825f8a28"
+    },
+    {
+      "path": "lib/map/route-comparison.ts",
+      "sha256": "8a4a498a447fa1d4f5bfab0213439cd6bd6635187c00cc5c94a5ddb16abafe41"
+    },
+    {
+      "path": "lib/routing/engine.ts",
+      "sha256": "c1e75a32b6a7503c39f3e8c5aa012d6887591a768c51aaad4fd74281e444e19b"
+    },
+    {
+      "path": "lib/routing/grid.ts",
+      "sha256": "02ac8a51dbecb86fce2181d07ac3355d3b478ae6db9e4ff3086dd045850d8f43"
+    },
+    {
+      "path": "lib/routing/heap.ts",
+      "sha256": "8cc1c5e88326489985838f01870b5272517a71da40bba06cc5f2d660a4860e97"
+    },
+    {
+      "path": "lib/routing/index.ts",
+      "sha256": "90e30a98cc95886bf3db131cbc34c2f13066c4c21bea870de593001e0f46f949"
+    },
+    {
+      "path": "lib/routing/load-grid.ts",
+      "sha256": "79fd88d47cd1e00bd2fc45be24a57695024479de8f11d548cb8b10c7afa27431"
+    },
+    {
+      "path": "lib/routing/types.ts",
+      "sha256": "3529ed250f1f3d96c9034bfa0869e361341733e27505ea2765a19690fbdfdc33"
+    },
+    {
+      "path": "lib/routing/worker-client.ts",
+      "sha256": "dfabbfd7771d9af46a9e41c664bfacb44a01e712c142bd929ff2cbca03c19f84"
+    },
+    {
+      "path": "lib/routing/worker-protocol.ts",
+      "sha256": "c234e9493041eee25734afdfdd983773b4ec0377b19806d7763798c86c3b0249"
+    },
+    {
+      "path": "lib/science/model.ts",
+      "sha256": "0e143eab7313f423401a7712b746f77e0059d53007b80130d560beec870fdbe8"
+    },
+    {
+      "path": "lib/science/objective-story.ts",
+      "sha256": "034195e056350be3696ac2d9d8da74453a34db670d182586d946123531440111"
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "64f90864922b998daadde2ff70053eda897820477b8d98ba453be8afb5a687ec"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "c6ba070b290ff315c5311925a62c5c869a01f49db991d9924c2c3cc136f05544"
+    },
+    {
+      "path": "package.json",
+      "sha256": "8bfab2a7bdeccbaefce7df636a14ed9d2ece4b961d6635c29d2a176c1b275f76"
+    },
+    {
+      "path": "public/THIRD_PARTY_NOTICES.txt",
+      "sha256": "3301d9743f4187b551b56b3e99799853e8137e87912f98bd7be50f05ca6ca3cf"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/demo-query.json",
+      "sha256": "97a0225ec2260e5d2ebb1304418bdfbc9a066d6452c2d2e63d9e9b1fe48a0ab9"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/elevation.webp",
+      "sha256": "e4fb682d8eee42f9de461300cddf008b4130cd90808a0acea6fc604cd07998f9"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/elevation.wld",
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/hillshade.webp",
+      "sha256": "e92ebf56ce777949e3c50bdd639b94bfe3bb2baa3dfa275d68c4aebc79d98ec3"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/hillshade.wld",
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/manifest.json",
+      "sha256": "31717c6421490dfea50ea17d8a4131d9b13408d8761e03d649e2588774009c85"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/nodata.webp",
+      "sha256": "3f4a18fd0406a1b863aeb7c58a399db1f2432d7e7b5b180e2bb52e341d78f287"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/ortho.webp",
+      "sha256": "551cff67e7bde8ffcf5ae6f31d32913d624fed685ed5ad00ab4b21c218d8931d"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/ortho.wld",
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/routing_elevation.f32",
+      "sha256": "f8487afd27f2179f9255aa6597136ada12587f6542c9289bfaf1dfdfafcfd147"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/routing_slope_max.f32",
+      "sha256": "033149802dde2b535f935f7931fae2896ed1de2e5e3e9d580bc8aa9c7d574e53"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/routing_valid.u8",
+      "sha256": "66f1c25eee54e74f898e70a19423d519fa7ead80e890c8fa6105ddcc0ace5b52"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/slope.webp",
+      "sha256": "67af96ed8672a909e77703369924e73d5fe4c3346f8b6ecfeee23a37bccb467d"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/slope.wld",
+      "sha256": "a229370aa1248e6d52054bc62c9f401786f410ace2c113efff99bab629c7bab0"
+    },
+    {
+      "path": "public/data/jezero-hirise-v1/visuals.json",
+      "sha256": "ef23e0b711d17c3087ed7b2405d478780e71bfe6469fd965fbb192a46c1eb40e"
+    },
+    {
+      "path": "public/data/jezero-overview-v1/context.json",
+      "sha256": "f20ada191ed59a7f053d74fb022e98f317df8de5a530dc49d32d76593c40f8bb"
+    },
+    {
+      "path": "public/data/jezero-science-v1/geology.json",
+      "sha256": "37d5518d109c317d48115595c0b17b15bfcc9a73cba12a34ed243fb83071ac27"
+    },
+    {
+      "path": "public/data/jezero-science-v1/manifest.json",
+      "sha256": "35479606c36e06c8b1fae3783c1df9fa7633bdc1a777d0e4123f846bbe79ac02"
+    },
+    {
+      "path": "public/data/jezero-science-v1/objectives.json",
+      "sha256": "6cb34e825e6f280efffa0656bbe89dda728a5f43d0df371c8bb7f1fc4d825245"
+    },
+    {
+      "path": "public/data/jezero-science-v1/photos.json",
+      "sha256": "af2f9613f1b9319c44e6b6ab041b7475c6b1a56487a39d34572eff0c40cd99a9"
+    },
+    {
+      "path": "public/data/jezero-science-v1/photos/perseverance-sol-107.jpg",
+      "sha256": "6dfb8761770d72e706ce72ff11af486921a40c87c8a700e04170cfa11fa1c228"
+    },
+    {
+      "path": "public/data/jezero-science-v1/photos/perseverance-sol-14.jpg",
+      "sha256": "258be5febb776d4bfade3de7781d8a7da13490bd40e84ee257704653a742530e"
+    },
+    {
+      "path": "public/workers/routing.worker.js",
+      "sha256": "fc22b6c0a805c629f61989050c3578bae3884aed2dc92e77f9b300a255678421"
+    },
+    {
+      "path": "scripts/routing/build-worker.mjs",
+      "sha256": "cf3914a6abfb5087d0205c24dc5e8cbefc5f0828895b016caacefb499df44b9e"
+    },
+    {
+      "path": "scripts/web/audit-licenses.mjs",
+      "sha256": "d49010d257105922633c33cb3428c2de029a3b5aae884034d052f476aa184e17"
+    },
+    {
+      "path": "scripts/web/capture-demo.mjs",
+      "sha256": "153d18aed90c89e7d4c4f93835e068670decbd91cdfb1960c31aa8e0963f9261"
+    },
+    {
+      "path": "scripts/web/check-evidence.mjs",
+      "sha256": "a2a3b6c2cd6e518aacb35ba173998d41b2f2ff31b640876e7895995511ac1dae"
+    },
+    {
+      "path": "scripts/web/check-science-evidence.mjs",
+      "sha256": "fbe72d6bda2df3d25cb7b5184a738a717b6092c58cdd3acea9b7013a2364195c"
+    },
+    {
+      "path": "scripts/web/prepare_visuals.py",
+      "sha256": "052dd899f704923c5fb9c81fbd656591aae4041cd09754032101abf5900a3c2f"
+    },
+    {
+      "path": "scripts/web/serve-static.mjs",
+      "sha256": "8838cc94077b3c4c0b16cec9125bdba1f143dda678885ceb547a56596a98d121"
+    },
+    {
+      "path": "scripts/web/sync-assets.mjs",
+      "sha256": "2ad2e4a598b24b237c147615e3e88c5d215e480bf05ee78eb01a7cc7bb4586b2"
+    },
+    {
+      "path": "workers/routing.worker.ts",
+      "sha256": "1087b2809a31da6fa3942c2a8817d1c58fe6c08977534022a182f6148d19c5e1"
+    }
+  ],
+  "stage": "English draft; production unchanged"
+}

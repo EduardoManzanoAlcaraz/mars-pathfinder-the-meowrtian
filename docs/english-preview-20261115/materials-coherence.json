@@ -1,0 +1,51 @@
+{
+  "verifiedAtUtc": "2026-11-15T15:59:17.789639+00:00",
+  "passed": true,
+  "pptxSlides": 7,
+  "pdfPages": 7,
+  "filesUnmodifiedFromValidatedJuryDeck": true,
+  "slide5MetricsMatchFreshEnglishPreviewExports": true,
+  "startMissionM3Consistent": true,
+  "vitestCountStill72": true,
+  "sourcesCreditsAndAIDisclosureRetained": true,
+  "existingMapCanvasCapturesRemainFromVerifiedProduction": true,
+  "notClaimedAsNewPreviewScreenshots": true,
+  "metrics": [
+    {
+      "metric": "horizontalMeters",
+      "value": "3,035.81"
+    },
+    {
+      "metric": "ascentMeters",
+      "value": "36.39"
+    },
+    {
+      "metric": "maxSlopeDeg",
+      "value": "14.54"
+    },
+    {
+      "metric": "horizontalMeters",
+      "value": "3,118.65"
+    },
+    {
+      "metric": "ascentMeters",
+      "value": "31.88"
+    },
+    {
+      "metric": "maxSlopeDeg",
+      "value": "9.02"
+    }
+  ],
+  "files": [
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian.pptx",
+      "bytes": 3113013,
+      "sha256": "1fa48c69aa6405823bffb4a90f5b2b920a386536e9e4743ae05a8fb91e305f14"
+    },
+    {
+      "file": "Mars-Pathfinder-The-Meowrtian-Submission.pdf",
+      "bytes": 446251,
+      "sha256": "c2c834d74676c1ae560cfe8bbffe206b6f8a2fa01e3e107115a9d2427fe1336e"
+    }
+  ]
+}

@@ -211,8 +211,9 @@ try {
       const card = page.getByTestId('science-inspector');
       await card.locator('img').waitFor(); await page.waitForFunction(() => { const i = document.querySelector('.science-inspector img') as HTMLImageElement | null; return !!i && i.complete && i.naturalWidth > 0; });
       assert.ok((await card.innerText()).includes('NASA/JPL-Caltech')); assert.ok((await card.innerText()).includes(photo.rmc));
-      assert.ok((await card.innerText()).includes('no de los blancos'));
+      assert.ok((await card.innerText()).includes('not the targets'));
       await card.getByText('Documentary verification', { exact: true }).click();
+      await assertEnglishUI(page);
       assert.equal(await card.locator('a[href*="rss/api"]').getAttribute('href'), photo.metadataUrl);
       await card.locator('.science-inspector-body').evaluate(el => { el.scrollTop = 0; });
       if (photo.sol === 107) await card.screenshot({ path: `${dir}/${name}-perseverance.png` });

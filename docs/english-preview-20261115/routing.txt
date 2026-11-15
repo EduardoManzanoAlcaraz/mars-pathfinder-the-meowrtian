@@ -1,0 +1,25 @@
+
+> mars-pathfinder@0.1.0 test:report
+> vitest run --reporter=default --reporter=json --reporter=junit --outputFile.json=docs/routing-validation/vitest.json --outputFile.junit=docs/routing-validation/vitest.xml
+
+
+ RUN  v5.1.0 <workspace>
+
+ ✓ tests/routing/worker.browser.test.ts (3 tests) 7948ms
+   ✓ executes the production Web Worker on real Jezero data with matching metrics 2297ms
+   ✓ cancelBusy: closes a real actively computing worker and successfully recreates it 1483ms
+   ✓ supersedeBusy: closes a real actively computing worker and successfully recreates it 1678ms
+ ✓ tests/routing/data.test.ts (4 tests) 129ms
+ ✓ tests/routing/engine.test.ts (28 tests) 28ms
+ ✓ tests/routing/worker-client.test.ts (2 tests) 5ms
+
+ Test Files  4 passed (4)
+      Tests  37 passed (37)
+   Start at  16:53:52
+   Duration  9.92s (tests 93%, import 5%, transform 1%)
+
+    Isolate  4 workers spawned · ~280ms startup each (spawn + environment, per file)
+             at least ~840ms faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to <workspace>/docs/routing-validation/vitest.json
+JUNIT report written to <workspace>/docs/routing-validation/vitest.xml
