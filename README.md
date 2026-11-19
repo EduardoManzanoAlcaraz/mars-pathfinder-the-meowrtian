@@ -123,3 +123,19 @@ Earlier detailed validation reports retain their original language and historica
 The team explicitly approved **Apache-2.0 for original code on 15 November 2026**. See [LICENSE](LICENSE), [NOTICE](NOTICE), [licensing scope](docs/LICENSING.md) and [full upstream notices](public/THIRD_PARTY_NOTICES.txt). Third-party software, agency datasets, photographs, fonts and icons retain their own conditions. The current seven-slide deck reflects that approval; earlier validation records retain their historical scope.
 
 **OpenAI Codex** assisted implementation, processing scripts, A*, integration, automated tests, debugging, deployment and documentation. **ChatGPT** assisted planning, challenge interpretation, architecture, instructions and methodology/presentation advice. NASA/USGS supply the observations and published interpretation. No generative image tool created the scientific imagery or measured outcomes, and no LLM service calculates routes at runtime. No agency endorsement is implied.
+
+## Maintainer handoff
+
+[Agent instructions](AGENTS.md) · [Implementation architecture](ARCHITECTURE.md) · [Verified status and next steps](PROJECT_STATUS.md).
+
+Fresh-checkout validation on 19 November 2026 passed the build, typecheck, **37 routing/worker tests** and **35 interface/science tests**. These are local results, separate from the historical production evidence above. No deployment or full original-data Python rerun was performed.
+
+**Windows checkout:** scientific hashes validate exact bytes. Clone with LF preserved, including JSON assets:
+
+```sh
+git -c core.autocrlf=false clone https://github.com/EduardoManzanoAlcaraz/mars-pathfinder-the-meowrtian.git
+cd mars-pathfinder-the-meowrtian
+git config core.autocrlf false
+```
+
+In this audit, automatic LF→CRLF conversion changed `public/data/jezero-science-v1/photos.json` from 5536 to 5639 bytes and correctly stopped the build. A checkout using the original Git blob bytes passed. Do not change expected hashes to conceal a checkout conversion. Changing Git configuration alone does not rewrite files already checked out; use a fresh directory and preserve any existing work.
